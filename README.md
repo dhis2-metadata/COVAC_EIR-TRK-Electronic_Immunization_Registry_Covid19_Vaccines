@@ -1,1 +1,1 @@
-# COVAX-Registry-tracker
+# COVAC - Electronic Immunization Registry
