@@ -35,7 +35,7 @@ jobs:
           AWS_REGION: 'eu-west-1'
           SOURCE_DIR: 'complete/metadata.json'
           # GITHUB_REF - tag "D2.35/1.1.3", branch "2.35"
-          DEST_DIR: "$CODE/$NAME/$GITHUB_REF/"
+          DEST_DIR: "${CODE}/${NAME}/${GITHUB_REF}/"
           # Will look like:
           # test-metadata.dhis2.org/COVAC/Registry/D2.35/1.1.3/metadata.json
           # test-metadata.dhis2.org/COVAC/Registry/D2.35/1.1.2/metadata.json
