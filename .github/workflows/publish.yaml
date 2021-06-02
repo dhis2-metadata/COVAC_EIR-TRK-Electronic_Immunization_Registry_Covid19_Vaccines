@@ -3,12 +3,12 @@ name: Publish
 on:
   push:
     branches:
-      - 2.35-test
+      - test
 #    tags:
 #      - test-D2.35/1.1.3
 #  pull_request:
 #    branches:
-#      - 2.35-test
+#      - test
 #    tags:
 #      - test-D2.35/1.1.3
 
