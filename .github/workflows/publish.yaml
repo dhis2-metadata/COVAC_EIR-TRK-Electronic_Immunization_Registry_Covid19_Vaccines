@@ -27,8 +27,12 @@ jobs:
 
       - name: 'Set destination'
         run: |
-          GITHUB_TAG="${GITHUB_REF#refs/tags/}"
-          echo "DESTINATION=$CODE/$NAME/$GITHUB_TAG/" >> $GITHUB_ENV
+          case $GITHUB_REF in "refs/heads/*")
+            SHORT_REF="${GITHUB_REF#refs/heads/}";;
+          case $GITHUB_REF in "refs/tags/*")
+            SHORT_REF="${GITHUB_REF#refs/tags/}";;
+          esac
+          echo "DESTINATION=$CODE/$NAME/$SHORT_REF/" >> $GITHUB_ENV
 
       - name: 'Upload to S3 Bucket'
         uses: dhis2/s3-sync-action@master
