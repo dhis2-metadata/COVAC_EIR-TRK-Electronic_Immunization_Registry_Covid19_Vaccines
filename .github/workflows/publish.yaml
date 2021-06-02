@@ -27,6 +27,11 @@ jobs:
 
       - name: 'Set destination'
         run: |
+          case $GITHUB_REF in refs/heads/*)
+            GITHUB_BRANCH=${GITHUB_REF#refs/heads/};;
+          case $GITHUB_REF in refs/tags/*)
+            GITHUB_TAG=${GITHUB_REF#refs/tags/};;
+          esac
           echo "DESTINATION=$CODE/$NAME/$GITHUB_REF/" >> $GITHUB_ENV
 
       - name: 'Upload to S3 Bucket'
