@@ -15,10 +15,10 @@ on:
 
 # Environment variables used as input
 env:
-  BUCKET: 'test-metadata.dhis2.org'
   CODE: 'COVAC'
   # Name or Type (aggregate, tracker, event, add_on)?
   NAME: 'Registry'
+  TYPE: 'tracker'
 
 jobs:
   publish:
@@ -40,35 +40,29 @@ jobs:
         run: |
           case $GITHUB_REF in
             refs/heads/*)
-                SHORT_REF="${GITHUB_REF#refs/heads/}";;
+                SHORT_REF="${GITHUB_REF#refs/heads/}"
+                echo "DESTINATION=$CODE/$TYPE/$SHORT_REF/" >> $GITHUB_ENV
+                ;;
             refs/tags/*)
-                SHORT_REF="${GITHUB_REF#refs/tags/}";;
+                SPLIT_REF="(${GITHUB_REF//\// })"
+                DHIS="${SPLIT_REF[0]#D}"
+                META="${SPLIT_REF[1]}"
+                echo "DESTINATION=$CODE/$TYPE/$META/$DHIS/" >> $GITHUB_ENV
+                ;;
           esac
-          echo "DESTINATION=$CODE/$NAME/$SHORT_REF/" >> $GITHUB_ENV
 
       - name: 'Upload to S3 Bucket'
         # TODO: Fix dockerfile, don't install aws-cli every time
         uses: dhis2/s3-sync-action@test
         with:
           # TODO: set ACL "--acl public-read" when public
-          # Symlinks?
+          # Symlinks? --follow-symlinks
           # Delete?
-          args: --follow-symlinks --delete
+          args: --delete
         env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_S3_BUCKET: ${{ env.BUCKET }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.BOT_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.BOT_SECRET_KEY }}
+          AWS_S3_BUCKET: ${{ secret.S3_BUCKET }}
           AWS_REGION: 'eu-west-1'
           SOURCE_DIR: 'complete/metadata.json'
           DEST_DIR: ${{ env.DESTINATION }}
-          #
-          # For a "tag" the DESTINATION will look like:
-          #
-          # test-metadata.dhis2.org/COVAC/Registry/D2.35/1.1.3/metadata.json
-          # test-metadata.dhis2.org/COVAC/Registry/D2.35/1.1.2/metadata.json
-          # test-metadata.dhis2.org/COVAC/Registry/D2.35/1.1.1/metadata.json
-          # test-metadata.dhis2.org/COVAC/Registry/D2.34/1.1.3/metadata.json
-          # test-metadata.dhis2.org/COVAC/Registry/D2.34/1.1.2/metadata.json
-          # test-metadata.dhis2.org/COVAC/Registry/D2.34/1.1.1/metadata.json
-          #
-          # "dhis2/metadata" or "metadata/dhis2" in S3?
