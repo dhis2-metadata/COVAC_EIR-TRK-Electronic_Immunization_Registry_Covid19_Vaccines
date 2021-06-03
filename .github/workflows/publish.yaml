@@ -62,7 +62,7 @@ jobs:
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.BOT_ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.BOT_SECRET_KEY }}
-          AWS_S3_BUCKET: ${{ secret.S3_BUCKET }}
+          AWS_S3_BUCKET: ${{ secrets.S3_BUCKET }}
           AWS_REGION: 'eu-west-1'
           SOURCE_DIR: 'complete/metadata.json'
           DEST_DIR: ${{ env.DESTINATION }}
