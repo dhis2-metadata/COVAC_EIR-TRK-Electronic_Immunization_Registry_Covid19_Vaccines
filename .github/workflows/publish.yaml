@@ -44,7 +44,8 @@ jobs:
                 echo "DESTINATION=$CODE/$TYPE/$SHORT_REF/" >> $GITHUB_ENV
                 ;;
             refs/tags/*)
-                SPLIT_REF="(${GITHUB_REF//\// })"
+                SHORT_REF="${GITHUB_REF#refs/tags/}"
+                SPLIT_REF="(${SHORT_REF//\// })"
                 DHIS="${SPLIT_REF[0]#D}"
                 META="${SPLIT_REF[1]}"
                 echo "DESTINATION=$CODE/$TYPE/$META/$DHIS/" >> $GITHUB_ENV
