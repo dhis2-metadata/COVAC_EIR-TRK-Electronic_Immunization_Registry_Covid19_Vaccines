@@ -15,9 +15,11 @@ on:
   # Enable button for manual trigger
   workflow_dispatch:
 
+# Environment variables used as input
 env:
   BUCKET: 'test-metadata.dhis2.org'
   CODE: 'COVAC'
+  # Name or Type (aggregate, tracker, event, add_on)?
   NAME: 'Registry'
 
 jobs:
