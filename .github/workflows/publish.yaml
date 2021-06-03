@@ -2,13 +2,8 @@ name: Publish
 
 on:
   push:
-    branches:
-      - test
     tags:
       - 'D2.35test**'
-#  pull_request:
-#    branches:
-#      - test
 
   # Enable button for manual trigger
   workflow_dispatch:
