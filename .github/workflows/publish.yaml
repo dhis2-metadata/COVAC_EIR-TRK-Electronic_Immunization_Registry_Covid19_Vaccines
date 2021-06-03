@@ -33,19 +33,11 @@ jobs:
         #
         # Remove ref prefix and construct destination for upload
         run: |
-          case $GITHUB_REF in
-            refs/heads/*)
-                SHORT_REF="${GITHUB_REF#refs/heads/}"
-                echo "DESTINATION=$CODE/$TYPE/$SHORT_REF/" >> $GITHUB_ENV
-                ;;
-            refs/tags/*)
-                SHORT_REF="${GITHUB_REF#refs/tags/}"
-                SPLIT_REF=(${SHORT_REF//\// })
-                DHIS="${SPLIT_REF[0]#D}"
-                META="${SPLIT_REF[1]}"
-                echo "DESTINATION=$CODE/$TYPE/$META/$DHIS/" >> $GITHUB_ENV
-                ;;
-          esac
+          SHORT_REF="${GITHUB_REF#refs/tags/}"
+          SPLIT_REF=(${SHORT_REF//\// })
+          DHIS="${SPLIT_REF[0]#D}"
+          META="${SPLIT_REF[1]}"
+          echo "DESTINATION=$CODE/$TYPE/$META/$DHIS/" >> $GITHUB_ENV
 
       - name: 'Upload to S3 Bucket'
         # TODO: Fix dockerfile, don't install aws-cli every time
