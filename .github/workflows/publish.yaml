@@ -3,7 +3,7 @@ name: Publish
 on:
   push:
     tags:
-      - 'D2.35test**'
+      - 'D2.3*test/*'
 
   # Enable button for manual trigger
   workflow_dispatch:
