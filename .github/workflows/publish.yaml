@@ -1,0 +1,49 @@
+name: Publish
+
+on:
+  push:
+    tags:
+      - 'D2.35test**'
+
+  # Enable button for manual trigger
+  workflow_dispatch:
+
+# Environment variables used as input
+env:
+  CODE: 'COVAC'
+  # Name or Type (aggregate, tracker, event, add_on)?
+  NAME: 'Registry'
+  TYPE: 'tracker'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: 'Set destination'
+        # Construct destination for upload:
+        # 1. Remove unneeded part of ref
+        # 2. Split the remaining into array by "/"
+        # 3. Get DHIS2 and Metadata versions from array
+        run: |
+          SHORT_REF="${GITHUB_REF#refs/tags/}"
+          SPLIT_REF=(${SHORT_REF//\// })
+          DHIS="${SPLIT_REF[0]#D}"
+          META="${SPLIT_REF[1]}"
+          echo "DESTINATION=$CODE/$TYPE/$META/$DHIS/" >> $GITHUB_ENV
+
+      - name: 'Upload to S3 Bucket'
+        uses: dhis2/s3-sync-action@test
+        with:
+          # TODO: set ACL "--acl public-read" when public
+          # Symlinks? --follow-symlinks
+          # Delete?
+          args: --delete
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.BOT_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.BOT_SECRET_KEY }}
+          AWS_S3_BUCKET: ${{ secrets.S3_BUCKET }}
+          AWS_REGION: 'eu-west-1'
+          SOURCE_DIR: 'complete'
+          DEST_DIR: ${{ env.DESTINATION }}
