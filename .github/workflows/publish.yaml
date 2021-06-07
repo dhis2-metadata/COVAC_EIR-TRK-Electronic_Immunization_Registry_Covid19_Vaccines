@@ -1,9 +1,7 @@
 name: Publish
 
 on:
-  push:
-    tags:
-      - 'D2.3*test/*'
+  push: [ tags ]
 
   # Enable button for manual trigger
   workflow_dispatch:
