@@ -33,7 +33,13 @@ jobs:
           META="${SPLIT_REF[1]}"
           echo "DESTINATION=$CODE/$TYPE/$META/$DHIS" >> $GITHUB_ENV
 
-      - name: 'Upload to S3 Bucket'
+      - name: 'Check if dashboard is available'
+          id: check_dashboard
+          uses: andstor/file-existence-action@v1
+          with:
+            files: 'dashboard'
+
+      - name: 'Upload complete'
         uses: dhis2/s3-sync-action@test
         with:
           # TODO: set ACL "--acl public-read" when public
@@ -48,13 +54,7 @@ jobs:
           SOURCE_DIR: 'complete'
           DEST_DIR: ${{ env.DESTINATION }}
 
-      - name: 'Check if dashboard metadata is available'
-        id: check_dashboard
-        uses: andstor/file-existence-action@v1
-        with:
-          files: 'dashboard'
-
-      - name: 'Upload dashboard if available'
+      - name: 'Upload dashboard'
         if: steps.check_dashboard.outputs.files_exists == 'true'
         uses: dhis2/s3-sync-action@test
         with:
