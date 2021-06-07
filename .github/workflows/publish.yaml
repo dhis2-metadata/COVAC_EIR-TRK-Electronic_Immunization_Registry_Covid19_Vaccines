@@ -39,7 +39,7 @@ jobs:
           with:
             files: 'dashboard'
 
-      - name: 'Upload complete'
+      - name: 'Upload "complete" package'
         uses: dhis2/s3-sync-action@test
         with:
           # TODO: set ACL "--acl public-read" when public
@@ -54,7 +54,7 @@ jobs:
           SOURCE_DIR: 'complete'
           DEST_DIR: ${{ env.DESTINATION }}
 
-      - name: 'Upload dashboard'
+      - name: 'Upload "dashboard" package'
         if: steps.check_dashboard.outputs.files_exists == 'true'
         uses: dhis2/s3-sync-action@test
         with:
