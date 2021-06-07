@@ -34,10 +34,10 @@ jobs:
           echo "DESTINATION=$CODE/$TYPE/$META/$DHIS" >> $GITHUB_ENV
 
       - name: 'Check if dashboard is available'
-          id: check_dashboard
-          uses: andstor/file-existence-action@v1
-          with:
-            files: 'dashboard'
+        id: check_dashboard
+        uses: andstor/file-existence-action@v1
+        with:
+          files: 'dashboard'
 
       - name: 'Upload "complete" package'
         uses: dhis2/s3-sync-action@test
