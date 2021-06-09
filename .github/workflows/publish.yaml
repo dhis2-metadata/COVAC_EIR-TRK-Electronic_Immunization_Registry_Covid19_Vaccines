@@ -18,21 +18,23 @@ env:
 jobs:
   prepare:
     runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
       - uses: actions/checkout@v2
-      - id: set-matrix
-        run: echo "::set-output name=matrix::$(bash .github/scripts/prepare-matrix.sh)"
-      outputs:
-        matrix: ${{ steps.set-matrix.outputs.matrix }}
+      - name: 'Prepare matrix'
+        id: set-matrix
+        run: echo "::set-output name=matrix::$(bash .github/scripts/prepare.sh)"
+
 
   publish:
+    needs: prepare
     runs-on: ubuntu-latest
     strategy:
       matrix:
         files: ${{ fromJson(needs.prepare.outputs.matrix) }}
     steps:
       - uses: actions/checkout@v2
-
       - name: 'Upload package'
         uses: prewk/s3-cp-action@master
 #        with:
@@ -45,8 +47,8 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.BOT_SECRET_KEY }}
           AWS_S3_BUCKET: ${{ secrets.S3_BUCKET }}
           AWS_REGION: ${{ secrets.AWS_REGION }}
-          SOURCE_DIR: ${{ matrix.files.source }}
-          DEST_DIR: ${{ matrix.files.destination }}
+          SOURCE: ${{ matrix.files.source }}
+          DEST: "s3://${{ secrets.S3_BUCKET }}/${{ matrix.files.destination }}"
 
       # OLD
       #- name: 'Set destination'

@@ -30,9 +30,6 @@ function getUploadables {
     FILES=($(ls "$OPTIONAL_DIR"))
     SOURCES+=( "${FILES[@]/#/$OPTIONAL_DIR/}" )
   fi
-
-  echo "uploadables:"
-  echo "${SOURCES[@]}"
 }
 
 function createJson {
@@ -40,7 +37,7 @@ function createJson {
 }
 
 function addToJson {
-  echo "$1" | jq --argjson new "$2" '. += $new'
+  echo "$1" | jq -c --argjson new "$2" '. += $new'
 }
 
 function createMatrix {
@@ -75,5 +72,4 @@ getUploadables
 
 createMatrix
 
-echo "matrix:"
 echo "$matrix"
