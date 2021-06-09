@@ -21,9 +21,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - id: set-matrix
-        run: |
-          # create array/json object of source files to destination filenames
-          echo "::set-output name=matrix::$(bash .github/scripts/prepare-matrix.sh)"
+        run: echo "::set-output name=matrix::$(bash .github/scripts/prepare-matrix.sh)"
       outputs:
         matrix: ${{ steps.set-matrix.outputs.matrix }}
 
