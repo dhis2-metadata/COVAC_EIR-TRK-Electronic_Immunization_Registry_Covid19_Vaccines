@@ -57,14 +57,14 @@ function createMatrix {
       else
         addition=$(createJson "$file" "$FILE_NAME.${file#*.}")
       fi
-	    matrix=$(addToJson "$matrix" "$addition")
-	  fi
+      matrix=$(addToJson "$matrix" "$addition")
+    fi
 
     # if the extension is html or xlsx it's a "reference"
-	  if [ "${file#*.}" == "html" ] || [ "${file#*.}" == "xlsx" ]; then
+    if [ "${file#*.}" == "html" ] || [ "${file#*.}" == "xlsx" ]; then
       addition=$(createJson "$file" "$FILE_NAME-ref.${file#*.}")
-	    matrix=$(addToJson "$matrix" "$addition")
-	  fi
+      matrix=$(addToJson "$matrix" "$addition")
+    fi
   done
 }
 
