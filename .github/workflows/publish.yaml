@@ -8,13 +8,6 @@ on:
   # Enable button for manual trigger
   workflow_dispatch:
 
-# Environment variables used as input
-env:
-  CODE: 'COVAC'
-  # Name or Type (aggregate, tracker, event, add_on)?
-  NAME: 'Registry'
-  TYPE: 'tracker'
-
 jobs:
   prepare:
     runs-on: ubuntu-latest
@@ -22,10 +15,9 @@ jobs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
       - uses: actions/checkout@v2
-      - name: 'Prepare matrix'
+      - name: 'Set matrix'
         id: set-matrix
         run: echo "::set-output name=matrix::$(bash .github/scripts/prepare.sh)"
-
 
   publish:
     needs: prepare
