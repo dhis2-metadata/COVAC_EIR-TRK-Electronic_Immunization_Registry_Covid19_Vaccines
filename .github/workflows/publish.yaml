@@ -37,11 +37,11 @@ jobs:
 
       - name: 'Upload package'
         uses: dhis2/s3-sync-action@test
-        with:
-          # TODO: set ACL "--acl public-read" when public
-          # Symlinks? --follow-symlinks
-          # Delete?
-          args: --delete
+#        with:
+#           TODO: set ACL "--acl public-read" when public
+#           Symlinks? --follow-symlinks
+#           Delete? --delete
+#          args:
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.BOT_ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.BOT_SECRET_KEY }}
