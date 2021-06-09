@@ -46,23 +46,28 @@ function createMatrix {
   # create source -> destination for all files
   for file in "${SOURCES[@]}"
   do
+    # incomplete
+    DESTINATION=''
+    if [[ $file =~ $OPTIONAL_DIR  ]]; then
+      DESTINATION+="$OPTIONAL_DIR/"
+    fi
     # if the extension is json it's a "package"
-    if [ "${file#*.}" == "json" ]; then
+    if [[ "${file#*.}" == "json" ]]; then
       # if there is _ in the name, it's a translation
       if [[ "${file%%.*}" =~ "_" ]]; then
         filename="${file%%.*}"
         locale="${filename#*_}"
         # replace the default "en" locale
-        addition=$(createJson "$file" "${FILE_NAME%-*}-$locale.${file#*.}")
+        addition=$(createJson "$file" "$DESTINATION${FILE_NAME%-*}-$locale.${file#*.}")
       else
-        addition=$(createJson "$file" "$FILE_NAME.${file#*.}")
+        addition=$(createJson "$file" "$DESTINATION$FILE_NAME.${file#*.}")
       fi
       matrix=$(addToJson "$matrix" "$addition")
     fi
 
     # if the extension is html or xlsx it's a "reference"
-    if [ "${file#*.}" == "html" ] || [ "${file#*.}" == "xlsx" ]; then
-      addition=$(createJson "$file" "$FILE_NAME-ref.${file#*.}")
+    if [[ "${file#*.}" == "html" ]] || [[ "${file#*.}" == "xlsx" ]]; then
+      addition=$(createJson "$file" "$DESTINATION$FILE_NAME-ref.${file#*.}")
       matrix=$(addToJson "$matrix" "$addition")
     fi
   done
