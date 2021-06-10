@@ -6,6 +6,7 @@ declare -a SOURCES
 declare -r MAIN_DIR="test/complete"
 declare -r SUBSET_DIR="test/dashboard"
 
+# create array of sources for upload
 function getUploadables {
   SOURCES=($(find "$MAIN_DIR" -type f | sort))
 
@@ -15,16 +16,19 @@ function getUploadables {
   fi
 }
 
+# $1 - file
 # if the extension is json, it's a "package"
 function isPackage {
   [[ "${1#*.}" == "json" ]]
 }
 
+# $1 - file
 # if the extension is html or xlsx, it's a "reference"
 function isReference {
   [[ "${1#*.}" == "html" ]] || [[ "${1#*.}" == "xlsx" ]]
 }
 
+# $1 - file
 # get "package" JSON object from file
 function getPackageObject {
   if isPackage "$1"; then
@@ -32,16 +36,19 @@ function getPackageObject {
   fi
 }
 
+# $1 & $2 - file path
 # create source->destination JSON
 function createJson {
   jq -n --arg key "$1" --arg value "$2" '[{"source": $key, "destination": $value}]'
 }
 
+# $1 & $2 - JSON
 # append JSON $2 to $1
 function addToJson {
   echo "$1" | jq -c --argjson new "$2" '. += $new'
 }
 
+# $1 - JSON
 # create path from "package" JSON object
 function createPath {
   # get package details from object
@@ -51,8 +58,10 @@ function createPath {
   package_version=$(echo "$1" | jq -r '.version')
   dhis2_version=$(echo "$1" | jq -r '.DHIS2Version')
 
+  # construct path
   path="$locale/$code/$type/$package_version/$dhis2_version"
 
+  # if the file is in a subset dir, add it to the path
   if [[ $1 =~ $SUBSET_DIR  ]]; then
     path+="$SUBSET_DIR/"
   fi
@@ -85,10 +94,13 @@ function getReferenceDestination {
 
 # create matrix of sources and destinations
 function createMatrix {
+  # list of files from arguments
   files=("$@")
 
+  # initialize empty matrix
   matrix='[]'
 
+  # default reference path and file name
   reference_destination=$(getReferenceDestination "${files[@]}")
 
   # create source -> destination for all files
@@ -105,6 +117,7 @@ function createMatrix {
     fi
 
     if isReference "$file"; then
+      # get reference locale from "parent" directory of the file
       locale=$(basename $(dirname "$file"))
       addition=$(createJson "$file" "$locale/$reference_destination-$locale-ref.${file#*.}")
       matrix=$(addToJson "$matrix" "$addition")
