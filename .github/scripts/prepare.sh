@@ -2,58 +2,75 @@
 
 set -e
 
-# test data
-FULL='
-{
-  "package": {
-    "name": "COVAC_TRACKER_V1.1.3_DHIS2.35.3-en",
-    "code": "COVAC",
-    "type": "TRACKER",
-    "version": "1.1.3",
-    "lastUpdate": "20210408T081801",
-    "DHIS2Version": "2.35.3",
-    "DHIS2Build": "3492688",
-    "locale": "en"
-  }
-}'
-PACKAGE=$(echo "$FULL" | jq -r '.package')
-FILE_NAME=$(echo "$PACKAGE" | jq -r '.name')
+declare -a SOURCES
+declare -r MAIN_DIR="complete"
+declare -r OPTIONAL_DIR="dashboard"
 
-MAIN_DIR="complete"
-OPTIONAL_DIR="dashboard"
+# TODO
+# construct destination
+# have correct locale subdirs
 
 function getUploadables {
   FILES=($(ls "$MAIN_DIR"))
   SOURCES=( "${FILES[@]/#/$MAIN_DIR/}" )
 
-  if [ -d "dashboard" ]; then
-    FILES=($(ls "$OPTIONAL_DIR"))
-    SOURCES+=( "${FILES[@]/#/$OPTIONAL_DIR/}" )
+  if [ -d "$OPTIONAL_DIR" ]; then
+    OPTIONAL_FILES=($(ls "$OPTIONAL_DIR"))
+    SOURCES+=( "${OPTIONAL_FILES[@]/#/$OPTIONAL_DIR/}" )
   fi
 }
 
+# if the extension is json it's a "package"
+function isPackage {
+  [[ "${1#*.}" == "json" ]]
+}
+
+# if the extension is html or xlsx it's a "reference"
+function isReference {
+  [[ "${1#*.}" == "html" ]] || [[ "${1#*.}" == "xlsx" ]]
+}
+
+# get JSON object "package"
+function getPackageVersion {
+  if isPackage "$1"; then
+    jq -r '.package' < "$1"
+  fi
+}
+
+# create source->destination JSON
 function createJson {
   jq -n --arg key "$1" --arg value "$2" '[{"source": $key, "destination": $value}]'
 }
 
+# append $2 to $1
 function addToJson {
   echo "$1" | jq -c --argjson new "$2" '. += $new'
+}
+
+function createDestination {
+  # incomplete
+  DESTINATION=''
+  if [[ $1 =~ $OPTIONAL_DIR  ]]; then
+    DESTINATION+="$OPTIONAL_DIR/"
+  fi
 }
 
 function createMatrix {
   matrix='[]'
 
   # create source -> destination for all files
-  for file in "${SOURCES[@]}"
+  files=("$@")
+  for file in "${files[@]}"
   do
-    # incomplete
-    DESTINATION=''
-    if [[ $file =~ $OPTIONAL_DIR  ]]; then
-      DESTINATION+="$OPTIONAL_DIR/"
-    fi
-    # if the extension is json it's a "package"
-    if [[ "${file#*.}" == "json" ]]; then
-      # if there is _ in the name, it's a translation
+    createDestination "$file"
+    packageVersion=$(getPackageVersion "$file")
+    echo "$packageVersion"
+
+    # default filename for references?
+    FILE_NAME=$(echo "$packageVersion" | jq -r '.name')
+
+    if isPackage "$file"; then
+      # TODO Remove this! if there is _ in the name, it's a translation
       if [[ "${file%%.*}" =~ "_" ]]; then
         filename="${file%%.*}"
         locale="${filename#*_}"
@@ -65,8 +82,7 @@ function createMatrix {
       matrix=$(addToJson "$matrix" "$addition")
     fi
 
-    # if the extension is html or xlsx it's a "reference"
-    if [[ "${file#*.}" == "html" ]] || [[ "${file#*.}" == "xlsx" ]]; then
+    if isReference "$file"; then
       addition=$(createJson "$file" "$DESTINATION$FILE_NAME-ref.${file#*.}")
       matrix=$(addToJson "$matrix" "$addition")
     fi
@@ -75,6 +91,6 @@ function createMatrix {
 
 getUploadables
 
-createMatrix
+createMatrix "${SOURCES[@]}"
 
 echo "$matrix"
