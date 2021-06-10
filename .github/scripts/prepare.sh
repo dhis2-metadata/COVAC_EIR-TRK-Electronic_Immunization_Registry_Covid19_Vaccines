@@ -3,8 +3,9 @@
 set -e
 
 declare -a SOURCES
-declare -r MAIN_DIR="test/complete"
-declare -r SUBSET_DIR="test/dashboard"
+declare -a DEFAULT_DESTINATION
+declare -r MAIN_DIR="complete"
+declare -r SUBSET_DIR="dashboard"
 
 # create array of sources for upload
 function getUploadables {
@@ -14,6 +15,12 @@ function getUploadables {
     subset=($(find "$SUBSET_DIR" -type f | sort))
     SOURCES+=("${subset[@]}")
   fi
+}
+
+# $1 file
+# is the file in a subset dir
+function isInSubsetDir {
+  [[ "$1" =~ $SUBSET_DIR  ]]
 }
 
 # $1 - file
@@ -56,21 +63,15 @@ function createPath {
   code=$(echo "$1" | jq -r '.code')
   type=$(echo "$1" | jq -r '.type')
   package_version=$(echo "$1" | jq -r '.version')
-  dhis2_version=$(echo "$1" | jq -r '.DHIS2Version')
+  # remove "patch" part of version for path
+  dhis2_version=$(echo "$1" | jq -r '.DHIS2Version' | cut -d '.' -f 1,2)
 
   # construct path
-  path="$locale/$code/$type/$package_version/$dhis2_version"
-
-  # if the file is in a subset dir, add it to the path
-  if [[ $1 =~ $SUBSET_DIR  ]]; then
-    path+="$SUBSET_DIR/"
-  fi
-
-  echo "$path"
+  echo "$locale/$code/$type/$package_version/$dhis2_version"
 }
 
-# get reference path and file name from the first "package" found
-function getReferenceDestination {
+# get default path and file name from the first "package" found
+function getDefaultDestination {
   files=("$@")
 
   for file in "${files[@]}"
@@ -85,7 +86,7 @@ function getReferenceDestination {
     name=$(echo "$object" | jq -r '.name')
     name_without_locale=${name%-*}
 
-    echo "$path_without_locale/$name_without_locale"
+    DEFAULT_DESTINATION=("$path_without_locale" "$name_without_locale")
 
     # return after first found file
     return
@@ -101,7 +102,7 @@ function createMatrix {
   matrix='[]'
 
   # default reference path and file name
-  reference_destination=$(getReferenceDestination "${files[@]}")
+  getDefaultDestination "${files[@]}"
 
   # create source -> destination for all files
   for file in "${files[@]}"
@@ -112,6 +113,11 @@ function createMatrix {
     file_name=$(echo "$packageObject" | jq -r '.name')
 
     if isPackage "$file"; then
+      # include subset dir in path if the file is coming from it
+      if isInSubsetDir "$file"; then
+        path+="/$SUBSET_DIR"
+      fi
+
       addition=$(createJson "$file" "$path/$file_name.${file#*.}")
       matrix=$(addToJson "$matrix" "$addition")
     fi
@@ -119,7 +125,14 @@ function createMatrix {
     if isReference "$file"; then
       # get reference locale from "parent" directory of the file
       locale=$(basename $(dirname "$file"))
-      addition=$(createJson "$file" "$locale/$reference_destination-$locale-ref.${file#*.}")
+
+      # include subset dir in path if the file is coming from it
+      if isInSubsetDir "$file"; then
+        addition=$(createJson "$file" "$locale/${DEFAULT_DESTINATION[0]}/$SUBSET_DIR/${DEFAULT_DESTINATION[1]}-$locale-ref.${file#*.}")
+      else
+        addition=$(createJson "$file" "$locale/${DEFAULT_DESTINATION[0]}/${DEFAULT_DESTINATION[1]}-$locale-ref.${file#*.}")
+      fi
+
       matrix=$(addToJson "$matrix" "$addition")
     fi
   done
