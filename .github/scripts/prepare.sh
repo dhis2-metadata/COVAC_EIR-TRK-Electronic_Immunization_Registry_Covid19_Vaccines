@@ -3,9 +3,11 @@
 set -e
 
 declare -a SOURCES
-declare -a DEFAULT_DESTINATION
 declare -r MAIN_DIR="complete"
 declare -r SUBSET_DIR="dashboard"
+declare DEFAULT_PATH
+declare DEFAULT_NAME
+declare MATRIX="[]"
 
 # create array of sources for upload
 function getUploadables {
@@ -80,26 +82,29 @@ function getDefaultDestination {
 
     # remove locale from path
     path=$(createPath "$object")
-    path_without_locale=${path#*/}
+    DEFAULT_PATH=${path#*/}
 
     # remove locale from name
     name=$(echo "$object" | jq -r '.name')
-    name_without_locale=${name%-*}
-
-    DEFAULT_DESTINATION=("$path_without_locale" "$name_without_locale")
+    DEFAULT_NAME=${name%-*}
 
     # return after first found file
     return
   done
 }
 
+# $1 - source file
+# $2 - destination path
+# create destination from source file
+function createDestination {
+  addition=$(createJson "$1" "$2.${1#*.}")
+  MATRIX=$(addToJson "$MATRIX" "$addition")
+}
+
+# $1 - array of files
 # create matrix of sources and destinations
 function createMatrix {
-  # list of files from arguments
   files=("$@")
-
-  # initialize empty matrix
-  matrix='[]'
 
   # default reference path and file name
   getDefaultDestination "${files[@]}"
@@ -118,8 +123,7 @@ function createMatrix {
         path+="/$SUBSET_DIR"
       fi
 
-      addition=$(createJson "$file" "$path/$file_name.${file#*.}")
-      matrix=$(addToJson "$matrix" "$addition")
+      createDestination "$file" "$path/$file_name"
     fi
 
     if isReference "$file"; then
@@ -128,12 +132,10 @@ function createMatrix {
 
       # include subset dir in path if the file is coming from it
       if isInSubsetDir "$file"; then
-        addition=$(createJson "$file" "$locale/${DEFAULT_DESTINATION[0]}/$SUBSET_DIR/${DEFAULT_DESTINATION[1]}-$locale-ref.${file#*.}")
+        createDestination "$file" "$locale/$DEFAULT_PATH/$SUBSET_DIR/$DEFAULT_NAME-$locale-ref"
       else
-        addition=$(createJson "$file" "$locale/${DEFAULT_DESTINATION[0]}/${DEFAULT_DESTINATION[1]}-$locale-ref.${file#*.}")
+        createDestination "$file" "$locale/$DEFAULT_PATH/$DEFAULT_NAME-$locale-ref"
       fi
-
-      matrix=$(addToJson "$matrix" "$addition")
     fi
   done
 }
@@ -142,4 +144,4 @@ getUploadables
 
 createMatrix "${SOURCES[@]}"
 
-echo "$matrix"
+echo "$MATRIX"
