@@ -17,7 +17,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: 'Set matrix'
         id: set-matrix
-        run: echo "::set-output name=matrix::$(bash .github/scripts/prepare.sh)"
+        uses: dhis2-metadata/prepare@master
 
   publish:
     needs: prepare
