@@ -9,7 +9,7 @@ declare DEFAULT_PATH
 declare DEFAULT_NAME
 declare MATRIX="[]"
 
-# create array of sources for upload
+# create array of source files for upload
 function getUploadables {
   SOURCES=($(find "$MAIN_DIR" -type f | sort))
 
@@ -20,7 +20,7 @@ function getUploadables {
 }
 
 # $1 file
-# is the file in a subset dir
+# check if the file is in a subset dir
 function isInSubsetDir {
   [[ "$1" =~ $SUBSET_DIR  ]]
 }
@@ -72,6 +72,7 @@ function createPath {
   echo "$locale/$code/$type/$package_version/$dhis2_version"
 }
 
+# $1 - array of files
 # get default path and file name from the first "package" found
 function getDefaultDestination {
   files=("$@")
