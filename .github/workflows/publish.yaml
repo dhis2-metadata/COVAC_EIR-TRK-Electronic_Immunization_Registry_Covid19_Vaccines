@@ -29,9 +29,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: 'Upload package'
         uses: prewk/s3-cp-action@master
-        #TODO uncomment when changing to public bucket
-        #with:
-        #  args: --acl public-read
+        with:
+          args: --acl public-read
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.BOT_ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.BOT_SECRET_KEY }}
