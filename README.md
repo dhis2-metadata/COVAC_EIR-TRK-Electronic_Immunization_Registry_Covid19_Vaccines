@@ -1,1 +1,1 @@
-# COVAC - Electronic Immunization Registry
+# Electronic Immunization Registry (COVID-19 vaccines) - Tracker metadata package
