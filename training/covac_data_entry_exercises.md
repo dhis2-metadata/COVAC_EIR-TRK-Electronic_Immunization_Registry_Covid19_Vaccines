@@ -1,7 +1,9 @@
 # Data Entry Exercises
 
 **DHIS2 Immunization Toolkit**
+
 **COVID-19 Vaccination Registry**
+
 **Data Entry Exercises - COVAC**
 
 ## Table of Contents
