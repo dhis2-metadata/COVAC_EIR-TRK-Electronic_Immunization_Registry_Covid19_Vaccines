@@ -1,6 +1,7 @@
 # Data Entry Trainer's Guide
 
 **DHIS2 Immunization Toolkit**
+
 **COVID-19 Vaccination Registry**
 
 ## Table of Contents
