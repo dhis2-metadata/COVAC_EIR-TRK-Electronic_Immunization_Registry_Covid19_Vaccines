@@ -147,13 +147,11 @@
 
 ![Vaccination Information](resources/images/vaccination_information_en.png)
 
-1. Underlying conditions can only be selected if “Any underlying conditions = Yes”
-2. Pre-immunization Questions
-3. A number of fields in the vaccination information section will be pre-populated once the vaccine is selected
-
 > **Note**
 >
-> Pregnancy details will appear if the person is female
+> 1. Underlying conditions can only be selected if “Any underlying conditions = Yes”
+> 2. A number of fields in the vaccination information section will be pre-populated once the vaccine is selected
+> 3. Pregnancy details will appear if the person is female
 
 ### Step 6.3 - Complete the event
 
