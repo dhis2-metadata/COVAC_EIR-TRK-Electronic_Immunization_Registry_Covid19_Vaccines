@@ -185,7 +185,7 @@
     
     > **Note**
     >
-v> 1. Underlying conditions can only be selected if “Any underlying conditions = Yes”
+    > 1. Underlying conditions can only be selected if “Any underlying conditions = Yes”
     > 2. A number of fields in the vaccination information section will be pre-populated once the vaccine is selected
     > 3. Pregnancy details will appear if the person is female
 
