@@ -30,7 +30,7 @@ Each exercise refers to an accompanying section within the user manual that has 
 
 If you are planning to enter data in real time, please create use-cases for data entry following this process as needed.
 
-## Exercise 1 – Access the Program and Register a New Case
+## Exercise 1 - Access the Program and Register a New Case
 
 In the first exercise, you will register a new person receiving their 1st dose into DHIS2 using tracker capture. In order to complete the exercise, you will need to refer to Section 1 of your filled in vaccination reporting form.
 
@@ -56,14 +56,14 @@ Follow these steps when entering data into stage 1:
 
 1. Within the case’s tracker dashboard, select the “+” icon by the vaccination stage and add a new event
 2. Select the date in which the 1st dose was given
-3. You will notice a number of fields can be hidden or shown. Responses to the following fields will either keep fields hidden or enable them for data entry: 
+3. You will notice a number of fields can be hidden or shown. Responses to the following fields will either keep fields hidden or enable them for data entry:
    * If the case is not female or female and less then 50 years of age, you will not be able to enter data related to pregnancy
    * If the case is female and less then 50 years of age, you will need to answer the questions on pregnancy before being able to enter other data. If the female person is pregnant, you can not enter other data.
    * You can only enter underlying conditions if you indicate they have an underlying condition
    * The fields for vaccine given, vaccine manufacturer and suggested date for next dose are automatically filled in
-4. Enter the details of your case as taken from your reporting form 
+4. Enter the details of your case as taken from your reporting form
 5. When you have completed entering details for the case, select the “Save” button at the bottom of the data entry form. If all of the details have been entered select “Finish and complete”
-6. Once you complete the data entry for the 1st dose, you can schedule the 2nd dose. There will be an automatic date that is calculated as 10 weeks from the date the 1st dose was given 
+6. Once you complete the data entry for the 1st dose, you can schedule the 2nd dose. There will be an automatic date that is calculated as 10 weeks from the date the 1st dose was given.
 
    > **Note**
    >
@@ -75,7 +75,7 @@ Follow these steps when entering data into stage 1:
 
 Refer to sections “Vaccinations – 1st Dose,” “Verifying the status of events within a program” and “Scheduling the 2nd dose” within the user guide for a reminder on how to complete these processes.
 
-## Exercise 3 – Sync Your Data and Find Your Case
+## Exercise 3 - Sync Your Data and Find Your Case
 
 In exercise 3, you will manually sync your data and find the case that you need to update.
 
@@ -103,12 +103,12 @@ Follow these steps when entering data into stage 2:
 
 1. Within the case’s tracker dashboard, select the “+” icon by the vaccination stage and select the already scheduled 2nd dose
 2. Select the date in which the 2nd dose was given
-3. You will notice a number of fields can be hidden or shown. Responses to the following fields will either keep fields hidden or enable them for data entry: 
+3. You will notice a number of fields can be hidden or shown. Responses to the following fields will either keep fields hidden or enable them for data entry:
    * If the case is not female or female and less then 50 years of age, you will not be able to enter data related to pregnancy
    * If the case is female and less then 50 years of age, you will need to answer the questions on pregnancy before being able to enter other data. If the female person is pregnant, you can not enter other data.
    * You can only enter underlying conditions if you indicate they have an underlying condition
    * The fields for vaccine given, vaccine manufacturer and suggested date for next dose are automatically filled in
-4. Enter the details of your case as taken from your reporting form 
+4. Enter the details of your case as taken from your reporting form
 5. You will receive a notification that the person has received their last dose [note to trainer: this is in cases where the vaccine is a 2 dose variant]
 6. When you have completed entering details for the case, select the “Save” button at the bottom of the data entry form. If all of the details have been entered select “Finish and complete”
 
@@ -118,7 +118,7 @@ Refer to the sections “Vaccinations – 2nd Dose” within the user guide for 
 
 Follow these instructions to complete the enrollment:
 
-1. Ensure you are still logged in and viewing your case 
+1. Ensure you are still logged in and viewing your case
 2. Now that all of the information for this case has been entered, you can complete the entire case’s interaction with this program. In order to complete this interaction, navigate to the top of the case’s tracker dashboard.
 3. Select the menu icon, followed by the “Complete” button to complete the enrollment
 4. To verify the enrollment is completed, you can navigate back to the search pagee and apply a filter for “Complete” under the “Enrollment status” filter group
@@ -140,20 +140,20 @@ To complete this exercise:
 7. **Optional** Sync your data
 8. Exit the person’s dashboard and search for it using the person’s ID
 9. After finding your person, enter the details of the 2nd dose
-10. Complete the 2nd dose by selecting the complete button
+10. Complete the 2^nd^ dose by selecting the complete button
 11. Complete the enrollment
 12. Verify it is complete by checking your “completed clients” list
 
-Please refer to each of the individual exercises and quick guides for a refresher on how to complete each of the steps presented here. 
+Please refer to each of the individual exercises and quick guides for a refresher on how to complete each of the steps presented here.
 
-## Exercise 7 – Scheduled Doses
+## Exercise 7 - Scheduled Doses
 
 > **Note**
 >
 > NOTE TO TRAINER
 > SPECIFY THE ORG UNIT/DATES TO USE WHICH HAS PEOPLE SCHEDULED FOR THEIR SECOND DOSE (IN WHICH THE DATE HAS NOT YET PASSED)
 
-In exercise 7, you will find people that are scheduled to receive their second dose. 
+In exercise 7, you will find people that are scheduled to receive their second dose.
 
 To do this:
 
@@ -165,7 +165,7 @@ To do this:
 
 Refer to the section “Using Filters” within the user guide for a reminder on how to complete this process.
 
-## Exercise 8 – Overdue Doses
+## Exercise 8 - Overdue Doses
 
 > **Note**
 >
