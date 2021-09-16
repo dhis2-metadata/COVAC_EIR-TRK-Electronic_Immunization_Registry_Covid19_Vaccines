@@ -4,29 +4,6 @@
 
 **COVID-19 Vaccination Registry**
 
-## Table of Contents
-
-* [Preparation Notes](#preparation-notes)
-* [Registration (New Case)](#registration-new-case)
-* [Exercise 1 - Register a new case](#exercise-1---register-a-new-case)
-* [Tracker Dashboard](#tracker-dashboard)
-* [Data Entry](#data-entry)
-* [Vaccination - 1^st^ dose](#vaccination---1st-dose)
-* [Exercise 2 - Fill in 1^st^ dose details and schedule the 2^nd^ dose](#exercise-2---fill-in-1st-dose-details-and-schedule-the-2nd-dose)
-* [Searching](#searching)
-* [Exercise 3 - Review the search and filter functionality to find a case](#exercise-3---review-the-search-and-filter-functionality-to-find-a-case)
-* [Vaccination - 2^nd^ dose](#vaccination---2nd-dose)
-* [Exercise 4 - Fill in 2^nd^ dose details](#exercise-4---fill-in-2nd-dose-details)
-* [Review the tracker dashboard](#review-the-tracker-dashboard)
-* [Completing the program enrollment](#completing-the-program-enrollment)
-* [Exercise 5 - Complete the enrollment](#exercise-5---complete-the-enrollment)
-* [Exercise 6 - Perform all concepts discussed](#exercise-6---perform-all-concepts-discussed)
-* [Reports](#reports)
-* [Upcoming Doses](#upcoming-doses)
-* [Exercise 7 - Run a report to identify the date people are scheduled for their second dose](#exercise-7---run-a-report-to-identify-the-date-people-are-scheduled-for-their-second-dose)
-* [Overdue Doses](#overdue-doses)
-* [Exercise 8 - Run a report to identify people that have missed their second dose](#exercise-8---run-a-report-to-identify-people-that-have-missed-their-second-dose)
-
 ## Preparation Notes
 
 In order to modify this guide, you will have to review the local SOPs that are in place and modify any workflow or features discussed in the order the user will interact with them
