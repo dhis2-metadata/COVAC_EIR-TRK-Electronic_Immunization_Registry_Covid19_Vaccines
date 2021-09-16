@@ -1,9 +1,7 @@
 # COVAC - Android User Guide
 
 **DHIS2 Android App**
-
 **DHIS2 Immunization Toolkit**
-
 **COVID-19 Vaccination Registry**
 
 ## Table of Contents
