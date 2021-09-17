@@ -17,19 +17,19 @@ In order to modify this guide, you will have to review the local SOPs that are i
 5. If demonstrating the filter functionality, you will need to have data entered that meets the criteria of each of the filters you are demonstrating
 6. To demonstrate the upcoming and overdue filter functionalities, you will need to schedule cases for either their first or second dose (but not fill in data for their dose). This should be a mix of individuals scheduled in both previous and upcoming days from the day of the training itself so you can demonstrate both filter types.
 
-Step by Step Guide
+## Step by Step Guide
 
 Log in to the DHIS2 system from the Android app using the username and password
 
 1. Review the org unit and program selection and select a health facility to work in
 2. Briefly describe the first page list if this appears, but note that we will get back to this later on
 
-## Accessing the Program
+### Accessing the Program
 
 1. When you first log in to DHIS2 you will be taken to a home screen that lists all your data sets and/or programs
 2. You can access the program you are working with by selecting it from this home screen
 
-## Registering a New Person
+### Registering a New Person
 
 1. After selecting the program you will be taken to the main search/registration screen within the android app
 2. To register someone on android, you need to perform a search first. This is in order to reduce duplicates. Enter an individual’s details and perform a search
@@ -42,18 +42,18 @@ Log in to the DHIS2 system from the Android app using the username and password
 
 STOP
 
-## Exercise 1 - Access the Program and Register a New Person
+#### Exercise 1 - Access the Program and Register a New Person
 
-## Tracker Dashboard
+### Tracker Dashboard
 
 1. After you save the details, you will be confronted with the tracker dashboard. There are many different elements to review within the tracker dashboard; however you can skip them initially and come back to them after you have entered some data
 2. Focus on the actual program stage element within the person’s dashboard. This allows you to add new events and enter data for the person.
    * Quickly recap the stages that are within the program (namely ‘Vaccination’) referring back to any background presentation(s) or demos you have already done.
    * Explain that the same information is collected during their 1st and 2nd dose. We will come back to the 2nd dose shortly. 
 
-## Data Entry
+### Data Entry
 
-## Vaccination - 1^st^ Dose
+### Vaccination - 1^st^ Dose
 
 1. The Vaccination stage is automatically generated. Depending on your configuration, the event for the 1st dose may or may not also be generated. If it is not automatically generated you will need to create the event. [Note to trainer : follow the local procedure based on the configuration within the implementation you are supporting]
 2. After you have generated the event or selected a scheduled/automatically created event within the vaccination stage, you can review the details of the 1st dose.
@@ -66,25 +66,25 @@ STOP
 
 STOP
 
-## Exercise 2 – Fill in 1^st^ Dose Details and Schedule the 2^nd^ Dose
+#### Exercise 2 – Fill in 1^st^ Dose Details and Schedule the 2^nd^ Dose
 
-## Synchronizing Data
+### Synchronizing Data
 
 1. It would now be a good time to discuss the synchronization strategy for your implementation. For example, what is the default rate at which data is synchronized (1 hour, 24 hours).
 2. Show them how to manually synchronize the data to the server from the android home page. This will upload all of the data they have entered for that program to the server
 3. You can show them the TEIs that you/they created on android through the web interface to verify that the data has been synchronized correctly.
 4. After syncing your data, there will be no sync icon on the android device because all data has been synced. As you start entering new data that is not yet synced, this icon will re-appear.
 
-## Searching
+### Searching
 
 1. Log in and select your program from the android home page
 2. Find the previous case that you had just entered (and scheduled your 2nd dose for) with your user
 
 STOP
 
-## Exercise 3 – Sync Data and Review the Search Functionality to Find a Case
+#### Exercise 3 – Sync Data and Review the Search Functionality to Find a Case
 
-## Vaccination – 2^nd^ Dose
+### Vaccination – 2^nd^ Dose
 
 1. Select the scheduled 2nd dose from within the Vaccination stage
 2. Select the date of the vaccination and proceed to enter any details on the 2nd dose based on the paper form or case study you are using as reference
@@ -93,9 +93,9 @@ STOP
 
 STOP
 
-## Exercise 4 – Fill in 2^nd^ Dose Details
+#### Exercise 4 – Fill in 2^nd^ Dose Details
 
-## Completing the Program Enrollment
+### Completing the Program Enrollment
 
 1. In this program, when you have completed the event, this means you have also completed data entry for that stage (as none of the stages in this program are repeatable). This process should now have occurred for each of the 2 stages in this program as you have instructed the participant’s to select the “complete” button during the demo and their exercises at the end of each stage.
 2. When all the events within the program have been marked as completed, this should also mean data entry for this enrollment is complete. At this point, explain what completing an enrollment means (they have received all required doses of the vaccine)
@@ -104,21 +104,21 @@ STOP
 
 STOP
 
-## Exercise 5 - Complete the Enrollment
+#### Exercise 5 - Complete the Enrollment
 
-## Review the Tracker Dashboard
+### Review the Tracker Dashboard
 
 1. Staying on the dashboard of the case you have now filled in all the data for, now would be a good time to review some of the other elements  available on the person’s dashboard.
 
-## Exercise 6 - Perform All Concepts Discussed
+#### Exercise 6 - Perform All Concepts Discussed
 
 Register a new case, enter data into each stage, use the search/filters to find a case, update a case, complete enrollments
 
-## Using Filters
+### Using Filters
 
 The search/registration section of the android capture app allows you to select filters that allow you to create lists for the “upcoming events” in order to retrieve lists of people are scheduled to received their 2nd dose as well as the “overdue events” to retrieve a list of people who were scheduled but did not receive their 2nd dose. There are also a number of other useful filters that can be used from within this portion of the app.
 
-## Upcoming Doses
+### Upcoming Doses
 
 > **Note**
 >
@@ -134,9 +134,9 @@ To create a filter to retrieve those individuals scheduled for their second dose
 
 STOP
 
-## Exercise 7 – Run a Report to Identify the Date People are Scheduled For Their 2^nd^ Dose
+#### Exercise 7 – Run a Report to Identify the Date People are Scheduled For Their 2^nd^ Dose
 
-## Overdue Doses
+### Overdue Doses
 
 > **Note**
 >
@@ -152,4 +152,4 @@ To run a report to retrieve those individuals who have missed their second dose:
 
 STOP
 
-## Exercise 8 – Run a Report to Identify People That Have Missed Their 2^nd^ Dose
+#### Exercise 8 – Run a Report to Identify People That Have Missed Their 2^nd^ Dose
