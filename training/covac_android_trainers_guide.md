@@ -1,4 +1,4 @@
-# COVAC - Android Trainer's Guide
+# COVAC - Android Trainer's Guide { #covac-android-trainers-guide }
 
 **DHIS2 Android App**
 
