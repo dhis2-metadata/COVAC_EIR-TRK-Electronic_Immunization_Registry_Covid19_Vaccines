@@ -1,27 +1,10 @@
-# COVAC - Android User Guide
+# COVAC - Android User Guide { #covac-android-user-guide }
 
 **DHIS2 Android App**
 
 **DHIS2 Immunization Toolkit**
 
 **COVID-19 Vaccination Registry**
-
-## Table of Contents
-
-* [Introduction](#introduction)
-* [Logging in](#logging-in)
-* [Accessing the Program](#accessing-the-program)
-* [Adding a New Person](#adding-a-new-person)
-* [Exploring the Tracker Dashboard](#exploring-the-tracker-dashboard)
-* [Vaccination - 1^st^ Dose](#vaccination---1st-dose)
-* [Scheduling the 2^nd^ Dose](#scheduling-the-2nd-dose)
-* [Verifying the Status of the Events Within a Program](#verifying_the_status_of_the_events_within_a_program)
-* [Searching for a Person](#searching_for_a_person)
-* [Vaccination - 2^nd^ Dose](#vaccination---2nd-dose)
-* [Completing the Enrolment](#completing-the-enrollment)
-* [Additional Information or Features](#additional-information-or-features)
-* [Using Filters](#using-filters)
-* [Manually Synchronizing Data](#manually-synchronizing-data)
 
 ## Introduction
 
