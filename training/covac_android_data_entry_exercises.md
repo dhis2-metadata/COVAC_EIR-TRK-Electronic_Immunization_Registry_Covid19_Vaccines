@@ -1,22 +1,10 @@
-# COVAC - Android Data Entry Exercises
+# COVAC - Android Data Entry Exercises { #covac-android-data-entry-exercises }
 
 **DHIS2 Android App**
 
 **DHIS2 Immunization Toolkit**
 
 **COVID-19 Vaccination Registry**
-
-## Table of Contents
-
-* [Preparation Notes for Trainer](#preparation-notes-for-trainer) (to be removed when exercises are shared with participant)
-* [Exercise 1 - Access the Program and Register a New Case](#exercise-1---access-the-program-and-register-a-new-case)
-* [Exercise 2 - Fill in 1^st^ Dose Details](#exercise-2---fill-in-1st-dose-details)
-* [Exercise 3 - Sync Your Data and Find Your Case](#exercise-3---sync-your-data-and-find-your-case)
-* [Exercise 4 - Fill in 2^nd^ Dose Details](#exercise-4---fill-in-2nd-dose-details)
-* [Exercise 5 - Complete the Enrollment](#exercise-5---complete-the-enrollment)
-* [Exercise 6 - Review of All Concepts](#exercise-6---review-of-all-concepts)
-* [Exercise 7 – Scheduled Doses](#exercise-7---scheduled-doses)
-* [Exercise 8 – Overdue Doses](#exercise-8---overdue-doses)
 
 ## Preparation Notes for Trainer
 
