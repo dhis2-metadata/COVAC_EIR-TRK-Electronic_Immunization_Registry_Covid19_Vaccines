@@ -1,4 +1,4 @@
-# COVAC - Data Entry Trainer's Guide
+# COVAC - Data Entry Trainer's Guide { #covac-data-entry-trainers-guide }
 
 **DHIS2 Immunization Toolkit**
 
