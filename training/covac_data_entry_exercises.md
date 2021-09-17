@@ -1,22 +1,10 @@
-# Data Entry Exercises
+# COVAC - Data Entry Exercises { #covac-data-entry-exercises }
 
 **DHIS2 Immunization Toolkit**
 
 **COVID-19 Vaccination Registry**
 
 **Data Entry Exercises - COVAC**
-
-## Table of Contents
-
-* [Preparation Notes for TRAINER (to be removed when exercises are shared with participant)](#preparation-notes-for-trainer)
-* [Exercise 1 - Register a new case](#exercise-1---register-a-new-case)
-* [Exercise 2 - Fill in 1st dose details](#exercise-2---fill-in-1st-dose-details)
-* [Exercise 3 - Finding your case](#exercise-3---finding-your-case)
-* [Exercise 4 - Fill in 2nd dose details](#exercise-4---fill-in-2nd-dose-details)
-* [Exercise 5 - Complete the enrollment](#exercise-5---complete-the-enrollment)
-* [Exercise 6 - Review of all concepts](#exercise-6---review-of-all-concepts)
-* [Exercise 7 – Scheduled doses](#exercise-7---scheduled-doses)
-* [Exercise 8 – Overdue doses](#exercise-8---overdue-doses)
 
 ## Preparation Notes for TRAINER
 
