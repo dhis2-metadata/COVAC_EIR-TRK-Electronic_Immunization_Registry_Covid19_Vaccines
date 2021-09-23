@@ -1,4 +1,4 @@
-# Covid-19 Immunization Registry Tracker System Design
+# Covid-19 Immunization Registry Tracker System Design { #covac-tracker-design }
 
 ## Introduction
 
