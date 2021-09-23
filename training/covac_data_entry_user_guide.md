@@ -1,4 +1,4 @@
-# COVID-19 Vaccination Registry (COVAC)
+# COVID-19 Vaccination Registry (COVAC) { #covac-data-entry-user-guide }
 
 ## 1 - Register a new case
 
