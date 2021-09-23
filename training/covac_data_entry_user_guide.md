@@ -1,10 +1,10 @@
-# COVID-19 Vaccination Registry (COVAC) { #covac-data-entry-user-guide }
+# Data Entry User Guide - COVID-19 Vaccination Registry (COVAC) { #covac-data-entry-user-guide }
 
 **DHIS2 Immunization Toolkit**
 
 **COVID-19 Vaccination Registry**
 
-Data Entry User Guide
+**Data Entry User Guide - COVAC**
 
 
 
