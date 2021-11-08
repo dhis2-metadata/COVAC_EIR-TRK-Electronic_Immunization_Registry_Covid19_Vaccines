@@ -28,7 +28,7 @@ Illustrative workflow:
 
 ![workflow](resources/images/Covac_workflow.png)
 
-Workflows will vary from country to country. The program design should be reviewed and localized by context. For example, the workflow in the figure above assumes that individuals will be registered in DHIS2 when they present themselves at a vaccination site to receive their first dose. An alternative that can be considered is to pre-register eligible individuals into the system as Tracker Entity Instances (e.g. from an existing health worker registry). ** \
+Workflows will vary from country to country. The program design should be reviewed and localized by context. For example, the workflow in the figure above assumes that individuals will be registered in DHIS2 when they present themselves at a vaccination site to receive their first dose. An alternative that can be considered is to pre-register eligible individuals into the system as Tracker Entity Instances (e.g. from an existing health worker registry).
 
 ## Tracker Program Configuration
 
@@ -42,7 +42,7 @@ Workflows will vary from country to country. The program design should be review
 
 ### Data elements in the vaccination stage
 
-|Data element (Form name)|Linked to Indicators|Linked to DIVOC|Linked to program rules|
+|Data element (Form name)|Linked to Indicators|Linked to Certificates|Linked to program rules|
 |--- |--- |--- |--- |
 |Dose given on (Vaccination date) Not a data element|Yes|Yes|Yes|
 |Is the patient pregnant or lactating?|No|No|Yes|
@@ -95,23 +95,23 @@ For the name in the form to reflect the products used in country, you would firs
 
 ![Option set](resources/images/Covac_optionset_2.png)
 
-#### Auto Assigning Manufacturers to Names
+#### Auto Assigning Manufacturers and Brands to Names
 
-Manufacturers are auto-assigned when a vaccine product is selected through program rules based on the vaccine chosen, unless the vaccine has more than one manufacturer available, in which case, a program rule will hide the options which are not relevant and the clerk will need to choose the right manufacturer name.
+Manufacturers and brands are auto-assigned when a vaccine product is selected through program rules based on the vaccine chosen, unless the vaccine has more than one manufacturer available, in which case, a program rule will hide the options which are not relevant and the clerk will need to choose the right manufacturer name, as is the case of AstraZeneca.
 
 ##### Auto assign rule
 
-For example, the program rule “Assign name to BioNtech/Pfizer" assigns the manufacturer BioNtech/Pfizer when “Comirnaty, Tozinameran” is selected.
+For example, the program rule “Assign Brand and manufacturers to BioNtech/Pfizer" assigns the manufacturer BioNtech/Pfizer when “Comirnaty, Tozinameran” is selected.
 
 It uses the expression:
-d2:hasValue( 'Vaccine_type' )  == true && #{Vaccine_type} == ' biontechpfizer'
+d2:hasValue( 'Vaccine_type' )  == true && #{Vaccine_type} == 'BIONTECHPFIZER'
 
-And the acton for this program rule is to assign value to the Data Element “Vaccine Manufacturer” as ‘biontechpfizer’ which is the option code for “BioNTech/Pfizer”
+And the action for this program rule is to assign value to the Data Element “Vaccine Manufacturer” as ‘BIONTTECHPFIZER’ which is the option code for “BioNTech/Pfizer” as well as "BioTech/Pfizer" for the brand.
 
 ##### Hide options rule
 
 Currently, the only rule like this is:
-“Assign names/Hide options to AstraZeneca”, as this product has two different manufacturers (AstraZeneca and SK Bio Astra Zeneca).  
+“Assign Brand/Hide options to AstraZeneca”, as this product has two different manufacturers (AstraZeneca and SK Bio Astra Zeneca).  
 This means that instead of assigning a manufacturer, the PR will hide the irrelevant manufacturers and allow the clerk to select one of the two currently available manufacturers.
 
 #### Age alert
@@ -127,7 +127,7 @@ Depending on the vaccine there can be lower age limits. , If a vaccinator admini
 
 The rules all use a similar expression:
 
-(#{Age_Calculated}   < 18 ) && (#{Vaccine_type} =='astrazeneca')
+(#{Age_Calculated}   < 18 ) && (#{Vaccine_type} =='ASTRAZENECA')
 
 Where you would need to modify the number, 18 in this case,  to match the necessary age.
 
@@ -145,7 +145,7 @@ There is currently no way for a tracker to assign a date for the next event base
 In addition, there is also a data element that auto-assigns using program rules a recommended date depending on the vaccine product. In order to modify this, the program rule needs to be edited:
 
  “Assign a suggested date for next dose AstraZeneca” (there is one rule for each product)
-“dhis-web-maintenance/#/edit/programSection/programRule/QWOOvnYfKbN”
+“.../dhis-web-maintenance/#/edit/programSection/programRule/ZT3tLrXXadf”
 
 The program rule has two actions
 
@@ -160,7 +160,7 @@ Modify the number 10 with the number of days that needs to be assigned to the av
 #### Last dose
 
 There is currently yes/no data element called “Last dose” this element is used to help indicators know when a product has completed its immunization schedule. Currently, all products have two doses, and therefore, we have set it up so that once a person is given a second dose, the DE “Last dose” is automatically checked as “Yes”. We have also hidden this DE for the first dose.
- \
+ 
 To modify this warning, edit the program rule:
  “If this is the second dose, mark it as "last dose" for all vaccine products”
 
@@ -169,7 +169,7 @@ dhis-web-maintenance/#/edit/programSection/programRule/PJjKiFrvfuN
 The expression:
 d2:hasValue( 'Dose_number' ) == true && #{Dose_number} == 'DOSE2'
 
-Indicates that if a clerk selects that the doses number given is the second dose, then it triggers an “assign value” action which adds the value “true” to the data element “Last dose”
+Indicates that if a clerk selects that the doses number given is the second dose, then it triggers an “assign value” action which adds the value “true” to the data element “Last dose” and to the Program rule variable "Last_dose"
 
 To modify this, edit the expression to filter out the vaccine products not in use/with a different schedule.
 
@@ -202,7 +202,7 @@ While the information on enrollment is meant to be completed when a case is firs
 
 The program is configured with two types of unique identifiers. Additional identifiers can be added to the program based on country context.
 
-[Unique Identifier]: An automatically generated ID which is unique to the entire system (e.g. the instance of DHIS2 being used). This TEI attribute is configured to generate the attribute value based on a pattern. It is a shared attribute with the AEFI package to facilitate searches.
+[Unique Identifier]: An automatically generated ID which is unique to the entire system (e.g. the instance of DHIS2 being used). This TEI attribute is configured to generate the attribute value based on a pattern. In the previous version of the package the unique identifier generated a number which was a prefix and a random rumber, "EPI_" + RANDOM(########)". The latest version has replaced this attribute for one with a sequential pattern which helps with performance for large implementations "EPI_" + RANDOM(########)".
 
 [National ID]: This ID is currently manually entered and should be adapted to local validation needs.
 
@@ -242,6 +242,8 @@ Vaccine given  (using the option set “Vaccine name”)
 
 Vaccine manufacturers (using the option set “Vaccine manufacturers”, autofilled)
 
+Vaccine Brand (Using the option set "Vaccine brand"
+
 The batch number for this dose
 
 The date of expiration of the dose
@@ -253,6 +255,10 @@ The number of total doses required for this vaccine product (autofilled)
 A data element to confirm if this is the last dose in the treatment (autofilled)
 
 An automatically calculated data element giving a suggestion for the next dose (autofilled)
+
+A data element asking if the client has had an adverse reaction following the immunization (Used when monitoring a patient immediately after being vaccinated)
+
+A data element to complete the health worker identification
 
 ![Vaccination section](resources/images/Covac_vaccination.png)
 
@@ -268,13 +274,15 @@ The stage is configured to ‘Ask the user to create a new event when a stage is
 
 The programme is packaged together with three user groups:
 
-COVAC - Covid Immunization Metadata manager: Has the rights to edit the metadata of the package but not to enter data into the package
-COVAC - Covid Immunization Data Capture: Has the rights to enter data into tracker
-COVAC - Cpvod Immunization Data Analysis: Has access to the dashboards, but cannot enter data.
+COVAC - Covid Immunization Metadata Admin: Has the rights to edit the metadata of the package but not to enter data into the package
+COVAC - Covid Immunization Data Entry: Has the rights to enter data into tracker
+COVAC - Covid Immunization Data Analysis: Has access to the dashboards, but cannot enter data.
 
 These should be adapted to national needs
 
 ## Certificate Printing
+
+DHIS2 does not support printing a vaccination certificate or generating an electronic certificate as a core functionality, but several countries have succesfully adapted the platform in order to provide digital and printed certificates. 
 
 ### SMS Notifications
 
