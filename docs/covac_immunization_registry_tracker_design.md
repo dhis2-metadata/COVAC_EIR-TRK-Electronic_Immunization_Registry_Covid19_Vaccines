@@ -274,13 +274,15 @@ The stage is configured to ‘Ask the user to create a new event when a stage is
 
 The programme is packaged together with three user groups:
 
-COVAC - Covid Immunization Metadata manager: Has the rights to edit the metadata of the package but not to enter data into the package
-COVAC - Covid Immunization Data Capture: Has the rights to enter data into tracker
-COVAC - Cpvod Immunization Data Analysis: Has access to the dashboards, but cannot enter data.
+COVAC - Covid Immunization Metadata Admin: Has the rights to edit the metadata of the package but not to enter data into the package
+COVAC - Covid Immunization Data Entry: Has the rights to enter data into tracker
+COVAC - Covid Immunization Data Analysis: Has access to the dashboards, but cannot enter data.
 
 These should be adapted to national needs
 
 ## Certificate Printing
+
+DHIS2 does not support printing a vaccination certificate or generating an electronic certificate as a core functionality, but several countries have succesfully adapted the platform in order to provide digital and printed certificates. 
 
 ### SMS Notifications
 
