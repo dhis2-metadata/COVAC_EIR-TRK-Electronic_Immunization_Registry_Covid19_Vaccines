@@ -6,7 +6,7 @@ The COVID-19 Immunization System Design document provides an overview of the con
 
 This package was developed in response to an expressed need from countries and partners to monitor equity and uptake of COVID-19 vaccines across priority groups, track individuals through the completion of their
 
-improve timeliness, accuracy of data, expand coverage, efficiency and effectiveness  delivery of the COVID-19 vaccines. It is based on the Guidance on developing a national deployment and vaccination plan for COVID-19 vaccines: <https://www.who.int/publications/i/item/WHO-2019-nCoV-Vaccine_deployment-2020.1> as well as feedback from WHO and CDC officials and general vaccination standards and guidance adapted from the DHIS2 immunization registry package
+improve timeliness, accuracy of data, expand coverage, efficiency and effectiveness  delivery of the COVID-19 vaccines. It is based on the [Guidance on developing a national deployment and vaccination plan for COVID-19 vaccines](https://www.who.int/publications/i/item/WHO-2019-nCoV-Vaccine_deployment-2020.1) as well as feedback from WHO and CDC officials and general vaccination standards and guidance adapted from the DHIS2 immunization registry package
 
 Because national guidelines and policies will vary, this package should be adapted to national context.
 
@@ -175,7 +175,7 @@ To modify this, edit the expression to filter out the vaccine products not in us
 
 #### Total number of doses
 
-The data element “Total doses required for this vaccine product” is an autofilled data element which displays the amount of doses required for this vaccine product’s vaccination schedule. Currently, all vaccines have two doses in their schedule. However, there is an individual rule for each vaccine in case this changes in the future: \
+The data element “Total doses required for this vaccine product” is an autofilled data element which displays the amount of doses required for this vaccine product’s vaccination schedule. Currently, all vaccines have two doses in their schedule. However, there is an individual rule for each vaccine in case this changes in the future:
 
 To modify, edit the corresponding rule: Assign dose number to NAMEOFPRODUCT
 
@@ -188,7 +188,7 @@ If the program matches the filter, then the action will assign value to the “T
 
 The program has been set up as a “protected” program, meaning that users are able to search in other org units beyond the ones they have rights to, but if they want to access records in a different facility, they must use the “breaking the glass” function and not down why they are accessing records in a different organisation unit.  
 
-Note that the breaking the glass feature is not supported in Android 2.3 and android users are unable to search other organisation units when the program is set as protected. <https://docs.dhis2.org/2.35/en/dhis2_android_capture_app/programs.html#breaking-the-glass>
+Note that the breaking the glass feature is not supported in Android 2.3 and android users are unable to search other organisation units when the program is set as protected. More information about [Breaking the glass](#capture_app_programs_breaking_the_glass)
 
 #### Enrollment Details
 
@@ -202,15 +202,13 @@ While the information on enrollment is meant to be completed when a case is firs
 
 The program is configured with two types of unique identifiers. Additional identifiers can be added to the program based on country context.
 
-[Unique Identifier]: An automatically generated ID which is unique to the entire system (e.g. the instance of DHIS2 being used). This TEI attribute is configured to generate the attribute value based on a pattern. In the previous version of the package the unique identifier generated a number which was a prefix and a random rumber, "EPI_" + RANDOM(########)". The latest version has replaced this attribute for one with a sequential pattern which helps with performance for large implementations "EPI_" + RANDOM(########)".
+**Unique Identifier**: An automatically generated ID which is unique to the entire system (e.g. the instance of DHIS2 being used). This TEI attribute is configured to generate the attribute value based on a pattern. In the previous version of the package the unique identifier generated a number which was a prefix and a random rumber, "EPI_" + RANDOM(########)". The latest version has replaced this attribute for one with a sequential pattern which helps with performance for large implementations "EPI_" + RANDOM(########)".
 
-[National ID]: This ID is currently manually entered and should be adapted to local validation needs.
-
-_Enrollment screenshot_:
+**National ID**: This ID is currently manually entered and should be adapted to local validation needs.
 
 ![Enrollment Stage](resources/images/Covac_enrollment.png)
 
-### Program Stage 1: Vaccination [repeatable]
+### Program Stage 1: Vaccination (repeatable)
 
 Section 1.1 Underlying conditions.
 
@@ -367,8 +365,11 @@ The immunization registry dashboard contains key monitoring indicators that are 
 The first group of items in the dashboard gives a quick overview of the uptake of vaccines, doses administered, and disaggregates them by variables such as sex, age, geographical area, and vaccines. The second group of items shows the drop-out rates and the numbers of completed vaccination schedules.
 
 ![Dashboard 1](resources/images/Covac_dashboard1.png)
+
 ![Dashboard 4](resources/images/Covac_dashboard4.png)
+
 ![Dashboard 2](resources/images/Covac_dashboard2.png)
+
 ![Dashboard 3](resources/images/Covac_dashboard3.png)
 
 ## Considerations for when implementing with Android devices
