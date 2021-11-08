@@ -28,7 +28,7 @@ Illustrative workflow:
 
 ![workflow](resources/images/Covac_workflow.png)
 
-Workflows will vary from country to country. The program design should be reviewed and localized by context. For example, the workflow in the figure above assumes that individuals will be registered in DHIS2 when they present themselves at a vaccination site to receive their first dose. An alternative that can be considered is to pre-register eligible individuals into the system as Tracker Entity Instances (e.g. from an existing health worker registry). ** \
+Workflows will vary from country to country. The program design should be reviewed and localized by context. For example, the workflow in the figure above assumes that individuals will be registered in DHIS2 when they present themselves at a vaccination site to receive their first dose. An alternative that can be considered is to pre-register eligible individuals into the system as Tracker Entity Instances (e.g. from an existing health worker registry).
 
 ## Tracker Program Configuration
 
@@ -42,7 +42,7 @@ Workflows will vary from country to country. The program design should be review
 
 ### Data elements in the vaccination stage
 
-|Data element (Form name)|Linked to Indicators|Linked to DIVOC|Linked to program rules|
+|Data element (Form name)|Linked to Indicators|Linked to Certificates|Linked to program rules|
 |--- |--- |--- |--- |
 |Dose given on (Vaccination date) Not a data element|Yes|Yes|Yes|
 |Is the patient pregnant or lactating?|No|No|Yes|
@@ -104,9 +104,9 @@ Manufacturers are auto-assigned when a vaccine product is selected through progr
 For example, the program rule “Assign name to BioNtech/Pfizer" assigns the manufacturer BioNtech/Pfizer when “Comirnaty, Tozinameran” is selected.
 
 It uses the expression:
-d2:hasValue( 'Vaccine_type' )  == true && #{Vaccine_type} == ' biontechpfizer'
+d2:hasValue( 'Vaccine_type' )  == true && #{Vaccine_type} == 'BIONTECHPFIZER'
 
-And the acton for this program rule is to assign value to the Data Element “Vaccine Manufacturer” as ‘biontechpfizer’ which is the option code for “BioNTech/Pfizer”
+And the action for this program rule is to assign value to the Data Element “Vaccine Manufacturer” as ‘BIONTTECHPFIZER’ which is the option code for “BioNTech/Pfizer”
 
 ##### Hide options rule
 
@@ -127,7 +127,7 @@ Depending on the vaccine there can be lower age limits. , If a vaccinator admini
 
 The rules all use a similar expression:
 
-(#{Age_Calculated}   < 18 ) && (#{Vaccine_type} =='astrazeneca')
+(#{Age_Calculated}   < 18 ) && (#{Vaccine_type} =='ASTRAZENECA')
 
 Where you would need to modify the number, 18 in this case,  to match the necessary age.
 
@@ -145,7 +145,7 @@ There is currently no way for a tracker to assign a date for the next event base
 In addition, there is also a data element that auto-assigns using program rules a recommended date depending on the vaccine product. In order to modify this, the program rule needs to be edited:
 
  “Assign a suggested date for next dose AstraZeneca” (there is one rule for each product)
-“dhis-web-maintenance/#/edit/programSection/programRule/QWOOvnYfKbN”
+“.../dhis-web-maintenance/#/edit/programSection/programRule/ZT3tLrXXadf”
 
 The program rule has two actions
 
@@ -160,7 +160,7 @@ Modify the number 10 with the number of days that needs to be assigned to the av
 #### Last dose
 
 There is currently yes/no data element called “Last dose” this element is used to help indicators know when a product has completed its immunization schedule. Currently, all products have two doses, and therefore, we have set it up so that once a person is given a second dose, the DE “Last dose” is automatically checked as “Yes”. We have also hidden this DE for the first dose.
- \
+ 
 To modify this warning, edit the program rule:
  “If this is the second dose, mark it as "last dose" for all vaccine products”
 
@@ -169,7 +169,7 @@ dhis-web-maintenance/#/edit/programSection/programRule/PJjKiFrvfuN
 The expression:
 d2:hasValue( 'Dose_number' ) == true && #{Dose_number} == 'DOSE2'
 
-Indicates that if a clerk selects that the doses number given is the second dose, then it triggers an “assign value” action which adds the value “true” to the data element “Last dose”
+Indicates that if a clerk selects that the doses number given is the second dose, then it triggers an “assign value” action which adds the value “true” to the data element “Last dose” and to the Program rule variable "Last_dose"
 
 To modify this, edit the expression to filter out the vaccine products not in use/with a different schedule.
 
