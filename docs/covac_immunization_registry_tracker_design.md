@@ -4,17 +4,29 @@
 
 The COVID-19 Immunization System Design document provides an overview of the conceptual design used to configure a DHIS2-tracker program serving as an electronic immunization registry for COVID-19 vaccines. This document is intended for use by DHIS2 implementers at country and regional level to be able to support implementation and localization of the package. Local work flows, national guidelines, and the respective vaccination product guidelines should be considered in the localization and adaptation of this configuration package.
 
-This package was developed in response to an expressed need from countries and partners to monitor equity and uptake of COVID-19 vaccines across priority groups, track individuals through the completion of their
+This package was developed in response to an expressed need from countries and partners to monitor equity and uptake of COVID-19 vaccines across priority groups, track individuals through the completion of their vaccination schedule. 
 
-improve timeliness, accuracy of data, expand coverage, efficiency and effectiveness  delivery of the COVID-19 vaccines. It is based on the Guidance on developing a national deployment and vaccination plan for COVID-19 vaccines: <https://www.who.int/publications/i/item/WHO-2019-nCoV-Vaccine_deployment-2020.1> as well as feedback from WHO and CDC officials and general vaccination standards and guidance adapted from the DHIS2 immunization registry package
+The goal of this package is to improve timeliness, accuracy of data, expand coverage, efficiency and effectiveness  delivery of the COVID-19 vaccines. It is based on the Guidance on developing a national deployment and vaccination plan for COVID-19 vaccines: <https://www.who.int/publications/i/item/WHO-2019-nCoV-Vaccine_deployment-2020.1> as well as feedback from WHO and CDC officials and general vaccination standards and guidance adapted from the DHIS2 immunization registry package
 
 Because national guidelines and policies will vary, this package should be adapted to national context.
+
 
 ## System Design Overview
 
 ### Use Case
 
 The tracker data model in DHIS2 enables an individual to be registered and followed  across a series of health services over time. This model can be leveraged to track individuals’ completion of vaccination schedules according to national policy and product recommendations, as well as capture robust individual level data to support analysis of vaccine distribution, uptake, and completion according to demographics, underlying conditions , and other variables.
+
+### Content
+
+The package includes:
+
+* Tracker programme which registers individual and each vaccination event
+* A set of program indicators which covers the requirements from the WHO guidance on Vaccine deployment.
+* A set of program indicatos which feeds into an aggregate data set for daily monitoring
+* An aggregate dataset for daily monitoring which
+* A set of indicators based on the aggregate data set
+* A daily monitoring dashboard based on the aggregate data set
 
 ### Intended Users
 
@@ -272,11 +284,12 @@ The stage is configured to ‘Ask the user to create a new event when a stage is
 
 ### User Groups
 
-The programme is packaged together with three user groups:
+The programme is packaged together with four user groups:
 
-COVAC - Covid Immunization Metadata Admin: Has the rights to edit the metadata of the package but not to enter data into the package
-COVAC - Covid Immunization Data Entry: Has the rights to enter data into tracker
-COVAC - Covid Immunization Data Analysis: Has access to the dashboards, but cannot enter data.
+*COVAC - Covid Immunization Metadata Admin:* Has the rights to edit the metadata of the package but not to enter data into the package
+*COVAC - Covid Immunization Data Entry:* Has the rights to enter data into tracker
+*COVAC - Covid Immunization Data Analysis:* Has access to the dashboards, but cannot enter data.
+*COVAC - Covid-19 Immunization data Admin:* This is an Admin group which is shared between tracker and aggregate and can both capture and view data in both programs. This usergroup is mainly for the user which would run the tracker to aggregate scripts as well as acces the dataset through the data entry app.
 
 These should be adapted to national needs
 
