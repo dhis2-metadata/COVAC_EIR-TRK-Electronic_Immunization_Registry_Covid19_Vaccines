@@ -85,7 +85,7 @@ Workflows will vary from country to country. The program design should be review
 
 ### Vaccine products in the program
 
-The specific COVID-19 products available in the country and vaccine schedules will vary by country. This package includes vaccine products following the documentation available from WHO, which will continue to evolve as [vaccines enter the market](https://extranet.who.int/pqweb/sites/default/files/documents/Status_COVID_VAX_16Feb2021.pdf)
+The specific COVID-19 products available in the country and vaccine schedules will vary by country. This package includes vaccine products following the documentation available from WHO, which will continue to evolve as [vaccines enter the market.](https://extranet.who.int/pqweb/sites/default/files/documents/Status_COVID_VAX_16Feb2021.pdf)
 
 In order to better demonstrate functionality, these placeholders have been configured based on five existing vaccine products, but it is important to verify and configure the programme based on the national adoption guidelines for the product. 
 
@@ -287,10 +287,10 @@ The stage is configured to ‘Ask the user to create a new event when a stage is
 
 The programme is packaged together with four user groups:
 
-*COVAC - Covid Immunization Metadata Admin:* Has the rights to edit the metadata of the package but not to enter data into the package
-*COVAC - Covid Immunization Data Entry:* Has the rights to enter data into tracker
-*COVAC - Covid Immunization Data Analysis:* Has access to the dashboards, but cannot enter data.
-*COVAC - Covid-19 Immunization data Admin:* This is an Admin group which is shared between tracker and aggregate. Members of this group can view data in both tracker and aggregate modules and capture data in the aggregate module only. This user group is set up for the users that would run the tracker to aggregate scripts as well as access the dataset through the data entry app.
+* *COVAC - Covid Immunization Metadata Admin:* Has the rights to edit the metadata of the package but not to enter data into the package
+* *COVAC - Covid Immunization Data Entry:* Has the rights to enter data into tracker
+* *COVAC - Covid Immunization Data Analysis:* Has access to the dashboards, but cannot enter data.
+* *COVAC - Covid-19 Immunization data Admin:* This is an Admin group which is shared between tracker and aggregate. Members of this group can view data in both tracker and aggregate modules and capture data in the aggregate module only. This user group is set up for the users that would run the tracker to aggregate scripts as well as access the dataset through the data entry app.
 
 These should be adapted to national needs.
 
