@@ -1,0 +1,1974 @@
+{
+	"categoryOptionGroups": [
+		{
+			"attributeValues": [],
+			"categoryOptions": [],
+			"code": "FEMALE",
+			"dataDimensionType": "DISAGGREGATION",
+			"id": "bqoVhX2RfG4",
+			"name": "[CONFIG] Female",
+			"publicAccess": "r-------",
+			"shortName": "Female",
+			"translations": [],
+			"user": {
+				"id": "vUeLeQMSwhN"
+			},
+			"userAccesses": [],
+			"userGroupAccesses": []
+		},
+		{
+			"attributeValues": [],
+			"categoryOptions": [],
+			"code": "MALE",
+			"dataDimensionType": "DISAGGREGATION",
+			"id": "EVYKU2fIc6G",
+			"name": "[CONFIG] Male",
+			"publicAccess": "r-------",
+			"shortName": "Male",
+			"translations": [],
+			"user": {
+				"id": "vUeLeQMSwhN"
+			},
+			"userAccesses": [],
+			"userGroupAccesses": []
+		},
+		{
+			"attributeValues": [],
+			"categoryOptions": [],
+			"code": "0059Y",
+			"dataDimensionType": "DISAGGREGATION",
+			"id": "fqborXHhXZG",
+			"name": "[CONFIG] 0-59 years",
+			"publicAccess": "r-------",
+			"shortName": "0-59y",
+			"translations": [],
+			"user": {
+				"id": "vUeLeQMSwhN"
+			},
+			"userAccesses": [],
+			"userGroupAccesses": []
+		},
+		{
+			"attributeValues": [],
+			"categoryOptions": [],
+			"code": "60PLUSY",
+			"dataDimensionType": "DISAGGREGATION",
+			"id": "hEct0AAbPAw",
+			"name": "[CONFIG] 60+ years",
+			"publicAccess": "r-------",
+			"shortName": "60+y",
+			"translations": [],
+			"user": {
+				"id": "vUeLeQMSwhN"
+			},
+			"userAccesses": [],
+			"userGroupAccesses": []
+		}
+	],
+	"categoryOptionGroupSets": [
+		{
+			"attributeValues": [],
+			"categoryOptionGroups": [
+				{
+					"id": "bqoVhX2RfG4"
+				},
+				{
+					"id": "EVYKU2fIc6G"
+				}
+			],
+			"code": "SEX_FEMALE_MALE",
+			"dataDimension": true,
+			"dataDimensionType": "DISAGGREGATION",
+			"id": "CMrvZp5rmoC",
+			"name": "Sex (Female/Male)",
+			"publicAccess": "r-------",
+			"translations": [],
+			"user": {
+				"id": "vUeLeQMSwhN"
+			},
+			"userAccesses": [],
+			"userGroupAccesses": []
+		},
+		{
+			"attributeValues": [],
+			"categoryOptionGroups": [
+				{
+					"id": "fqborXHhXZG"
+				},
+				{
+					"id": "hEct0AAbPAw"
+				}
+			],
+			"code": "AGE_0059_60PLUS",
+			"dataDimension": true,
+			"dataDimensionType": "DISAGGREGATION",
+			"description": "Age (0-59,60+)",
+			"id": "hEcLht1oMFl",
+			"name": "Age (0-59,60+)",
+			"publicAccess": "r-------",
+			"translations": [],
+			"user": {
+				"id": "vUeLeQMSwhN"
+			},
+			"userAccesses": [],
+			"userGroupAccesses": []
+		}
+	],
+	"dashboards": [
+		{
+			"code": "CVC_EIR_AGG_DAILY_MONITORING",
+			"dashboardItems": [
+				{
+					"access": {
+						"delete": true,
+						"externalize": true,
+						"manage": true,
+						"read": true,
+						"update": true,
+						"write": true
+					},
+					"attributeValues": [],
+					"contentCount": 1,
+					"externalAccess": false,
+					"favorite": false,
+					"favorites": [],
+					"height": 29,
+					"id": "zdO5pGqOW29",
+					"interpretationCount": 0,
+					"interpretationLikeCount": 0,
+					"reports": [],
+					"resources": [],
+					"translations": [],
+					"type": "VISUALIZATION",
+					"userAccesses": [],
+					"userGroupAccesses": [],
+					"users": [],
+					"visualization": {
+						"id": "P9Zxxt2VNXi"
+					},
+					"width": 19,
+					"x": 40,
+					"y": 55
+				},
+				{
+					"access": {
+						"delete": true,
+						"externalize": true,
+						"manage": true,
+						"read": true,
+						"update": true,
+						"write": true
+					},
+					"attributeValues": [],
+					"contentCount": 1,
+					"externalAccess": false,
+					"favorite": false,
+					"favorites": [],
+					"height": 29,
+					"id": "th79ee0Da1m",
+					"interpretationCount": 0,
+					"interpretationLikeCount": 0,
+					"reports": [],
+					"resources": [],
+					"translations": [],
+					"type": "VISUALIZATION",
+					"userAccesses": [],
+					"userGroupAccesses": [],
+					"users": [],
+					"visualization": {
+						"id": "efCsnG0LzNp"
+					},
+					"width": 19,
+					"x": 40,
+					"y": 26
+				},
+				{
+					"access": {
+						"delete": true,
+						"externalize": true,
+						"manage": true,
+						"read": true,
+						"update": true,
+						"write": true
+					},
+					"attributeValues": [],
+					"contentCount": 1,
+					"externalAccess": false,
+					"favorite": false,
+					"favorites": [],
+					"height": 26,
+					"id": "hMM0bPVXOoC",
+					"interpretationCount": 0,
+					"interpretationLikeCount": 0,
+					"reports": [],
+					"resources": [],
+					"translations": [],
+					"type": "VISUALIZATION",
+					"userAccesses": [],
+					"userGroupAccesses": [],
+					"users": [],
+					"visualization": {
+						"id": "ejUP3qyDQIW"
+					},
+					"width": 41,
+					"x": 0,
+					"y": 0
+				},
+				{
+					"access": {
+						"delete": true,
+						"externalize": true,
+						"manage": true,
+						"read": true,
+						"update": true,
+						"write": true
+					},
+					"attributeValues": [],
+					"contentCount": 1,
+					"externalAccess": false,
+					"favorite": false,
+					"favorites": [],
+					"height": 29,
+					"id": "obC0g2xnEpZ",
+					"interpretationCount": 0,
+					"interpretationLikeCount": 0,
+					"reports": [],
+					"resources": [],
+					"translations": [],
+					"type": "VISUALIZATION",
+					"userAccesses": [],
+					"userGroupAccesses": [],
+					"users": [],
+					"visualization": {
+						"id": "mtLMyTmbSSE"
+					},
+					"width": 20,
+					"x": 0,
+					"y": 26
+				},
+				{
+					"access": {
+						"delete": true,
+						"externalize": true,
+						"manage": true,
+						"read": true,
+						"update": true,
+						"write": true
+					},
+					"attributeValues": [],
+					"contentCount": 1,
+					"externalAccess": false,
+					"favorite": false,
+					"favorites": [],
+					"height": 29,
+					"id": "jCKrh9F73gP",
+					"interpretationCount": 0,
+					"interpretationLikeCount": 0,
+					"reports": [],
+					"resources": [],
+					"translations": [],
+					"type": "VISUALIZATION",
+					"userAccesses": [],
+					"userGroupAccesses": [],
+					"users": [],
+					"visualization": {
+						"id": "B09OVExmoc6"
+					},
+					"width": 20,
+					"x": 0,
+					"y": 71
+				},
+				{
+					"access": {
+						"delete": true,
+						"externalize": true,
+						"manage": true,
+						"read": true,
+						"update": true,
+						"write": true
+					},
+					"attributeValues": [],
+					"contentCount": 1,
+					"externalAccess": false,
+					"favorite": false,
+					"favorites": [],
+					"height": 16,
+					"id": "hgv7D6j2Gu3",
+					"interpretationCount": 0,
+					"interpretationLikeCount": 0,
+					"reports": [],
+					"resources": [],
+					"translations": [],
+					"type": "VISUALIZATION",
+					"userAccesses": [],
+					"userGroupAccesses": [],
+					"users": [],
+					"visualization": {
+						"id": "JYXA2qs3udu"
+					},
+					"width": 40,
+					"x": 0,
+					"y": 55
+				},
+				{
+					"access": {
+						"delete": true,
+						"externalize": true,
+						"manage": true,
+						"read": true,
+						"update": true,
+						"write": true
+					},
+					"attributeValues": [],
+					"contentCount": 1,
+					"externalAccess": false,
+					"favorite": false,
+					"favorites": [],
+					"height": 29,
+					"id": "WZytEfYQQkb",
+					"interpretationCount": 0,
+					"interpretationLikeCount": 0,
+					"map": {
+						"id": "Re6XpOCNGeo"
+					},
+					"reports": [],
+					"resources": [],
+					"translations": [],
+					"type": "MAP",
+					"userAccesses": [],
+					"userGroupAccesses": [],
+					"users": [],
+					"width": 20,
+					"x": 20,
+					"y": 26
+				},
+				{
+					"access": {
+						"delete": true,
+						"externalize": true,
+						"manage": true,
+						"read": true,
+						"update": true,
+						"write": true
+					},
+					"attributeValues": [],
+					"contentCount": 1,
+					"externalAccess": false,
+					"favorite": false,
+					"favorites": [],
+					"height": 29,
+					"id": "ahwhWrNQmS4",
+					"interpretationCount": 0,
+					"interpretationLikeCount": 0,
+					"map": {
+						"id": "gY6BvOreBGk"
+					},
+					"reports": [],
+					"resources": [],
+					"translations": [],
+					"type": "MAP",
+					"userAccesses": [],
+					"userGroupAccesses": [],
+					"users": [],
+					"width": 20,
+					"x": 20,
+					"y": 71
+				}
+			],
+			"description": "PIs to aggregate data",
+			"externalAccess": false,
+			"favorites": [],
+			"id": "iBWlFCvvtkH",
+			"name": "COVAC - Daily monitoring",
+			"publicAccess": "r-------",
+			"translations": [],
+			"user": {
+				"id": "vUeLeQMSwhN"
+			},
+			"userAccesses": [],
+			"userGroupAccesses": [
+				{
+					"access": "rw------",
+					"id": "AEAQ9LktNze"
+				},
+				{
+					"access": "r-------",
+					"id": "q3Nh5xhJEy2"
+				},
+				{
+					"access": "r-------",
+					"id": "VLIaHu6ou8E"
+				},
+				{
+					"access": "r-------",
+					"id": "dl1WZpz570i"
+				}
+			]
+		}
+	],
+	"indicators": [
+		{
+			"annualized": false,
+			"attributeValues": [],
+			"code": "CVC_EIR_AGG_PPL_2ND_DOSE",
+			"denominator": "1",
+			"denominatorDescription": "1",
+			"id": "ddZjJCwXf6k",
+			"indicatorType": {
+				"id": "CqNPn5KzksS"
+			},
+			"legendSets": [],
+			"name": "[CONFIG] COVAC - People with 2nd, 3rd, or booster doses",
+			"numerator": "-1",
+			"numeratorDescription": "2nd dose covid vaccine",
+			"publicAccess": "r-------",
+			"shortName": "People with 2nd, 3rd, or booster doses",
+			"translations": [],
+			"user": {
+				"id": "vUeLeQMSwhN"
+			},
+			"userAccesses": [],
+			"userGroupAccesses": []
+		},
+		{
+			"annualized": false,
+			"attributeValues": [],
+			"code": "CVC_EIR_AGG_PPL_1ST_DOSE",
+			"denominator": "1",
+			"denominatorDescription": "1",
+			"id": "GeAtojrj7Yy",
+			"indicatorType": {
+				"id": "CqNPn5KzksS"
+			},
+			"legendSets": [],
+			"name": "[CONFIG] COVAC - People with 1st dose",
+			"numerator": "-1",
+			"numeratorDescription": "1st dose covid vaccine",
+			"publicAccess": "r-------",
+			"shortName": "People with 1st dose",
+			"translations": [],
+			"user": {
+				"id": "vUeLeQMSwhN"
+			},
+			"userAccesses": [],
+			"userGroupAccesses": []
+		},
+		{
+			"annualized": false,
+			"attributeValues": [],
+			"code": "CVC_EIR_AGG_PPL_UNDER_CONDITIONS",
+			"denominator": "1",
+			"denominatorDescription": "1",
+			"id": "KIgI3EPjs2T",
+			"indicatorType": {
+				"id": "CqNPn5KzksS"
+			},
+			"legendSets": [],
+			"name": "[CONFIG] COVAC - People with underlying conditions",
+			"numerator": "-1",
+			"numeratorDescription": "People with at least one underlying condition",
+			"publicAccess": "r-------",
+			"shortName": "People with underlying conditions",
+			"translations": [],
+			"user": {
+				"id": "vUeLeQMSwhN"
+			},
+			"userAccesses": [],
+			"userGroupAccesses": []
+		},
+		{
+			"annualized": false,
+			"attributeValues": [],
+			"code": "CVC_EIR_AGG_PPL_LAST_DOSE",
+			"denominator": "1",
+			"denominatorDescription": "1",
+			"id": "OAZXVEjEEoD",
+			"indicatorType": {
+				"id": "CqNPn5KzksS"
+			},
+			"legendSets": [],
+			"name": "[CONFIG] COVAC - People with last recommended dose",
+			"numerator": "-1",
+			"numeratorDescription": "last dose covid vaccine",
+			"publicAccess": "r-------",
+			"shortName": "People with last recommended dose",
+			"translations": [],
+			"user": {
+				"id": "vUeLeQMSwhN"
+			},
+			"userAccesses": [],
+			"userGroupAccesses": []
+		}
+	],
+	"indicatorTypes": [
+		{
+			"factor": 1,
+			"id": "CqNPn5KzksS",
+			"name": "Numerator only (number)",
+			"number": true,
+			"translations": [
+				{
+					"locale": "ar",
+					"property": "NAME",
+					"value": "البسط فقط (رقم)"
+				},
+				{
+					"locale": "cs",
+					"property": "NAME",
+					"value": "Pouze čitatel (číslo)"
+				},
+				{
+					"locale": "es",
+					"property": "NAME",
+					"value": "Solo numerador (número)"
+				},
+				{
+					"locale": "fr",
+					"property": "NAME",
+					"value": "Numérateur seulement (nombre)"
+				},
+				{
+					"locale": "nb",
+					"property": "NAME",
+					"value": "Kun teller (tall)"
+				},
+				{
+					"locale": "pt",
+					"property": "NAME",
+					"value": "Apenas numerador (número)"
+				},
+				{
+					"locale": "ru",
+					"property": "NAME",
+					"value": "Тоько числитель (число)"
+				},
+				{
+					"locale": "uz",
+					"property": "NAME",
+					"value": "Фақат рақамловчи (рақам)"
+				}
+			]
+		}
+	],
+	"maps": [
+		{
+			"basemap": "osmLight",
+			"externalAccess": false,
+			"favorites": [],
+			"id": "gY6BvOreBGk",
+			"mapViews": [
+				{
+					"access": {
+						"delete": true,
+						"externalize": true,
+						"manage": true,
+						"read": true,
+						"update": true,
+						"write": true
+					},
+					"aggregationType": "DEFAULT",
+					"attributeDimensions": [],
+					"attributeValues": [],
+					"categoryDimensions": [],
+					"categoryOptionGroupSetDimensions": [],
+					"classes": 5,
+					"colorScale": "#eff3ff,#bdd7e7,#6baed6,#3182bd,#08519c",
+					"columnDimensions": [
+						"dx"
+					],
+					"columns": [],
+					"completedOnly": false,
+					"dataDimensionItems": [
+						{
+							"dataDimensionItemType": "INDICATOR",
+							"indicator": {
+								"id": "ddZjJCwXf6k"
+							}
+						}
+					],
+					"dataElementDimensions": [],
+					"dataElementGroupSetDimensions": [],
+					"digitGroupSeparator": "SPACE",
+					"endDate": "2021-10-29T00:00:00.000",
+					"eventClustering": false,
+					"eventPointRadius": 0,
+					"externalAccess": false,
+					"favorite": false,
+					"favorites": [],
+					"filterDimensions": [
+						"pe"
+					],
+					"filters": [],
+					"hideSubtitle": false,
+					"hideTitle": false,
+					"id": "AU0aOWvag1m",
+					"interpretations": [],
+					"itemOrganisationUnitGroups": [],
+					"layer": "thematic",
+					"method": 2,
+					"name": "COVAC - People with 2nd, 3rd, or booster doses",
+					"organisationUnitGroupSetDimensions": [],
+					"organisationUnitLevels": [],
+					"organisationUnits": [],
+					"parentGraphMap": {
+						
+					},
+					"parentLevel": 0,
+					"periods": [],
+					"programIndicatorDimensions": [],
+					"relativePeriods": {
+						"biMonthsThisYear": false,
+						"last12Months": false,
+						"last12Weeks": false,
+						"last14Days": false,
+						"last180Days": false,
+						"last2SixMonths": false,
+						"last30Days": true,
+						"last3Days": false,
+						"last3Months": false,
+						"last4BiWeeks": false,
+						"last4Quarters": false,
+						"last4Weeks": false,
+						"last52Weeks": false,
+						"last5FinancialYears": false,
+						"last5Years": false,
+						"last60Days": false,
+						"last6BiMonths": false,
+						"last6Months": false,
+						"last7Days": false,
+						"last90Days": false,
+						"lastBimonth": false,
+						"lastBiWeek": false,
+						"lastFinancialYear": false,
+						"lastMonth": false,
+						"lastQuarter": false,
+						"lastSixMonth": false,
+						"lastWeek": false,
+						"lastYear": false,
+						"monthsLastYear": false,
+						"monthsThisYear": false,
+						"quartersLastYear": false,
+						"quartersThisYear": false,
+						"thisBimonth": false,
+						"thisBiWeek": false,
+						"thisDay": false,
+						"thisFinancialYear": false,
+						"thisMonth": false,
+						"thisQuarter": false,
+						"thisSixMonth": false,
+						"thisWeek": false,
+						"thisYear": false,
+						"weeksThisYear": false,
+						"yesterday": false
+					},
+					"renderingStrategy": "TIMELINE",
+					"rows": [],
+					"sortOrder": 0,
+					"startDate": "2020-10-29T00:00:00.000",
+					"subscribed": false,
+					"subscribers": [],
+					"thematicMapType": "CHOROPLETH",
+					"topLimit": 0,
+					"translations": [],
+					"userAccesses": [],
+					"userGroupAccesses": [],
+					"userOrganisationUnit": false,
+					"userOrganisationUnitChildren": false,
+					"userOrganisationUnitGrandChildren": true
+				},
+				{
+					"access": {
+						"delete": true,
+						"externalize": true,
+						"manage": true,
+						"read": true,
+						"update": true,
+						"write": true
+					},
+					"attributeDimensions": [],
+					"attributeValues": [],
+					"categoryDimensions": [],
+					"categoryOptionGroupSetDimensions": [],
+					"columnDimensions": [],
+					"columns": [],
+					"completedOnly": false,
+					"dataDimensionItems": [],
+					"dataElementDimensions": [],
+					"dataElementGroupSetDimensions": [],
+					"digitGroupSeparator": "SPACE",
+					"eventClustering": false,
+					"eventPointRadius": 0,
+					"externalAccess": false,
+					"favorite": false,
+					"favorites": [],
+					"filterDimensions": [],
+					"filters": [],
+					"hideSubtitle": false,
+					"hideTitle": false,
+					"id": "mWnHHtPz0e3",
+					"interpretations": [],
+					"itemOrganisationUnitGroups": [],
+					"layer": "boundary",
+					"name": "mWnHHtPz0e3",
+					"opacity": 1,
+					"organisationUnitGroupSetDimensions": [],
+					"organisationUnitLevels": [],
+					"organisationUnits": [],
+					"parentGraphMap": {
+						
+					},
+					"parentLevel": 0,
+					"periods": [],
+					"programIndicatorDimensions": [],
+					"renderingStrategy": "SINGLE",
+					"rows": [],
+					"sortOrder": 0,
+					"subscribed": false,
+					"subscribers": [],
+					"topLimit": 0,
+					"translations": [],
+					"userAccesses": [],
+					"userGroupAccesses": [],
+					"userOrganisationUnit": true,
+					"userOrganisationUnitChildren": false,
+					"userOrganisationUnitGrandChildren": false
+				}
+			],
+			"name": "COVAC-DAILY-007",
+			"publicAccess": "r-------",
+			"subscribers": [],
+			"translations": [],
+			"user": {
+				"id": "vUeLeQMSwhN"
+			},
+			"userAccesses": [],
+			"userGroupAccesses": []
+		},
+		{
+			"basemap": "osmLight",
+			"externalAccess": false,
+			"favorites": [],
+			"id": "Re6XpOCNGeo",
+			"mapViews": [
+				{
+					"access": {
+						"delete": true,
+						"externalize": true,
+						"manage": true,
+						"read": true,
+						"update": true,
+						"write": true
+					},
+					"attributeDimensions": [],
+					"attributeValues": [],
+					"categoryDimensions": [],
+					"categoryOptionGroupSetDimensions": [],
+					"columnDimensions": [],
+					"columns": [],
+					"completedOnly": false,
+					"dataDimensionItems": [],
+					"dataElementDimensions": [],
+					"dataElementGroupSetDimensions": [],
+					"digitGroupSeparator": "SPACE",
+					"eventClustering": false,
+					"eventPointRadius": 0,
+					"externalAccess": false,
+					"favorite": false,
+					"favorites": [],
+					"filterDimensions": [],
+					"filters": [],
+					"hideSubtitle": false,
+					"hideTitle": false,
+					"id": "fOzvsPouEiB",
+					"interpretations": [],
+					"itemOrganisationUnitGroups": [],
+					"layer": "boundary",
+					"name": "fOzvsPouEiB",
+					"opacity": 1,
+					"organisationUnitGroupSetDimensions": [],
+					"organisationUnitLevels": [],
+					"organisationUnits": [],
+					"parentGraphMap": {
+						
+					},
+					"parentLevel": 0,
+					"periods": [],
+					"programIndicatorDimensions": [],
+					"renderingStrategy": "SINGLE",
+					"rows": [],
+					"sortOrder": 0,
+					"subscribed": false,
+					"subscribers": [],
+					"topLimit": 0,
+					"translations": [],
+					"userAccesses": [],
+					"userGroupAccesses": [],
+					"userOrganisationUnit": true,
+					"userOrganisationUnitChildren": false,
+					"userOrganisationUnitGrandChildren": false
+				},
+				{
+					"access": {
+						"delete": true,
+						"externalize": true,
+						"manage": true,
+						"read": true,
+						"update": true,
+						"write": true
+					},
+					"aggregationType": "DEFAULT",
+					"attributeDimensions": [],
+					"attributeValues": [],
+					"categoryDimensions": [],
+					"categoryOptionGroupSetDimensions": [],
+					"columnDimensions": [
+						"dx"
+					],
+					"columns": [],
+					"completedOnly": false,
+					"dataDimensionItems": [
+						{
+							"dataDimensionItemType": "INDICATOR",
+							"indicator": {
+								"id": "GeAtojrj7Yy"
+							}
+						}
+					],
+					"dataElementDimensions": [],
+					"dataElementGroupSetDimensions": [],
+					"digitGroupSeparator": "SPACE",
+					"endDate": "2021-10-29T00:00:00.000",
+					"eventClustering": false,
+					"eventPointRadius": 0,
+					"externalAccess": false,
+					"favorite": false,
+					"favorites": [],
+					"filterDimensions": [
+						"pe"
+					],
+					"filters": [],
+					"hideSubtitle": false,
+					"hideTitle": false,
+					"id": "Pdxqv9KK6pE",
+					"interpretations": [],
+					"itemOrganisationUnitGroups": [],
+					"layer": "thematic",
+					"method": 2,
+					"name": "COVAC - People with 1st dose",
+					"opacity": 1,
+					"organisationUnitGroupSetDimensions": [],
+					"organisationUnitLevels": [],
+					"organisationUnits": [],
+					"parentGraphMap": {
+						
+					},
+					"parentLevel": 0,
+					"periods": [],
+					"programIndicatorDimensions": [],
+					"relativePeriods": {
+						"biMonthsThisYear": false,
+						"last12Months": false,
+						"last12Weeks": false,
+						"last14Days": false,
+						"last180Days": false,
+						"last2SixMonths": false,
+						"last30Days": true,
+						"last3Days": false,
+						"last3Months": false,
+						"last4BiWeeks": false,
+						"last4Quarters": false,
+						"last4Weeks": false,
+						"last52Weeks": false,
+						"last5FinancialYears": false,
+						"last5Years": false,
+						"last60Days": false,
+						"last6BiMonths": false,
+						"last6Months": false,
+						"last7Days": false,
+						"last90Days": false,
+						"lastBimonth": false,
+						"lastBiWeek": false,
+						"lastFinancialYear": false,
+						"lastMonth": false,
+						"lastQuarter": false,
+						"lastSixMonth": false,
+						"lastWeek": false,
+						"lastYear": false,
+						"monthsLastYear": false,
+						"monthsThisYear": false,
+						"quartersLastYear": false,
+						"quartersThisYear": false,
+						"thisBimonth": false,
+						"thisBiWeek": false,
+						"thisDay": false,
+						"thisFinancialYear": false,
+						"thisMonth": false,
+						"thisQuarter": false,
+						"thisSixMonth": false,
+						"thisWeek": false,
+						"thisYear": false,
+						"weeksThisYear": false,
+						"yesterday": false
+					},
+					"renderingStrategy": "TIMELINE",
+					"rows": [],
+					"sortOrder": 0,
+					"startDate": "2020-10-29T00:00:00.000",
+					"subscribed": false,
+					"subscribers": [],
+					"thematicMapType": "CHOROPLETH",
+					"topLimit": 0,
+					"translations": [],
+					"userAccesses": [],
+					"userGroupAccesses": [],
+					"userOrganisationUnit": false,
+					"userOrganisationUnitChildren": false,
+					"userOrganisationUnitGrandChildren": true
+				}
+			],
+			"name": "COVAC-DAILY-006",
+			"publicAccess": "r-------",
+			"subscribers": [],
+			"translations": [],
+			"user": {
+				"id": "vUeLeQMSwhN"
+			},
+			"userAccesses": [],
+			"userGroupAccesses": []
+		}
+	],
+	"package": {
+		"code": "COVAC_EIR_DSH",
+		"DHIS2Build": "834b25f",
+		"DHIS2Version": "2.35.8",
+		"locale": "en",
+		"name": "COVAC_EIR_DSH_V1.2.0_DHIS2.35.8-en",
+		"type": "DASHBOARD",
+		"version": "1.2.0"
+	},
+	"userGroups": [
+		{
+			"attributeValues": [],
+			"code": "CVC_EIR_AGG_METADATA_ADMIN",
+			"id": "AEAQ9LktNze",
+			"managedGroups": [],
+			"name": "COVAC - Covid-19 Immunization Metadata Admin",
+			"publicAccess": "r-------",
+			"translations": [
+				{
+					"locale": "cs",
+					"property": "NAME",
+					"value": "COVAC - správce metadat imunizace Covid-19"
+				},
+				{
+					"locale": "es",
+					"property": "NAME",
+					"value": "COVAC - Administrador de metadatos de inmunización Covid-19"
+				},
+				{
+					"locale": "fr",
+					"property": "NAME",
+					"value": "COVAC - Administrateur de métadonnées d'immunisation Covid-19"
+				}
+			],
+			"user": {
+				"id": "vUeLeQMSwhN"
+			},
+			"userAccesses": [],
+			"userGroupAccesses": [],
+			"users": [
+				{
+					"id": "vUeLeQMSwhN"
+				}
+			]
+		},
+		{
+			"attributeValues": [],
+			"code": "CVC_EIR_AGG_DATA_ADMIN",
+			"id": "dl1WZpz570i",
+			"managedGroups": [],
+			"name": "COVAC - Covid-19 Immunization Data Admin",
+			"publicAccess": "r-------",
+			"translations": [],
+			"user": {
+				"id": "vUeLeQMSwhN"
+			},
+			"userAccesses": [],
+			"userGroupAccesses": [],
+			"users": [
+				{
+					"id": "vUeLeQMSwhN"
+				}
+			]
+		},
+		{
+			"attributeValues": [],
+			"code": "CVC_EIR_AGG_DATA_ENTRY",
+			"id": "q3Nh5xhJEy2",
+			"managedGroups": [],
+			"name": "COVAC - Covid-19 Immunization Data Entry",
+			"publicAccess": "r-------",
+			"translations": [
+				{
+					"locale": "cs",
+					"property": "NAME",
+					"value": "COVAC - vstup dat imunizace Covid-19"
+				},
+				{
+					"locale": "es",
+					"property": "NAME",
+					"value": "COVAC - Entrada de datos de inmunización Covid-19"
+				},
+				{
+					"locale": "fr",
+					"property": "NAME",
+					"value": "COVAC - Saisie des données de vaccination Covid-19"
+				}
+			],
+			"user": {
+				"id": "vUeLeQMSwhN"
+			},
+			"userAccesses": [],
+			"userGroupAccesses": [],
+			"users": [
+				{
+					"id": "vUeLeQMSwhN"
+				}
+			]
+		},
+		{
+			"attributeValues": [],
+			"code": "CVC_EIR_AGG_DATA_ANALYSIS",
+			"id": "VLIaHu6ou8E",
+			"managedGroups": [],
+			"name": "COVAC - Covid-19 Immunization Data Analysis",
+			"publicAccess": "r-------",
+			"translations": [
+				{
+					"locale": "cs",
+					"property": "NAME",
+					"value": "COVAC - Analýza dat imunizace Covid-19"
+				},
+				{
+					"locale": "es",
+					"property": "NAME",
+					"value": "COVAC - Análisis de datos de inmunización Covid-19"
+				},
+				{
+					"locale": "fr",
+					"property": "NAME",
+					"value": "COVAC - Analyse des données de vaccination Covid-19"
+				}
+			],
+			"user": {
+				"id": "vUeLeQMSwhN"
+			},
+			"userAccesses": [],
+			"userGroupAccesses": [],
+			"users": [
+				{
+					"id": "vUeLeQMSwhN"
+				}
+			]
+		}
+	],
+	"users": [
+		{
+			"attributeValues": [],
+			"dataViewOrganisationUnits": [],
+			"firstName": "Admin",
+			"id": "vUeLeQMSwhN",
+			"organisationUnits": [],
+			"surname": "WHO",
+			"teiSearchOrganisationUnits": [],
+			"userCredentials": {
+				"access": {
+					"delete": true,
+					"externalize": true,
+					"manage": true,
+					"read": true,
+					"update": true,
+					"write": true
+				},
+				"attributeValues": [],
+				"catDimensionConstraints": [],
+				"cogsDimensionConstraints": [],
+				"disabled": true,
+				"externalAccess": false,
+				"externalAuth": false,
+				"favorite": false,
+				"favorites": [],
+				"id": "MMRO6oP1HQg",
+				"invitation": false,
+				"lastLogin": "2018-07-13T12:28:39.168",
+				"name": "Admin WHO",
+				"passwordLastUpdated": "2018-07-13T12:28:39.168",
+				"selfRegistered": false,
+				"translations": [],
+				"twoFA": false,
+				"user": {
+					"id": "vUeLeQMSwhN",
+					"username": "who"
+				},
+				"userAccesses": [],
+				"userGroupAccesses": [],
+				"userInfo": {
+					"id": "vUeLeQMSwhN"
+				},
+				"username": "who",
+				"userRoles": []
+			}
+		}
+	],
+	"visualizations": [
+		{
+			"aggregationType": "DEFAULT",
+			"categoryDimensions": [],
+			"categoryOptionGroupSetDimensions": [],
+			"colorSet": "DEFAULT",
+			"colSubTotals": false,
+			"colTotals": false,
+			"columnDimensions": [
+				"dx"
+			],
+			"completedOnly": false,
+			"cumulativeValues": true,
+			"dataDimensionItems": [
+				{
+					"dataDimensionItemType": "INDICATOR",
+					"indicator": {
+						"id": "ddZjJCwXf6k"
+					}
+				}
+			],
+			"dataElementGroupSetDimensions": [],
+			"digitGroupSeparator": "SPACE",
+			"displayDensity": "NORMAL",
+			"externalAccess": false,
+			"favorites": [],
+			"filterDimensions": [
+				"ou"
+			],
+			"fontSize": "NORMAL",
+			"fontStyle": {
+				
+			},
+			"hideEmptyColumns": false,
+			"hideEmptyRowItems": "NONE",
+			"hideEmptyRows": false,
+			"hideLegend": false,
+			"hideSubtitle": false,
+			"hideTitle": false,
+			"id": "B09OVExmoc6",
+			"itemOrganisationUnitGroups": [],
+			"legendDisplayStrategy": "FIXED",
+			"legendDisplayStyle": "FILL",
+			"name": "COVAC-DAILY-002",
+			"noSpaceBetweenColumns": true,
+			"numberType": "VALUE",
+			"optionalAxes": [],
+			"organisationUnitGroupSetDimensions": [],
+			"organisationUnitLevels": [],
+			"organisationUnits": [],
+			"percentStackedValues": false,
+			"periods": [],
+			"publicAccess": "r-------",
+			"regression": false,
+			"regressionType": "NONE",
+			"relativePeriods": {
+				"biMonthsThisYear": false,
+				"last12Months": false,
+				"last12Weeks": false,
+				"last14Days": false,
+				"last180Days": false,
+				"last2SixMonths": false,
+				"last30Days": true,
+				"last3Days": false,
+				"last3Months": false,
+				"last4BiWeeks": false,
+				"last4Quarters": false,
+				"last4Weeks": false,
+				"last52Weeks": false,
+				"last5FinancialYears": false,
+				"last5Years": false,
+				"last60Days": false,
+				"last6BiMonths": false,
+				"last6Months": false,
+				"last7Days": false,
+				"last90Days": false,
+				"lastBimonth": false,
+				"lastBiWeek": false,
+				"lastFinancialYear": false,
+				"lastMonth": false,
+				"lastQuarter": false,
+				"lastSixMonth": false,
+				"lastWeek": false,
+				"lastYear": false,
+				"monthsLastYear": false,
+				"monthsThisYear": false,
+				"quartersLastYear": false,
+				"quartersThisYear": false,
+				"thisBimonth": false,
+				"thisBiWeek": false,
+				"thisDay": false,
+				"thisFinancialYear": false,
+				"thisMonth": false,
+				"thisQuarter": false,
+				"thisSixMonth": false,
+				"thisWeek": false,
+				"thisYear": false,
+				"weeksThisYear": false,
+				"yesterday": false
+			},
+			"reportingParams": {
+				"grandParentOrganisationUnit": false,
+				"organisationUnit": false,
+				"parentOrganisationUnit": false,
+				"reportingPeriod": false
+			},
+			"rowDimensions": [
+				"pe"
+			],
+			"rowSubTotals": false,
+			"rowTotals": false,
+			"series": [],
+			"showData": true,
+			"showDimensionLabels": false,
+			"showHierarchy": false,
+			"skipRounding": false,
+			"sortOrder": 0,
+			"subscribers": [],
+			"title": "Cumulative number of people given the 2nd+ dose",
+			"topLimit": 0,
+			"translations": [],
+			"type": "STACKED_COLUMN",
+			"user": {
+				"id": "vUeLeQMSwhN"
+			},
+			"userAccesses": [],
+			"userGroupAccesses": [],
+			"userOrganisationUnit": true,
+			"userOrganisationUnitChildren": false,
+			"userOrganisationUnitGrandChildren": false,
+			"yearlySeries": []
+		},
+		{
+			"aggregationType": "DEFAULT",
+			"categoryDimensions": [],
+			"categoryOptionGroupSetDimensions": [
+				{
+					"categoryOptionGroups": [
+						{
+							"id": "fqborXHhXZG"
+						},
+						{
+							"id": "hEct0AAbPAw"
+						}
+					],
+					"categoryOptionGroupSet": {
+						"id": "hEcLht1oMFl"
+					}
+				}
+			],
+			"colorSet": "DEFAULT",
+			"colSubTotals": false,
+			"colTotals": false,
+			"columnDimensions": [
+				"hEcLht1oMFl"
+			],
+			"completedOnly": false,
+			"cumulativeValues": false,
+			"dataDimensionItems": [
+				{
+					"dataDimensionItemType": "INDICATOR",
+					"indicator": {
+						"id": "GeAtojrj7Yy"
+					}
+				}
+			],
+			"dataElementGroupSetDimensions": [],
+			"description": "Age distribution of the recipients of the 1st dose",
+			"digitGroupSeparator": "SPACE",
+			"displayDensity": "NORMAL",
+			"externalAccess": false,
+			"favorites": [],
+			"filterDimensions": [
+				"ou",
+				"pe",
+				"dx"
+			],
+			"fontSize": "NORMAL",
+			"fontStyle": {
+				
+			},
+			"hideEmptyColumns": false,
+			"hideEmptyRowItems": "NONE",
+			"hideEmptyRows": false,
+			"hideLegend": false,
+			"hideSubtitle": false,
+			"hideTitle": false,
+			"id": "efCsnG0LzNp",
+			"itemOrganisationUnitGroups": [],
+			"legendDisplayStrategy": "FIXED",
+			"legendDisplayStyle": "FILL",
+			"name": "COVAC-DAILY-005",
+			"noSpaceBetweenColumns": false,
+			"numberType": "VALUE",
+			"optionalAxes": [],
+			"organisationUnitGroupSetDimensions": [],
+			"organisationUnitLevels": [],
+			"organisationUnits": [],
+			"percentStackedValues": false,
+			"periods": [],
+			"publicAccess": "r-------",
+			"regression": false,
+			"regressionType": "NONE",
+			"relativePeriods": {
+				"biMonthsThisYear": false,
+				"last12Months": false,
+				"last12Weeks": false,
+				"last14Days": false,
+				"last180Days": false,
+				"last2SixMonths": false,
+				"last30Days": true,
+				"last3Days": false,
+				"last3Months": false,
+				"last4BiWeeks": false,
+				"last4Quarters": false,
+				"last4Weeks": false,
+				"last52Weeks": false,
+				"last5FinancialYears": false,
+				"last5Years": false,
+				"last60Days": false,
+				"last6BiMonths": false,
+				"last6Months": false,
+				"last7Days": false,
+				"last90Days": false,
+				"lastBimonth": false,
+				"lastBiWeek": false,
+				"lastFinancialYear": false,
+				"lastMonth": false,
+				"lastQuarter": false,
+				"lastSixMonth": false,
+				"lastWeek": false,
+				"lastYear": false,
+				"monthsLastYear": false,
+				"monthsThisYear": false,
+				"quartersLastYear": false,
+				"quartersThisYear": false,
+				"thisBimonth": false,
+				"thisBiWeek": false,
+				"thisDay": false,
+				"thisFinancialYear": false,
+				"thisMonth": false,
+				"thisQuarter": false,
+				"thisSixMonth": false,
+				"thisWeek": false,
+				"thisYear": false,
+				"weeksThisYear": false,
+				"yesterday": false
+			},
+			"reportingParams": {
+				"grandParentOrganisationUnit": false,
+				"organisationUnit": false,
+				"parentOrganisationUnit": false,
+				"reportingPeriod": false
+			},
+			"rowDimensions": [],
+			"rowSubTotals": false,
+			"rowTotals": false,
+			"series": [],
+			"showData": true,
+			"showDimensionLabels": false,
+			"showHierarchy": false,
+			"skipRounding": false,
+			"sortOrder": 0,
+			"subscribers": [],
+			"title": "Age distribution of the recipients of the 1st dose",
+			"topLimit": 0,
+			"translations": [],
+			"type": "PIE",
+			"user": {
+				"id": "vUeLeQMSwhN"
+			},
+			"userAccesses": [],
+			"userGroupAccesses": [],
+			"userOrganisationUnit": true,
+			"userOrganisationUnitChildren": false,
+			"userOrganisationUnitGrandChildren": false,
+			"yearlySeries": []
+		},
+		{
+			"aggregationType": "DEFAULT",
+			"categoryDimensions": [],
+			"categoryOptionGroupSetDimensions": [],
+			"colorSet": "DEFAULT",
+			"colSubTotals": false,
+			"colTotals": false,
+			"columnDimensions": [
+				"dx"
+			],
+			"completedOnly": false,
+			"cumulativeValues": false,
+			"dataDimensionItems": [
+				{
+					"dataDimensionItemType": "INDICATOR",
+					"indicator": {
+						"id": "GeAtojrj7Yy"
+					}
+				},
+				{
+					"dataDimensionItemType": "INDICATOR",
+					"indicator": {
+						"id": "ddZjJCwXf6k"
+					}
+				}
+			],
+			"dataElementGroupSetDimensions": [],
+			"digitGroupSeparator": "SPACE",
+			"displayDensity": "NORMAL",
+			"externalAccess": false,
+			"favorites": [],
+			"filterDimensions": [
+				"ou"
+			],
+			"fontSize": "NORMAL",
+			"fontStyle": {
+				
+			},
+			"hideEmptyColumns": false,
+			"hideEmptyRowItems": "NONE",
+			"hideEmptyRows": false,
+			"hideLegend": false,
+			"hideSubtitle": false,
+			"hideTitle": false,
+			"id": "ejUP3qyDQIW",
+			"itemOrganisationUnitGroups": [],
+			"legendDisplayStrategy": "FIXED",
+			"legendDisplayStyle": "FILL",
+			"name": "COVAC-DAILY-008",
+			"noSpaceBetweenColumns": false,
+			"numberType": "VALUE",
+			"optionalAxes": [],
+			"organisationUnitGroupSetDimensions": [],
+			"organisationUnitLevels": [],
+			"organisationUnits": [],
+			"percentStackedValues": false,
+			"periods": [],
+			"publicAccess": "r-------",
+			"regression": false,
+			"regressionType": "NONE",
+			"relativePeriods": {
+				"biMonthsThisYear": false,
+				"last12Months": false,
+				"last12Weeks": false,
+				"last14Days": false,
+				"last180Days": false,
+				"last2SixMonths": false,
+				"last30Days": true,
+				"last3Days": false,
+				"last3Months": false,
+				"last4BiWeeks": false,
+				"last4Quarters": false,
+				"last4Weeks": false,
+				"last52Weeks": false,
+				"last5FinancialYears": false,
+				"last5Years": false,
+				"last60Days": false,
+				"last6BiMonths": false,
+				"last6Months": false,
+				"last7Days": false,
+				"last90Days": false,
+				"lastBimonth": false,
+				"lastBiWeek": false,
+				"lastFinancialYear": false,
+				"lastMonth": false,
+				"lastQuarter": false,
+				"lastSixMonth": false,
+				"lastWeek": false,
+				"lastYear": false,
+				"monthsLastYear": false,
+				"monthsThisYear": false,
+				"quartersLastYear": false,
+				"quartersThisYear": false,
+				"thisBimonth": false,
+				"thisBiWeek": false,
+				"thisDay": false,
+				"thisFinancialYear": false,
+				"thisMonth": false,
+				"thisQuarter": false,
+				"thisSixMonth": false,
+				"thisWeek": false,
+				"thisYear": false,
+				"weeksThisYear": false,
+				"yesterday": false
+			},
+			"reportingParams": {
+				"grandParentOrganisationUnit": false,
+				"organisationUnit": false,
+				"parentOrganisationUnit": false,
+				"reportingPeriod": false
+			},
+			"rowDimensions": [
+				"pe"
+			],
+			"rowSubTotals": false,
+			"rowTotals": false,
+			"series": [],
+			"showData": true,
+			"showDimensionLabels": false,
+			"showHierarchy": false,
+			"skipRounding": false,
+			"sortOrder": 0,
+			"subscribers": [],
+			"title": "Daily number of people vaccinated with the 1st or 2nd+ dose",
+			"topLimit": 0,
+			"translations": [],
+			"type": "COLUMN",
+			"user": {
+				"id": "vUeLeQMSwhN"
+			},
+			"userAccesses": [],
+			"userGroupAccesses": [],
+			"userOrganisationUnit": true,
+			"userOrganisationUnitChildren": false,
+			"userOrganisationUnitGrandChildren": false,
+			"yearlySeries": []
+		},
+		{
+			"aggregationType": "DEFAULT",
+			"categoryDimensions": [],
+			"categoryOptionGroupSetDimensions": [],
+			"colorSet": "DEFAULT",
+			"colSubTotals": false,
+			"colTotals": false,
+			"columnDimensions": [
+				"dx"
+			],
+			"completedOnly": false,
+			"cumulativeValues": false,
+			"dataDimensionItems": [
+				{
+					"dataDimensionItemType": "INDICATOR",
+					"indicator": {
+						"id": "GeAtojrj7Yy"
+					}
+				},
+				{
+					"dataDimensionItemType": "INDICATOR",
+					"indicator": {
+						"id": "KIgI3EPjs2T"
+					}
+				}
+			],
+			"dataElementGroupSetDimensions": [],
+			"digitGroupSeparator": "SPACE",
+			"displayDensity": "NORMAL",
+			"externalAccess": false,
+			"favorites": [],
+			"filterDimensions": [
+				"ou"
+			],
+			"fontSize": "NORMAL",
+			"fontStyle": {
+				
+			},
+			"hideEmptyColumns": false,
+			"hideEmptyRowItems": "NONE",
+			"hideEmptyRows": false,
+			"hideLegend": false,
+			"hideSubtitle": false,
+			"hideTitle": false,
+			"id": "JYXA2qs3udu",
+			"itemOrganisationUnitGroups": [],
+			"legendDisplayStrategy": "FIXED",
+			"legendDisplayStyle": "FILL",
+			"name": "COVAC-DAILY-003",
+			"noSpaceBetweenColumns": false,
+			"numberType": "VALUE",
+			"optionalAxes": [],
+			"organisationUnitGroupSetDimensions": [],
+			"organisationUnitLevels": [],
+			"organisationUnits": [],
+			"percentStackedValues": false,
+			"periods": [],
+			"publicAccess": "r-------",
+			"regression": false,
+			"regressionType": "NONE",
+			"relativePeriods": {
+				"biMonthsThisYear": false,
+				"last12Months": false,
+				"last12Weeks": false,
+				"last14Days": false,
+				"last180Days": false,
+				"last2SixMonths": false,
+				"last30Days": true,
+				"last3Days": false,
+				"last3Months": false,
+				"last4BiWeeks": false,
+				"last4Quarters": false,
+				"last4Weeks": false,
+				"last52Weeks": false,
+				"last5FinancialYears": false,
+				"last5Years": false,
+				"last60Days": false,
+				"last6BiMonths": false,
+				"last6Months": false,
+				"last7Days": false,
+				"last90Days": false,
+				"lastBimonth": false,
+				"lastBiWeek": false,
+				"lastFinancialYear": false,
+				"lastMonth": false,
+				"lastQuarter": false,
+				"lastSixMonth": false,
+				"lastWeek": false,
+				"lastYear": false,
+				"monthsLastYear": false,
+				"monthsThisYear": false,
+				"quartersLastYear": false,
+				"quartersThisYear": false,
+				"thisBimonth": false,
+				"thisBiWeek": false,
+				"thisDay": false,
+				"thisFinancialYear": false,
+				"thisMonth": false,
+				"thisQuarter": false,
+				"thisSixMonth": false,
+				"thisWeek": false,
+				"thisYear": false,
+				"weeksThisYear": false,
+				"yesterday": false
+			},
+			"reportingParams": {
+				"grandParentOrganisationUnit": false,
+				"organisationUnit": false,
+				"parentOrganisationUnit": false,
+				"reportingPeriod": false
+			},
+			"rowDimensions": [
+				"pe"
+			],
+			"rowSubTotals": false,
+			"rowTotals": false,
+			"series": [],
+			"showData": true,
+			"showDimensionLabels": false,
+			"showHierarchy": false,
+			"skipRounding": false,
+			"sortOrder": 0,
+			"subscribers": [],
+			"title": "Total 1st dose recipients vs recipients with at least an underlying condition",
+			"topLimit": 0,
+			"translations": [],
+			"type": "COLUMN",
+			"user": {
+				"id": "vUeLeQMSwhN"
+			},
+			"userAccesses": [],
+			"userGroupAccesses": [],
+			"userOrganisationUnit": true,
+			"userOrganisationUnitChildren": false,
+			"userOrganisationUnitGrandChildren": false,
+			"yearlySeries": []
+		},
+		{
+			"aggregationType": "DEFAULT",
+			"categoryDimensions": [],
+			"categoryOptionGroupSetDimensions": [],
+			"colorSet": "DEFAULT",
+			"colSubTotals": false,
+			"colTotals": false,
+			"columnDimensions": [
+				"dx"
+			],
+			"completedOnly": false,
+			"cumulativeValues": true,
+			"dataDimensionItems": [
+				{
+					"dataDimensionItemType": "INDICATOR",
+					"indicator": {
+						"id": "GeAtojrj7Yy"
+					}
+				}
+			],
+			"dataElementGroupSetDimensions": [],
+			"digitGroupSeparator": "SPACE",
+			"displayDensity": "NORMAL",
+			"externalAccess": false,
+			"favorites": [],
+			"filterDimensions": [
+				"ou"
+			],
+			"fontSize": "NORMAL",
+			"fontStyle": {
+				
+			},
+			"hideEmptyColumns": false,
+			"hideEmptyRowItems": "NONE",
+			"hideEmptyRows": false,
+			"hideLegend": false,
+			"hideSubtitle": false,
+			"hideTitle": false,
+			"id": "mtLMyTmbSSE",
+			"itemOrganisationUnitGroups": [],
+			"legendDisplayStrategy": "FIXED",
+			"legendDisplayStyle": "FILL",
+			"name": "COVAC-DAILY-001",
+			"noSpaceBetweenColumns": true,
+			"numberType": "VALUE",
+			"optionalAxes": [],
+			"organisationUnitGroupSetDimensions": [],
+			"organisationUnitLevels": [],
+			"organisationUnits": [],
+			"percentStackedValues": false,
+			"periods": [],
+			"publicAccess": "r-------",
+			"regression": false,
+			"regressionType": "NONE",
+			"relativePeriods": {
+				"biMonthsThisYear": false,
+				"last12Months": false,
+				"last12Weeks": false,
+				"last14Days": false,
+				"last180Days": false,
+				"last2SixMonths": false,
+				"last30Days": true,
+				"last3Days": false,
+				"last3Months": false,
+				"last4BiWeeks": false,
+				"last4Quarters": false,
+				"last4Weeks": false,
+				"last52Weeks": false,
+				"last5FinancialYears": false,
+				"last5Years": false,
+				"last60Days": false,
+				"last6BiMonths": false,
+				"last6Months": false,
+				"last7Days": false,
+				"last90Days": false,
+				"lastBimonth": false,
+				"lastBiWeek": false,
+				"lastFinancialYear": false,
+				"lastMonth": false,
+				"lastQuarter": false,
+				"lastSixMonth": false,
+				"lastWeek": false,
+				"lastYear": false,
+				"monthsLastYear": false,
+				"monthsThisYear": false,
+				"quartersLastYear": false,
+				"quartersThisYear": false,
+				"thisBimonth": false,
+				"thisBiWeek": false,
+				"thisDay": false,
+				"thisFinancialYear": false,
+				"thisMonth": false,
+				"thisQuarter": false,
+				"thisSixMonth": false,
+				"thisWeek": false,
+				"thisYear": false,
+				"weeksThisYear": false,
+				"yesterday": false
+			},
+			"reportingParams": {
+				"grandParentOrganisationUnit": false,
+				"organisationUnit": false,
+				"parentOrganisationUnit": false,
+				"reportingPeriod": false
+			},
+			"rowDimensions": [
+				"pe"
+			],
+			"rowSubTotals": false,
+			"rowTotals": false,
+			"series": [],
+			"showData": true,
+			"showDimensionLabels": false,
+			"showHierarchy": false,
+			"skipRounding": false,
+			"sortOrder": 0,
+			"subscribers": [],
+			"title": "Cumulative number of people given the 1st dose",
+			"topLimit": 0,
+			"translations": [],
+			"type": "STACKED_COLUMN",
+			"user": {
+				"id": "vUeLeQMSwhN"
+			},
+			"userAccesses": [],
+			"userGroupAccesses": [],
+			"userOrganisationUnit": true,
+			"userOrganisationUnitChildren": false,
+			"userOrganisationUnitGrandChildren": false,
+			"yearlySeries": []
+		},
+		{
+			"aggregationType": "DEFAULT",
+			"categoryDimensions": [],
+			"categoryOptionGroupSetDimensions": [
+				{
+					"categoryOptionGroups": [
+						{
+							"id": "fqborXHhXZG"
+						},
+						{
+							"id": "hEct0AAbPAw"
+						}
+					],
+					"categoryOptionGroupSet": {
+						"id": "hEcLht1oMFl"
+					}
+				},
+				{
+					"categoryOptionGroups": [
+						{
+							"id": "bqoVhX2RfG4"
+						},
+						{
+							"id": "EVYKU2fIc6G"
+						}
+					],
+					"categoryOptionGroupSet": {
+						"id": "CMrvZp5rmoC"
+					}
+				}
+			],
+			"colorSet": "DEFAULT",
+			"colSubTotals": false,
+			"colTotals": true,
+			"columnDimensions": [
+				"dx",
+				"hEcLht1oMFl",
+				"CMrvZp5rmoC"
+			],
+			"completedOnly": false,
+			"cumulativeValues": false,
+			"dataDimensionItems": [
+				{
+					"dataDimensionItemType": "INDICATOR",
+					"indicator": {
+						"id": "GeAtojrj7Yy"
+					}
+				},
+				{
+					"dataDimensionItemType": "INDICATOR",
+					"indicator": {
+						"id": "ddZjJCwXf6k"
+					}
+				}
+			],
+			"dataElementGroupSetDimensions": [],
+			"description": "Overview of the vaccination activities by age and sex",
+			"digitGroupSeparator": "SPACE",
+			"displayDensity": "NORMAL",
+			"externalAccess": false,
+			"favorites": [],
+			"filterDimensions": [
+				"ou"
+			],
+			"fontSize": "NORMAL",
+			"fontStyle": {
+				
+			},
+			"hideEmptyColumns": true,
+			"hideEmptyRowItems": "NONE",
+			"hideEmptyRows": true,
+			"hideLegend": false,
+			"hideSubtitle": false,
+			"hideTitle": false,
+			"id": "P9Zxxt2VNXi",
+			"itemOrganisationUnitGroups": [],
+			"legendDisplayStrategy": "FIXED",
+			"legendDisplayStyle": "FILL",
+			"name": "COVAC-DAILY-004",
+			"noSpaceBetweenColumns": false,
+			"numberType": "VALUE",
+			"optionalAxes": [],
+			"organisationUnitGroupSetDimensions": [],
+			"organisationUnitLevels": [],
+			"organisationUnits": [],
+			"percentStackedValues": false,
+			"periods": [],
+			"publicAccess": "r-------",
+			"regression": false,
+			"regressionType": "NONE",
+			"relativePeriods": {
+				"biMonthsThisYear": false,
+				"last12Months": false,
+				"last12Weeks": false,
+				"last14Days": false,
+				"last180Days": false,
+				"last2SixMonths": false,
+				"last30Days": true,
+				"last3Days": false,
+				"last3Months": false,
+				"last4BiWeeks": false,
+				"last4Quarters": false,
+				"last4Weeks": false,
+				"last52Weeks": false,
+				"last5FinancialYears": false,
+				"last5Years": false,
+				"last60Days": false,
+				"last6BiMonths": false,
+				"last6Months": false,
+				"last7Days": false,
+				"last90Days": false,
+				"lastBimonth": false,
+				"lastBiWeek": false,
+				"lastFinancialYear": false,
+				"lastMonth": false,
+				"lastQuarter": false,
+				"lastSixMonth": false,
+				"lastWeek": false,
+				"lastYear": false,
+				"monthsLastYear": false,
+				"monthsThisYear": false,
+				"quartersLastYear": false,
+				"quartersThisYear": false,
+				"thisBimonth": false,
+				"thisBiWeek": false,
+				"thisDay": false,
+				"thisFinancialYear": false,
+				"thisMonth": false,
+				"thisQuarter": false,
+				"thisSixMonth": false,
+				"thisWeek": false,
+				"thisYear": false,
+				"weeksThisYear": false,
+				"yesterday": false
+			},
+			"reportingParams": {
+				"grandParentOrganisationUnit": false,
+				"organisationUnit": false,
+				"parentOrganisationUnit": false,
+				"reportingPeriod": false
+			},
+			"rowDimensions": [
+				"pe"
+			],
+			"rowSubTotals": false,
+			"rowTotals": true,
+			"series": [],
+			"showData": true,
+			"showDimensionLabels": false,
+			"showHierarchy": false,
+			"skipRounding": false,
+			"sortOrder": 0,
+			"subscribers": [],
+			"title": "Overview of the vaccination activities by age and sex",
+			"topLimit": 0,
+			"translations": [],
+			"type": "PIVOT_TABLE",
+			"user": {
+				"id": "vUeLeQMSwhN"
+			},
+			"userAccesses": [],
+			"userGroupAccesses": [],
+			"userOrganisationUnit": true,
+			"userOrganisationUnitChildren": false,
+			"userOrganisationUnitGrandChildren": false,
+			"yearlySeries": []
+		}
+	]
+}

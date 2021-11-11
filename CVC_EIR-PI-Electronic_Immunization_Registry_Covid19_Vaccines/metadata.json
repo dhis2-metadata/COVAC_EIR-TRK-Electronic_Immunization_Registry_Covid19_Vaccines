@@ -1,0 +1,1704 @@
+{
+    "package": {
+        "DHIS2Build": "834b25f",
+        "DHIS2Version": "2.35.8",
+        "code": "CVC_EIR",
+        "description": "",
+        "lastUpdated": "20211111T141045",
+        "locale": "en",
+        "name": "CVC_EIR_PI_1.2.0_DHIS2.35.8-en",
+        "type": "ADD_ON",
+        "version": "1.2.0"
+    },
+    "programIndicators": [
+        {
+            "aggregateExportCategoryOptionCombo": "0059Y_F",
+            "aggregationType": "COUNT",
+            "analyticsPeriodBoundaries": [
+                {
+                    "analyticsPeriodBoundaryType": "BEFORE_END_OF_REPORTING_PERIOD",
+                    "attributeValues": [],
+                    "boundaryTarget": "EVENT_DATE",
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "hRGsjzM27N7",
+                    "translations": [],
+                    "userAccesses": [],
+                    "userGroupAccesses": []
+                },
+                {
+                    "analyticsPeriodBoundaryType": "AFTER_START_OF_REPORTING_PERIOD",
+                    "attributeValues": [],
+                    "boundaryTarget": "EVENT_DATE",
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "AsuoHZaDy5v",
+                    "translations": [],
+                    "userAccesses": [],
+                    "userGroupAccesses": []
+                }
+            ],
+            "analyticsType": "EVENT",
+            "attributeValues": [
+                {
+                    "attribute": {
+                        "id": "vudyDP7jUy5"
+                    },
+                    "value": "CVC_EIR_AGG_PPL_1ST_DOSE"
+                }
+            ],
+            "code": "CVC_EIR_PPL_1ST_DOSE_0059Y_F",
+            "decimals": 0,
+            "description": "Number of people who have had a first dose of a vaccine product",
+            "dimensionItem": "RJ6pdxga9Od",
+            "dimensionItemType": "PROGRAM_INDICATOR",
+            "expression": "V{tei_count}",
+            "externalAccess": false,
+            "favorite": false,
+            "filter": "A{oindugucx72}== 'FEMALE' && #{a1jCssI2LkW.LUIsbsm3okG} == 'DOSE1' && V{program_stage_id} == 'a1jCssI2LkW' && d2:yearsBetween(A{NI0QRzJvQ0k}, V{analytics_period_start})<= 59",
+            "id": "RJ6pdxga9Od",
+            "legendSets": [],
+            "name": "Number of people receiving a first dose (Female 0-59)",
+            "periodOffset": 0,
+            "program": {
+                "id": "yDuAzyqYABS"
+            },
+            "programIndicatorGroups": [
+                {
+                    "id": "NXBR4r6MwAO"
+                }
+            ],
+            "publicAccess": "rw------",
+            "shortName": "First dose - Number of people (Female 0-59)",
+            "translations": [
+                {
+                    "locale": "es",
+                    "property": "SHORT_NAME",
+                    "value": "Primera dosis - Número de personas (Mujeres 0-59)"
+                },
+                {
+                    "locale": "fr",
+                    "property": "SHORT_NAME",
+                    "value": "Première dose - Nombre de personnes (Femme, 0-59 ans)"
+                },
+                {
+                    "locale": "pt",
+                    "property": "SHORT_NAME",
+                    "value": "Primeira dose - Número de pessoas (mulheres 0-59)"
+                },
+                {
+                    "locale": "fr",
+                    "property": "DESCRIPTION",
+                    "value": "Nombre de personnes ayant reçu la première dose d'un produit vaccinal"
+                },
+                {
+                    "locale": "pt",
+                    "property": "DESCRIPTION",
+                    "value": "Número de pessoas que receberam a primeira dose de um produto vacinal"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "Número de personas que recibieron una primera dosis (Mujeres 0-59)"
+                },
+                {
+                    "locale": "cs",
+                    "property": "SHORT_NAME",
+                    "value": "První dávka - počet osob (žena 0-59)"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "Nombre de personnes recevant une première dose (Femme, 0-59 ans)"
+                },
+                {
+                    "locale": "pt",
+                    "property": "NAME",
+                    "value": "Número de pessoas que receberam a primeira dose (Feminino 0-59)"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "Počet osob, kterým byla podána první dávka (žena 0-59)"
+                },
+                {
+                    "locale": "es",
+                    "property": "DESCRIPTION",
+                    "value": "Número de personas que han recibido una primera dosis de una vacuna."
+                },
+                {
+                    "locale": "cs",
+                    "property": "DESCRIPTION",
+                    "value": "Počet lidí, kteří dostali první dávku vakcínového produktu"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": []
+        },
+        {
+            "aggregateExportCategoryOptionCombo": "60PLUSY_F",
+            "aggregationType": "COUNT",
+            "analyticsPeriodBoundaries": [
+                {
+                    "analyticsPeriodBoundaryType": "BEFORE_END_OF_REPORTING_PERIOD",
+                    "attributeValues": [],
+                    "boundaryTarget": "EVENT_DATE",
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "svylIKn8yNk",
+                    "translations": [],
+                    "userAccesses": [],
+                    "userGroupAccesses": []
+                },
+                {
+                    "analyticsPeriodBoundaryType": "AFTER_START_OF_REPORTING_PERIOD",
+                    "attributeValues": [],
+                    "boundaryTarget": "EVENT_DATE",
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "sBJtmPMVgh7",
+                    "translations": [],
+                    "userAccesses": [],
+                    "userGroupAccesses": []
+                }
+            ],
+            "analyticsType": "EVENT",
+            "attributeValues": [
+                {
+                    "attribute": {
+                        "id": "vudyDP7jUy5"
+                    },
+                    "value": "CVC_EIR_AGG_PPL_1ST_DOSE"
+                }
+            ],
+            "code": "CVC_EIR_PPL_1ST_DOSE_60PLUSY_F",
+            "decimals": 0,
+            "description": "Number of people who have had a first dose of a vaccine product",
+            "dimensionItem": "x4L0LuEBHhW",
+            "dimensionItemType": "PROGRAM_INDICATOR",
+            "expression": "V{tei_count}",
+            "externalAccess": false,
+            "favorite": false,
+            "filter": "A{oindugucx72}== 'FEMALE' && #{a1jCssI2LkW.LUIsbsm3okG} == 'DOSE1' && V{program_stage_id} == 'a1jCssI2LkW' && d2:yearsBetween(A{NI0QRzJvQ0k}, V{analytics_period_start})>=60",
+            "id": "x4L0LuEBHhW",
+            "legendSets": [],
+            "name": "Number of people receiving a first dose (Female 60+)",
+            "periodOffset": 0,
+            "program": {
+                "id": "yDuAzyqYABS"
+            },
+            "programIndicatorGroups": [
+                {
+                    "id": "NXBR4r6MwAO"
+                }
+            ],
+            "publicAccess": "rw------",
+            "shortName": "First dose - Number of people (Female 60+)",
+            "translations": [
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "Nombre de personnes recevant une première dose (Femme de plus de 60 ans)"
+                },
+                {
+                    "locale": "fr",
+                    "property": "DESCRIPTION",
+                    "value": "Nombre de personnes ayant reçu la première dose d'un produit vaccinal"
+                },
+                {
+                    "locale": "es",
+                    "property": "SHORT_NAME",
+                    "value": "Primera dosis: número de personas (mujeres 60+ años)"
+                },
+                {
+                    "locale": "pt",
+                    "property": "DESCRIPTION",
+                    "value": "Número de pessoas que receberam a primeira dose de um produto vacinal"
+                },
+                {
+                    "locale": "pt",
+                    "property": "NAME",
+                    "value": "Número de pessoas que receberam a primeira dose (mulheres com mais de 60 anos)"
+                },
+                {
+                    "locale": "pt",
+                    "property": "SHORT_NAME",
+                    "value": "Primeira dose - Número de pessoas (mulheres com mais de 60 anos)"
+                },
+                {
+                    "locale": "cs",
+                    "property": "SHORT_NAME",
+                    "value": "První dávka - počet osob (ženy 60+)"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "Número de personas que reciben una primera dosis (mujeres 60+ años)"
+                },
+                {
+                    "locale": "fr",
+                    "property": "SHORT_NAME",
+                    "value": "Première dose - Nombre de personnes (Femme de plus de 60 ans)"
+                },
+                {
+                    "locale": "es",
+                    "property": "DESCRIPTION",
+                    "value": "Número de personas que han recibido una primera dosis de una vacuna."
+                },
+                {
+                    "locale": "cs",
+                    "property": "DESCRIPTION",
+                    "value": "Počet lidí, kteří dostali první dávku vakcínového produktu"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "Počet osob, kterým byla podána první dávka (ženy 60+)"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": []
+        },
+        {
+            "aggregateExportCategoryOptionCombo": "0059Y_M",
+            "aggregationType": "COUNT",
+            "analyticsPeriodBoundaries": [
+                {
+                    "analyticsPeriodBoundaryType": "BEFORE_END_OF_REPORTING_PERIOD",
+                    "attributeValues": [],
+                    "boundaryTarget": "EVENT_DATE",
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "FkJxS3Mbisi",
+                    "translations": [],
+                    "userAccesses": [],
+                    "userGroupAccesses": []
+                },
+                {
+                    "analyticsPeriodBoundaryType": "AFTER_START_OF_REPORTING_PERIOD",
+                    "attributeValues": [],
+                    "boundaryTarget": "EVENT_DATE",
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "jxvLvwIzWwV",
+                    "translations": [],
+                    "userAccesses": [],
+                    "userGroupAccesses": []
+                }
+            ],
+            "analyticsType": "EVENT",
+            "attributeValues": [
+                {
+                    "attribute": {
+                        "id": "vudyDP7jUy5"
+                    },
+                    "value": "CVC_EIR_AGG_PPL_1ST_DOSE"
+                }
+            ],
+            "code": "CVC_EIR_PPL_1ST_DOSE_0059Y_M",
+            "decimals": 0,
+            "description": "Number of people who have had a first dose of a vaccine product",
+            "dimensionItem": "hqm8znlAzkT",
+            "dimensionItemType": "PROGRAM_INDICATOR",
+            "expression": "V{tei_count}",
+            "externalAccess": false,
+            "favorite": false,
+            "filter": "A{oindugucx72} == 'MALE' && #{a1jCssI2LkW.LUIsbsm3okG} == 'DOSE1' && V{program_stage_id} == 'a1jCssI2LkW' && d2:yearsBetween(A{NI0QRzJvQ0k}, V{analytics_period_start})<= 59",
+            "id": "hqm8znlAzkT",
+            "legendSets": [],
+            "name": "Number of people receiving a first dose (Male 0-59)",
+            "periodOffset": 0,
+            "program": {
+                "id": "yDuAzyqYABS"
+            },
+            "programIndicatorGroups": [
+                {
+                    "id": "NXBR4r6MwAO"
+                }
+            ],
+            "publicAccess": "rw------",
+            "shortName": "First dose - Number of people (Male 0-59)",
+            "translations": [
+                {
+                    "locale": "pt",
+                    "property": "NAME",
+                    "value": "Número de pessoas que recebem a primeira dose (Masculino 0-59)"
+                },
+                {
+                    "locale": "es",
+                    "property": "SHORT_NAME",
+                    "value": "Primera dosis - Número de personas (Hombres 0-59)"
+                },
+                {
+                    "locale": "cs",
+                    "property": "SHORT_NAME",
+                    "value": "První dávka - počet osob (muži 0-59)"
+                },
+                {
+                    "locale": "fr",
+                    "property": "DESCRIPTION",
+                    "value": "Nombre de personnes ayant reçu la première dose d'un produit vaccinal"
+                },
+                {
+                    "locale": "pt",
+                    "property": "DESCRIPTION",
+                    "value": "Número de pessoas que receberam a primeira dose de um produto vacinal"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "Número de personas que reciben una primera dosis (hombres 0-59)"
+                },
+                {
+                    "locale": "pt",
+                    "property": "SHORT_NAME",
+                    "value": "Primeira dose - Número de pessoas (Masculino 0-59)"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "Nombre de personnes recevant une première dose (Homme, 0-59 ans)"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "Počet osob, kterým byla podána první dávka (muži 0-59)"
+                },
+                {
+                    "locale": "fr",
+                    "property": "SHORT_NAME",
+                    "value": "Première dose - Nombre de personnes (Homme, 0-59 ans)"
+                },
+                {
+                    "locale": "es",
+                    "property": "DESCRIPTION",
+                    "value": "Número de personas que han recibido una primera dosis de una vacuna."
+                },
+                {
+                    "locale": "cs",
+                    "property": "DESCRIPTION",
+                    "value": "Počet lidí, kteří dostali první dávku vakcínového produktu"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": []
+        },
+        {
+            "aggregateExportCategoryOptionCombo": "60PLUSY_M",
+            "aggregationType": "COUNT",
+            "analyticsPeriodBoundaries": [
+                {
+                    "analyticsPeriodBoundaryType": "BEFORE_END_OF_REPORTING_PERIOD",
+                    "attributeValues": [],
+                    "boundaryTarget": "EVENT_DATE",
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "YCoPFlLx2Hj",
+                    "translations": [],
+                    "userAccesses": [],
+                    "userGroupAccesses": []
+                },
+                {
+                    "analyticsPeriodBoundaryType": "AFTER_START_OF_REPORTING_PERIOD",
+                    "attributeValues": [],
+                    "boundaryTarget": "EVENT_DATE",
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "UJ2fnSssSrH",
+                    "translations": [],
+                    "userAccesses": [],
+                    "userGroupAccesses": []
+                }
+            ],
+            "analyticsType": "EVENT",
+            "attributeValues": [
+                {
+                    "attribute": {
+                        "id": "vudyDP7jUy5"
+                    },
+                    "value": "CVC_EIR_AGG_PPL_1ST_DOSE"
+                }
+            ],
+            "code": "CVC_EIR_PPL_1ST_DOSE_60PLUSY_M",
+            "decimals": 0,
+            "description": "Number of people who have had a first dose of a vaccine product",
+            "dimensionItem": "aIIHyDy8AMW",
+            "dimensionItemType": "PROGRAM_INDICATOR",
+            "expression": "V{tei_count}",
+            "externalAccess": false,
+            "favorite": false,
+            "filter": "A{oindugucx72} == 'MALE' && #{a1jCssI2LkW.LUIsbsm3okG} == 'DOSE1' && V{program_stage_id} == 'a1jCssI2LkW' && d2:yearsBetween(A{NI0QRzJvQ0k}, V{analytics_period_start})>=60",
+            "id": "aIIHyDy8AMW",
+            "legendSets": [],
+            "name": "Number of people receiving a first dose (Male 60+)",
+            "periodOffset": 0,
+            "program": {
+                "id": "yDuAzyqYABS"
+            },
+            "programIndicatorGroups": [
+                {
+                    "id": "NXBR4r6MwAO"
+                }
+            ],
+            "publicAccess": "rw------",
+            "shortName": "First dose - Number of people (Male 60+)",
+            "translations": [
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "Nombre de personnes recevant une première dose (Homme, plus de 60 ans)"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "Número de personas que reciben una primera dosis (hombres 60+ años)"
+                },
+                {
+                    "locale": "pt",
+                    "property": "NAME",
+                    "value": "Número de pessoas que recebem a primeira dose (homens com mais de 60 anos)"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "Počet osob, kterým byla podána první dávka (muži nad 60 let)"
+                },
+                {
+                    "locale": "fr",
+                    "property": "DESCRIPTION",
+                    "value": "Nombre de personnes ayant reçu la première dose d'un produit vaccinal"
+                },
+                {
+                    "locale": "pt",
+                    "property": "DESCRIPTION",
+                    "value": "Número de pessoas que receberam a primeira dose de um produto vacinal"
+                },
+                {
+                    "locale": "pt",
+                    "property": "SHORT_NAME",
+                    "value": "Primeira dose - Número de pessoas (homens com mais de 60 anos)"
+                },
+                {
+                    "locale": "fr",
+                    "property": "SHORT_NAME",
+                    "value": "Première dose - Nombre de personnes (Homme, plus de 60 ans)"
+                },
+                {
+                    "locale": "cs",
+                    "property": "SHORT_NAME",
+                    "value": "První dávka - počet osob (muži nad 60 let)"
+                },
+                {
+                    "locale": "es",
+                    "property": "SHORT_NAME",
+                    "value": "Primera dosis: número de personas (hombres 60+ años)"
+                },
+                {
+                    "locale": "es",
+                    "property": "DESCRIPTION",
+                    "value": "Número de personas que han recibido una primera dosis de una vacuna."
+                },
+                {
+                    "locale": "cs",
+                    "property": "DESCRIPTION",
+                    "value": "Počet lidí, kteří dostali první dávku vakcínového produktu"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": []
+        },
+        {
+            "aggregateExportCategoryOptionCombo": "0059Y_F",
+            "aggregationType": "COUNT",
+            "analyticsPeriodBoundaries": [
+                {
+                    "analyticsPeriodBoundaryType": "BEFORE_END_OF_REPORTING_PERIOD",
+                    "attributeValues": [],
+                    "boundaryTarget": "EVENT_DATE",
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "asX0qJKeNRz",
+                    "translations": [],
+                    "userAccesses": [],
+                    "userGroupAccesses": []
+                },
+                {
+                    "analyticsPeriodBoundaryType": "AFTER_START_OF_REPORTING_PERIOD",
+                    "attributeValues": [],
+                    "boundaryTarget": "EVENT_DATE",
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "ok8p8fM5eyR",
+                    "translations": [],
+                    "userAccesses": [],
+                    "userGroupAccesses": []
+                }
+            ],
+            "analyticsType": "EVENT",
+            "attributeValues": [
+                {
+                    "attribute": {
+                        "id": "vudyDP7jUy5"
+                    },
+                    "value": "CVC_EIR_AGG_PPL_2ND_DOSE"
+                }
+            ],
+            "code": "CVC_EIR_PPL_2ND_DOSE_0059Y_F",
+            "decimals": 0,
+            "description": "Number of females who have had a second, third, or booster dose of a vaccine product",
+            "dimensionItem": "xY4T9hHXNji",
+            "dimensionItemType": "PROGRAM_INDICATOR",
+            "expression": "V{tei_count}",
+            "externalAccess": false,
+            "favorite": false,
+            "filter": "A{oindugucx72} == 'FEMALE' && (#{a1jCssI2LkW.LUIsbsm3okG} == 'DOSE2' || #{a1jCssI2LkW.LUIsbsm3okG} == 'DOSE3' || #{a1jCssI2LkW.LUIsbsm3okG} == 'BOOSTER') && (#{a1jCssI2LkW.bbnyNYD1wgS} == 'ASTRAZENECA' || #{a1jCssI2LkW.bbnyNYD1wgS} == 'BIONTECHPFIZER' || #{a1jCssI2LkW.bbnyNYD1wgS} == 'MODERNA' || #{a1jCssI2LkW.bbnyNYD1wgS} == 'GAMALEYA' || #{a1jCssI2LkW.bbnyNYD1wgS} == 'SINOPHARM') && V{program_stage_id} == 'a1jCssI2LkW' && d2:yearsBetween(A{NI0QRzJvQ0k}, V{analytics_period_start})<= 59 ",
+            "id": "xY4T9hHXNji",
+            "legendSets": [],
+            "name": "Number of people receiving a second, third or booster dose (Female 0-59)",
+            "periodOffset": 0,
+            "program": {
+                "id": "yDuAzyqYABS"
+            },
+            "programIndicatorGroups": [
+                {
+                    "id": "NXBR4r6MwAO"
+                }
+            ],
+            "publicAccess": "rw------",
+            "shortName": "2nd, 3rd or booster dose - (Female 0-59)",
+            "translations": [
+                {
+                    "locale": "fr",
+                    "property": "SHORT_NAME",
+                    "value": "2ème, 3ème ou dose de rappel - (Femme, 0-59 ans)"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "Nombre de personnes recevant une deuxième, une troisième ou une dose de rappel (Femme, 0-59 ans)"
+                },
+                {
+                    "locale": "pt",
+                    "property": "DESCRIPTION",
+                    "value": "Número de mulheres que receberam uma segunda, terceira ou dose de reforço de um produto de vacina"
+                },
+                {
+                    "locale": "cs",
+                    "property": "DESCRIPTION",
+                    "value": "Počet žen, kterým byla podána druhá, třetí nebo přeočkovací dávka vakcínového produktu"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "Počet lidí, kteří dostávají druhou, třetí nebo posilovací dávku (ženy 0-59)"
+                },
+                {
+                    "locale": "es",
+                    "property": "SHORT_NAME",
+                    "value": "2.a, 3.a o dosis de refuerzo - (mujeres de 0-59)"
+                },
+                {
+                    "locale": "pt",
+                    "property": "SHORT_NAME",
+                    "value": "2ª, 3ª ou dose de reforço - (Mulher 0-59)"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "Número de personas que reciben una segunda, tercera o dosis de refuerzo (Mujeres 0-59)"
+                },
+                {
+                    "locale": "pt",
+                    "property": "NAME",
+                    "value": "Número de pessoas que recebem uma segunda, terceira ou dose de reforço (Feminino 0-59)"
+                },
+                {
+                    "locale": "cs",
+                    "property": "SHORT_NAME",
+                    "value": "2., 3. nebo posilovací dávka - (ženy 0-59)"
+                },
+                {
+                    "locale": "es",
+                    "property": "DESCRIPTION",
+                    "value": "Número de mujeres que han recibido una segunda, tercera o dosis de refuerzo de una vacuna."
+                },
+                {
+                    "locale": "fr",
+                    "property": "DESCRIPTION",
+                    "value": "Nombre de personnes de sexe féminin ayant reçu une deuxième, une troisième ou une dose de rappel d'un produit vaccinal"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": []
+        },
+        {
+            "aggregateExportCategoryOptionCombo": "60PLUSY_F",
+            "aggregationType": "COUNT",
+            "analyticsPeriodBoundaries": [
+                {
+                    "analyticsPeriodBoundaryType": "BEFORE_END_OF_REPORTING_PERIOD",
+                    "attributeValues": [],
+                    "boundaryTarget": "EVENT_DATE",
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "dg2gVpwtr6W",
+                    "translations": [],
+                    "userAccesses": [],
+                    "userGroupAccesses": []
+                },
+                {
+                    "analyticsPeriodBoundaryType": "AFTER_START_OF_REPORTING_PERIOD",
+                    "attributeValues": [],
+                    "boundaryTarget": "EVENT_DATE",
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "O4LjpfMyfeL",
+                    "translations": [],
+                    "userAccesses": [],
+                    "userGroupAccesses": []
+                }
+            ],
+            "analyticsType": "EVENT",
+            "attributeValues": [
+                {
+                    "attribute": {
+                        "id": "vudyDP7jUy5"
+                    },
+                    "value": "CVC_EIR_AGG_PPL_2ND_DOSE"
+                }
+            ],
+            "code": "CVC_EIR_PPL_2ND_DOSE_60PLUSY_F",
+            "decimals": 0,
+            "description": "Number of females who have had a second, third, or booster dose of a vaccine product",
+            "dimensionItem": "h9G7i6mQKef",
+            "dimensionItemType": "PROGRAM_INDICATOR",
+            "expression": "V{tei_count}",
+            "externalAccess": false,
+            "favorite": false,
+            "filter": "A{oindugucx72} == 'FEMALE' && (#{a1jCssI2LkW.LUIsbsm3okG} == 'DOSE2' || #{a1jCssI2LkW.LUIsbsm3okG} == 'DOSE3' || #{a1jCssI2LkW.LUIsbsm3okG} == 'BOOSTER') && (#{a1jCssI2LkW.bbnyNYD1wgS} == 'ASTRAZENECA' || #{a1jCssI2LkW.bbnyNYD1wgS} == 'BIONTECHPFIZER' || #{a1jCssI2LkW.bbnyNYD1wgS} == 'MODERNA' || #{a1jCssI2LkW.bbnyNYD1wgS} == 'GAMALEYA' || #{a1jCssI2LkW.bbnyNYD1wgS} == 'SINOPHARM') && V{program_stage_id} == 'a1jCssI2LkW' && d2:yearsBetween(A{NI0QRzJvQ0k}, V{analytics_period_start})>=60 ",
+            "id": "h9G7i6mQKef",
+            "legendSets": [],
+            "name": "Number of people receiving a second, third or booster dose (Female 60+)",
+            "periodOffset": 0,
+            "program": {
+                "id": "yDuAzyqYABS"
+            },
+            "programIndicatorGroups": [
+                {
+                    "id": "NXBR4r6MwAO"
+                }
+            ],
+            "publicAccess": "rw------",
+            "shortName": "2nd, 3rd, booster dose - (Female 60+)",
+            "translations": [
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "Número de personas que reciben una segunda, tercera o dosis de refuerzo (mujeres mayores de 60 años)"
+                },
+                {
+                    "locale": "pt",
+                    "property": "NAME",
+                    "value": "Número de pessoas que receberam uma segunda, terceira ou dose de reforço (mulheres com mais de 60 anos)"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "Nombre de personnes recevant une deuxième, une troisième ou une dose de rappel (Femme, plus de 60 ans)"
+                },
+                {
+                    "locale": "pt",
+                    "property": "DESCRIPTION",
+                    "value": "Número de mulheres que receberam uma segunda, terceira ou dose de reforço de um produto de vacina"
+                },
+                {
+                    "locale": "cs",
+                    "property": "SHORT_NAME",
+                    "value": "2., 3., posilovací dávka - (ženy 60+)"
+                },
+                {
+                    "locale": "cs",
+                    "property": "DESCRIPTION",
+                    "value": "Počet žen, kterým byla podána druhá, třetí nebo přeočkovací dávka vakcínového produktu"
+                },
+                {
+                    "locale": "es",
+                    "property": "SHORT_NAME",
+                    "value": "2da, 3ra, dosis de refuerzo - (Mujeres 60+)"
+                },
+                {
+                    "locale": "fr",
+                    "property": "SHORT_NAME",
+                    "value": "2ème, 3ème, dose de rappel - (Femme de plus de 60 ans)"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "Počet lidí, kteří dostávají druhou, třetí nebo posilovací dávku (žena 60+)"
+                },
+                {
+                    "locale": "es",
+                    "property": "DESCRIPTION",
+                    "value": "Número de mujeres que han recibido una segunda, tercera o dosis de refuerzo de una vacuna."
+                },
+                {
+                    "locale": "pt",
+                    "property": "SHORT_NAME",
+                    "value": "2ª, 3ª, dose de reforço - (Mulher 60+)"
+                },
+                {
+                    "locale": "fr",
+                    "property": "DESCRIPTION",
+                    "value": "Nombre de personnes de sexe féminin ayant reçu une deuxième, une troisième ou une dose de rappel d'un produit vaccinal"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": []
+        },
+        {
+            "aggregateExportCategoryOptionCombo": "0059Y_M",
+            "aggregationType": "COUNT",
+            "analyticsPeriodBoundaries": [
+                {
+                    "analyticsPeriodBoundaryType": "BEFORE_END_OF_REPORTING_PERIOD",
+                    "attributeValues": [],
+                    "boundaryTarget": "EVENT_DATE",
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "Svqj6LvG6nE",
+                    "translations": [],
+                    "userAccesses": [],
+                    "userGroupAccesses": []
+                },
+                {
+                    "analyticsPeriodBoundaryType": "AFTER_START_OF_REPORTING_PERIOD",
+                    "attributeValues": [],
+                    "boundaryTarget": "EVENT_DATE",
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "ADTUeyWoLAd",
+                    "translations": [],
+                    "userAccesses": [],
+                    "userGroupAccesses": []
+                }
+            ],
+            "analyticsType": "EVENT",
+            "attributeValues": [
+                {
+                    "attribute": {
+                        "id": "vudyDP7jUy5"
+                    },
+                    "value": "CVC_EIR_AGG_PPL_2ND_DOSE"
+                }
+            ],
+            "code": "CVC_EIR_PPL_2ND_DOSE_0059Y_M",
+            "decimals": 0,
+            "description": "Number of males who have had a second, third, or booster dose of a vaccine product",
+            "dimensionItem": "MGjwUUNsE60",
+            "dimensionItemType": "PROGRAM_INDICATOR",
+            "expression": "V{tei_count}",
+            "externalAccess": false,
+            "favorite": false,
+            "filter": "A{oindugucx72} == 'MALE' && (#{a1jCssI2LkW.LUIsbsm3okG} == 'DOSE2' || #{a1jCssI2LkW.LUIsbsm3okG} == 'DOSE3' || #{a1jCssI2LkW.LUIsbsm3okG} == 'BOOSTER') && (#{a1jCssI2LkW.bbnyNYD1wgS} == 'ASTRAZENECA' || #{a1jCssI2LkW.bbnyNYD1wgS} == 'BIONTECHPFIZER' || #{a1jCssI2LkW.bbnyNYD1wgS} == 'MODERNA' || #{a1jCssI2LkW.bbnyNYD1wgS} == 'GAMALEYA' || #{a1jCssI2LkW.bbnyNYD1wgS} == 'SINOPHARM') && V{program_stage_id} == 'a1jCssI2LkW' && d2:yearsBetween(A{NI0QRzJvQ0k}, V{analytics_period_start})<= 59 ",
+            "id": "MGjwUUNsE60",
+            "legendSets": [],
+            "name": "Number of people receiving a second, third or booster dose (Male 0-59)",
+            "periodOffset": 0,
+            "program": {
+                "id": "yDuAzyqYABS"
+            },
+            "programIndicatorGroups": [
+                {
+                    "id": "NXBR4r6MwAO"
+                }
+            ],
+            "publicAccess": "rw------",
+            "shortName": "2nd, 3rd or booster dose - (Male 0-59)",
+            "translations": [
+                {
+                    "locale": "fr",
+                    "property": "SHORT_NAME",
+                    "value": "2ème, 3ème, dose de rappel - (Homme, 0-59 ans)"
+                },
+                {
+                    "locale": "cs",
+                    "property": "DESCRIPTION",
+                    "value": "Počet mužů, kteří dostali druhou, třetí nebo posilovací dávku vakcínového produktu"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "Nombre de personnes recevant une deuxième, une troisième ou une dose de rappel (Homme, 0-59 ans)"
+                },
+                {
+                    "locale": "pt",
+                    "property": "DESCRIPTION",
+                    "value": "Número de homens que receberam uma segunda, terceira ou dose de reforço de um produto de vacina"
+                },
+                {
+                    "locale": "pt",
+                    "property": "SHORT_NAME",
+                    "value": "2ª, 3ª ou dose de reforço - (Masculino 0-59)"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "Número de personas que reciben una segunda, tercera o dosis de refuerzo (hombres 0-59)"
+                },
+                {
+                    "locale": "es",
+                    "property": "SHORT_NAME",
+                    "value": "2a, 3a o dosis de refuerzo - (Hombres 0-59)"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "Počet lidí, kteří dostávají druhou, třetí nebo posilovací dávku (muži 0-59)"
+                },
+                {
+                    "locale": "pt",
+                    "property": "NAME",
+                    "value": "Número de pessoas que receberam uma segunda, terceira ou dose de reforço (masculino, 0-59)"
+                },
+                {
+                    "locale": "es",
+                    "property": "DESCRIPTION",
+                    "value": "Número de hombres que han recibido una segunda, tercera o dosis de refuerzo de una vacuna."
+                },
+                {
+                    "locale": "fr",
+                    "property": "DESCRIPTION",
+                    "value": "Nombre de personnes de sexe masculin ayant reçu une deuxième, une troisième ou une dose de rappel d'un produit vaccinal"
+                },
+                {
+                    "locale": "cs",
+                    "property": "SHORT_NAME",
+                    "value": "2., 3. nebo posilovací dávka - (muži 0-59)"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": []
+        },
+        {
+            "aggregateExportCategoryOptionCombo": "60PLUSY_M",
+            "aggregationType": "COUNT",
+            "analyticsPeriodBoundaries": [
+                {
+                    "analyticsPeriodBoundaryType": "BEFORE_END_OF_REPORTING_PERIOD",
+                    "attributeValues": [],
+                    "boundaryTarget": "EVENT_DATE",
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "xhqu6Nes8z0",
+                    "translations": [],
+                    "userAccesses": [],
+                    "userGroupAccesses": []
+                },
+                {
+                    "analyticsPeriodBoundaryType": "AFTER_START_OF_REPORTING_PERIOD",
+                    "attributeValues": [],
+                    "boundaryTarget": "EVENT_DATE",
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "vrUuKOVeeS5",
+                    "translations": [],
+                    "userAccesses": [],
+                    "userGroupAccesses": []
+                }
+            ],
+            "analyticsType": "EVENT",
+            "attributeValues": [
+                {
+                    "attribute": {
+                        "id": "vudyDP7jUy5"
+                    },
+                    "value": "CVC_EIR_AGG_PPL_2ND_DOSE"
+                }
+            ],
+            "code": "CVC_EIR_PPL_2ND_DOSE_60PLUSY_M",
+            "decimals": 0,
+            "description": "Number of people who have had a second, third, or booster dose of a vaccine product",
+            "dimensionItem": "qh0kIjHZbP8",
+            "dimensionItemType": "PROGRAM_INDICATOR",
+            "expression": "V{tei_count}",
+            "externalAccess": false,
+            "favorite": false,
+            "filter": "A{oindugucx72} == 'MALE' && (#{a1jCssI2LkW.LUIsbsm3okG} == 'DOSE2' || #{a1jCssI2LkW.LUIsbsm3okG} == 'DOSE3' || #{a1jCssI2LkW.LUIsbsm3okG} == 'BOOSTER') && (#{a1jCssI2LkW.bbnyNYD1wgS} == 'ASTRAZENECA' || #{a1jCssI2LkW.bbnyNYD1wgS} == 'BIONTECHPFIZER' || #{a1jCssI2LkW.bbnyNYD1wgS} == 'MODERNA' || #{a1jCssI2LkW.bbnyNYD1wgS} == 'GAMALEYA' || #{a1jCssI2LkW.bbnyNYD1wgS} == 'SINOPHARM') && V{program_stage_id} == 'a1jCssI2LkW' && d2:yearsBetween(A{NI0QRzJvQ0k}, V{analytics_period_start})>=60 ",
+            "id": "qh0kIjHZbP8",
+            "legendSets": [],
+            "name": "Number of people receiving a second, third or booster dose (Male 60+)",
+            "periodOffset": 0,
+            "program": {
+                "id": "yDuAzyqYABS"
+            },
+            "programIndicatorGroups": [
+                {
+                    "id": "NXBR4r6MwAO"
+                }
+            ],
+            "publicAccess": "rw------",
+            "shortName": "2nd, 3rd, booster dose - (Male 60+)",
+            "translations": [
+                {
+                    "locale": "pt",
+                    "property": "DESCRIPTION",
+                    "value": "Número de pessoas que receberam uma segunda, terceira ou dose de reforço de um produto vacinal"
+                },
+                {
+                    "locale": "fr",
+                    "property": "DESCRIPTION",
+                    "value": "Nombre de personnes ayant reçu une deuxième, une troisième ou une dose de rappel d'un produit vaccinal"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "Número de personas que reciben una segunda, tercera o dosis de refuerzo (hombres 60+ años)"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "Počet lidí, kteří dostávají druhou, třetí nebo posilovací dávku (muži 60+)"
+                },
+                {
+                    "locale": "es",
+                    "property": "SHORT_NAME",
+                    "value": "2da, 3ra, dosis de refuerzo - (Hombres 60+)"
+                },
+                {
+                    "locale": "fr",
+                    "property": "SHORT_NAME",
+                    "value": "2ème, 3ème, dose de rappel - (Homme de plus de 60 ans)"
+                },
+                {
+                    "locale": "cs",
+                    "property": "DESCRIPTION",
+                    "value": "Počet lidí, kteří dostali druhou, třetí nebo posilovací dávku vakcínového produktu"
+                },
+                {
+                    "locale": "cs",
+                    "property": "SHORT_NAME",
+                    "value": "2., 3., posilovací dávka - (muži nad 60 let)"
+                },
+                {
+                    "locale": "pt",
+                    "property": "SHORT_NAME",
+                    "value": "2ª, 3ª, dose de reforço - (Masculino 60+)"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "Nombre de personnes recevant une deuxième, une troisième ou une dose de rappel (Homme de plus de 60 ans)"
+                },
+                {
+                    "locale": "pt",
+                    "property": "NAME",
+                    "value": "Número de pessoas que receberam uma segunda, terceira ou dose de reforço (masculino, 60+)"
+                },
+                {
+                    "locale": "es",
+                    "property": "DESCRIPTION",
+                    "value": "Number of people who have had a second, third, or booster dose of a vaccine product"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": []
+        },
+        {
+            "aggregateExportCategoryOptionCombo": "0059Y_F",
+            "aggregationType": "COUNT",
+            "analyticsPeriodBoundaries": [
+                {
+                    "analyticsPeriodBoundaryType": "BEFORE_END_OF_REPORTING_PERIOD",
+                    "attributeValues": [],
+                    "boundaryTarget": "EVENT_DATE",
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "XPwRRHW04v6",
+                    "translations": [],
+                    "userAccesses": [],
+                    "userGroupAccesses": []
+                },
+                {
+                    "analyticsPeriodBoundaryType": "AFTER_START_OF_REPORTING_PERIOD",
+                    "attributeValues": [],
+                    "boundaryTarget": "EVENT_DATE",
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "EeYDI2yXVDu",
+                    "translations": [],
+                    "userAccesses": [],
+                    "userGroupAccesses": []
+                }
+            ],
+            "analyticsType": "EVENT",
+            "attributeValues": [
+                {
+                    "attribute": {
+                        "id": "vudyDP7jUy5"
+                    },
+                    "value": "CVC_EIR_AGG_PPL_LAST_DOSE"
+                }
+            ],
+            "code": "CVC_EIR_PPL_LAST_DOSE_0059Y_F",
+            "decimals": 0,
+            "description": "Number of people who have had a last recommended dose of a vaccine product",
+            "dimensionItem": "Zp39TSOR8eW",
+            "dimensionItemType": "PROGRAM_INDICATOR",
+            "expression": "V{tei_count}",
+            "externalAccess": false,
+            "favorite": false,
+            "filter": "#{a1jCssI2LkW.DSOWCIdQ8Tr}==1 && V{program_stage_id} == 'a1jCssI2LkW' && d2:yearsBetween(A{NI0QRzJvQ0k}, V{analytics_period_start})<= 59  && A{oindugucx72} == 'FEMALE'",
+            "id": "Zp39TSOR8eW",
+            "legendSets": [],
+            "name": "Number of people who received the last recommended dose for the respective vaccine product (Female 0-59)",
+            "periodOffset": 0,
+            "program": {
+                "id": "yDuAzyqYABS"
+            },
+            "programIndicatorGroups": [
+                {
+                    "id": "NXBR4r6MwAO"
+                }
+            ],
+            "publicAccess": "rw------",
+            "shortName": "Received last dose (Female 0-59)",
+            "translations": [
+                {
+                    "locale": "fr",
+                    "property": "DESCRIPTION",
+                    "value": "Nombre de personnes ayant reçu la dernière dose recommandée d'un produit vaccinal"
+                },
+                {
+                    "locale": "es",
+                    "property": "DESCRIPTION",
+                    "value": "Número de personas que han recibido la última dosis recomendada de una vacuna"
+                },
+                {
+                    "locale": "pt",
+                    "property": "DESCRIPTION",
+                    "value": "Número de pessoas que receberam a última dose recomendada de um produto de vacina"
+                },
+                {
+                    "locale": "cs",
+                    "property": "DESCRIPTION",
+                    "value": "Počet lidí, kteří dostali poslední doporučenou dávku vakcínového produktu"
+                },
+                {
+                    "locale": "cs",
+                    "property": "SHORT_NAME",
+                    "value": "Přijatá poslední dávka (ženy 0-59)"
+                },
+                {
+                    "locale": "es",
+                    "property": "SHORT_NAME",
+                    "value": "Recibió última dosis (Mujeres 0-59)"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "Nombre de personnes ayant reçu la dernière dose recommandée du produit vaccinal concerné (Femme, 0-59 ans)"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "Número de personas que recibieron la última dosis recomendada para la vacuna respectiva (Mujeres 0-59)"
+                },
+                {
+                    "locale": "fr",
+                    "property": "SHORT_NAME",
+                    "value": "Personnes ayant reçu la dernière dose (Femme, 0-59 ans)"
+                },
+                {
+                    "locale": "pt",
+                    "property": "SHORT_NAME",
+                    "value": "Recebeu a última dose (Feminino 0-59)"
+                },
+                {
+                    "locale": "pt",
+                    "property": "NAME",
+                    "value": "Número de pessoas que receberam a última dose recomendada do respectivo produto vacinal (Feminino 0-59)"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "Počet osob, které dostaly poslední doporučenou dávku pro příslušný vakcínový produkt (ženy 0-59)"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": []
+        },
+        {
+            "aggregateExportCategoryOptionCombo": "60PLUSY_F",
+            "aggregationType": "COUNT",
+            "analyticsPeriodBoundaries": [
+                {
+                    "analyticsPeriodBoundaryType": "BEFORE_END_OF_REPORTING_PERIOD",
+                    "attributeValues": [],
+                    "boundaryTarget": "EVENT_DATE",
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "GCsNfv22Ht5",
+                    "translations": [],
+                    "userAccesses": [],
+                    "userGroupAccesses": []
+                },
+                {
+                    "analyticsPeriodBoundaryType": "AFTER_START_OF_REPORTING_PERIOD",
+                    "attributeValues": [],
+                    "boundaryTarget": "EVENT_DATE",
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "cWvfsQ9lp9C",
+                    "translations": [],
+                    "userAccesses": [],
+                    "userGroupAccesses": []
+                }
+            ],
+            "analyticsType": "EVENT",
+            "attributeValues": [
+                {
+                    "attribute": {
+                        "id": "vudyDP7jUy5"
+                    },
+                    "value": "CVC_EIR_AGG_PPL_LAST_DOSE"
+                }
+            ],
+            "code": "CVC_EIR_PPL_LAST_DOSE_60PLUSY_F",
+            "decimals": 0,
+            "description": "Number of people who have had a last recommended dose of a vaccine product",
+            "dimensionItem": "XFUvVgqPukT",
+            "dimensionItemType": "PROGRAM_INDICATOR",
+            "expression": "V{tei_count}",
+            "externalAccess": false,
+            "favorite": false,
+            "filter": "#{a1jCssI2LkW.DSOWCIdQ8Tr}==1 && V{program_stage_id} == 'a1jCssI2LkW' && d2:yearsBetween(A{NI0QRzJvQ0k}, V{analytics_period_start})>=60  && A{oindugucx72} == 'FEMALE'",
+            "id": "XFUvVgqPukT",
+            "legendSets": [],
+            "name": "Number of people who received the last recommended dose for the respective vaccine product (Female 60+)",
+            "periodOffset": 0,
+            "program": {
+                "id": "yDuAzyqYABS"
+            },
+            "programIndicatorGroups": [
+                {
+                    "id": "NXBR4r6MwAO"
+                }
+            ],
+            "publicAccess": "rw------",
+            "shortName": "Received last dose (Female 60+)",
+            "translations": [
+                {
+                    "locale": "pt",
+                    "property": "SHORT_NAME",
+                    "value": "Recebeu a última dose (Feminino 60+)"
+                },
+                {
+                    "locale": "fr",
+                    "property": "SHORT_NAME",
+                    "value": "Personnes ayant reçu la dernière dose (Femme de plus de 60 ans)"
+                },
+                {
+                    "locale": "fr",
+                    "property": "DESCRIPTION",
+                    "value": "Nombre de personnes ayant reçu la dernière dose recommandée d'un produit vaccinal"
+                },
+                {
+                    "locale": "es",
+                    "property": "DESCRIPTION",
+                    "value": "Número de personas que han recibido la última dosis recomendada de una vacuna"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "Número de personas que recibieron la última dosis recomendada para la vacuna respectiva (Mujeres 60+)"
+                },
+                {
+                    "locale": "pt",
+                    "property": "DESCRIPTION",
+                    "value": "Número de pessoas que receberam a última dose recomendada de um produto de vacina"
+                },
+                {
+                    "locale": "cs",
+                    "property": "DESCRIPTION",
+                    "value": "Počet lidí, kteří dostali poslední doporučenou dávku vakcínového produktu"
+                },
+                {
+                    "locale": "cs",
+                    "property": "SHORT_NAME",
+                    "value": "Přijatá poslední dávka (žena 60+)"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "Počet osob, které dostaly poslední doporučenou dávku pro příslušný vakcínový produkt (žena 60+)"
+                },
+                {
+                    "locale": "pt",
+                    "property": "NAME",
+                    "value": "Número de pessoas que receberam a última dose recomendada para o respectivo produto da vacina (Feminino 60+)"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "Nombre de personnes ayant reçu la dernière dose recommandée du produit vaccinal concerné (Femme de plus de 60 ans)"
+                },
+                {
+                    "locale": "es",
+                    "property": "SHORT_NAME",
+                    "value": "Recibió última dosis (Mujeres 60+)"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": []
+        },
+        {
+            "aggregateExportCategoryOptionCombo": "0059Y_M",
+            "aggregationType": "COUNT",
+            "analyticsPeriodBoundaries": [
+                {
+                    "analyticsPeriodBoundaryType": "BEFORE_END_OF_REPORTING_PERIOD",
+                    "attributeValues": [],
+                    "boundaryTarget": "EVENT_DATE",
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "Gug0D9u1l8W",
+                    "translations": [],
+                    "userAccesses": [],
+                    "userGroupAccesses": []
+                },
+                {
+                    "analyticsPeriodBoundaryType": "AFTER_START_OF_REPORTING_PERIOD",
+                    "attributeValues": [],
+                    "boundaryTarget": "EVENT_DATE",
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "J6PHCqbQa0Z",
+                    "translations": [],
+                    "userAccesses": [],
+                    "userGroupAccesses": []
+                }
+            ],
+            "analyticsType": "EVENT",
+            "attributeValues": [
+                {
+                    "attribute": {
+                        "id": "vudyDP7jUy5"
+                    },
+                    "value": "CVC_EIR_AGG_PPL_LAST_DOSE"
+                }
+            ],
+            "code": "CVC_EIR_PPL_LAST_DOSE_0059Y_M",
+            "decimals": 0,
+            "description": "Number of people who have had a last recommended dose of a vaccine product",
+            "dimensionItem": "FZNIlzPRMmL",
+            "dimensionItemType": "PROGRAM_INDICATOR",
+            "expression": "V{tei_count}",
+            "externalAccess": false,
+            "favorite": false,
+            "filter": "#{a1jCssI2LkW.DSOWCIdQ8Tr}==1 && V{program_stage_id} == 'a1jCssI2LkW' && d2:yearsBetween(A{NI0QRzJvQ0k}, V{analytics_period_start})<= 59  && A{oindugucx72} == 'MALE'",
+            "id": "FZNIlzPRMmL",
+            "legendSets": [],
+            "name": "Number of people who received the last recommended dose for the respective vaccine product (Male 0-59)",
+            "periodOffset": 0,
+            "program": {
+                "id": "yDuAzyqYABS"
+            },
+            "programIndicatorGroups": [
+                {
+                    "id": "NXBR4r6MwAO"
+                }
+            ],
+            "publicAccess": "rw------",
+            "shortName": "Received last dose (Male 0-59)",
+            "translations": [
+                {
+                    "locale": "fr",
+                    "property": "DESCRIPTION",
+                    "value": "Nombre de personnes ayant reçu la dernière dose recommandée d'un produit vaccinal"
+                },
+                {
+                    "locale": "es",
+                    "property": "DESCRIPTION",
+                    "value": "Número de personas que han recibido la última dosis recomendada de una vacuna"
+                },
+                {
+                    "locale": "pt",
+                    "property": "DESCRIPTION",
+                    "value": "Número de pessoas que receberam a última dose recomendada de um produto de vacina"
+                },
+                {
+                    "locale": "cs",
+                    "property": "DESCRIPTION",
+                    "value": "Počet lidí, kteří dostali poslední doporučenou dávku vakcínového produktu"
+                },
+                {
+                    "locale": "es",
+                    "property": "SHORT_NAME",
+                    "value": "Recibió la última dosis (hombres 0-59)"
+                },
+                {
+                    "locale": "cs",
+                    "property": "SHORT_NAME",
+                    "value": "Přijatá poslední dávka (muži 0-59)"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "Nombre de personnes ayant reçu la dernière dose recommandée du produit vaccinal concerné (Homme, 0-59 ans)"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "Número de personas que recibieron la última dosis recomendada para el producto de vacuna respectivo (hombres 0-59)"
+                },
+                {
+                    "locale": "pt",
+                    "property": "SHORT_NAME",
+                    "value": "Recebeu a última dose (Masculino 0-59)"
+                },
+                {
+                    "locale": "fr",
+                    "property": "SHORT_NAME",
+                    "value": "Personnes ayant reçu la dernière dose (Homme, 0-59 ans)"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "Počet osob, které dostaly poslední doporučenou dávku pro příslušný vakcínový produkt (muži 0-59)"
+                },
+                {
+                    "locale": "pt",
+                    "property": "NAME",
+                    "value": "Número de pessoas que receberam a última dose recomendada do respectivo produto vacinal (Masculino, 0-59)"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": []
+        },
+        {
+            "aggregateExportCategoryOptionCombo": "60PLUSY_M",
+            "aggregationType": "COUNT",
+            "analyticsPeriodBoundaries": [
+                {
+                    "analyticsPeriodBoundaryType": "BEFORE_END_OF_REPORTING_PERIOD",
+                    "attributeValues": [],
+                    "boundaryTarget": "EVENT_DATE",
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "TrVV2CchWJ1",
+                    "translations": [],
+                    "userAccesses": [],
+                    "userGroupAccesses": []
+                },
+                {
+                    "analyticsPeriodBoundaryType": "AFTER_START_OF_REPORTING_PERIOD",
+                    "attributeValues": [],
+                    "boundaryTarget": "EVENT_DATE",
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "uRnOepghP6P",
+                    "translations": [],
+                    "userAccesses": [],
+                    "userGroupAccesses": []
+                }
+            ],
+            "analyticsType": "EVENT",
+            "attributeValues": [
+                {
+                    "attribute": {
+                        "id": "vudyDP7jUy5"
+                    },
+                    "value": "CVC_EIR_AGG_PPL_LAST_DOSE"
+                }
+            ],
+            "code": "CVC_EIR_PEOPLE_LAST_DOSE_60PLUSY_M",
+            "decimals": 0,
+            "description": "Number of people who have had a last recommended dose of a vaccine product",
+            "dimensionItem": "zovL7DKBRuK",
+            "dimensionItemType": "PROGRAM_INDICATOR",
+            "expression": "V{tei_count}",
+            "externalAccess": false,
+            "favorite": false,
+            "filter": "#{a1jCssI2LkW.DSOWCIdQ8Tr}==1 && V{program_stage_id} == 'a1jCssI2LkW' && d2:yearsBetween(A{NI0QRzJvQ0k}, V{analytics_period_start})>=60  && A{oindugucx72} == 'MALE'",
+            "id": "zovL7DKBRuK",
+            "legendSets": [],
+            "name": "Number of people who received the last recommended dose for the respective vaccine product (Male 60+)",
+            "periodOffset": 0,
+            "program": {
+                "id": "yDuAzyqYABS"
+            },
+            "programIndicatorGroups": [
+                {
+                    "id": "NXBR4r6MwAO"
+                }
+            ],
+            "publicAccess": "rw------",
+            "shortName": "Received last dose (Male 60+)",
+            "translations": [
+                {
+                    "locale": "fr",
+                    "property": "DESCRIPTION",
+                    "value": "Nombre de personnes ayant reçu la dernière dose recommandée d'un produit vaccinal"
+                },
+                {
+                    "locale": "es",
+                    "property": "DESCRIPTION",
+                    "value": "Número de personas que han recibido la última dosis recomendada de una vacuna"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "Número de personas que recibieron la última dosis recomendada para el producto de vacuna respectivo (Hombres 60+)"
+                },
+                {
+                    "locale": "pt",
+                    "property": "DESCRIPTION",
+                    "value": "Número de pessoas que receberam a última dose recomendada de um produto de vacina"
+                },
+                {
+                    "locale": "cs",
+                    "property": "DESCRIPTION",
+                    "value": "Počet lidí, kteří dostali poslední doporučenou dávku vakcínového produktu"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "Počet osob, které dostaly poslední doporučenou dávku pro příslušný vakcínový produkt (muži 60+)"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "Nombre de personnes ayant reçu la dernière dose recommandée du produit vaccinal concerné (Homme de plus de 60 ans)"
+                },
+                {
+                    "locale": "es",
+                    "property": "SHORT_NAME",
+                    "value": "Recibió la última dosis (hombres 60+ años)"
+                },
+                {
+                    "locale": "cs",
+                    "property": "SHORT_NAME",
+                    "value": "Přijatá poslední dávka (muži 60+)"
+                },
+                {
+                    "locale": "fr",
+                    "property": "SHORT_NAME",
+                    "value": "Personnes ayant reçu la dernière dose (Homme de plus de 60 ans)"
+                },
+                {
+                    "locale": "pt",
+                    "property": "NAME",
+                    "value": "Número de pessoas que receberam a última dose recomendada do respectivo produto da vacina (homens com mais de 60 anos)"
+                },
+                {
+                    "locale": "pt",
+                    "property": "SHORT_NAME",
+                    "value": "Recebeu a última dose (Masculino 60+)"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": []
+        },
+        {
+            "aggregationType": "COUNT",
+            "analyticsPeriodBoundaries": [
+                {
+                    "analyticsPeriodBoundaryType": "BEFORE_END_OF_REPORTING_PERIOD",
+                    "attributeValues": [],
+                    "boundaryTarget": "EVENT_DATE",
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "TrN2M86jvXU",
+                    "translations": [],
+                    "userAccesses": [],
+                    "userGroupAccesses": []
+                },
+                {
+                    "analyticsPeriodBoundaryType": "AFTER_START_OF_REPORTING_PERIOD",
+                    "attributeValues": [],
+                    "boundaryTarget": "EVENT_DATE",
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "id": "eOKM08kSxvP",
+                    "translations": [],
+                    "userAccesses": [],
+                    "userGroupAccesses": []
+                }
+            ],
+            "analyticsType": "EVENT",
+            "attributeValues": [
+                {
+                    "attribute": {
+                        "id": "vudyDP7jUy5"
+                    },
+                    "value": "CVC_EIR_AGG_PPL_UNDER_CONDITIONS"
+                }
+            ],
+            "code": "CVC_EIR_PPL_UNDER_CONDITIONS",
+            "decimals": 0,
+            "description": "Count of people who have one or more underlying conditions",
+            "dimensionItem": "Zn0UuSRYyJw",
+            "dimensionItemType": "PROGRAM_INDICATOR",
+            "expression": "V{tei_count}",
+            "externalAccess": false,
+            "favorite": false,
+            "filter": "#{a1jCssI2LkW.bCtWZGjSWM8}== 'YES' && V{program_stage_id} == 'a1jCssI2LkW'\n",
+            "id": "Zn0UuSRYyJw",
+            "legendSets": [],
+            "name": "People with underlying conditions",
+            "periodOffset": 0,
+            "program": {
+                "id": "yDuAzyqYABS"
+            },
+            "programIndicatorGroups": [
+                {
+                    "id": "NXBR4r6MwAO"
+                }
+            ],
+            "publicAccess": "rw------",
+            "shortName": "People with underlying conditions",
+            "translations": [
+                {
+                    "locale": "fr",
+                    "property": "SHORT_NAME",
+                    "value": "Personnes ayant des affections sous-jacentes"
+                },
+                {
+                    "locale": "pt",
+                    "property": "SHORT_NAME",
+                    "value": "Condições subjacentes - Pessoas com"
+                },
+                {
+                    "locale": "fr",
+                    "property": "DESCRIPTION",
+                    "value": "Nombre de personnes souffrant d'une ou plusieurs affections sous-jacentes"
+                },
+                {
+                    "locale": "pt",
+                    "property": "DESCRIPTION",
+                    "value": "Número de pessoas que têm uma ou mais doenças subjacentes"
+                },
+                {
+                    "locale": "pt",
+                    "property": "NAME",
+                    "value": "Condições subjacentes - Pessoas com"
+                },
+                {
+                    "locale": "es",
+                    "property": "DESCRIPTION",
+                    "value": "Número de personas que tienen una o más afecciones subyacentes"
+                },
+                {
+                    "locale": "cs",
+                    "property": "SHORT_NAME",
+                    "value": "Základní podmínky - lidé s"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "Personnes ayant des affections sous-jacentes"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "Condiciones subyacentes - Gente con"
+                },
+                {
+                    "locale": "es",
+                    "property": "SHORT_NAME",
+                    "value": "Condiciones subyacentes - Gente con"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "Základní podmínky - lidé s"
+                },
+                {
+                    "locale": "cs",
+                    "property": "DESCRIPTION",
+                    "value": "POČET lidí, kteří mají jednu nebo více základních podmínek"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": []
+        }
+    ]
+}
