@@ -4,17 +4,31 @@
 
 The COVID-19 Immunization System Design document provides an overview of the conceptual design used to configure a DHIS2-tracker program serving as an electronic immunization registry for COVID-19 vaccines. This document is intended for use by DHIS2 implementers at country and regional level to be able to support implementation and localization of the package. Local work flows, national guidelines, and the respective vaccination product guidelines should be considered in the localization and adaptation of this configuration package.
 
-This package was developed in response to an expressed need from countries and partners to monitor equity and uptake of COVID-19 vaccines across priority groups, track individuals through the completion of their
+This package was developed in response to an expressed need from countries and partners to monitor equity and uptake of COVID-19 vaccines across priority groups, track individuals through the completion of their vaccination schedule. 
 
-improve timeliness, accuracy of data, expand coverage, efficiency and effectiveness  delivery of the COVID-19 vaccines. It is based on the [Guidance on developing a national deployment and vaccination plan for COVID-19 vaccines](https://www.who.int/publications/i/item/WHO-2019-nCoV-Vaccine_deployment-2020.1) as well as feedback from WHO and CDC officials and general vaccination standards and guidance adapted from the DHIS2 immunization registry package
+
+The goal of this package is to improve timeliness, accuracy of data, expand coverage, efficiency and effectiveness  delivery of the COVID-19 vaccines. It is based on the Guidance on developing a national deployment and vaccination plan for COVID-19 vaccines: <https://www.who.int/publications/i/item/WHO-2019-nCoV-Vaccine_deployment-2020.1> as well as feedback from WHO and CDC officials and general vaccination standards and guidance adapted from the DHIS2 immunization registry package
+
 
 Because national guidelines and policies will vary, this package should be adapted to national context.
+
 
 ## System Design Overview
 
 ### Use Case
 
 The tracker data model in DHIS2 enables an individual to be registered and followed  across a series of health services over time. This model can be leveraged to track individuals’ completion of vaccination schedules according to national policy and product recommendations, as well as capture robust individual level data to support analysis of vaccine distribution, uptake, and completion according to demographics, underlying conditions , and other variables.
+
+### Content
+
+The package includes:
+
+* Tracker programme which registers individual and each vaccination event
+* A set of program indicators which covers the requirements from the WHO guidance on Vaccine deployment.
+* A set of program indicatos which feeds into an aggregate data set for daily monitoring
+* An aggregate dataset for daily monitoring which
+* A set of indicators based on the aggregate data set
+* A daily monitoring dashboard based on the aggregate data set
 
 ### Intended Users
 
@@ -71,7 +85,7 @@ Workflows will vary from country to country. The program design should be review
 
 ### Vaccine products in the program
 
-The specific COVID-19 products available in the country and vaccine schedules will vary by country. This package includes vaccine products following the documentation available from WHO, which will continue to evolve as vaccines enter the market: <https://extranet.who.int/pqweb/sites/default/files/documents/Status_COVID_VAX_16Feb2021.pdf>
+The specific COVID-19 products available in the country and vaccine schedules will vary by country. This package includes vaccine products following the documentation available from WHO, which will continue to evolve as [vaccines enter the market](https://extranet.who.int/pqweb/sites/default/files/documents/Status_COVID_VAX_16Feb2021.pdf)
 
 In order to better demonstrate functionality, these placeholders have been configured based on five existing vaccine products, but it is important to verify and configure the programme based on the national adoption guidelines for the product. 
 
@@ -175,7 +189,9 @@ To modify this, edit the expression to filter out the vaccine products not in us
 
 #### Total number of doses
 
+
 The data element “Total doses required for this vaccine product” is an autofilled data element which displays the amount of doses required for this vaccine product’s vaccination schedule. Currently, all vaccines have two doses in their schedule. However, there is an individual rule for each vaccine in case this changes in the future:
+
 
 To modify, edit the corresponding rule: Assign dose number to NAMEOFPRODUCT
 
@@ -188,7 +204,9 @@ If the program matches the filter, then the action will assign value to the “T
 
 The program has been set up as a “protected” program, meaning that users are able to search in other org units beyond the ones they have rights to, but if they want to access records in a different facility, they must use the “breaking the glass” function and not down why they are accessing records in a different organisation unit.  
 
-Note that the breaking the glass feature is not supported in Android 2.3 and android users are unable to search other organisation units when the program is set as protected. More information about [Breaking the glass](#capture_app_programs_breaking_the_glass)
+
+Note that the [breaking the glass feature is not supported in Android ](https://docs.dhis2.org/2.35/en/dhis2_android_capture_app/programs.html#breaking-the-glass) and android users are unable to search other organisation units when the program is set as protected. 
+
 
 #### Enrollment Details
 
@@ -214,7 +232,7 @@ Section 1.1 Underlying conditions.
 
 ![Underlying conditions](resources/images/Covac_underlying.png)
 
-The underlying conditions listed here are based on the guidelines for the COVID case surveillance and contact tracing packages, and they also include health states such as pregnancy and lactation. The pregnancy and lactation options  only appear for females. Once one of the underlying conditions (except for pregnancy) are selected, they will remain selected in the following stage (as this is a repeatable stage) and they will be listed in the indicator box. \
+The underlying conditions listed here are based on the guidelines for the COVID case surveillance and contact tracing packages, and they also include health states such as pregnancy and lactation. The pregnancy and lactation options  only appear for females. Once one of the underlying conditions (except for pregnancy) are selected, they will remain selected in the following stage (as this is a repeatable stage) and they will be listed in the indicator box. 
 
 #### Section 1.2 Pre Immunization Questions
 
@@ -270,11 +288,12 @@ The stage is configured to ‘Ask the user to create a new event when a stage is
 
 ### User Groups
 
-The programme is packaged together with three user groups:
+The programme is packaged together with four user groups:
 
-COVAC - Covid Immunization Metadata Admin: Has the rights to edit the metadata of the package but not to enter data into the package
-COVAC - Covid Immunization Data Entry: Has the rights to enter data into tracker
-COVAC - Covid Immunization Data Analysis: Has access to the dashboards, but cannot enter data.
+*COVAC - Covid Immunization Metadata Admin:* Has the rights to edit the metadata of the package but not to enter data into the package
+*COVAC - Covid Immunization Data Entry:* Has the rights to enter data into tracker
+*COVAC - Covid Immunization Data Analysis:* Has access to the dashboards, but cannot enter data.
+*COVAC - Covid-19 Immunization data Admin:* This is an Admin group which is shared between tracker and aggregate and can both capture and view data in both programs. This usergroup is mainly for the user which would run the tracker to aggregate scripts as well as acces the dataset through the data entry app.
 
 These should be adapted to national needs
 
@@ -284,7 +303,7 @@ DHIS2 does not support printing a vaccination certificate or generating an elect
 
 ### SMS Notifications
 
-DHIS2 has an SMS notifications module, but in order to use the notifications, and SMS gateway needs to be configured. See documentation on sms gateways here: <https://docs.dhis2.org/en/develop/using-the-api/dhis-core-version-master/sms.html>
+DHIS2 has an SMS notifications module, but in order to use the notifications, and SMS gateway needs to be configured. See documentation on sms gateways [here](https://docs.dhis2.org/en/develop/using-the-api/dhis-core-version-master/sms.html)
 
 The programme includes a default reminder 7 days before the scheduled due date for a vaccination event:
 
@@ -316,67 +335,72 @@ Those whose enrollment has been completed
 
 ## Analytics
 
+To optimize performance for anticipated large-scale deployments and the use of high-volume campaign-style vaccine administration strategies, this package is designed to serve analytics objects and dashboards through the aggregate data model. 
+
+In addition to ensuring maximum performance for analytics users accessing the dashboards in near real-time while high-volume data entry through Tracker is likely ongoing, aggregating tracker data and serving the dashboards through the aggregate domain has the added benefit of making data dimensions available for analytics users (e.g. based on Categories for disaggregation). 
+
+In order to serve COVID-19 analytics from the COVID-19 EIR tracker program source data, the package includes the following components:
+An aggregate data set with data elements and category combos (to serve as a target for pushing tracker data to aggregate model)
+A dashboard based on aggregate domain indicators (replaces the tracker-based (program indicator-based) dashboard in previous versions)
+A group of program indicators with attributes mapped to the target aggregate DEs/COCs 
+
+### Dashboard
+
+This package contains a simplified COVAC Daily Monitoring Dashboard (iBWlFCvvtkH) to facilitate daily/near real-time analysis during campaign-style vaccine delivery activities. This dashboard is designed to be as light as possible, serving a core set of metrics optimized for daily monitoring of vaccine delivery operations. The dashboard indicators were selected as a subset of the monitoring guidance included in the WHO Guidance on developing a national deployment and vaccination plan for COVID-19 vaccines. [WHO Guidance on developing a national deployment and vaccination plan for COVID-19 vaccines](https://www.who.int/publications/i/item/WHO-2019-nCoV-Vaccine_deployment-2020.1).
+The  “COVAC Daily Monitoring Dashboard” ((iBWlFCvvtkH)  is configured entirely based on indicators belonging to the indicator group COVAC - Daily (doQTIS8KJQH). This will enable countries to map dashboard indicators to their own set of underlying data elements, if the target aggregate data set and data elements are customized for local implementation. 
+
+For a complete monitoring dashboard covering additional aspects of the WHO NDVP Monitoring Guidance (such as vaccine coverage and uptake by target groups, indicators on adverse events, supply & cold chain), refer to the [COVAC Core Dashboard/Aggregate metadata package](https://docs.dhis2.org/en/topics/metadata/covid-19-vaccine-delivery/covac-aggregate/version-110/design.html). 
+
+If your instance already has a dashboard from previous version of this package, it is recommended that it is deleted, or that access to it is limited to a few users. For instructions on how to delete dashboards see the [installation guide] (https://docs.dhis2.org/en/topics/metadata/covid-19-vaccine-delivery/covac-immunization-registry-tracker/installation.html)
+
+
+### Aggregate Data Set 
+
+An aggregate dataset ‘COVAC - EIR tracker data (aggregated)’ has been configured with daily frequency as a target for pushing tracker program indicator-based calculated data values to the aggregate domain. The dataset contains the following Data Elements:
+
+People with 1st dose
+People with 2nd, 3rd or booster doses
+People with last recommended dose
+People with underlying conditions
+
+![Aggregate data entry](resources/images/covac_agg_data_entry.png)
+
+Where possible, Category Combinations, Categories (and their associated CategoryOptionCombos and Category Options) were re-used from the existing (COVAC Core Dashboard/Aggregate metadata package](https://docs.dhis2.org/en/topics/metadata/covid-19-vaccine-delivery/covac-aggregate/version-110/design.html) to facilitate analysis across data elements from these two packages.
+
+These data elements and COCs are expected to be populated from tracker program indicators, as described below. 
+
 ### Program Indicators
 
-Program indicators have been configured to align with the WHO Monitoring Guidelines for COVID-19 vaccine delivery. These program indicators can facilitate pushing aggregated data from the tracker program to the COVID-19 core aggregate module for analysis. This can be particularly useful if a country has hybrid systems in place, where some sites use the electronic immunization registry and others may rely on paper-based reporting.  
+A group of Program Indicators, COVAC-Tracker to aggregate (NXBR4r6MwAO) has been configured and mapped (via attributes) to facilitate pushing data values to the associated target aggregate domain Data Elements and COCs as described above. An example of this mapping is as follows:
 
-#### Number of people receiving a first dose - COV-1
+| Program indicator (Name) | Program indicator UID | Pushed to Aggregate DE (Name) | Aggregate DE UID | Mapped to Indicator (Name) | Indicator UID |
+|---|---|---|---|---|---|
+| Number of people receiving a first dose (Female 0-59) | RJ6pdxga9Od | COVAC- People with 1st dose | RjT7dmzunF4 | COVAC - People with 1st dose | GeAtojrj7Yy |
+| Number of people receiving a first dose (Female 60+) | x4L0LuEBHhW | COVAC- People with 1st dose | RjT7dmzunF5 | COVAC - People with 1st dose | GeAtojrj7Yy |
+| Number of people receiving a first dose (Male 0-59) | hqm8znlAzkT | COVAC- People with 1st dose | RjT7dmzunF6 | COVAC - People with 1st dose | GeAtojrj7Yy |
+| Number of people receiving a first dose (Male 60+) | aIIHyDy8AMW | COVAC- People with 1st dose | RjT7dmzunF7 | COVAC - People with 1st dose | GeAtojrj7Yy |
+| Number of people receiving a second, third or booster dose (Female 0-59) | xY4T9hHXNji | COVAC - People with 2nd, 3rd or booster doses | zmKNuqgsq8N | COVAC - People with 2nd, 3rd, or booster doses | ddZjJCwXf6k |
+| Number of people receiving a second, third or booster dose (Female 60+) | h9G7i6mQKef | COVAC - People with 2nd, 3rd or booster doses | zmKNuqgsq8N | COVAC - People with 2nd, 3rd, or booster doses | ddZjJCwXf6k |
+| Number of people receiving a second, third or booster dose (Male 0-59) | MGjwUUNsE60 | COVAC - People with 2nd, 3rd or booster doses | zmKNuqgsq8N | COVAC - People with 2nd, 3rd, or booster doses | ddZjJCwXf6k |
+| Number of people receiving a second, third or booster dose (Male 60+) | qh0kIjHZbP8 | COVAC - People with 2nd, 3rd or booster doses | zmKNuqgsq8N | COVAC - People with 2nd, 3rd, or booster doses | ddZjJCwXf6k |
+| Number of people who received the last recommended dose for the respective vaccine product (Female 0-59) | Zp39TSOR8eW | COVAC - People with last recommended dose | CB46jykiEye | COVAC - People with last recommended dose | OAZXVEjEEoD |
+| Number of people who received the last recommended dose for the respective vaccine product (Female 60+) | XFUvVgqPukT | COVAC - People with last recommended dose | CB46jykiEye | COVAC - People with last recommended dose | OAZXVEjEEoD |
+| Number of people who received the last recommended dose for the respective vaccine product (Male 0-59) | FZNIlzPRMmL | COVAC - People with last recommended dose | CB46jykiEye | COVAC - People with last recommended dose | OAZXVEjEEoD |
+| Number of people who received the last recommended dose for the respective vaccine product (Male 60+) | zovL7DKBRuK | COVAC - People with last recommended dose | CB46jykiEye | COVAC - People with last recommended dose | OAZXVEjEEoD |
+| People with underlying conditions | Zn0UuSRYyJw | COVAC - People with underlying conditions | OUI05zSKrqk | COVAC - People with underlying conditions | KIgI3EPjs2T |
 
-The number of people receiving a first dose of the vaccine
 
-This is a programme indicator which filters those who are marked as having received the first dose of the vaccine.
+Additional program indicators have been configured to enable ad hoc analysis of the tracker data itself (e.g. coverage rates calculated based on tracker data, etc). However, these program indicators are not used in the COVAC - Daily Monitoring dashboard. 
 
-#### Number of people receiving a second, third or booster dose - COV-2
+##Transferring aggregated tracker domain data to aggregate domain data values
+In addition to the metadata provided above, implementations will require a mechanism to push the program indicator values from the tracker domain to the target aggregate data set. More information about this can be found in this chapter of the DHIS2 Implementation Guide: [Integrating Tracker and Aggregate Data](https://github.com/dhis2/dhis2-docs-implementation/blob/master/content/maintenance_use/tracker-aggregate-integration.md)
 
-The number of people receiving a second or third dose of the vaccine, plus any booster doses. This is a programme indicator which filters using the same data element as COV-1, but with the second, third or booster dose.
-
-#### Number of people who received the last recommended dose for the respective vaccine product - COV-c
-
- The number of people who received the last recommended dose for the respective vaccine product. The “c” denotes the dose that completes the schedule, which might be a first, second or third dose depending on the product that was used.
-
-#### Doses given  COV-n
-
-This program indicator counts the raw amount of doses given  
-
-#### Drop-out from COV-1 to COV-c
-
-The proportion of people who received at least one dose of a COVID-19 vaccine but did not receive the last dose in the schedule yet. Calculated as: (COV-1 – COV-c)/COV-1  We have made a drop-out indicator for each of the placeholder vaccine products in the tracker program.
-
-For a more accurate and timely dropout rate during a large scale up of two-dose vaccinations, the dashboards do not show gross totals first dose and last doses provided each reporting period. Instead, the dropout rate is calculated using a discrete time boundary between enrollment and final dose. For example, if a maximum 30 day period is assumed between the first and final doses, then a patient provided a first dose is only considered a "dropout" during a reporting period that is exactly 30 days after the first dose. The patient is not considered as a dropout less than 30 days after the first dose, and is not included as a dropout in subsequent reporting periods.
-For these indicators, we have assumed:
-For AstraZeneca: 10 days
-
-For PfizerBionTech: 21 days
-
-For Moderna: 28 days
-
-For Gamaleya: 21 days
-
-For Sinovac: 28 days
-
-#### Vaccine uptake
-
-The amount of people who have received at least one dose of one of the respective vaccine products. There is one indicator per product.
-
-### Dashboards
-
-The immunization registry dashboard contains key monitoring indicators that are aligned with the WHO’s Monitoring Guidance for COVID-19 vaccine delivery and the aggregate COVID-19 immunisation package.
-
-The first group of items in the dashboard gives a quick overview of the uptake of vaccines, doses administered, and disaggregates them by variables such as sex, age, geographical area, and vaccines. The second group of items shows the drop-out rates and the numbers of completed vaccination schedules.
-
-![Dashboard 1](resources/images/Covac_dashboard1.png)
-
-![Dashboard 4](resources/images/Covac_dashboard4.png)
-
-![Dashboard 2](resources/images/Covac_dashboard2.png)
-
-![Dashboard 3](resources/images/Covac_dashboard3.png)
 
 ## Considerations for when implementing with Android devices
 
 ### Access level ‘protected’
 
-The ‘breaking the glass’ feature is not yet supported in DHIS2 Android Capture App as of v. 2.3. If the program is configured as ‘Protected’, the default behavior for Android will be the same as if the program is configured as ‘closed.’ This means that an Android user will not be able to read or edit enrollments of a TEI outside of their org unit. TEIs registered in a Search OU will be returned by the TE Type search but if the program is closed or protected the user will not be allowed to see or create a new enrollment. If Android users must be able to access TEI outside of their data capture org unit, the program should be configured with access level ‘Open.’ <https://jira.dhis2.org/browse/ANDROAPP-657>
+The ‘breaking the glass’ feature is not yet supported in DHIS2 Android Capture App as of v. 2.3. If the program is configured as ‘Protected’, the default behavior for Android will be the same as if the program is configured as ‘closed.’ This means that an Android user will not be able to read or edit enrollments of a TEI outside of their org unit. TEIs registered in a Search OU will be returned by the TE Type search but if the program is closed or protected the user will not be allowed to see or create a new enrollment. If Android users must be able to access TEI outside of their data capture org unit, the program should be configured with access level ‘Open.’ Follow the status of this issue on [Jira](https://jira.dhis2.org/browse/ANDROAPP-657)
 
 ### Dose due date
 
@@ -384,21 +408,4 @@ The description of the due date is not correctly displayed on android and instea
 
 ### Reserve IDs
 
-The unique identifier for this package is autogenerated and uses the pattern "CURRENT_DATE(yyyy-MM-dd)-"-"-SEQUENTIAL(#####)". With android devices, the values for these system generated UIDs are reserved in advance for each device, to ensure that the values are unique for the whole instance. This means that the value of the date and of the sequencial number will not necessarilly correspond with what today's date and the chronological order of when a patient receives the vaccine. More information about this can be found here: <https://docs.dhis2.org/en/implement/implementing-with-android/dhis2-configuration-for-android.html#configuration_reserved_id>
-
-## Import considerations
-
-### Importing event reports
-
-There is currently a bug that prevents the importing event reports. <https://jira.dhis2.org/browse/DHIS2-10163>
-
-![Summary of doses](resources/images/Covac_event_report1.png)
-
-Use the events report app and select the “Pivot table” function and the “event” output type. Then select the data element “COVAC - Dose Number” and add the doses 1 and 2 (3+ booster if the used vaccine products require it); the Program attribute “Sex”; and the DE “COVAC - Vaccine name”.
-
-![settings for event report](resources/images/Covac_event_report2.png)
-
-Arrange then the layout of the table with DE COVAC - Dose Number and PA Sex in the Column dimensions, and DE COVAC - Vaccine Name in the Row Dimensions:
-
-![Settings for event report](resources/images/Covac_event_report3.png)
-
+The unique identifier for this package is autogenerated and uses the pattern "CURRENT_DATE(yyyy-MM-dd)-"-"-SEQUENTIAL(#####)". With android devices, the values for these system generated UIDs are reserved in advance for each device, to ensure that the values are unique for the whole instance. This means that the value of the date and of the sequencial number will not necessarilly correspond with what today's date and the chronological order of when a patient receives the vaccine. More information about this can be found [here](https://docs.dhis2.org/en/implement/implementing-with-android/dhis2-configuration-for-android.html#configuration_reserved_id)
