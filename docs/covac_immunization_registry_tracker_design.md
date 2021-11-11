@@ -331,58 +331,72 @@ Those whose enrollment has been completed
 
 ## Analytics
 
+To optimize performance for anticipated large-scale deployments and the use of high-volume campaign-style vaccine administration strategies, this package is designed to serve analytics objects and dashboards through the aggregate data model. 
+
+In addition to ensuring maximum performance for analytics users accessing the dashboards in near real-time while high-volume data entry through Tracker is likely ongoing, aggregating tracker data and serving the dashboards through the aggregate domain has the added benefit of making data dimensions available for analytics users (e.g. based on Categories for disaggregation). 
+
+In order to serve COVID-19 analytics from the COVID-19 EIR tracker program source data, the package includes the following components:
+An aggregate data set with data elements and category combos (to serve as a target for pushing tracker data to aggregate model)
+A dashboard based on aggregate domain indicators (replaces the tracker-based (program indicator-based) dashboard in previous versions)
+A group of program indicators with attributes mapped to the target aggregate DEs/COCs 
+
+### Dashboard
+
+This package contains a simplified COVAC Daily Monitoring Dashboard (iBWlFCvvtkH) to facilitate daily/near real-time analysis during campaign-style vaccine delivery activities. This dashboard is designed to be as light as possible, serving a core set of metrics optimized for daily monitoring of vaccine delivery operations. The dashboard indicators were selected as a subset of the monitoring guidance included in the WHO Guidance on developing a national deployment and vaccination plan for COVID-19 vaccines. [WHO Guidance on developing a national deployment and vaccination plan for COVID-19 vaccines](https://www.who.int/publications/i/item/WHO-2019-nCoV-Vaccine_deployment-2020.1).
+The  “COVAC Daily Monitoring Dashboard” ((iBWlFCvvtkH)  is configured entirely based on indicators belonging to the indicator group COVAC - Daily (doQTIS8KJQH). This will enable countries to map dashboard indicators to their own set of underlying data elements, if the target aggregate data set and data elements are customized for local implementation. 
+
+For a complete monitoring dashboard covering additional aspects of the WHO NDVP Monitoring Guidance (such as vaccine coverage and uptake by target groups, indicators on adverse events, supply & cold chain), refer to the [COVAC Core Dashboard/Aggregate metadata package](https://docs.dhis2.org/en/topics/metadata/covid-19-vaccine-delivery/covac-aggregate/version-110/design.html). 
+
+If your instance already has a dashboard from previous version of this package, it is recommended that it is deleted, or that access to it is limited to a few users. For instructions on how to delete dashboards see the [installation guide] (https://docs.dhis2.org/en/topics/metadata/covid-19-vaccine-delivery/covac-immunization-registry-tracker/installation.html)
+
+
+
+### Aggregate Data Set 
+
+An aggregate dataset ‘COVAC - EIR tracker data (aggregated)’ has been configured with daily frequency as a target for pushing tracker program indicator-based calculated data values to the aggregate domain. The dataset contains the following Data Elements:
+
+People with 1st dose
+People with 2nd, 3rd or booster doses
+People with last recommended dose
+People with underlying conditions
+
+![Aggregate data entry](resources/images/covac_agg_data_entry.png)
+
+
+
+Where possible, Category Combinations, Categories (and their associated CategoryOptionCombos and Category Options) were re-used from the existing (COVAC Core Dashboard/Aggregate metadata package](https://docs.dhis2.org/en/topics/metadata/covid-19-vaccine-delivery/covac-aggregate/version-110/design.html) to facilitate analysis across data elements from these two packages.
+
+These data elements and COCs are expected to be populated from tracker program indicators, as described below. 
+
 ### Program Indicators
 
-Program indicators have been configured to align with the WHO Monitoring Guidelines for COVID-19 vaccine delivery. These program indicators can facilitate pushing aggregated data from the tracker program to the COVID-19 core aggregate module for analysis. This can be particularly useful if a country has hybrid systems in place, where some sites use the electronic immunization registry and others may rely on paper-based reporting.  
+A group of Program Indicators, COVAC-Tracker to aggregate (NXBR4r6MwAO) has been configured and mapped (via attributes) to facilitate pushing data values to the associated target aggregate domain Data Elements and COCs as described above. An example of this mapping is as follows:
 
-#### Number of people receiving a first dose - COV-1
+| Program indicator (Name) | Program indicator UID | Pushed to Aggregate DE (Name) | Aggregate DE UID | Mapped to Indicator (Name) | Indicator UID |
+|---|---|---|---|---|---|
+| Number of people receiving a first dose (Female 0-59) | RJ6pdxga9Od | COVAC- People with 1st dose | RjT7dmzunF4 | COVAC - People with 1st dose | GeAtojrj7Yy |
+| Number of people receiving a first dose (Female 60+) | x4L0LuEBHhW | COVAC- People with 1st dose | RjT7dmzunF5 | COVAC - People with 1st dose | GeAtojrj7Yy |
+| Number of people receiving a first dose (Male 0-59) | hqm8znlAzkT | COVAC- People with 1st dose | RjT7dmzunF6 | COVAC - People with 1st dose | GeAtojrj7Yy |
+| Number of people receiving a first dose (Male 60+) | aIIHyDy8AMW | COVAC- People with 1st dose | RjT7dmzunF7 | COVAC - People with 1st dose | GeAtojrj7Yy |
+| Number of people receiving a second, third or booster dose (Female 0-59) | xY4T9hHXNji | COVAC - People with 2nd, 3rd or booster doses | zmKNuqgsq8N | COVAC - People with 2nd, 3rd, or booster doses | ddZjJCwXf6k |
+| Number of people receiving a second, third or booster dose (Female 60+) | h9G7i6mQKef | COVAC - People with 2nd, 3rd or booster doses | zmKNuqgsq8N | COVAC - People with 2nd, 3rd, or booster doses | ddZjJCwXf6k |
+| Number of people receiving a second, third or booster dose (Male 0-59) | MGjwUUNsE60 | COVAC - People with 2nd, 3rd or booster doses | zmKNuqgsq8N | COVAC - People with 2nd, 3rd, or booster doses | ddZjJCwXf6k |
+| Number of people receiving a second, third or booster dose (Male 60+) | qh0kIjHZbP8 | COVAC - People with 2nd, 3rd or booster doses | zmKNuqgsq8N | COVAC - People with 2nd, 3rd, or booster doses | ddZjJCwXf6k |
+| Number of people who received the last recommended dose for the respective vaccine product (Female 0-59) | Zp39TSOR8eW | COVAC - People with last recommended dose | CB46jykiEye | COVAC - People with last recommended dose | OAZXVEjEEoD |
+| Number of people who received the last recommended dose for the respective vaccine product (Female 60+) | XFUvVgqPukT | COVAC - People with last recommended dose | CB46jykiEye | COVAC - People with last recommended dose | OAZXVEjEEoD |
+| Number of people who received the last recommended dose for the respective vaccine product (Male 0-59) | FZNIlzPRMmL | COVAC - People with last recommended dose | CB46jykiEye | COVAC - People with last recommended dose | OAZXVEjEEoD |
+| Number of people who received the last recommended dose for the respective vaccine product (Male 60+) | zovL7DKBRuK | COVAC - People with last recommended dose | CB46jykiEye | COVAC - People with last recommended dose | OAZXVEjEEoD |
+| People with underlying conditions | Zn0UuSRYyJw | COVAC - People with underlying conditions | OUI05zSKrqk | COVAC - People with underlying conditions | KIgI3EPjs2T |
 
-The number of people receiving a first dose of the vaccine
 
-This is a programme indicator which filters those who are marked as having received the first dose of the vaccine.
+Additional program indicators have been configured to enable ad hoc analysis of the tracker data itself (e.g. coverage rates calculated based on tracker data, etc). However, these program indicators are not used in the COVAC - Daily Monitoring dashboard. 
 
-#### Number of people receiving a second, third or booster dose - COV-2
 
-The number of people receiving a second or third dose of the vaccine, plus any booster doses. This is a programme indicator which filters using the same data element as COV-1, but with the second, third or booster dose.
 
-#### Number of people who received the last recommended dose for the respective vaccine product - COV-c
 
- The number of people who received the last recommended dose for the respective vaccine product. The “c” denotes the dose that completes the schedule, which might be a first, second or third dose depending on the product that was used.
 
-#### Doses given  COV-n
-
-This program indicator counts the raw amount of doses given  
-
-#### Drop-out from COV-1 to COV-c
-
-The proportion of people who received at least one dose of a COVID-19 vaccine but did not receive the last dose in the schedule yet. Calculated as: (COV-1 – COV-c)/COV-1  We have made a drop-out indicator for each of the placeholder vaccine products in the tracker program.
-
-For a more accurate and timely dropout rate during a large scale up of two-dose vaccinations, the dashboards do not show gross totals first dose and last doses provided each reporting period. Instead, the dropout rate is calculated using a discrete time boundary between enrollment and final dose. For example, if a maximum 30 day period is assumed between the first and final doses, then a patient provided a first dose is only considered a "dropout" during a reporting period that is exactly 30 days after the first dose. The patient is not considered as a dropout less than 30 days after the first dose, and is not included as a dropout in subsequent reporting periods.
-For these indicators, we have assumed:
-For AstraZeneca: 10 days
-
-For PfizerBionTech: 21 days
-
-For Moderna: 28 days
-
-For Gamaleya: 21 days
-
-For Sinovac: 28 days
-
-#### Vaccine uptake
-
-The amount of people who have received at least one dose of one of the respective vaccine products. There is one indicator per product.
-
-### Dashboards
-
-The immunization registry dashboard contains key monitoring indicators that are aligned with the WHO’s Monitoring Guidance for COVID-19 vaccine delivery and the aggregate COVID-19 immunisation package.
-
-The first group of items in the dashboard gives a quick overview of the uptake of vaccines, doses administered, and disaggregates them by variables such as sex, age, geographical area, and vaccines. The second group of items shows the drop-out rates and the numbers of completed vaccination schedules.
-
-![Dashboard 1](resources/images/Covac_dashboard1.png)
-![Dashboard 4](resources/images/Covac_dashboard4.png)
-![Dashboard 2](resources/images/Covac_dashboard2.png)
-![Dashboard 3](resources/images/Covac_dashboard3.png)
+##Transferring aggregated tracker domain data to aggregate domain data values
+In addition to the metadata provided above, implementations will require a mechanism to push the program indicator values from the tracker domain to the target aggregate data set. More information about this can be found in this chapter of the DHIS2 Implementation Guide: [Integrating Tracker and Aggregate Data](https://github.com/dhis2/dhis2-docs-implementation/blob/master/content/maintenance_use/tracker-aggregate-integration.md)
 
 ## Considerations for when implementing with Android devices
 
