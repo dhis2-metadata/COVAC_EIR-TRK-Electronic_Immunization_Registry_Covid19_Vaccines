@@ -6,7 +6,9 @@ The COVID-19 Immunization System Design document provides an overview of the con
 
 This package was developed in response to an expressed need from countries and partners to monitor equity and uptake of COVID-19 vaccines across priority groups, track individuals through the completion of their vaccination schedule. 
 
+
 The goal of this package is to improve timeliness, accuracy of data, expand coverage, efficiency and effectiveness  delivery of the COVID-19 vaccines. It is based on the Guidance on developing a national deployment and vaccination plan for COVID-19 vaccines: <https://www.who.int/publications/i/item/WHO-2019-nCoV-Vaccine_deployment-2020.1> as well as feedback from WHO and CDC officials and general vaccination standards and guidance adapted from the DHIS2 immunization registry package
+
 
 Because national guidelines and policies will vary, this package should be adapted to national context.
 
@@ -187,7 +189,9 @@ To modify this, edit the expression to filter out the vaccine products not in us
 
 #### Total number of doses
 
-The data element “Total doses required for this vaccine product” is an autofilled data element which displays the amount of doses required for this vaccine product’s vaccination schedule. Currently, all vaccines have two doses in their schedule. However, there is an individual rule for each vaccine in case this changes in the future: 
+
+The data element “Total doses required for this vaccine product” is an autofilled data element which displays the amount of doses required for this vaccine product’s vaccination schedule. Currently, all vaccines have two doses in their schedule. However, there is an individual rule for each vaccine in case this changes in the future:
+
 
 To modify, edit the corresponding rule: Assign dose number to NAMEOFPRODUCT
 
@@ -200,7 +204,9 @@ If the program matches the filter, then the action will assign value to the “T
 
 The program has been set up as a “protected” program, meaning that users are able to search in other org units beyond the ones they have rights to, but if they want to access records in a different facility, they must use the “breaking the glass” function and not down why they are accessing records in a different organisation unit.  
 
+
 Note that the [breaking the glass feature is not supported in Android ](https://docs.dhis2.org/2.35/en/dhis2_android_capture_app/programs.html#breaking-the-glass) and android users are unable to search other organisation units when the program is set as protected. 
+
 
 #### Enrollment Details
 
@@ -214,15 +220,13 @@ While the information on enrollment is meant to be completed when a case is firs
 
 The program is configured with two types of unique identifiers. Additional identifiers can be added to the program based on country context.
 
-[Unique Identifier]: An automatically generated ID which is unique to the entire system (e.g. the instance of DHIS2 being used). This TEI attribute is configured to generate the attribute value based on a pattern. In the previous version of the package the unique identifier generated a number which was a prefix and a random rumber, "EPI_" + RANDOM(########)". The latest version has replaced this attribute for one with a sequential pattern which helps with performance for large implementations "EPI_" + RANDOM(########)".
+**Unique Identifier**: An automatically generated ID which is unique to the entire system (e.g. the instance of DHIS2 being used). This TEI attribute is configured to generate the attribute value based on a pattern. In the previous version of the package the unique identifier generated a number which was a prefix and a random rumber, "EPI_" + RANDOM(########)". The latest version has replaced this attribute for one with a sequential pattern which helps with performance for large implementations "EPI_" + RANDOM(########)".
 
-[National ID]: This ID is currently manually entered and should be adapted to local validation needs.
-
-_Enrollment screenshot_:
+**National ID**: This ID is currently manually entered and should be adapted to local validation needs.
 
 ![Enrollment Stage](resources/images/Covac_enrollment.png)
 
-### Program Stage 1: Vaccination [repeatable]
+### Program Stage 1: Vaccination (repeatable)
 
 Section 1.1 Underlying conditions.
 
@@ -350,7 +354,6 @@ For a complete monitoring dashboard covering additional aspects of the WHO NDVP 
 If your instance already has a dashboard from previous version of this package, it is recommended that it is deleted, or that access to it is limited to a few users. For instructions on how to delete dashboards see the [installation guide] (https://docs.dhis2.org/en/topics/metadata/covid-19-vaccine-delivery/covac-immunization-registry-tracker/installation.html)
 
 
-
 ### Aggregate Data Set 
 
 An aggregate dataset ‘COVAC - EIR tracker data (aggregated)’ has been configured with daily frequency as a target for pushing tracker program indicator-based calculated data values to the aggregate domain. The dataset contains the following Data Elements:
@@ -361,8 +364,6 @@ People with last recommended dose
 People with underlying conditions
 
 ![Aggregate data entry](resources/images/covac_agg_data_entry.png)
-
-
 
 Where possible, Category Combinations, Categories (and their associated CategoryOptionCombos and Category Options) were re-used from the existing (COVAC Core Dashboard/Aggregate metadata package](https://docs.dhis2.org/en/topics/metadata/covid-19-vaccine-delivery/covac-aggregate/version-110/design.html) to facilitate analysis across data elements from these two packages.
 
@@ -391,12 +392,9 @@ A group of Program Indicators, COVAC-Tracker to aggregate (NXBR4r6MwAO) has been
 
 Additional program indicators have been configured to enable ad hoc analysis of the tracker data itself (e.g. coverage rates calculated based on tracker data, etc). However, these program indicators are not used in the COVAC - Daily Monitoring dashboard. 
 
-
-
-
-
 ##Transferring aggregated tracker domain data to aggregate domain data values
 In addition to the metadata provided above, implementations will require a mechanism to push the program indicator values from the tracker domain to the target aggregate data set. More information about this can be found in this chapter of the DHIS2 Implementation Guide: [Integrating Tracker and Aggregate Data](https://github.com/dhis2/dhis2-docs-implementation/blob/master/content/maintenance_use/tracker-aggregate-integration.md)
+
 
 ## Considerations for when implementing with Android devices
 
