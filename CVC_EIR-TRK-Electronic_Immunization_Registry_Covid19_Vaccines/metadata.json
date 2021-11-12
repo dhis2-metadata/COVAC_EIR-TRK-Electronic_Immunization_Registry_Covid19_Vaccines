@@ -19825,19 +19825,10 @@
             "onlyEnrollOnce": false,
             "programIndicators": [
                 {
-                    "id": "kKr4FSA1O0Z"
-                },
-                {
-                    "id": "MUXThnNRCk6"
-                },
-                {
                     "id": "ZS6qo9BSrcI"
                 },
                 {
                     "id": "xY4T9hHXNji"
-                },
-                {
-                    "id": "SqD0kovH0CS"
                 },
                 {
                     "id": "kNzRGpiCvg4"
@@ -19847,12 +19838,6 @@
                 },
                 {
                     "id": "M3jBOeFxHO0"
-                },
-                {
-                    "id": "CI0pKfEiWom"
-                },
-                {
-                    "id": "UzPqw49tyym"
                 },
                 {
                     "id": "FZNIlzPRMmL"
@@ -19870,28 +19855,13 @@
                     "id": "Zp39TSOR8eW"
                 },
                 {
-                    "id": "HCe7qiP0GoC"
-                },
-                {
-                    "id": "wkaRLVNi6Fm"
-                },
-                {
                     "id": "MzXxrDWcNjW"
-                },
-                {
-                    "id": "ApGCVA6qhKT"
                 },
                 {
                     "id": "cq2a28RsAFT"
                 },
                 {
                     "id": "rqwQndYRiXO"
-                },
-                {
-                    "id": "UzbfnPqo0LV"
-                },
-                {
-                    "id": "BtB8fMhK2gH"
                 },
                 {
                     "id": "h9G7i6mQKef"
@@ -19930,27 +19900,6 @@
                     "id": "dIAw5mn6Wqp"
                 },
                 {
-                    "id": "T4Fcv5Khfe8"
-                },
-                {
-                    "id": "zgt8n5PIAAf"
-                },
-                {
-                    "id": "a6kCEcImBlW"
-                },
-                {
-                    "id": "pbiKvW0Xv5Y"
-                },
-                {
-                    "id": "IXW8ahBF3Pl"
-                },
-                {
-                    "id": "UWXUTVN709H"
-                },
-                {
-                    "id": "BEw3zmRnGo4"
-                },
-                {
                     "id": "MGjwUUNsE60"
                 },
                 {
@@ -19973,12 +19922,6 @@
                 },
                 {
                     "id": "DNWp4zqrALv"
-                },
-                {
-                    "id": "zr25iLoCE4g"
-                },
-                {
-                    "id": "rtoIINJSfAf"
                 }
             ],
             "programRuleVariables": [
