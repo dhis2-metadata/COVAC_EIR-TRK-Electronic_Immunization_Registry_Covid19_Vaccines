@@ -1,4 +1,4 @@
-# Covid-19 Immunization Registry Tracker System Design { #covac-tracker-design }
+# Covid-19 Electronic Immunization Registry Tracker System Design { #cvc-eir-tracker-design }
 
 ## Introduction
 
@@ -6,7 +6,9 @@ The COVID-19 Immunization System Design document provides an overview of the con
 
 This package was developed in response to an expressed need from countries and partners to monitor equity and uptake of COVID-19 vaccines across priority groups, track individuals through the completion of their vaccination schedule. 
 
-The goal of this package is to improve timeliness, accuracy of data, expand coverage, efficiency and effectiveness  delivery of the COVID-19 vaccines. It is based on the Guidance on developing a national deployment and vaccination plan for COVID-19 vaccines: <https://www.who.int/publications/i/item/WHO-2019-nCoV-Vaccine_deployment-2020.1> as well as feedback from WHO and CDC officials and general vaccination standards and guidance adapted from the DHIS2 immunization registry package
+
+The goal of this package is to improve timeliness, accuracy of data, expand coverage, efficiency and effectiveness  delivery of the COVID-19 vaccines. It is based on the [Guidance on developing a national deployment and vaccination plan for COVID-19 vaccines](https://www.who.int/publications/i/item/WHO-2019-nCoV-Vaccine_deployment-2020.1) as well as feedback from WHO and CDC officials and general vaccination standards and guidance adapted from the DHIS2 immunization registry package
+
 
 Because national guidelines and policies will vary, this package should be adapted to national context.
 
@@ -15,7 +17,7 @@ Because national guidelines and policies will vary, this package should be adapt
 
 ### Use Case
 
-The tracker data model in DHIS2 enables an individual to be registered and followed  across a series of health services over time. This model can be leveraged to track individuals’ completion of vaccination schedules according to national policy and product recommendations, as well as capture robust individual level data to support analysis of vaccine distribution, uptake, and completion according to demographics, underlying conditions , and other variables.
+The tracker data model in DHIS2 enables an individual to be registered and followed  across a series of health services over time. This model can be leveraged to track individuals’ completion of vaccination schedules according to national policy and product recommendations, as well as capture robust individual level data to support analysis of vaccine distribution, uptake, and completion according to demographics, underlying conditions, and other variables.
 
 ### Content
 
@@ -24,7 +26,7 @@ The package includes:
 * Tracker programme which registers individual and each vaccination event
 * A set of program indicators which covers the requirements from the WHO guidance on Vaccine deployment.
 * A set of program indicatos which feeds into an aggregate data set for daily monitoring
-* An aggregate dataset for daily monitoring which
+* An aggregate dataset for daily monitoring
 * A set of indicators based on the aggregate data set
 * A daily monitoring dashboard based on the aggregate data set
 
@@ -83,7 +85,7 @@ Workflows will vary from country to country. The program design should be review
 
 ### Vaccine products in the program
 
-The specific COVID-19 products available in the country and vaccine schedules will vary by country. This package includes vaccine products following the documentation available from WHO, which will continue to evolve as [vaccines enter the market](https://extranet.who.int/pqweb/sites/default/files/documents/Status_COVID_VAX_16Feb2021.pdf)
+The specific COVID-19 products available in the country and vaccine schedules will vary by country. This package includes vaccine products following the documentation available from WHO, which will continue to evolve as [vaccines enter the market.](https://extranet.who.int/pqweb/sites/default/files/documents/Status_COVID_VAX_16Feb2021.pdf)
 
 In order to better demonstrate functionality, these placeholders have been configured based on five existing vaccine products, but it is important to verify and configure the programme based on the national adoption guidelines for the product. 
 
@@ -116,7 +118,7 @@ Manufacturers and brands are auto-assigned when a vaccine product is selected th
 For example, the program rule “Assign Brand and manufacturers to BioNtech/Pfizer" assigns the manufacturer BioNtech/Pfizer when “Comirnaty, Tozinameran” is selected.
 
 It uses the expression:
-d2:hasValue( 'Vaccine_type' )  == true && #{Vaccine_type} == 'BIONTECHPFIZER'
+`d2:hasValue( 'Vaccine_type' )  == true && #{Vaccine_type} == 'BIONTECHPFIZER'`
 
 And the action for this program rule is to assign value to the Data Element “Vaccine Manufacturer” as ‘BIONTTECHPFIZER’ which is the option code for “BioNTech/Pfizer” as well as "BioTech/Pfizer" for the brand.
 
@@ -139,7 +141,7 @@ Depending on the vaccine there can be lower age limits. , If a vaccinator admini
 
 The rules all use a similar expression:
 
-(#{Age_Calculated}   < 18 ) && (#{Vaccine_type} =='ASTRAZENECA')
+`(#{Age_Calculated}   < 18 ) && (#{Vaccine_type} =='ASTRAZENECA')`
 
 Where you would need to modify the number, 18 in this case,  to match the necessary age.
 
@@ -152,7 +154,7 @@ You should also modify this warning to match the most appropriate National Guide
 
 There is currently no way for a tracker to assign a date for the next event based on a data element, so what we have done is configured tracker to automatically autoschedule the next vaccination date 10 days from the first dose, assuming that the most used product would be Astra-zeneca. This must be modified to match the interval used in the country by changing the setting for the vaccination program stage in the maintenance app.  
 
-![Program setting](resources/images/Covac_date_setting.png )
+![Program setting](resources/images/Covac_date_setting.png)
 
 In addition, there is also a data element that auto-assigns using program rules a recommended date depending on the vaccine product. In order to modify this, the program rule needs to be edited:
 
@@ -179,20 +181,20 @@ To modify this warning, edit the program rule:
 dhis-web-maintenance/#/edit/programSection/programRule/PJjKiFrvfuN
 
 The expression:
-d2:hasValue( 'Dose_number' ) == true && #{Dose_number} == 'DOSE2'
+`d2:hasValue( 'Dose_number' ) == true && #{Dose_number} == 'DOSE2'`
 
-Indicates that if a clerk selects that the doses number given is the second dose, then it triggers an “assign value” action which adds the value “true” to the data element “Last dose” and to the Program rule variable "Last_dose"
+indicates that if a clerk selects that the doses number given is the second dose, then it triggers an “assign value” action which adds the value “true” to the data element “Last dose” and to the Program rule variable "Last_dose"
 
 To modify this, edit the expression to filter out the vaccine products not in use/with a different schedule.
 
 #### Total number of doses
 
-The data element “Total doses required for this vaccine product” is an autofilled data element which displays the amount of doses required for this vaccine product’s vaccination schedule. Currently, all vaccines have two doses in their schedule. However, there is an individual rule for each vaccine in case this changes in the future: 
+The data element “Total doses required for this vaccine product” is an autofilled data element which displays the amount of doses required for this vaccine product’s vaccination schedule. Currently, all vaccines have two doses in their schedule. However, there is an individual rule for each vaccine in case this changes in the future:
 
 To modify, edit the corresponding rule: Assign dose number to NAMEOFPRODUCT
 
 And the expression:
-d2:hasValue( 'Vaccine_type' )  == true && #{Vaccine_type} == 'astrazeneca'
+`d2:hasValue( 'Vaccine_type' )  == true && #{Vaccine_type} == 'astrazeneca'`
 
 If the program matches the filter, then the action will assign value to the “Total doses” data element. Currently, all rules assign the value “2” and hides the option for a third dose.
 
@@ -200,7 +202,8 @@ If the program matches the filter, then the action will assign value to the “T
 
 The program has been set up as a “protected” program, meaning that users are able to search in other org units beyond the ones they have rights to, but if they want to access records in a different facility, they must use the “breaking the glass” function and not down why they are accessing records in a different organisation unit.  
 
-Note that the [breaking the glass feature is not supported in Android ](https://docs.dhis2.org/2.35/en/dhis2_android_capture_app/programs.html#breaking-the-glass) and android users are unable to search other organisation units when the program is set as protected. 
+
+Note that the [breaking the glass feature is not supported in Android](https://docs.dhis2.org/2.35/en/dhis2_android_capture_app/programs.html#breaking-the-glass) and android users are unable to search other organisation units when the program is set as protected. 
 
 #### Enrollment Details
 
@@ -214,15 +217,13 @@ While the information on enrollment is meant to be completed when a case is firs
 
 The program is configured with two types of unique identifiers. Additional identifiers can be added to the program based on country context.
 
-[Unique Identifier]: An automatically generated ID which is unique to the entire system (e.g. the instance of DHIS2 being used). This TEI attribute is configured to generate the attribute value based on a pattern. In the previous version of the package the unique identifier generated a number which was a prefix and a random rumber, "EPI_" + RANDOM(########)". The latest version has replaced this attribute for one with a sequential pattern which helps with performance for large implementations "EPI_" + RANDOM(########)".
+**Unique Identifier**: An automatically generated ID which is unique to the entire system (e.g. the instance of DHIS2 being used). This TEI attribute is configured to generate the attribute value based on a pattern. In the previous version of the package the unique identifier generated a number which was a prefix and a random rumber, "EPI_" + RANDOM(########)". The latest version has replaced this attribute for one with a sequential pattern which helps with performance for large implementations "EPI_" + RANDOM(########)".
 
-[National ID]: This ID is currently manually entered and should be adapted to local validation needs.
-
-_Enrollment screenshot_:
+**National ID**: This ID is currently manually entered and should be adapted to local validation needs.
 
 ![Enrollment Stage](resources/images/Covac_enrollment.png)
 
-### Program Stage 1: Vaccination [repeatable]
+### Program Stage 1: Vaccination (repeatable)
 
 Section 1.1 Underlying conditions.
 
@@ -286,12 +287,12 @@ The stage is configured to ‘Ask the user to create a new event when a stage is
 
 The programme is packaged together with four user groups:
 
-*COVAC - Covid Immunization Metadata Admin:* Has the rights to edit the metadata of the package but not to enter data into the package
-*COVAC - Covid Immunization Data Entry:* Has the rights to enter data into tracker
-*COVAC - Covid Immunization Data Analysis:* Has access to the dashboards, but cannot enter data.
-*COVAC - Covid-19 Immunization data Admin:* This is an Admin group which is shared between tracker and aggregate and can both capture and view data in both programs. This usergroup is mainly for the user which would run the tracker to aggregate scripts as well as acces the dataset through the data entry app.
+* *COVAC - Covid Immunization Metadata Admin:* Has the rights to edit the metadata of the package but not to enter data into the package
+* *COVAC - Covid Immunization Data Entry:* Has the rights to enter data into tracker
+* *COVAC - Covid Immunization Data Analysis:* Has access to the dashboards, but cannot enter data.
+* *COVAC - Covid-19 Immunization data Admin:* This is an Admin group which is shared between tracker and aggregate. Members of this group can view data in both tracker and aggregate modules and capture data in the aggregate module only. This user group is set up for the users that would run the tracker to aggregate scripts as well as access the dataset through the data entry app.
 
-These should be adapted to national needs
+These should be adapted to national needs.
 
 ## Certificate Printing
 
@@ -347,24 +348,20 @@ The  “COVAC Daily Monitoring Dashboard” ((iBWlFCvvtkH)  is configured entire
 
 For a complete monitoring dashboard covering additional aspects of the WHO NDVP Monitoring Guidance (such as vaccine coverage and uptake by target groups, indicators on adverse events, supply & cold chain), refer to the [COVAC Core Dashboard/Aggregate metadata package](https://docs.dhis2.org/en/topics/metadata/covid-19-vaccine-delivery/covac-aggregate/version-110/design.html). 
 
-If your instance already has a dashboard from previous version of this package, it is recommended that it is deleted, or that access to it is limited to a few users. For instructions on how to delete dashboards see the [installation guide] (https://docs.dhis2.org/en/topics/metadata/covid-19-vaccine-delivery/covac-immunization-registry-tracker/installation.html)
-
-
+If your instance already has a dashboard from previous version of this package, it is recommended that it is deleted, or that access to it is limited to a few users. For instructions on how to delete dashboards see the [installation guide](https://docs.dhis2.org/en/topics/metadata/covid-19-vaccine-delivery/covac-immunization-registry-tracker/installation.html)
 
 ### Aggregate Data Set 
 
 An aggregate dataset ‘COVAC - EIR tracker data (aggregated)’ has been configured with daily frequency as a target for pushing tracker program indicator-based calculated data values to the aggregate domain. The dataset contains the following Data Elements:
 
-People with 1st dose
-People with 2nd, 3rd or booster doses
-People with last recommended dose
-People with underlying conditions
+1. People with 1st dose
+2. People with 2nd, 3rd or booster doses
+3. People with last recommended dose
+4. People with underlying conditions
 
 ![Aggregate data entry](resources/images/covac_agg_data_entry.png)
 
-
-
-Where possible, Category Combinations, Categories (and their associated CategoryOptionCombos and Category Options) were re-used from the existing (COVAC Core Dashboard/Aggregate metadata package](https://docs.dhis2.org/en/topics/metadata/covid-19-vaccine-delivery/covac-aggregate/version-110/design.html) to facilitate analysis across data elements from these two packages.
+Where possible, Category Combinations, Categories (and their associated CategoryOptionCombos and Category Options) were re-used from the existing [COVAC Core Dashboard/Aggregate metadata package](https://docs.dhis2.org/en/topics/metadata/covid-19-vaccine-delivery/covac-aggregate/version-110/design.html) to facilitate analysis across data elements from these two packages.
 
 These data elements and COCs are expected to be populated from tracker program indicators, as described below. 
 
@@ -391,10 +388,6 @@ A group of Program Indicators, COVAC-Tracker to aggregate (NXBR4r6MwAO) has been
 
 Additional program indicators have been configured to enable ad hoc analysis of the tracker data itself (e.g. coverage rates calculated based on tracker data, etc). However, these program indicators are not used in the COVAC - Daily Monitoring dashboard. 
 
-
-
-
-
 ## Transferring aggregated tracker domain data to aggregate domain data values
 
 In addition to the metadata provided above, implementations will require a mechanism to push the program indicator values from the tracker domain to the target aggregate data set. More information about this can be found in this chapter of the DHIS2 Implementation Guide: [Integrating Tracker and Aggregate Data](https://docs.dhis2.org/en/implement/maintenance-and-use/tracker-and-aggregate-data-integration.html#how-to-saving-aggregated-tracker-data-as-aggregate-data-values) 
@@ -407,7 +400,7 @@ The ‘breaking the glass’ feature is not yet supported in DHIS2 Android Captu
 
 ### Dose due date
 
-The description of the due date is not correctly displayed on android and instead of saying “Dose due date” it says “Due date” <https://jira.dhis2.org/browse/ANDROAPP-3620>
+The description of the due date is not correctly displayed on android and instead of saying “Dose due date” it says “Due date” [Link to jira](https://jira.dhis2.org/browse/ANDROAPP-3620)
 
 ### Reserve IDs
 
