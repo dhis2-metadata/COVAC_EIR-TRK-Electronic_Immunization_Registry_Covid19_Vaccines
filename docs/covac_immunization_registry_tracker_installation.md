@@ -169,7 +169,7 @@ The Covid-19 Electronic Immunization Registry tracker package includes four meta
 > **Note**
 >
 > The package is not an out-of-the-box tool for tracker-to-aggregate data transfer.
-> The structure of the metadata package and the suggested mapping of metadata allow the implementer to set up the transfer of data based on existing tools and guidance. More information is available in the [Tracker to aggregate data Transfer Document](https://github.com/dhis2/dhis2-docs-implementation/blob/master/content/maintenance_use/tracker-aggregate-integration.md).
+> The structure of the metadata package and the suggested mapping of metadata allow the implementer to set up the transfer of data based on existing tools and guidance. More information is available in the [Tracker to aggregate data Transfer Document](https://docs.dhis2.org/en/implement/maintenance-and-use/tracker-and-aggregate-data-integration.html#how-to-saving-aggregated-tracker-data-as-aggregate-data-values).
 
 ## Mapping guide for data transfer
 
