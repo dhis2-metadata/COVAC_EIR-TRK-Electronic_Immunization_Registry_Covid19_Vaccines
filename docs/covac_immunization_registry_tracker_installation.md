@@ -40,20 +40,6 @@ Available translations: French, Spanish, Portuguese
     }
     ```
 
-=== "Aggregate Dashboard Package"
-
-    ```json
-    "package": {
-        "code": "COVAC_EIR_DSH",
-        "DHIS2Build": "834b25f",
-        "DHIS2Version": "2.35.8",
-        "locale": "en",
-        "name": "COVAC_EIR_DSH_V1.2.0_DHIS2.35.8-en",
-        "type": "DASHBOARD",
-        "version": "1.2.0"
-    }
-    ```
-
 === "Program Indicators (tracker-to-aggregate transfer)
 
     ```json
@@ -100,20 +86,6 @@ Available translations: French, Spanish, Portuguese
         "locale": "en",
         "name": "CVC_EIR_AGG_1.2.0_DHIS2.36.4-en",
         "type": "AGG",
-        "version": "1.2.0"
-    }
-    ```
-
-=== "Aggregate Dashboard Package"
-
-    ```json
-        "package": {
-        "code": "COVAC_EIR_DSH",
-        "DHIS2Build": "2adf10b",
-        "DHIS2Version": "2.36.4",
-        "locale": "en",
-        "name": "COVAC_EIR_DSH_V1.2.0_DHIS2.36.4-en",
-        "type": "DASHBOARD",
         "version": "1.2.0"
     }
     ```
@@ -165,7 +137,6 @@ The Covid-19 Electronic Immunization Registry tracker package includes four meta
 |---------------------------------------------------------------|-----------|---------|
 | CVC_EIR-TRK-Electronic_Immunization_Registry_Covid19_Vaccines | Updated tracker package, <br> aggregate data set for automated tracker-to-aggregate-transfer, <br> dashboard based on aggregate indicator values | New implementation |
 | CVC_EIR-AGG-Electronic_Immunization_Registry_Covid19_Vaccines | Aggregate data set for automated tracker-to-aggregate-transfer, <br> dashboard based on aggregate indicator values | Update to an existing tracker implementation, <br> Setup of tracker-to-aggregate transfer, <br> Use of Daily aggregate dashboard |
-| CVC_EIR-DSH-Electronic_Immunization_Registry_Covid19_Vaccines | Aggregate dashboard with to-be-configured indicators | Specific use cases. Update to an existing tracker implementation, <br> Advanced configuration of aggregate indicators <br> Integration with existing metadata <br> Setup of tracker-to-aggregate transfer <br> Use of Daily aggregate dashboard |
 | CVC_EIR-PI-Electronic_Immunization_Registry_Covid19_Vaccines  | 13 updated program indicators from the original package. <br> PIs are mapped to the aggregate data elements and Category option combinations in the daily aggregate data set | Update to an existing implementation |
 
 > **Note**
