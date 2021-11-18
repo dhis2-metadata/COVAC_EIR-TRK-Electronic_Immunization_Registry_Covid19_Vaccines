@@ -189,7 +189,7 @@ The custom attribute **Data element for aggregate data export** `vudyDP7jUy5` co
 
 The **Category option combination for agggregate export** field contains reference codes of the category option combinations, eg. **CVC_EIR_0059Y_F**
 
-The suggested transfer of the tracker-to-aggregate values is based on the following GET and POST api requests:
+The suggested transfer of the tracker-to-aggregate values is based on the following GET and POST API requests:
 
 1. Source request: `../api/analytics/dataValueSet.json?dimension=dx:` "{program indicator uid/s}" `&dimension=pe:` "{relative period/s}" `&dimension=ou:` {organisation unit level} `&outputIdScheme=ATTRIBUTE:` {"custom attribute:`vudyDP7jUy5`"}
 2. Target request: `..api/dataValueSets?dataElementIdScheme=CODE&categoryOptionComboIdScheme=CODE&importStrategy=CREATE_AND_UPDATE&mergeMode=REPLACE&dryRun=false`
@@ -234,7 +234,7 @@ To avoid conflicts when importing the metadata, it is advisable to search and re
 | Category combination        | `bjDvmb4bfuf` | `../api/categoryCombos.json?filter=name:eq:default`       |
 | Category option combination | `HllvX50cXC0` | `../api/categoryOptionCombos.json?filter=name:eq:default` |
 
-Identify the UIDs of the default dimesions in your instance using the listed api requests and replace the UIDs in the json file with the UIDs from the instance.
+Identify the UIDs of the default dimesions in your instance using the listed API requests and replace the UIDs in the json file with the UIDs from the instance.
 
 > **NOTE**
 >
@@ -242,7 +242,7 @@ Identify the UIDs of the default dimesions in your instance using the listed api
 
 ### Indicator types
 
-Indicator type is another type of object that can create import conflict because certain names are used in different DHIS2 databases (.e.g "Percentage"). Since Indicator types are defined simply by their factor and whether or not they are simple numbers without a denominator, they are unambiguous and can be replaced through a search and replace of the UIDs. This avoids potential import conflicts, and avoids creating duplicate indicator types. Table 2 shows the UIDs which could be replaced, as well as the API endpoints to identify the existing UIDs
+Indicator type is another type of object that can create import conflict because certain names are used in different DHIS2 databases (.e.g "Percentage"). Since Indicator types are defined by their factor (including 1 for "numerator only" indicators), they are unambiguous and can be replaced through a search and replace of the UIDs. This method helps avoid potential import conflicts, and prevents the implementer from creating duplicate indicator types. The table below contains the UIDs which could be replaced, as well as the API endpoints to identify the existing UIDs:
 
 |Object                  | UID           | API endpoint                                                          |
 |------------------------|---------------|-----------------------------------------------------------------------|
@@ -250,7 +250,7 @@ Indicator type is another type of object that can create import conflict because
 
 ### Tracked Entity Type
 
-Like indicator types, you may have already existing tracked entity types in your DHIS2 database. The references to the tracked entity type should be changed to reflect what is in your system so you do not create duplicates. Table 3 shows the UIDs which could be replaced, as well as the API endpoints to identify the existing UIDs
+Like indicator types, you may have already existing tracked entity types in your DHIS2 database. The references to the tracked entity type should be changed to reflect what is in your system so you do not create duplicates. The table below contains the UIDs which could be replaced, as well as the API endpoints to identify the existing UIDs:
 
 |Object  | UID           | API endpoint                                           |
 |------------------------|---------------|----------------------------------------|
@@ -326,11 +326,19 @@ WHERE trackedentityattributeid=<affected trackedentityattribute database_id> AND
 > AND programstageid=1510410385;
 > ```
 
+Option codes are also used in program rule expressions, program indicators, etc. If you are updating code options in your system, make sure you update the codes in all affected metadata objects.
+
 ### Sort order for options
 
 Check whether the sort order `sortOrder` of options in your system matches the sort order of options included in the metadata package. This only applies when the json file and the target instance contain options and option sets with the same UID.
 
-After import, make sure that the sort order for options within an option set starts from 1.
+After import, make sure that the sort order for options within an option set starts at 1. There should be no gaps (eg. 1,2,3,5,6) in the sort order values.
+
+Sort order can be adjusted in the Maintenance app.
+
+1. Go to the applicable Option Set
+2. Open the "Options" section
+3. Use "SORT BY NAME", "SORT BY CODE/VALUE" or "SORT MANUALLY" alternatives.
 
 ## Importing metadata
 
@@ -368,28 +376,33 @@ Once all metadata has been successfully imported, there are a few steps that nee
 
 ### Sharing
 
-First, you will have to use the *Sharing* functionality of DHIS2 to configure which users (user groups) should see the metadata and data associated with the programme as well as who can register/enter data into the program. By default, sharing has been configured for the following:
+First, you will have to use the *Sharing* functionality of DHIS2 to configure which users (user groups) should see the metadata and data associated with the program as well as who can register/enter data into the program. By default, sharing has been configured for the following:
 
 * Tracked entity type
 * Program
 * Program stages
 * Dashboards
+* Visualizations, maps, event reports and report tables
+* Data sets
+* Category options
+
+Please refer to the [DHIS2 documentation](#sharing) for more information on sharing.
 
 There are four user groups that come with the package. By default the following permissions are assigned to these user groups:
 
-* COVAC - COVID-19 Immunization Metadata Admin
-* COVAC - COVID-19 Immunization Data Entry
 * COVAC - COVID-19 Immunization Data Analysis
-* COVAC - Covid-19 Immunization Data Admin
+* COVAC - COVID-19 Immunization Data Admin
+* COVAC - COVID-19 Immunization Data Entry
+* COVAC - COVID-19 Immunization Metadata Admin
 
-|Object                   |User Group                                     |                                                   |                                                     |                                                     |
-|-------------------------|-----------------------------------------------|---------------------------------------------------|-----------------------------------------------------|-----------------------------------------------------|
-|                         | _COVAC - COVID-19 Immunization Data Analysis_ | _COVAC - COVID-19 Immunization Metadata Admin_    | _COVAC - COVID-19 Immunization Data Entry_          | _COVAC - COVID-19 Immunization Data Admin_          |
-| _*Tracked entity type*_ | Metadata : can view <br> Data: can view       | Metadata : can edit and view <br> Data: can view  | Metadata : can view <br> Data: can capture and view | Metadata : can view <br> Data: can view             |
-| _*Program*_             | Metadata : can view <br> Data: can view       | Metadata : can edit and view <br> Data: can view  | Metadata : can view <br> Data: can capture and view | Metadata : can view <br> Data: can view             |
-| _*Program Stages*_      | Metadata : can view <br> Data: can view       | Metadata : can edit and view <br> Data: can view  | Metadata : can view <br> Data: can capture and view | Metadata : can view <br> Data: can view             |
-| _*Dashboards*_          | Metadata : can view                           | Metadata : can edit and view                      | No Access                                           | Metadata : can view                                 |
-| _*Data Sets*_           | Metadata : can view <br> Data: can view       | Metadata : can edit and view <br> Data: No access | No Access                                           | Metadata : can view <br> Data: can capture and view |
+|Object                   |User Group                                     |                                                     |                                                     |                                                    |
+|-------------------------|-----------------------------------------------|-----------------------------------------------------|-----------------------------------------------------|----------------------------------------------------|
+|                         | _COVAC - COVID-19 Immunization Data Analysis_ | _COVAC - COVID-19 Immunization Data Admin_          | _COVAC - COVID-19 Immunization Data Entry_          | _COVAC - COVID-19 Immunization Metadata Admin_    |
+| _*Tracked entity type*_ | Metadata : can view <br> Data: can view       | Metadata : can view <br> Data: can view             | Metadata : can view <br> Data: can capture and view | Metadata : can edit and view <br> Data: can view  |
+| _*Program*_             | Metadata : can view <br> Data: can view       | Metadata : can view <br> Data: can view             | Metadata : can view <br> Data: can capture and view | Metadata : can edit and view <br> Data: can view  |
+| _*Program Stages*_      | Metadata : can view <br> Data: can view       | Metadata : can view <br> Data: can view             | Metadata : can view <br> Data: can capture and view | Metadata : can edit and view <br> Data: can view  |
+| _*Dashboards*_          | Metadata : can view                           | Metadata : can view                                 | No Access                                           | Metadata : can edit and view                      |
+| _*Data Sets*_           | Metadata : can view <br> Data: can view       | Metadata : can view <br> Data: can capture and view | No Access                                           | Metadata : can edit and view <br> Data: No access |
 
 The users are assigned to the appropriate user group based on their role within the system. Sharing for other objects in the package may be adjusted depending on the set up. Refer to the [DHIS2 Documentation on sharing](#sharing) for more information.
 
@@ -404,13 +417,14 @@ Refer to the [DHIS2 Documentation](https://docs.dhis2.org/) for more information
 
 ### Organisation Units
 
-The program and the data setsmust be assigned to organisation units within existing hierarchy in order to be accessible via tracker capture/capture apps.
+The program and the data sets must be assigned to organisation units within existing hierarchy in order to be accessible via tracker capture/capture apps.
 
-### Duplicated metadata
+### Duplicated Metadata
 
 > **NOTE**
 >
-> This section only applies if you are importing into a DHIS2 database in which there is already meta-data present. If you are working with a new DHIS2 instance, please skip this section and go to [Adapting the tracker program](#adapting-the-tracker-program).”
+> This section only applies if you are importing into a DHIS2 database in which there is already meta-data present. If you are working with a new DHIS2 instance, please skip this section and go to [Adapting the tracker program](#adapting-the-tracker-program).
+> If you are using any third party applications that rely on the current metadata, please take into account that this update could break them”
 
 Even when metadata has been successfully imported without any import conflicts, there can be duplicates in the metadata - data elements, tracked entity attributes or option sets that already exist. As was noted in the section above on resolving conflict, an important issue to keep in mind is that decisions on making changes to the metadata in DHIS2 also needs to take into account other documents and resources that are in different ways associated with both the existing metadata, and the metadata that has been imported through the configuration package. Resolving duplicates is thus not only a matter of "cleaning up the database", but also making sure that this is done without, for example, breaking potential integrating with other systems, the possibility to use training material, breaking SOPs etc. This will very much be context-dependent.
 
@@ -418,7 +432,7 @@ One important thing to keep in mind is that DHIS2 has tools that can hide some o
 
 ## Adapting the Program
 
-Once the program has been imported, you might want to make certain modifications to the programme. Examples of local adaptations that *could* be made include:
+Once the program has been imported, you might want to make certain modifications to the program. Examples of local adaptations that *could* be made include:
 
 * Adding additional variables to the form.
 * Adapting data element/option names according to national conventions.
