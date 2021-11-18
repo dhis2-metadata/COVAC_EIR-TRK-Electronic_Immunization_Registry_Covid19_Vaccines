@@ -1,12 +1,14 @@
 # Covid-19 Electronic Immunization Registry - Tracker Installation Guide { #cvc-eir-trk-installation }
 
-## Overview
-
 This document includes an installation guide for the updated COVAC Electronic Immunization Registry tracker package and a supplementary aggregate module for daily reporting based on tracker data.
+System default language: English
+Available translations: French, Spanish, Portuguese
+
+## Overview
 
 ### DHIS2.35
 
-=== "Complete package"
+=== "Complete Package"
 
     ```json
     "package": {
@@ -22,7 +24,7 @@ This document includes an installation guide for the updated COVAC Electronic Im
     }
     ```
 
-=== "Aggregate package"
+=== "Aggregate Package"
 
     ```json
     "package": {
@@ -38,7 +40,7 @@ This document includes an installation guide for the updated COVAC Electronic Im
     }
     ```
 
-=== "Aggregate Dashboard package"
+=== "Aggregate Dashboard Package"
 
     ```json
     "package": {
@@ -52,7 +54,7 @@ This document includes an installation guide for the updated COVAC Electronic Im
     }
     ```
 
-=== "Program indicators (tracker-to-aggregate)
+=== "Program Indicators (tracker-to-aggregate transfer)
 
     ```json
     "package": {
@@ -70,7 +72,7 @@ This document includes an installation guide for the updated COVAC Electronic Im
 
 ### DHIS2.36
 
-=== "Complete package"
+=== "Complete Package"
 
     ```json
     "package": {
@@ -86,7 +88,7 @@ This document includes an installation guide for the updated COVAC Electronic Im
     }
     ```
 
-=== "Aggregate package"
+=== "Aggregate Package"
 
     ```json
     "package": {
@@ -102,7 +104,7 @@ This document includes an installation guide for the updated COVAC Electronic Im
     }
     ```
 
-=== "Aggregate Dashboard package"
+=== "Aggregate Dashboard Package"
 
     ```json
         "package": {
@@ -116,7 +118,7 @@ This document includes an installation guide for the updated COVAC Electronic Im
     }
     ```
 
-=== "Program indicators (tracker-to-aggregate)
+=== "Program Indicators (tracker-to-aggregate transfer)
 
     ```json
     "package": {
@@ -135,17 +137,17 @@ This document includes an installation guide for the updated COVAC Electronic Im
 
 Installation of the module consists of several steps:
 
-1. Preparing the metadata file with DHIS2 metadata.
-2. Importing the metadata file into DHIS2.
-3. Configuring the imported metadata.
-4. Adapting the program after import
+1. [Preparing the metadata file with DHIS2 metadata](#preparing-the-metadata-file).
+2. [Importing the metadata file into DHIS2](#importing-metadata).
+3. [Configuring the imported metadata](#configuration).
+4. [Adapting the program after import](#adapting-the-program)
 
-It is recommended to first read through each section before starting the installation and configuration process in DHIS2. Identify applicable sections depending on the type of your import:
+It is recommended to first read through each section of the installation guide before starting the installation and configuration process in DHIS2. Identify applicable sections depending on the type of your import:
 
-1. import into a blank instance
+1. import into a blank DHIS2 instance
 2. import into a DHIS2 instance with existing metadata.
 
-The steps outlined in this document should be tested in a test/staging environment before either being repeated or transferred to a production instance of DHIS2.
+The steps outlined in this document should be tested in a test/staging DHIS2 instance and only then applied to a production environment.
 
 ## Requirements
 
@@ -171,7 +173,9 @@ The Covid-19 Electronic Immunization Registry tracker package includes four meta
 > The package is not an out-of-the-box tool for tracker-to-aggregate data transfer.
 > The structure of the metadata package and the suggested mapping of metadata allow the implementer to set up the transfer of data based on existing tools and guidance. More information is available in the [Tracker to aggregate data Transfer Document](https://docs.dhis2.org/en/implement/maintenance-and-use/tracker-and-aggregate-data-integration.html#how-to-saving-aggregated-tracker-data-as-aggregate-data-values).
 
-## Mapping guide for data transfer
+## Preparing the Metadata File
+
+### Mapping guide for data transfer
 
 The 13 program indicators that can be used for tracker-to-aggregate data transfer are mapped to the corresponding data elements and category option combinations of the aggregate data set.
 
@@ -190,7 +194,7 @@ The suggested transfer of the tracker-to-aggregate values is based on the follow
 1. Source request: `../api/analytics/dataValueSet.json?dimension=dx:` "{program indicator uid/s}" `&dimension=pe:` "{relative period/s}" `&dimension=ou:` {organisation unit level} `&outputIdScheme=ATTRIBUTE:` {"custom attribute:`vudyDP7jUy5`"}
 2. Target request: `..api/dataValueSets?dataElementIdScheme=CODE&categoryOptionComboIdScheme=CODE&importStrategy=CREATE_AND_UPDATE&mergeMode=REPLACE&dryRun=false`
 
-### Importing Program Indicators
+### Program Indicators
 
 The program indicators required for the aggregation of the data values are included in the program indicator group **COVAC - Tracker to aggregate** `NXBR4r6MwAO`
 
@@ -244,7 +248,7 @@ Indicator type is another type of object that can create import conflict because
 |------------------------|---------------|-----------------------------------------------------------------------|
 | Numerator only (number)| `CqNPn5KzksS` | `../api/indicatorTypes.json?filter=number:eq:true&filter=factor:eq:1` |
 
-#### Tracked Entity Type
+### Tracked Entity Type
 
 Like indicator types, you may have already existing tracked entity types in your DHIS2 database. The references to the tracked entity type should be changed to reflect what is in your system so you do not create duplicates. Table 3 shows the UIDs which could be replaced, as well as the API endpoints to identify the existing UIDs
 
@@ -252,7 +256,7 @@ Like indicator types, you may have already existing tracked entity types in your
 |------------------------|---------------|----------------------------------------|
 | Person | `MCPQUTHX1Ze` | `../api/trackedEntityTypes.json?filter=name:eq:Person` |
 
-#### Visualizations using Root Organisation Unit UID
+### Visualizations using Root Organisation Unit UID
 
 Visualizations, event reports, report tables and maps that are assigned to a specific organisation unit level or organisation unit group, have a reference to the root (level 1) organisation unit. Such objects, if present in the metadata file, contain a placeholder `<OU_ROOT_UID>`. Use the search function in the .json file editor to possibly identify this placeholder and replace it with the UID of the level 1 organisation unit in the target instance.
 
@@ -412,9 +416,9 @@ Even when metadata has been successfully imported without any import conflicts, 
 
 One important thing to keep in mind is that DHIS2 has tools that can hide some of the complexities of potential duplications in metadata. For example, where duplicate option sets exist, they can be hidden for groups of users through [sharing](#sharing).
 
-## Adapting the tracker program
+## Adapting the Program
 
-Once the programme has been imported, you might want to make certain modifications to the programme. Examples of local adaptations that *could* be made include:
+Once the program has been imported, you might want to make certain modifications to the programme. Examples of local adaptations that *could* be made include:
 
 * Adding additional variables to the form.
 * Adapting data element/option names according to national conventions.
