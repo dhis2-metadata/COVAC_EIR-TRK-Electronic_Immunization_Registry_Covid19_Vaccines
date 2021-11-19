@@ -131,7 +131,7 @@ Great care should be taken to ensure that the server itself and the DHIS2 applic
 
 While not always necessary, it can often be advantageous to make certain modifications to the metadata file before importing it into DHIS2.
 
-The Covid-19 Electronic Immunization Registry tracker package includes four metadata files. The contents and purposose of each individual file are described below:
+The Covid-19 Electronic Immunization Registry tracker package includes three metadata files. The contents and purposose of each individual file are described below:
 
 | Package identifier                                            | Contents  | Purpose |
 |---------------------------------------------------------------|-----------|---------|
