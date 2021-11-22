@@ -2390,7 +2390,7 @@
             "name": "COVAC EIR aggregated tracker data",
             "noValueRequiresComment": false,
             "notifyCompletingUser": false,
-            "openFuturePeriods": 0,
+            "openFuturePeriods": 1,
             "openPeriodsAfterCoEndDate": 0,
             "periodOffset": 0,
             "periodType": "Daily",
