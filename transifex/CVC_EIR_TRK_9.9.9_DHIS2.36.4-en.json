@@ -23158,19 +23158,10 @@
             "onlyEnrollOnce": false,
             "programIndicators": [
                 {
-                    "id": "kKr4FSA1O0Z"
-                },
-                {
-                    "id": "MUXThnNRCk6"
-                },
-                {
                     "id": "ZS6qo9BSrcI"
                 },
                 {
                     "id": "xY4T9hHXNji"
-                },
-                {
-                    "id": "SqD0kovH0CS"
                 },
                 {
                     "id": "kNzRGpiCvg4"
@@ -23180,12 +23171,6 @@
                 },
                 {
                     "id": "M3jBOeFxHO0"
-                },
-                {
-                    "id": "CI0pKfEiWom"
-                },
-                {
-                    "id": "UzPqw49tyym"
                 },
                 {
                     "id": "FZNIlzPRMmL"
@@ -23203,28 +23188,13 @@
                     "id": "Zp39TSOR8eW"
                 },
                 {
-                    "id": "HCe7qiP0GoC"
-                },
-                {
-                    "id": "wkaRLVNi6Fm"
-                },
-                {
                     "id": "MzXxrDWcNjW"
-                },
-                {
-                    "id": "ApGCVA6qhKT"
                 },
                 {
                     "id": "cq2a28RsAFT"
                 },
                 {
                     "id": "rqwQndYRiXO"
-                },
-                {
-                    "id": "UzbfnPqo0LV"
-                },
-                {
-                    "id": "BtB8fMhK2gH"
                 },
                 {
                     "id": "h9G7i6mQKef"
@@ -23263,27 +23233,6 @@
                     "id": "dIAw5mn6Wqp"
                 },
                 {
-                    "id": "T4Fcv5Khfe8"
-                },
-                {
-                    "id": "zgt8n5PIAAf"
-                },
-                {
-                    "id": "a6kCEcImBlW"
-                },
-                {
-                    "id": "pbiKvW0Xv5Y"
-                },
-                {
-                    "id": "IXW8ahBF3Pl"
-                },
-                {
-                    "id": "UWXUTVN709H"
-                },
-                {
-                    "id": "BEw3zmRnGo4"
-                },
-                {
                     "id": "MGjwUUNsE60"
                 },
                 {
@@ -23306,12 +23255,6 @@
                 },
                 {
                     "id": "DNWp4zqrALv"
-                },
-                {
-                    "id": "rtoIINJSfAf"
-                },
-                {
-                    "id": "zr25iLoCE4g"
                 }
             ],
             "programRuleVariables": [
@@ -25416,22 +25359,22 @@
                 "external": false,
                 "owner": "vUeLeQMSwhN",
                 "public": "r-------",
-                "userGroups": {
-                    "LHhbGJKXmzz": {
+                      "userGroups": {
+                    "VLIaHu6ou8E": {
                         "access": "r-r-----",
-                        "id": "LHhbGJKXmzz"
+                        "id": "VLIaHu6ou8E"
                     },
-                    "XTNFOnPGrp0": {
+                    "dl1WZpz570i": {
+                        "access": "r-r-----",
+                        "id": "dl1WZpz570i"
+                    },
+                    "q3Nh5xhJEy2": {
                         "access": "r-rw----",
-                        "id": "XTNFOnPGrp0"
+                        "id": "q3Nh5xhJEy2"
                     },
-                    "byS9SDFsd9p": {
-                        "access": "r-rw----",
-                        "id": "byS9SDFsd9p"
-                    },
-                    "vN3X85Hxzno": {
+                    "AEAQ9LktNze": {
                         "access": "rw------",
-                        "id": "vN3X85Hxzno"
+                        "id": "AEAQ9LktNze"
                     }
                 },
                 "users": {}
