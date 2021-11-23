@@ -19823,7 +19823,7 @@
             "name": "COVAC - COVID-19 Vaccination Registry",
             "notificationTemplates": [],
             "onlyEnrollOnce": false,
-            "programIndicators": [
+             "programIndicators": [
                 {
                     "id": "ZS6qo9BSrcI"
                 },
