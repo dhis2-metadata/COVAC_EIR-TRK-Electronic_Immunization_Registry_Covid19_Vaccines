@@ -359,12 +359,14 @@ First, you will have to use the *Sharing* functionality of DHIS2 to configure wh
 
 Please refer to the [DHIS2 documentation](#sharing) for more information on sharing.
 
-There are four user groups that come with the package. By default the following permissions are assigned to these user groups:
+Four core user groups are included in the package:
 
 * COVAC - COVID-19 Immunization Data Analysis
 * COVAC - COVID-19 Immunization Data Admin
 * COVAC - COVID-19 Immunization Data Entry
 * COVAC - COVID-19 Immunization Metadata Admin
+
+By default, the following permissions are assigned to these user groups:
 
 |Object                   |User Group                                     |                                                     |                                                     |                                                    |
 |-------------------------|-----------------------------------------------|-----------------------------------------------------|-----------------------------------------------------|----------------------------------------------------|
