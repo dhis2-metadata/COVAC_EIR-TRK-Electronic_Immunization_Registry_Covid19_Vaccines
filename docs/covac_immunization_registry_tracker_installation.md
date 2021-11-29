@@ -1,7 +1,9 @@
 # Covid-19 Electronic Immunization Registry - Tracker Installation Guide { #cvc-eir-trk-installation }
 
 This document includes an installation guide for the updated COVAC Electronic Immunization Registry tracker package and a supplementary aggregate module for daily reporting based on tracker data.
+
 System default language: English
+
 Available translations: French, Spanish, Portuguese
 
 ## Overview
