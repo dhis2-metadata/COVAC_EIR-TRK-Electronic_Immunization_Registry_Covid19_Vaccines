@@ -42,7 +42,7 @@ Available translations: French, Spanish, Portuguese
     }
     ```
 
-=== "Program Indicators (tracker-to-aggregate transfer)
+=== "Program Indicators (tracker-to-aggregate transfer)"
 
     ```json
     "package": {
@@ -92,7 +92,7 @@ Available translations: French, Spanish, Portuguese
     }
     ```
 
-=== "Program Indicators (tracker-to-aggregate transfer)
+=== "Program Indicators (tracker-to-aggregate transfer)"
 
     ```json
     "package": {
