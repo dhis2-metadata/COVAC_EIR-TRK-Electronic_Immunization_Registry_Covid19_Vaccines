@@ -1,4 +1,4 @@
-# Change logs { #covac-change-log }
+# Change logs { #cvc-change-log }
 
 If you have installed one of the work in progress packages before the official release, these are the main changes between each iteration:
 
