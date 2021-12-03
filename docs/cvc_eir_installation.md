@@ -146,7 +146,7 @@ The Covid-19 Electronic Immunization Registry tracker package includes three met
 > The package is not an out-of-the-box tool for tracker-to-aggregate data transfer.
 > The structure of the metadata package and the suggested mapping of metadata allow the implementer to set up the transfer of data based on existing tools and guidance. More information is available in the [Tracker to aggregate data Transfer Document](https://docs.dhis2.org/en/implement/maintenance-and-use/tracker-and-aggregate-data-integration.html#how-to-saving-aggregated-tracker-data-as-aggregate-data-values).
 
-## Preparing the Metadata File
+## Preparing the metadata file
 
 ### Mapping guide for data transfer
 
@@ -167,7 +167,7 @@ The suggested transfer of the tracker-to-aggregate values is based on the follow
 1. Source request: `../api/analytics/dataValueSet.json?dimension=dx:` "{program indicator uid/s}" `&dimension=pe:` "{relative period/s}" `&dimension=ou:` {organisation unit level} `&outputIdScheme=ATTRIBUTE:` {"custom attribute:`vudyDP7jUy5`"}
 2. Target request: `..api/dataValueSets?dataElementIdScheme=CODE&categoryOptionComboIdScheme=CODE&importStrategy=CREATE_AND_UPDATE&mergeMode=REPLACE&dryRun=false`
 
-### Program Indicators
+### Program indicators
 
 The program indicators required for the aggregation of the data values are included in the program indicator group **COVAC - Tracker to aggregate** `NXBR4r6MwAO`
 
@@ -381,7 +381,7 @@ By default, the following permissions are assigned to these user groups:
 
 The users are assigned to the appropriate user group based on their role within the system. Sharing for other objects in the package may be adjusted depending on the set up. Refer to the [DHIS2 Documentation on sharing](#sharing) for more information.
 
-### User Roles
+### User roles
 
 Users will need user roles in order to engage with the various applications within DHIS2. The following minimum roles are recommended:
 
@@ -390,22 +390,22 @@ Users will need user roles in order to engage with the various applications with
 
 Refer to the [DHIS2 Documentation](https://docs.dhis2.org/) for more information on configuring user roles.
 
-### Organisation Units
+### Organisation units
 
 The program and the data sets must be assigned to organisation units within existing hierarchy in order to be accessible via tracker capture/capture apps.
 
-### Duplicated Metadata
+### Duplicated metadata
 
 > **NOTE**
 >
-> This section only applies if you are importing into a DHIS2 database in which there is already meta-data present. If you are working with a new DHIS2 instance, please skip this section and go to [Adapting the tracker program](#adapting-the-tracker-program).
+> This section only applies if you are importing into a DHIS2 database in which there is already meta-data present. If you are working with a new DHIS2 instance, please skip this section and go to [Adapting the tracker program](#adapting-the-program).
 > If you are using any third party applications that rely on the current metadata, please take into account that this update could break them.
 
 Even when metadata has been successfully imported without any import conflicts, there can be duplicates in the metadata - data elements, tracked entity attributes or option sets that already exist. As was noted in the section above on resolving conflict, an important issue to keep in mind is that decisions on making changes to the metadata in DHIS2 also needs to take into account other documents and resources that are in different ways associated with both the existing metadata, and the metadata that has been imported through the configuration package. Resolving duplicates is thus not only a matter of "cleaning up the database", but also making sure that this is done without, for example, breaking potential integrating with other systems, the possibility to use training material, breaking SOPs etc. This will very much be context-dependent.
 
 One important thing to keep in mind is that DHIS2 has tools that can hide some of the complexities of potential duplications in metadata. For example, where duplicate option sets exist, they can be hidden for groups of users through [sharing](#sharing).
 
-## Adapting the Program
+## Adapting the program
 
 Once the program has been imported, you might want to make certain modifications to the program. Examples of local adaptations that *could* be made include:
 
