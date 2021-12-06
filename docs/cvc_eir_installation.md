@@ -8,7 +8,7 @@ Available translations: French, Spanish, Portuguese
 
 ## Overview
 
-The package metadata json files contain a "package" component that provides technical details on package version and content. The overview of the complete package and its components available for installation is provided below. 
+The package metadata json files contain a "package" component that provides technical details on package version and content. The files available in the current version of the package are listed below.
 
 ### DHIS2.35
 
