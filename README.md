@@ -1,1 +1,1 @@
-# CVIR - Electronic Immunization Registry - Covid-19 Vaccines
+Electronic Immunization Registry (COVID-19 vaccines) - Tracker metadata package
