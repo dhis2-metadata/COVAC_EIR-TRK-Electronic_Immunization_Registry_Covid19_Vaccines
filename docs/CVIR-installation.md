@@ -16,14 +16,14 @@ The package metadata json files contain a "package" component that provides tech
 
     ```json
     "package": {
-        "DHIS2Build": "834b25f",
-        "DHIS2Version": "2.35.8",
-        "code": "CVC_EIR",
-        "description": "",
-        "lastUpdated": "20211111T154832",
+        "DHIS2Build": "35d663a",
+        "DHIS2Version": "2.35.11",
+        "code": "CVIR00",
+        "description": "COVID19 Electronic Immunization Registry",
+        "lastUpdated": "20220118T163027",
         "locale": "en",
-        "name": "CVC_EIR_TRK_1.2.0_DHIS2.35.8-en",
-        "type": "TRK",
+        "name": "COVAC_EIR_TKR_1.2.0_DHIS2.35.11-en",
+        "type": "TKR",
         "version": "1.2.0"
     }
     ```
@@ -32,13 +32,13 @@ The package metadata json files contain a "package" component that provides tech
 
     ```json
     "package": {
-        "DHIS2Build": "834b25f",
-        "DHIS2Version": "2.35.8",
-        "code": "CVC_EIR_AGG",
+        "DHIS2Build": "35d663a",
+        "DHIS2Version": "2.35.11",
+        "code": "CVIRAG",
         "description": "",
-        "lastUpdated": "20211111T154832",
+        "lastUpdated": "20220119T094326",
         "locale": "en",
-        "name": "CVC_EIR_AGG_1.2.0_DHIS2.35.8-en",
+        "name": "CVIR_EIR_AGG_1.2.0_DHIS2.35.11-en",
         "type": "AGG",
         "version": "1.2.0"
     }
@@ -48,14 +48,14 @@ The package metadata json files contain a "package" component that provides tech
 
     ```json
     "package": {
-        "DHIS2Build": "834b25f",
-        "DHIS2Version": "2.35.8",
-        "code": "CVC_EIR",
-        "description": "",
-        "lastUpdated": "20211111T141045",
+        "DHIS2Build": "35d663a",
+        "DHIS2Version": "2.35.11",
+        "code": "CVIRPI",
+        "description": "COVID19 Electronic Immunization Registry",
+        "lastUpdated": "20220118T163027",
         "locale": "en",
-        "name": "CVC_EIR_PI_1.2.0_DHIS2.35.8-en",
-        "type": "ADD_ON",
+        "name": "COVAC_EIR_TKR_1.2.0_DHIS2.35.11-en",
+        "type": "TKR",
         "version": "1.2.0"
     }
     ```
@@ -66,14 +66,14 @@ The package metadata json files contain a "package" component that provides tech
 
     ```json
     "package": {
-        "DHIS2Build": "2adf10b",
-        "DHIS2Version": "2.36.4",
-        "code": "CVC_EIR",
-        "description": "",
-        "lastUpdated": "20211111T155558",
+        "DHIS2Build": "5d136cb",
+        "DHIS2Version": "2.36.6",
+        "code": "CVIR00",
+        "description": "COVID19 Electronic Immunization Registry",
+        "lastUpdated": "20220119T084447",
         "locale": "en",
-        "name": "CVC_EIR_TRK_1.2.0_DHIS2.36.4-en",
-        "type": "TRK",
+        "name": "COVAC_EIR_TKR_1.2.0_DHIS2.36.6-en",
+        "type": "TKR",
         "version": "1.2.0"
     }
     ```
@@ -82,13 +82,13 @@ The package metadata json files contain a "package" component that provides tech
 
     ```json
     "package": {
-        "DHIS2Build": "2adf10b",
-        "DHIS2Version": "2.36.4",
-        "code": "CVC_EIR_AGG",
+        "DHIS2Build": "5d136cb",
+        "DHIS2Version": "2.36.6",
+        "code": "CVIRAG",
         "description": "",
-        "lastUpdated": "20211111T154958",
+        "lastUpdated": "20220119T084447",
         "locale": "en",
-        "name": "CVC_EIR_AGG_1.2.0_DHIS2.36.4-en",
+        "name": "CVIR_EIR_AGG_1.2.0_DHIS2.36.6-en",
         "type": "AGG",
         "version": "1.2.0"
     }
@@ -98,13 +98,14 @@ The package metadata json files contain a "package" component that provides tech
 
     ```json
     "package": {
-        "DHIS2Version": "2.36.4",
-        "code": "CVC_EIR",
-        "description": "",
-        "lastUpdated": "20211111T155558",
+        "DHIS2Build": "5d136cb",
+        "DHIS2Version": "2.36.6",
+        "code": "CVIRPI",
+        "description": "COVID19 Electronic Immunization Registry",
+        "lastUpdated": "20220119T084447",
         "locale": "en",
-        "name": "CVC_EIR_PI_1.2.0_DHIS2.36.4-en",
-        "type": "ADD_ON",
+        "name": "COVAC_EIR_TKR_1.2.0_DHIS2.36.6-en",
+        "type": "TKR",
         "version": "1.2.0"
     }
     ```
