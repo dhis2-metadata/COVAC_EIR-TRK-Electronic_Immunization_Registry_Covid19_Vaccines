@@ -1,0 +1,5560 @@
+{
+    "attributes": [
+        {
+            "attributeValues": [],
+            "categoryAttribute": false,
+            "categoryOptionAttribute": false,
+            "categoryOptionComboAttribute": false,
+            "categoryOptionGroupAttribute": false,
+            "categoryOptionGroupSetAttribute": false,
+            "constantAttribute": false,
+            "dataElementAttribute": false,
+            "dataElementGroupAttribute": false,
+            "dataElementGroupSetAttribute": false,
+            "dataSetAttribute": false,
+            "description": "ICD-10 code",
+            "documentAttribute": false,
+            "externalAccess": false,
+            "favorite": false,
+            "id": "iehcXLBKVWM",
+            "indicatorAttribute": false,
+            "indicatorGroupAttribute": false,
+            "legendSetAttribute": false,
+            "mandatory": false,
+            "name": "Code (ICD-10)",
+            "optionAttribute": false,
+            "optionSetAttribute": false,
+            "organisationUnitAttribute": false,
+            "organisationUnitGroupAttribute": false,
+            "organisationUnitGroupSetAttribute": false,
+            "programAttribute": false,
+            "programIndicatorAttribute": false,
+            "programStageAttribute": false,
+            "publicAccess": "rw------",
+            "sectionAttribute": false,
+            "shortName": "ICD-10",
+            "sqlViewAttribute": false,
+            "trackedEntityAttributeAttribute": true,
+            "trackedEntityTypeAttribute": false,
+            "translations": [
+                {
+                    "locale": "cs",
+                    "property": "DESCRIPTION",
+                    "value": "ICD-10 kód"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "Código (ICD-10)"
+                },
+                {
+                    "locale": "ru",
+                    "property": "NAME",
+                    "value": "Код (МКБ-10)"
+                },
+                {
+                    "locale": "fr",
+                    "property": "DESCRIPTION",
+                    "value": "Code CIM-10"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "Kód (ICD-10)"
+                },
+                {
+                    "locale": "cs",
+                    "property": "SHORT_NAME",
+                    "value": "ICD-10"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "Code (CIM-10)"
+                },
+                {
+                    "locale": "es",
+                    "property": "DESCRIPTION",
+                    "value": "Código ICD-10"
+                },
+                {
+                    "locale": "ru",
+                    "property": "DESCRIPTION",
+                    "value": "Код МКБ-10"
+                },
+                {
+                    "locale": "ru",
+                    "property": "SHORT_NAME",
+                    "value": "МКБ-10"
+                },
+                {
+                    "locale": "fr",
+                    "property": "SHORT_NAME",
+                    "value": "CIM-10"
+                },
+                {
+                    "locale": "es",
+                    "property": "SHORT_NAME",
+                    "value": "ICD-10"
+                }
+            ],
+            "unique": true,
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userAttribute": false,
+            "userGroupAccesses": [],
+            "userGroupAttribute": false,
+            "validationRuleAttribute": false,
+            "validationRuleGroupAttribute": false,
+            "valueType": "TEXT"
+        },
+        {
+            "attributeValues": [],
+            "categoryAttribute": false,
+            "categoryOptionAttribute": false,
+            "categoryOptionComboAttribute": false,
+            "categoryOptionGroupAttribute": false,
+            "categoryOptionGroupSetAttribute": false,
+            "constantAttribute": false,
+            "dataElementAttribute": false,
+            "dataElementGroupAttribute": false,
+            "dataElementGroupSetAttribute": false,
+            "dataSetAttribute": false,
+            "description": "Loinc code",
+            "documentAttribute": false,
+            "externalAccess": false,
+            "favorite": false,
+            "id": "mpXON5igCG1",
+            "indicatorAttribute": false,
+            "indicatorGroupAttribute": false,
+            "legendSetAttribute": false,
+            "mandatory": false,
+            "name": "Code (Loinc)",
+            "optionAttribute": false,
+            "optionSetAttribute": false,
+            "organisationUnitAttribute": false,
+            "organisationUnitGroupAttribute": false,
+            "organisationUnitGroupSetAttribute": false,
+            "programAttribute": false,
+            "programIndicatorAttribute": false,
+            "programStageAttribute": false,
+            "publicAccess": "rw------",
+            "sectionAttribute": false,
+            "shortName": "Loinc",
+            "sqlViewAttribute": false,
+            "trackedEntityAttributeAttribute": true,
+            "trackedEntityTypeAttribute": false,
+            "translations": [
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "Código (Loinc)"
+                },
+                {
+                    "locale": "es",
+                    "property": "SHORT_NAME",
+                    "value": "Loinc"
+                },
+                {
+                    "locale": "cs",
+                    "property": "SHORT_NAME",
+                    "value": "Loinc"
+                },
+                {
+                    "locale": "fr",
+                    "property": "DESCRIPTION",
+                    "value": "code Loinc"
+                },
+                {
+                    "locale": "ru",
+                    "property": "DESCRIPTION",
+                    "value": "Код Loinc"
+                },
+                {
+                    "locale": "ru",
+                    "property": "SHORT_NAME",
+                    "value": "Loinc"
+                },
+                {
+                    "locale": "fr",
+                    "property": "SHORT_NAME",
+                    "value": "Loinc"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "code (Loinc)"
+                },
+                {
+                    "locale": "cs",
+                    "property": "DESCRIPTION",
+                    "value": "Loinc kód"
+                },
+                {
+                    "locale": "es",
+                    "property": "DESCRIPTION",
+                    "value": "Código Loinc"
+                },
+                {
+                    "locale": "ru",
+                    "property": "NAME",
+                    "value": "Код (Loinc)"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "Kód (Loinc)"
+                }
+            ],
+            "unique": true,
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userAttribute": false,
+            "userGroupAccesses": [],
+            "userGroupAttribute": false,
+            "validationRuleAttribute": false,
+            "validationRuleGroupAttribute": false,
+            "valueType": "TEXT"
+        },
+        {
+            "attributeValues": [],
+            "categoryAttribute": false,
+            "categoryOptionAttribute": false,
+            "categoryOptionComboAttribute": false,
+            "categoryOptionGroupAttribute": false,
+            "categoryOptionGroupSetAttribute": false,
+            "constantAttribute": false,
+            "dataElementAttribute": false,
+            "dataElementGroupAttribute": false,
+            "dataElementGroupSetAttribute": false,
+            "dataSetAttribute": false,
+            "description": "SNOMED code",
+            "documentAttribute": false,
+            "externalAccess": false,
+            "favorite": false,
+            "id": "I6u65yRc0ct",
+            "indicatorAttribute": false,
+            "indicatorGroupAttribute": false,
+            "legendSetAttribute": false,
+            "mandatory": false,
+            "name": "Code (SNOMED)",
+            "optionAttribute": false,
+            "optionSetAttribute": false,
+            "organisationUnitAttribute": false,
+            "organisationUnitGroupAttribute": false,
+            "organisationUnitGroupSetAttribute": false,
+            "programAttribute": false,
+            "programIndicatorAttribute": false,
+            "programStageAttribute": false,
+            "publicAccess": "rw------",
+            "sectionAttribute": false,
+            "shortName": "SNOMED",
+            "sqlViewAttribute": false,
+            "trackedEntityAttributeAttribute": true,
+            "trackedEntityTypeAttribute": false,
+            "translations": [
+                {
+                    "locale": "ru",
+                    "property": "NAME",
+                    "value": "Код (SNOMED)"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "Code (SNOMED)"
+                },
+                {
+                    "locale": "es",
+                    "property": "DESCRIPTION",
+                    "value": "Código SNOMED"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "Kód (SNOMED)"
+                },
+                {
+                    "locale": "cs",
+                    "property": "SHORT_NAME",
+                    "value": "SNOMED"
+                },
+                {
+                    "locale": "es",
+                    "property": "SHORT_NAME",
+                    "value": "SNOMED"
+                },
+                {
+                    "locale": "fr",
+                    "property": "DESCRIPTION",
+                    "value": "code SNOMED"
+                },
+                {
+                    "locale": "cs",
+                    "property": "DESCRIPTION",
+                    "value": "SNOMED kód"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "Código (SNOMED)"
+                },
+                {
+                    "locale": "fr",
+                    "property": "SHORT_NAME",
+                    "value": "SNOMED"
+                },
+                {
+                    "locale": "ru",
+                    "property": "SHORT_NAME",
+                    "value": "SNOMED"
+                }
+            ],
+            "unique": true,
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userAttribute": false,
+            "userGroupAccesses": [],
+            "userGroupAttribute": false,
+            "validationRuleAttribute": false,
+            "validationRuleGroupAttribute": false,
+            "valueType": "TEXT"
+        },
+        {
+            "attributeValues": [],
+            "categoryAttribute": false,
+            "categoryOptionAttribute": false,
+            "categoryOptionComboAttribute": false,
+            "categoryOptionGroupAttribute": false,
+            "categoryOptionGroupSetAttribute": false,
+            "code": "DATA_ELEMENT_AGG",
+            "constantAttribute": false,
+            "dataElementAttribute": false,
+            "dataElementGroupAttribute": false,
+            "dataElementGroupSetAttribute": false,
+            "dataSetAttribute": false,
+            "description": "Data element for aggregate data export",
+            "documentAttribute": false,
+            "externalAccess": false,
+            "favorite": false,
+            "id": "vudyDP7jUy5",
+            "indicatorAttribute": false,
+            "indicatorGroupAttribute": false,
+            "legendSetAttribute": false,
+            "mandatory": false,
+            "name": "Data element for aggregate data export",
+            "optionAttribute": false,
+            "optionSetAttribute": false,
+            "organisationUnitAttribute": false,
+            "organisationUnitGroupAttribute": false,
+            "organisationUnitGroupSetAttribute": false,
+            "programAttribute": false,
+            "programIndicatorAttribute": true,
+            "programStageAttribute": false,
+            "publicAccess": "rw------",
+            "sectionAttribute": false,
+            "shortName": "Data element for aggregate data export",
+            "sqlViewAttribute": false,
+            "trackedEntityAttributeAttribute": false,
+            "trackedEntityTypeAttribute": false,
+            "translations": [
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "Élément de données pour l'exportation de données agrégées"
+                },
+                {
+                    "locale": "cs",
+                    "property": "SHORT_NAME",
+                    "value": "Datový prvek pro agregovaný export dat"
+                },
+                {
+                    "locale": "uz",
+                    "property": "NAME",
+                    "value": "Умумий маълумотларни экспорт қилиш учун маълумотлар элементи"
+                },
+                {
+                    "locale": "cs",
+                    "property": "DESCRIPTION",
+                    "value": "Datový prvek pro agregovaný export dat"
+                },
+                {
+                    "locale": "es",
+                    "property": "DESCRIPTION",
+                    "value": "Elemento de datos para la exportación de datos agregados"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "Elemento de datos para la exportación de datos agregados"
+                },
+                {
+                    "locale": "ru",
+                    "property": "SHORT_NAME",
+                    "value": "Элемент данных для экспорта агрегированных данных"
+                },
+                {
+                    "locale": "ru",
+                    "property": "NAME",
+                    "value": "Элемент данных для экспорта агрегированных данных"
+                },
+                {
+                    "locale": "uz",
+                    "property": "SHORT_NAME",
+                    "value": "Умумий маълумотларни экспорт қилиш учун маълумотлар элементи"
+                },
+                {
+                    "locale": "uz",
+                    "property": "DESCRIPTION",
+                    "value": "Умумий маълумотларни экспорт қилиш учун маълумотлар элементи"
+                },
+                {
+                    "locale": "fr",
+                    "property": "SHORT_NAME",
+                    "value": "Élément de données pour l'exportation de données agrégées"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "Datový prvek pro agregovaný export dat"
+                },
+                {
+                    "locale": "fr",
+                    "property": "DESCRIPTION",
+                    "value": "Élément de données pour l'exportation de données agrégées"
+                },
+                {
+                    "locale": "ru",
+                    "property": "DESCRIPTION",
+                    "value": "Элемент данных для экспорта агрегированных данных"
+                },
+                {
+                    "locale": "es",
+                    "property": "SHORT_NAME",
+                    "value": "Elemento de datos para la exportación de datos agregados"
+                }
+            ],
+            "unique": false,
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userAttribute": false,
+            "userGroupAccesses": [],
+            "userGroupAttribute": false,
+            "validationRuleAttribute": false,
+            "validationRuleGroupAttribute": false,
+            "valueType": "TEXT"
+        }
+    ],
+    "categories": [
+        {
+            "attributeValues": [],
+            "categoryCombos": [
+                {
+                    "id": "ejUQIUINJ58"
+                }
+            ],
+            "categoryOptions": [
+                {
+                    "id": "ZzSc6xP10nz"
+                },
+                {
+                    "id": "m9UzfatWfRs"
+                }
+            ],
+            "code": "AGE_0059_60PLUS",
+            "dataDimension": true,
+            "dataDimensionType": "DISAGGREGATION",
+            "dimension": "zOt7MceLobG",
+            "dimensionType": "CATEGORY",
+            "externalAccess": false,
+            "favorite": false,
+            "id": "zOt7MceLobG",
+            "items": [
+                {
+                    "id": "ZzSc6xP10nz"
+                },
+                {
+                    "id": "m9UzfatWfRs"
+                }
+            ],
+            "name": "Age - (0-59,60+)",
+            "publicAccess": "rw------",
+            "shortName": "Age - (0-59,60+)",
+            "translations": [
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "Âge - (0-59,60+)"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "Věk - (0-59,60+)"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "Edad - (0-59,60+)"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": []
+        },
+        {
+            "attributeValues": [],
+            "categoryCombos": [
+                {
+                    "id": "bjDvmb4bfuf"
+                }
+            ],
+            "categoryOptions": [
+                {
+                    "id": "xYerKDKCefk"
+                }
+            ],
+            "code": "default",
+            "dataDimension": false,
+            "dataDimensionType": "DISAGGREGATION",
+            "dimension": "GLevLNI9wkl",
+            "dimensionType": "CATEGORY",
+            "externalAccess": false,
+            "favorite": false,
+            "id": "GLevLNI9wkl",
+            "items": [
+                {
+                    "id": "xYerKDKCefk"
+                }
+            ],
+            "name": "default",
+            "publicAccess": "rw------",
+            "shortName": "default",
+            "translations": [
+                {
+                    "locale": "nb",
+                    "property": "NAME",
+                    "value": "standard"
+                },
+                {
+                    "locale": "pt",
+                    "property": "NAME",
+                    "value": "Padrão"
+                },
+                {
+                    "locale": "id",
+                    "property": "NAME",
+                    "value": "Putus berobat/default"
+                },
+                {
+                    "locale": "ar",
+                    "property": "NAME",
+                    "value": "الافتراضي"
+                },
+                {
+                    "locale": "uz",
+                    "property": "NAME",
+                    "value": "Стандарт"
+                },
+                {
+                    "locale": "uz_UZ",
+                    "property": "NAME",
+                    "value": "standart"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "défaut"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "default"
+                },
+                {
+                    "locale": "ru",
+                    "property": "NAME",
+                    "value": "по умолчанию"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "výchozí"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": []
+        },
+        {
+            "attributeValues": [],
+            "categoryCombos": [
+                {
+                    "id": "ejUQIUINJ58"
+                }
+            ],
+            "categoryOptions": [
+                {
+                    "id": "FFA9e1yIXCT"
+                },
+                {
+                    "id": "MP15bHaQh2x"
+                }
+            ],
+            "code": "SEX",
+            "dataDimension": true,
+            "dataDimensionType": "DISAGGREGATION",
+            "dimension": "FRwO58KwwJt",
+            "dimensionType": "CATEGORY",
+            "externalAccess": false,
+            "favorite": false,
+            "id": "FRwO58KwwJt",
+            "items": [
+                {
+                    "id": "FFA9e1yIXCT"
+                },
+                {
+                    "id": "MP15bHaQh2x"
+                }
+            ],
+            "name": "Sex",
+            "publicAccess": "rw------",
+            "shortName": "Sex",
+            "translations": [
+                {
+                    "locale": "id",
+                    "property": "NAME",
+                    "value": "Jenis Kelamin"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "Sexo"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "Sexe à la naissance"
+                },
+                {
+                    "locale": "uz",
+                    "property": "NAME",
+                    "value": "Жинси"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "Pohlaví"
+                },
+                {
+                    "locale": "pt",
+                    "property": "NAME",
+                    "value": "Sexo"
+                },
+                {
+                    "locale": "ru",
+                    "property": "NAME",
+                    "value": "Пол"
+                },
+                {
+                    "locale": "nb",
+                    "property": "NAME",
+                    "value": "Kjønn"
+                },
+                {
+                    "locale": "uz_UZ",
+                    "property": "NAME",
+                    "value": "Jinsi"
+                },
+                {
+                    "locale": "ar",
+                    "property": "NAME",
+                    "value": "الجنس"
+                },
+                {
+                    "locale": "de",
+                    "property": "NAME",
+                    "value": "Sexo"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": []
+        }
+    ],
+    "categoryCombos": [
+        {
+            "attributeValues": [],
+            "categories": [
+                {
+                    "id": "FRwO58KwwJt"
+                },
+                {
+                    "id": "zOt7MceLobG"
+                }
+            ],
+            "categoryOptionCombos": [
+                {
+                    "id": "nACYHQS6RTn"
+                },
+                {
+                    "id": "wY6kS8VVWH9"
+                },
+                {
+                    "id": "FsZSFGKirY0"
+                },
+                {
+                    "id": "iUe9y7FGGws"
+                }
+            ],
+            "code": "COVAC_AGE_SEX",
+            "dataDimensionType": "DISAGGREGATION",
+            "externalAccess": false,
+            "favorite": false,
+            "id": "ejUQIUINJ58",
+            "isDefault": false,
+            "name": "COVAC - (Age, sex)",
+            "publicAccess": "rw------",
+            "skipTotal": false,
+            "translations": [
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "COVAC - (věk, pohlaví)"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "COVAV - (Edad, sexo)"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "COVAC - (Âge, sexe)"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": []
+        },
+        {
+            "attributeValues": [],
+            "categories": [
+                {
+                    "id": "GLevLNI9wkl"
+                }
+            ],
+            "categoryOptionCombos": [
+                {
+                    "id": "HllvX50cXC0"
+                }
+            ],
+            "code": "default",
+            "dataDimensionType": "DISAGGREGATION",
+            "externalAccess": false,
+            "favorite": false,
+            "id": "bjDvmb4bfuf",
+            "isDefault": true,
+            "name": "default",
+            "publicAccess": "rw------",
+            "skipTotal": false,
+            "translations": [
+                {
+                    "locale": "nb",
+                    "property": "NAME",
+                    "value": "standard"
+                },
+                {
+                    "locale": "pt",
+                    "property": "NAME",
+                    "value": "Padrão"
+                },
+                {
+                    "locale": "id",
+                    "property": "NAME",
+                    "value": "Putus berobat/default"
+                },
+                {
+                    "locale": "ar",
+                    "property": "NAME",
+                    "value": "الافتراضي"
+                },
+                {
+                    "locale": "uz",
+                    "property": "NAME",
+                    "value": "Стандарт"
+                },
+                {
+                    "locale": "uz_UZ",
+                    "property": "NAME",
+                    "value": "standart"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "default"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "défaut"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "výchozí"
+                },
+                {
+                    "locale": "ru",
+                    "property": "NAME",
+                    "value": "по умолчанию"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": []
+        }
+    ],
+    "categoryOptionCombos": [
+        {
+            "attributeValues": [],
+            "categoryCombo": {
+                "id": "bjDvmb4bfuf"
+            },
+            "categoryOptions": [
+                {
+                    "id": "xYerKDKCefk"
+                }
+            ],
+            "code": "default",
+            "dimensionItem": "HllvX50cXC0",
+            "externalAccess": false,
+            "favorite": false,
+            "id": "HllvX50cXC0",
+            "ignoreApproval": false,
+            "legendSets": [],
+            "name": "default",
+            "periodOffset": 0,
+            "shortName": "default",
+            "translations": [
+                {
+                    "locale": "nb",
+                    "property": "NAME",
+                    "value": "standard"
+                },
+                {
+                    "locale": "pt",
+                    "property": "NAME",
+                    "value": "Padrão"
+                },
+                {
+                    "locale": "id",
+                    "property": "NAME",
+                    "value": "Putus berobat/default"
+                },
+                {
+                    "locale": "ar",
+                    "property": "NAME",
+                    "value": "الافتراضي"
+                },
+                {
+                    "locale": "uz",
+                    "property": "NAME",
+                    "value": "Стандарт"
+                },
+                {
+                    "locale": "uz_UZ",
+                    "property": "NAME",
+                    "value": "standart"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "default"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "défaut"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "výchozí"
+                },
+                {
+                    "locale": "ru",
+                    "property": "NAME",
+                    "value": "по умолчанию"
+                }
+            ],
+            "userAccesses": [],
+            "userGroupAccesses": []
+        },
+        {
+            "attributeValues": [],
+            "categoryCombo": {
+                "id": "ejUQIUINJ58"
+            },
+            "categoryOptions": [
+                {
+                    "id": "ZzSc6xP10nz"
+                },
+                {
+                    "id": "FFA9e1yIXCT"
+                }
+            ],
+            "code": "0059Y_F",
+            "dimensionItem": "FsZSFGKirY0",
+            "externalAccess": false,
+            "favorite": false,
+            "id": "FsZSFGKirY0",
+            "ignoreApproval": false,
+            "legendSets": [],
+            "name": "Female, 0-59 years",
+            "periodOffset": 0,
+            "shortName": "Female, 0-59 years",
+            "translations": [
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "Femme, 0-59 ans"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "Mujer, 0-59 años"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "Žena, 0-59 let"
+                }
+            ],
+            "userAccesses": [],
+            "userGroupAccesses": []
+        },
+        {
+            "attributeValues": [],
+            "categoryCombo": {
+                "id": "ejUQIUINJ58"
+            },
+            "categoryOptions": [
+                {
+                    "id": "FFA9e1yIXCT"
+                },
+                {
+                    "id": "m9UzfatWfRs"
+                }
+            ],
+            "code": "60PLUSY_F",
+            "dimensionItem": "iUe9y7FGGws",
+            "externalAccess": false,
+            "favorite": false,
+            "id": "iUe9y7FGGws",
+            "ignoreApproval": false,
+            "legendSets": [],
+            "name": "Female, 60+ years",
+            "periodOffset": 0,
+            "shortName": "Female, 60+ years",
+            "translations": [
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "Mujer, 60+ años"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "Žena, 60+ let"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "Femme, 60+ ans"
+                }
+            ],
+            "userAccesses": [],
+            "userGroupAccesses": []
+        },
+        {
+            "attributeValues": [],
+            "categoryCombo": {
+                "id": "ejUQIUINJ58"
+            },
+            "categoryOptions": [
+                {
+                    "id": "ZzSc6xP10nz"
+                },
+                {
+                    "id": "MP15bHaQh2x"
+                }
+            ],
+            "code": "0059Y_M",
+            "dimensionItem": "nACYHQS6RTn",
+            "externalAccess": false,
+            "favorite": false,
+            "id": "nACYHQS6RTn",
+            "ignoreApproval": false,
+            "legendSets": [],
+            "name": "Male, 0-59 years",
+            "periodOffset": 0,
+            "shortName": "Male, 0-59 years",
+            "translations": [
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "Hombre, 0-59 años"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "Muž, 0-59 let"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "Homme, 0-59 ans"
+                }
+            ],
+            "userAccesses": [],
+            "userGroupAccesses": []
+        },
+        {
+            "attributeValues": [],
+            "categoryCombo": {
+                "id": "ejUQIUINJ58"
+            },
+            "categoryOptions": [
+                {
+                    "id": "m9UzfatWfRs"
+                },
+                {
+                    "id": "MP15bHaQh2x"
+                }
+            ],
+            "code": "60PLUSY_M",
+            "dimensionItem": "wY6kS8VVWH9",
+            "externalAccess": false,
+            "favorite": false,
+            "id": "wY6kS8VVWH9",
+            "ignoreApproval": false,
+            "legendSets": [],
+            "name": "Male, 60+ years",
+            "periodOffset": 0,
+            "shortName": "Male, 60+ years",
+            "translations": [
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "Hombre, 60+ años"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "Muž, 60+ let"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "Homme, 60+ ans"
+                }
+            ],
+            "userAccesses": [],
+            "userGroupAccesses": []
+        }
+    ],
+    "categoryOptionGroupSets": [
+        {
+            "attributeValues": [],
+            "categoryOptionGroups": [
+                {
+                    "id": "fqborXHhXZG"
+                },
+                {
+                    "id": "hEct0AAbPAw"
+                }
+            ],
+            "code": "AGE_0059_60PLUS",
+            "dataDimension": true,
+            "dataDimensionType": "DISAGGREGATION",
+            "description": "Age (0-59,60+)",
+            "dimension": "hEcLht1oMFl",
+            "dimensionType": "CATEGORY_OPTION_GROUP_SET",
+            "externalAccess": false,
+            "favorite": false,
+            "id": "hEcLht1oMFl",
+            "items": [
+                {
+                    "id": "fqborXHhXZG"
+                },
+                {
+                    "id": "hEct0AAbPAw"
+                }
+            ],
+            "name": "Age (0-59,60+)",
+            "publicAccess": "rw------",
+            "shortName": "Age (0-59,60+)",
+            "translations": [
+                {
+                    "locale": "es",
+                    "property": "DESCRIPTION",
+                    "value": "Edad (0-59,60+)"
+                },
+                {
+                    "locale": "fr",
+                    "property": "DESCRIPTION",
+                    "value": "Âge (0-59,60+)"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "Věk (0-59,60+)"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "Edad (0-59,60 +)"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "Âge (0-59,60+)"
+                },
+                {
+                    "locale": "cs",
+                    "property": "DESCRIPTION",
+                    "value": "Věk (0-59, 60+)"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": []
+        },
+        {
+            "attributeValues": [],
+            "categoryOptionGroups": [
+                {
+                    "id": "bqoVhX2RfG4"
+                },
+                {
+                    "id": "EVYKU2fIc6G"
+                }
+            ],
+            "code": "SEX_FEMALE_MALE",
+            "dataDimension": true,
+            "dataDimensionType": "DISAGGREGATION",
+            "dimension": "CMrvZp5rmoC",
+            "dimensionType": "CATEGORY_OPTION_GROUP_SET",
+            "externalAccess": false,
+            "favorite": false,
+            "id": "CMrvZp5rmoC",
+            "items": [
+                {
+                    "id": "bqoVhX2RfG4"
+                },
+                {
+                    "id": "EVYKU2fIc6G"
+                }
+            ],
+            "name": "Sex (Female/Male)",
+            "publicAccess": "rw------",
+            "shortName": "Sex (Female/Male)",
+            "translations": [
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "Sexe (Femme/Homme)"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "Pohlaví (žena / muž)"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "Sexo (femenino / masculino)"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": []
+        }
+    ],
+    "categoryOptionGroups": [
+        {
+            "attributeValues": [],
+            "categoryOptions": [
+                {
+                    "id": "ZzSc6xP10nz"
+                }
+            ],
+            "code": "0059Y",
+            "dataDimensionType": "DISAGGREGATION",
+            "dimensionItem": "fqborXHhXZG",
+            "dimensionItemType": "CATEGORY_OPTION_GROUP",
+            "externalAccess": false,
+            "favorite": false,
+            "groupSets": [
+                {
+                    "id": "hEcLht1oMFl"
+                }
+            ],
+            "id": "fqborXHhXZG",
+            "legendSets": [],
+            "name": "0-59 years",
+            "periodOffset": 0,
+            "publicAccess": "rw------",
+            "shortName": "0-59y",
+            "translations": [
+                {
+                    "locale": "cs",
+                    "property": "SHORT_NAME",
+                    "value": "0-59 let"
+                },
+                {
+                    "locale": "fr",
+                    "property": "SHORT_NAME",
+                    "value": "0-59ans"
+                },
+                {
+                    "locale": "es",
+                    "property": "SHORT_NAME",
+                    "value": "0-59años"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "0-59 ans"
+                },
+                {
+                    "locale": "pt",
+                    "property": "NAME",
+                    "value": "0-59 anos"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "0-59 años"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "0-59 let"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": []
+        },
+        {
+            "attributeValues": [],
+            "categoryOptions": [
+                {
+                    "id": "m9UzfatWfRs"
+                }
+            ],
+            "code": "60PLUSY",
+            "dataDimensionType": "DISAGGREGATION",
+            "dimensionItem": "hEct0AAbPAw",
+            "dimensionItemType": "CATEGORY_OPTION_GROUP",
+            "externalAccess": false,
+            "favorite": false,
+            "groupSets": [
+                {
+                    "id": "hEcLht1oMFl"
+                }
+            ],
+            "id": "hEct0AAbPAw",
+            "legendSets": [],
+            "name": "60+ years",
+            "periodOffset": 0,
+            "publicAccess": "rw------",
+            "shortName": "60+y",
+            "translations": [
+                {
+                    "locale": "cs",
+                    "property": "SHORT_NAME",
+                    "value": "60+r"
+                },
+                {
+                    "locale": "es",
+                    "property": "SHORT_NAME",
+                    "value": "60+años"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "60+ ans"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "60+ let"
+                },
+                {
+                    "locale": "pt",
+                    "property": "NAME",
+                    "value": "60+ anos"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "60+ años"
+                },
+                {
+                    "locale": "fr",
+                    "property": "SHORT_NAME",
+                    "value": "60+ans"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": []
+        },
+        {
+            "attributeValues": [],
+            "categoryOptions": [
+                {
+                    "id": "FFA9e1yIXCT"
+                }
+            ],
+            "code": "FEMALE",
+            "dataDimensionType": "DISAGGREGATION",
+            "dimensionItem": "bqoVhX2RfG4",
+            "dimensionItemType": "CATEGORY_OPTION_GROUP",
+            "externalAccess": false,
+            "favorite": false,
+            "groupSets": [
+                {
+                    "id": "CMrvZp5rmoC"
+                }
+            ],
+            "id": "bqoVhX2RfG4",
+            "legendSets": [],
+            "name": "Female",
+            "periodOffset": 0,
+            "publicAccess": "rw------",
+            "shortName": "Female",
+            "translations": [
+                {
+                    "locale": "uz",
+                    "property": "SHORT_NAME",
+                    "value": "Аёл"
+                },
+                {
+                    "locale": "uz_UZ",
+                    "property": "NAME",
+                    "value": "Аyol"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "ženský"
+                },
+                {
+                    "locale": "nb",
+                    "property": "NAME",
+                    "value": "Kvinne"
+                },
+                {
+                    "locale": "nb",
+                    "property": "SHORT_NAME",
+                    "value": "Kvinne"
+                },
+                {
+                    "locale": "ar",
+                    "property": "NAME",
+                    "value": "إناث"
+                },
+                {
+                    "locale": "cs",
+                    "property": "SHORT_NAME",
+                    "value": "ženský"
+                },
+                {
+                    "locale": "ru",
+                    "property": "NAME",
+                    "value": "Женский"
+                },
+                {
+                    "locale": "pt",
+                    "property": "NAME",
+                    "value": "Feminino"
+                },
+                {
+                    "locale": "id",
+                    "property": "SHORT_NAME",
+                    "value": "Wanita"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "Féminin"
+                },
+                {
+                    "locale": "es",
+                    "property": "SHORT_NAME",
+                    "value": "Femenino"
+                },
+                {
+                    "locale": "ar",
+                    "property": "SHORT_NAME",
+                    "value": "إناث"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "Femenino"
+                },
+                {
+                    "locale": "fr",
+                    "property": "SHORT_NAME",
+                    "value": "Féminin"
+                },
+                {
+                    "locale": "uz_UZ",
+                    "property": "SHORT_NAME",
+                    "value": "Аyol"
+                },
+                {
+                    "locale": "uz",
+                    "property": "NAME",
+                    "value": "Аёл"
+                },
+                {
+                    "locale": "ru",
+                    "property": "SHORT_NAME",
+                    "value": "Женский"
+                },
+                {
+                    "locale": "pt",
+                    "property": "SHORT_NAME",
+                    "value": "Feminino"
+                },
+                {
+                    "locale": "id",
+                    "property": "NAME",
+                    "value": "Wanita"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": []
+        },
+        {
+            "attributeValues": [],
+            "categoryOptions": [
+                {
+                    "id": "MP15bHaQh2x"
+                }
+            ],
+            "code": "MALE",
+            "dataDimensionType": "DISAGGREGATION",
+            "dimensionItem": "EVYKU2fIc6G",
+            "dimensionItemType": "CATEGORY_OPTION_GROUP",
+            "externalAccess": false,
+            "favorite": false,
+            "groupSets": [
+                {
+                    "id": "CMrvZp5rmoC"
+                }
+            ],
+            "id": "EVYKU2fIc6G",
+            "legendSets": [],
+            "name": "Male",
+            "periodOffset": 0,
+            "publicAccess": "rw------",
+            "shortName": "Male",
+            "translations": [
+                {
+                    "locale": "id",
+                    "property": "NAME",
+                    "value": "Laki-laki"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "Masculin"
+                },
+                {
+                    "locale": "uz_UZ",
+                    "property": "SHORT_NAME",
+                    "value": "Erkak"
+                },
+                {
+                    "locale": "ar",
+                    "property": "SHORT_NAME",
+                    "value": "ذكور"
+                },
+                {
+                    "locale": "ru",
+                    "property": "NAME",
+                    "value": "мужской"
+                },
+                {
+                    "locale": "cs",
+                    "property": "SHORT_NAME",
+                    "value": "muž"
+                },
+                {
+                    "locale": "fr",
+                    "property": "SHORT_NAME",
+                    "value": "Masculin"
+                },
+                {
+                    "locale": "pt",
+                    "property": "NAME",
+                    "value": "Masculino"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "muž"
+                },
+                {
+                    "locale": "uz_UZ",
+                    "property": "NAME",
+                    "value": "Erkak"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "Masculino"
+                },
+                {
+                    "locale": "nb",
+                    "property": "SHORT_NAME",
+                    "value": "Mann"
+                },
+                {
+                    "locale": "uz",
+                    "property": "SHORT_NAME",
+                    "value": "Эркак"
+                },
+                {
+                    "locale": "es",
+                    "property": "SHORT_NAME",
+                    "value": "Masculino"
+                },
+                {
+                    "locale": "ar",
+                    "property": "NAME",
+                    "value": "ذكور"
+                },
+                {
+                    "locale": "ru",
+                    "property": "SHORT_NAME",
+                    "value": "мужской"
+                },
+                {
+                    "locale": "uz",
+                    "property": "NAME",
+                    "value": "Эркак"
+                },
+                {
+                    "locale": "pt",
+                    "property": "SHORT_NAME",
+                    "value": "Masculino"
+                },
+                {
+                    "locale": "id",
+                    "property": "SHORT_NAME",
+                    "value": "Laki-laki"
+                },
+                {
+                    "locale": "nb",
+                    "property": "NAME",
+                    "value": "Mann"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": []
+        }
+    ],
+    "categoryOptions": [
+        {
+            "attributeValues": [],
+            "categories": [
+                {
+                    "id": "zOt7MceLobG"
+                }
+            ],
+            "categoryOptionCombos": [
+                {
+                    "id": "FsZSFGKirY0"
+                },
+                {
+                    "id": "nACYHQS6RTn"
+                }
+            ],
+            "categoryOptionGroups": [
+                {
+                    "id": "fqborXHhXZG"
+                }
+            ],
+            "code": "0059Y",
+            "dimensionItem": "ZzSc6xP10nz",
+            "dimensionItemType": "CATEGORY_OPTION",
+            "externalAccess": false,
+            "favorite": false,
+            "id": "ZzSc6xP10nz",
+            "isDefault": false,
+            "legendSets": [],
+            "name": "0-59 years",
+            "organisationUnits": [],
+            "periodOffset": 0,
+            "publicAccess": "r-------",
+            "shortName": "0-59y",
+            "translations": [
+                {
+                    "locale": "cs",
+                    "property": "SHORT_NAME",
+                    "value": "0-59 let"
+                },
+                {
+                    "locale": "fr",
+                    "property": "SHORT_NAME",
+                    "value": "0-59ans"
+                },
+                {
+                    "locale": "es",
+                    "property": "SHORT_NAME",
+                    "value": "0-59años"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "0-59 ans"
+                },
+                {
+                    "locale": "pt",
+                    "property": "NAME",
+                    "value": "0-59 anos"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "0-59 años"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "0-59 let"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": [
+                {
+                    "access": "r-r-----",
+                    "id": "VLIaHu6ou8E",
+                    "userGroupUid": "VLIaHu6ou8E"
+                },
+                {
+                    "access": "rw------",
+                    "id": "AEAQ9LktNze",
+                    "userGroupUid": "AEAQ9LktNze"
+                },
+                {
+                    "access": "r-rw----",
+                    "id": "dl1WZpz570i",
+                    "userGroupUid": "dl1WZpz570i"
+                }
+            ]
+        },
+        {
+            "attributeValues": [],
+            "categories": [
+                {
+                    "id": "zOt7MceLobG"
+                }
+            ],
+            "categoryOptionCombos": [
+                {
+                    "id": "wY6kS8VVWH9"
+                },
+                {
+                    "id": "iUe9y7FGGws"
+                }
+            ],
+            "categoryOptionGroups": [
+                {
+                    "id": "hEct0AAbPAw"
+                }
+            ],
+            "code": "60PLUSY",
+            "dimensionItem": "m9UzfatWfRs",
+            "dimensionItemType": "CATEGORY_OPTION",
+            "externalAccess": false,
+            "favorite": false,
+            "id": "m9UzfatWfRs",
+            "isDefault": false,
+            "legendSets": [],
+            "name": "60+ years",
+            "organisationUnits": [],
+            "periodOffset": 0,
+            "publicAccess": "r-------",
+            "shortName": "60+y",
+            "translations": [
+                {
+                    "locale": "cs",
+                    "property": "SHORT_NAME",
+                    "value": "60+r"
+                },
+                {
+                    "locale": "es",
+                    "property": "SHORT_NAME",
+                    "value": "60+años"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "60+ ans"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "60+ let"
+                },
+                {
+                    "locale": "pt",
+                    "property": "NAME",
+                    "value": "60+ anos"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "60+ años"
+                },
+                {
+                    "locale": "fr",
+                    "property": "SHORT_NAME",
+                    "value": "60+ans"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": [
+                {
+                    "access": "r-r-----",
+                    "id": "VLIaHu6ou8E",
+                    "userGroupUid": "VLIaHu6ou8E"
+                },
+                {
+                    "access": "rw------",
+                    "id": "AEAQ9LktNze",
+                    "userGroupUid": "AEAQ9LktNze"
+                },
+                {
+                    "access": "r-rw----",
+                    "id": "dl1WZpz570i",
+                    "userGroupUid": "dl1WZpz570i"
+                }
+            ]
+        },
+        {
+            "attributeValues": [],
+            "categories": [
+                {
+                    "id": "GLevLNI9wkl"
+                }
+            ],
+            "categoryOptionCombos": [
+                {
+                    "id": "HllvX50cXC0"
+                }
+            ],
+            "categoryOptionGroups": [],
+            "code": "default",
+            "dimensionItem": "xYerKDKCefk",
+            "dimensionItemType": "CATEGORY_OPTION",
+            "externalAccess": false,
+            "favorite": false,
+            "id": "xYerKDKCefk",
+            "isDefault": true,
+            "legendSets": [],
+            "name": "default",
+            "organisationUnits": [],
+            "periodOffset": 0,
+            "publicAccess": "rwrw----",
+            "translations": [
+                {
+                    "locale": "nb",
+                    "property": "NAME",
+                    "value": "standard"
+                },
+                {
+                    "locale": "pt",
+                    "property": "NAME",
+                    "value": "Padrão"
+                },
+                {
+                    "locale": "id",
+                    "property": "NAME",
+                    "value": "Putus berobat/default"
+                },
+                {
+                    "locale": "ar",
+                    "property": "NAME",
+                    "value": "الافتراضي"
+                },
+                {
+                    "locale": "uz",
+                    "property": "NAME",
+                    "value": "Стандарт"
+                },
+                {
+                    "locale": "uz_UZ",
+                    "property": "NAME",
+                    "value": "standart"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "default"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "défaut"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "výchozí"
+                },
+                {
+                    "locale": "ru",
+                    "property": "NAME",
+                    "value": "по умолчанию"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": []
+        },
+        {
+            "attributeValues": [],
+            "categories": [
+                {
+                    "id": "FRwO58KwwJt"
+                }
+            ],
+            "categoryOptionCombos": [
+                {
+                    "id": "FsZSFGKirY0"
+                },
+                {
+                    "id": "iUe9y7FGGws"
+                }
+            ],
+            "categoryOptionGroups": [
+                {
+                    "id": "bqoVhX2RfG4"
+                }
+            ],
+            "code": "FEMALE",
+            "dimensionItem": "FFA9e1yIXCT",
+            "dimensionItemType": "CATEGORY_OPTION",
+            "externalAccess": false,
+            "favorite": false,
+            "id": "FFA9e1yIXCT",
+            "isDefault": false,
+            "legendSets": [],
+            "name": "Female",
+            "organisationUnits": [],
+            "periodOffset": 0,
+            "publicAccess": "r-------",
+            "shortName": "Female",
+            "translations": [
+                {
+                    "locale": "uz",
+                    "property": "SHORT_NAME",
+                    "value": "Аёл"
+                },
+                {
+                    "locale": "uz_UZ",
+                    "property": "NAME",
+                    "value": "Аyol"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "ženský"
+                },
+                {
+                    "locale": "nb",
+                    "property": "NAME",
+                    "value": "Kvinne"
+                },
+                {
+                    "locale": "nb",
+                    "property": "SHORT_NAME",
+                    "value": "Kvinne"
+                },
+                {
+                    "locale": "ar",
+                    "property": "NAME",
+                    "value": "إناث"
+                },
+                {
+                    "locale": "cs",
+                    "property": "SHORT_NAME",
+                    "value": "ženský"
+                },
+                {
+                    "locale": "ru",
+                    "property": "NAME",
+                    "value": "Женский"
+                },
+                {
+                    "locale": "pt",
+                    "property": "NAME",
+                    "value": "Feminino"
+                },
+                {
+                    "locale": "id",
+                    "property": "SHORT_NAME",
+                    "value": "Wanita"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "Féminin"
+                },
+                {
+                    "locale": "es",
+                    "property": "SHORT_NAME",
+                    "value": "Femenino"
+                },
+                {
+                    "locale": "ar",
+                    "property": "SHORT_NAME",
+                    "value": "إناث"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "Femenino"
+                },
+                {
+                    "locale": "fr",
+                    "property": "SHORT_NAME",
+                    "value": "Féminin"
+                },
+                {
+                    "locale": "uz_UZ",
+                    "property": "SHORT_NAME",
+                    "value": "Аyol"
+                },
+                {
+                    "locale": "uz",
+                    "property": "NAME",
+                    "value": "Аёл"
+                },
+                {
+                    "locale": "ru",
+                    "property": "SHORT_NAME",
+                    "value": "Женский"
+                },
+                {
+                    "locale": "pt",
+                    "property": "SHORT_NAME",
+                    "value": "Feminino"
+                },
+                {
+                    "locale": "id",
+                    "property": "NAME",
+                    "value": "Wanita"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": [
+                {
+                    "access": "r-r-----",
+                    "id": "VLIaHu6ou8E",
+                    "userGroupUid": "VLIaHu6ou8E"
+                },
+                {
+                    "access": "rw------",
+                    "id": "AEAQ9LktNze",
+                    "userGroupUid": "AEAQ9LktNze"
+                },
+                {
+                    "access": "r-rw----",
+                    "id": "dl1WZpz570i",
+                    "userGroupUid": "dl1WZpz570i"
+                }
+            ]
+        },
+        {
+            "attributeValues": [],
+            "categories": [
+                {
+                    "id": "FRwO58KwwJt"
+                }
+            ],
+            "categoryOptionCombos": [
+                {
+                    "id": "wY6kS8VVWH9"
+                },
+                {
+                    "id": "nACYHQS6RTn"
+                }
+            ],
+            "categoryOptionGroups": [
+                {
+                    "id": "EVYKU2fIc6G"
+                }
+            ],
+            "code": "MALE",
+            "dimensionItem": "MP15bHaQh2x",
+            "dimensionItemType": "CATEGORY_OPTION",
+            "externalAccess": false,
+            "favorite": false,
+            "id": "MP15bHaQh2x",
+            "isDefault": false,
+            "legendSets": [],
+            "name": "Male",
+            "organisationUnits": [],
+            "periodOffset": 0,
+            "publicAccess": "r-------",
+            "shortName": "Male",
+            "translations": [
+                {
+                    "locale": "id",
+                    "property": "NAME",
+                    "value": "Laki-laki"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "Masculin"
+                },
+                {
+                    "locale": "uz_UZ",
+                    "property": "SHORT_NAME",
+                    "value": "Erkak"
+                },
+                {
+                    "locale": "ar",
+                    "property": "SHORT_NAME",
+                    "value": "ذكور"
+                },
+                {
+                    "locale": "ru",
+                    "property": "NAME",
+                    "value": "мужской"
+                },
+                {
+                    "locale": "cs",
+                    "property": "SHORT_NAME",
+                    "value": "muž"
+                },
+                {
+                    "locale": "fr",
+                    "property": "SHORT_NAME",
+                    "value": "Masculin"
+                },
+                {
+                    "locale": "pt",
+                    "property": "NAME",
+                    "value": "Masculino"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "muž"
+                },
+                {
+                    "locale": "uz_UZ",
+                    "property": "NAME",
+                    "value": "Erkak"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "Masculino"
+                },
+                {
+                    "locale": "nb",
+                    "property": "SHORT_NAME",
+                    "value": "Mann"
+                },
+                {
+                    "locale": "uz",
+                    "property": "SHORT_NAME",
+                    "value": "Эркак"
+                },
+                {
+                    "locale": "es",
+                    "property": "SHORT_NAME",
+                    "value": "Masculino"
+                },
+                {
+                    "locale": "ar",
+                    "property": "NAME",
+                    "value": "ذكور"
+                },
+                {
+                    "locale": "ru",
+                    "property": "SHORT_NAME",
+                    "value": "мужской"
+                },
+                {
+                    "locale": "uz",
+                    "property": "NAME",
+                    "value": "Эркак"
+                },
+                {
+                    "locale": "pt",
+                    "property": "SHORT_NAME",
+                    "value": "Masculino"
+                },
+                {
+                    "locale": "id",
+                    "property": "SHORT_NAME",
+                    "value": "Laki-laki"
+                },
+                {
+                    "locale": "nb",
+                    "property": "NAME",
+                    "value": "Mann"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": [
+                {
+                    "access": "r-r-----",
+                    "id": "VLIaHu6ou8E",
+                    "userGroupUid": "VLIaHu6ou8E"
+                },
+                {
+                    "access": "rw------",
+                    "id": "AEAQ9LktNze",
+                    "userGroupUid": "AEAQ9LktNze"
+                },
+                {
+                    "access": "r-rw----",
+                    "id": "dl1WZpz570i",
+                    "userGroupUid": "dl1WZpz570i"
+                }
+            ]
+        }
+    ],
+    "constants": [],
+    "dashboards": [
+        {
+            "attributeValues": [],
+            "code": "CVIRAG",
+            "dashboardItems": [
+                {
+                    "attributeValues": [],
+                    "chart": {
+                        "id": "ejUP3qyDQIW"
+                    },
+                    "contentCount": 2,
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "height": 24,
+                    "id": "vd6Yvi4KpU0",
+                    "interpretationCount": 0,
+                    "interpretationLikeCount": 0,
+                    "reports": [],
+                    "resources": [],
+                    "translations": [],
+                    "type": "CHART",
+                    "userAccesses": [],
+                    "userGroupAccesses": [],
+                    "users": [],
+                    "visualization": {
+                        "id": "ejUP3qyDQIW"
+                    },
+                    "width": 43,
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "attributeValues": [],
+                    "contentCount": 2,
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "height": 29,
+                    "id": "zdO5pGqOW29",
+                    "interpretationCount": 0,
+                    "interpretationLikeCount": 0,
+                    "reportTable": {
+                        "id": "P9Zxxt2VNXi"
+                    },
+                    "reports": [],
+                    "resources": [],
+                    "translations": [],
+                    "type": "REPORT_TABLE",
+                    "userAccesses": [],
+                    "userGroupAccesses": [],
+                    "users": [],
+                    "visualization": {
+                        "id": "P9Zxxt2VNXi"
+                    },
+                    "width": 19,
+                    "x": 40,
+                    "y": 53
+                },
+                {
+                    "attributeValues": [],
+                    "chart": {
+                        "id": "efCsnG0LzNp"
+                    },
+                    "contentCount": 2,
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "height": 29,
+                    "id": "th79ee0Da1m",
+                    "interpretationCount": 0,
+                    "interpretationLikeCount": 0,
+                    "reports": [],
+                    "resources": [],
+                    "translations": [],
+                    "type": "CHART",
+                    "userAccesses": [],
+                    "userGroupAccesses": [],
+                    "users": [],
+                    "visualization": {
+                        "id": "efCsnG0LzNp"
+                    },
+                    "width": 19,
+                    "x": 40,
+                    "y": 24
+                },
+                {
+                    "attributeValues": [],
+                    "chart": {
+                        "id": "mtLMyTmbSSE"
+                    },
+                    "contentCount": 2,
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "height": 29,
+                    "id": "obC0g2xnEpZ",
+                    "interpretationCount": 0,
+                    "interpretationLikeCount": 0,
+                    "reports": [],
+                    "resources": [],
+                    "translations": [],
+                    "type": "CHART",
+                    "userAccesses": [],
+                    "userGroupAccesses": [],
+                    "users": [],
+                    "visualization": {
+                        "id": "mtLMyTmbSSE"
+                    },
+                    "width": 20,
+                    "x": 0,
+                    "y": 24
+                },
+                {
+                    "attributeValues": [],
+                    "chart": {
+                        "id": "B09OVExmoc6"
+                    },
+                    "contentCount": 2,
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "height": 29,
+                    "id": "jCKrh9F73gP",
+                    "interpretationCount": 0,
+                    "interpretationLikeCount": 0,
+                    "reports": [],
+                    "resources": [],
+                    "translations": [],
+                    "type": "CHART",
+                    "userAccesses": [],
+                    "userGroupAccesses": [],
+                    "users": [],
+                    "visualization": {
+                        "id": "B09OVExmoc6"
+                    },
+                    "width": 20,
+                    "x": 0,
+                    "y": 69
+                },
+                {
+                    "attributeValues": [],
+                    "chart": {
+                        "id": "JYXA2qs3udu"
+                    },
+                    "contentCount": 2,
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "height": 16,
+                    "id": "hgv7D6j2Gu3",
+                    "interpretationCount": 0,
+                    "interpretationLikeCount": 0,
+                    "reports": [],
+                    "resources": [],
+                    "translations": [],
+                    "type": "CHART",
+                    "userAccesses": [],
+                    "userGroupAccesses": [],
+                    "users": [],
+                    "visualization": {
+                        "id": "JYXA2qs3udu"
+                    },
+                    "width": 40,
+                    "x": 0,
+                    "y": 53
+                },
+                {
+                    "attributeValues": [],
+                    "contentCount": 1,
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "height": 29,
+                    "id": "WZytEfYQQkb",
+                    "interpretationCount": 0,
+                    "interpretationLikeCount": 0,
+                    "map": {
+                        "id": "Re6XpOCNGeo"
+                    },
+                    "reports": [],
+                    "resources": [],
+                    "translations": [],
+                    "type": "MAP",
+                    "userAccesses": [],
+                    "userGroupAccesses": [],
+                    "users": [],
+                    "width": 20,
+                    "x": 20,
+                    "y": 24
+                },
+                {
+                    "attributeValues": [],
+                    "contentCount": 1,
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "height": 29,
+                    "id": "ahwhWrNQmS4",
+                    "interpretationCount": 0,
+                    "interpretationLikeCount": 0,
+                    "map": {
+                        "id": "gY6BvOreBGk"
+                    },
+                    "reports": [],
+                    "resources": [],
+                    "translations": [],
+                    "type": "MAP",
+                    "userAccesses": [],
+                    "userGroupAccesses": [],
+                    "users": [],
+                    "width": 20,
+                    "x": 20,
+                    "y": 69
+                }
+            ],
+            "description": "PIs to aggregate data",
+            "externalAccess": false,
+            "favorite": false,
+            "id": "iBWlFCvvtkH",
+            "itemCount": 8,
+            "name": "COVAC - Daily monitoring",
+            "publicAccess": "--------",
+            "translations": [
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "COVAC - Monitoreo diario"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "COVAC - Denní sledování"
+                },
+                {
+                    "locale": "cs",
+                    "property": "DESCRIPTION",
+                    "value": "PI pro agregaci dat"
+                },
+                {
+                    "locale": "fr",
+                    "property": "DESCRIPTION",
+                    "value": "IP pour agréger les données"
+                },
+                {
+                    "locale": "es",
+                    "property": "DESCRIPTION",
+                    "value": "Indicadores de Programa para Datos agregados"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "COVAC - Suivi journalier"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": [
+                {
+                    "access": "rw------",
+                    "id": "AEAQ9LktNze",
+                    "userGroupUid": "AEAQ9LktNze"
+                },
+                {
+                    "access": "r-------",
+                    "id": "dl1WZpz570i",
+                    "userGroupUid": "dl1WZpz570i"
+                },
+                {
+                    "access": "r-------",
+                    "id": "VLIaHu6ou8E",
+                    "userGroupUid": "VLIaHu6ou8E"
+                }
+            ]
+        }
+    ],
+    "dataElementGroups": [
+        {
+            "aggregationType": "SUM",
+            "attributeValues": [],
+            "code": "CVIRAG",
+            "dataElements": [
+                {
+                    "id": "zmKNuqgsq8N"
+                },
+                {
+                    "id": "CB46jykiEye"
+                },
+                {
+                    "id": "RjT7dmzunF4"
+                },
+                {
+                    "id": "OUI05zSKrqk"
+                }
+            ],
+            "dimensionItem": "NO7B6QrdrOB",
+            "dimensionItemType": "DATA_ELEMENT_GROUP",
+            "externalAccess": false,
+            "favorite": false,
+            "groupSets": [],
+            "id": "NO7B6QrdrOB",
+            "legendSets": [],
+            "name": "COVAC - Aggregate",
+            "periodOffset": 0,
+            "publicAccess": "rw------",
+            "shortName": "COVAC Aggregate",
+            "translations": [
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "COVAC - Datos agregados"
+                },
+                {
+                    "locale": "es",
+                    "property": "SHORT_NAME",
+                    "value": "COVAC Datos agregados"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "COVAC - Agregát"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "COVAC - Agrégé"
+                },
+                {
+                    "locale": "cs",
+                    "property": "SHORT_NAME",
+                    "value": "COVAC Agregát"
+                },
+                {
+                    "locale": "fr",
+                    "property": "SHORT_NAME",
+                    "value": "COVAC Agrégé"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": []
+        }
+    ],
+    "dataElements": [
+        {
+            "aggregationLevels": [],
+            "aggregationType": "SUM",
+            "attributeValues": [],
+            "categoryCombo": {
+                "id": "ejUQIUINJ58"
+            },
+            "code": "CVC_EIR_AGG_PPL_1ST_DOSE",
+            "dataElementGroups": [
+                {
+                    "id": "NO7B6QrdrOB"
+                }
+            ],
+            "dataSetElements": [
+                {
+                    "dataElement": {
+                        "id": "RjT7dmzunF4"
+                    },
+                    "dataSet": {
+                        "id": "tM6PFnTKKGP"
+                    }
+                }
+            ],
+            "dimensionItem": "RjT7dmzunF4",
+            "dimensionItemType": "DATA_ELEMENT",
+            "domainType": "AGGREGATE",
+            "externalAccess": false,
+            "favorite": false,
+            "formName": "People with 1st dose",
+            "id": "RjT7dmzunF4",
+            "legendSets": [],
+            "name": "COVAC - People with 1st dose",
+            "optionSetValue": false,
+            "periodOffset": 0,
+            "publicAccess": "rw------",
+            "shortName": "People with 1st dose",
+            "translations": [
+                {
+                    "locale": "es",
+                    "property": "SHORT_NAME",
+                    "value": "Personas con la 1ª dosis"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "COVAC - Lidé s 1. dávkou"
+                },
+                {
+                    "locale": "cs",
+                    "property": "FORM_NAME",
+                    "value": "Lidé s 1. dávkou"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "COVAC - Personas con 1ra dosis"
+                },
+                {
+                    "locale": "fr",
+                    "property": "FORM_NAME",
+                    "value": "Personnes avec 1ère dose"
+                },
+                {
+                    "locale": "es",
+                    "property": "FORM_NAME",
+                    "value": "Personas con la 1ra dosis"
+                },
+                {
+                    "locale": "fr",
+                    "property": "SHORT_NAME",
+                    "value": "Personnes avec 1ère dose"
+                },
+                {
+                    "locale": "cs",
+                    "property": "SHORT_NAME",
+                    "value": "Lidé s 1. dávkou"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "COVAC - Personnes avec 1ère dose"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": [],
+            "valueType": "INTEGER_ZERO_OR_POSITIVE",
+            "zeroIsSignificant": true
+        },
+        {
+            "aggregationLevels": [],
+            "aggregationType": "SUM",
+            "attributeValues": [],
+            "categoryCombo": {
+                "id": "ejUQIUINJ58"
+            },
+            "code": "CVC_EIR_AGG_PPL_2ND_DOSE",
+            "dataElementGroups": [
+                {
+                    "id": "NO7B6QrdrOB"
+                }
+            ],
+            "dataSetElements": [
+                {
+                    "dataElement": {
+                        "id": "zmKNuqgsq8N"
+                    },
+                    "dataSet": {
+                        "id": "tM6PFnTKKGP"
+                    }
+                }
+            ],
+            "dimensionItem": "zmKNuqgsq8N",
+            "dimensionItemType": "DATA_ELEMENT",
+            "domainType": "AGGREGATE",
+            "externalAccess": false,
+            "favorite": false,
+            "formName": "People with 2nd, 3rd, or booster doses",
+            "id": "zmKNuqgsq8N",
+            "legendSets": [],
+            "name": "COVAC - People with 2nd, 3rd, or booster doses",
+            "optionSetValue": false,
+            "periodOffset": 0,
+            "publicAccess": "rw------",
+            "shortName": "People with 2nd, 3rd, or booster doses",
+            "translations": [
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "COVAC - Personnes avec 2ème, 3ème ou doses de rappel"
+                },
+                {
+                    "locale": "cs",
+                    "property": "FORM_NAME",
+                    "value": "Lidé s 2., 3. nebo posilovací dávkou"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "COVAC - Lidé s 2., 3. nebo posilovací dávkou"
+                },
+                {
+                    "locale": "cs",
+                    "property": "SHORT_NAME",
+                    "value": "Lidé s 2., 3. nebo posilovací dávkou"
+                },
+                {
+                    "locale": "fr",
+                    "property": "FORM_NAME",
+                    "value": "Personnes ayant reçu une 2èmes, une 3ème dose ou une dose de rappel"
+                },
+                {
+                    "locale": "es",
+                    "property": "SHORT_NAME",
+                    "value": "Personas con 2ª o 3ª dosis o dosis de refuerzo"
+                },
+                {
+                    "locale": "es",
+                    "property": "FORM_NAME",
+                    "value": "Personas con 2ª o 3ª dosis o dosis de refuerzo"
+                },
+                {
+                    "locale": "fr",
+                    "property": "SHORT_NAME",
+                    "value": "Personnes ayant reçu une 2èmes, une 3ème dose ou une dose de rappel"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "COVAC: personas con 2.da, 3.ra o dosis de refuerzo"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": [],
+            "valueType": "INTEGER_ZERO_OR_POSITIVE",
+            "zeroIsSignificant": true
+        },
+        {
+            "aggregationLevels": [],
+            "aggregationType": "SUM",
+            "attributeValues": [],
+            "categoryCombo": {
+                "id": "ejUQIUINJ58"
+            },
+            "code": "CVC_EIR_AGG_PPL_LAST_DOSE",
+            "dataElementGroups": [
+                {
+                    "id": "NO7B6QrdrOB"
+                }
+            ],
+            "dataSetElements": [
+                {
+                    "dataElement": {
+                        "id": "CB46jykiEye"
+                    },
+                    "dataSet": {
+                        "id": "tM6PFnTKKGP"
+                    }
+                }
+            ],
+            "dimensionItem": "CB46jykiEye",
+            "dimensionItemType": "DATA_ELEMENT",
+            "domainType": "AGGREGATE",
+            "externalAccess": false,
+            "favorite": false,
+            "formName": "People with last recommended dose",
+            "id": "CB46jykiEye",
+            "legendSets": [],
+            "name": "COVAC - People with last recommended dose",
+            "optionSetValue": false,
+            "periodOffset": 0,
+            "publicAccess": "rw------",
+            "shortName": "People with last recommended dose",
+            "translations": [
+                {
+                    "locale": "es",
+                    "property": "SHORT_NAME",
+                    "value": "Personas con la última dosis recomendada"
+                },
+                {
+                    "locale": "cs",
+                    "property": "SHORT_NAME",
+                    "value": "Lidé s poslední doporučenou dávkou"
+                },
+                {
+                    "locale": "es",
+                    "property": "FORM_NAME",
+                    "value": "Personas con la última dosis recomendada"
+                },
+                {
+                    "locale": "cs",
+                    "property": "FORM_NAME",
+                    "value": "Lidé s poslední doporučenou dávkou"
+                },
+                {
+                    "locale": "fr",
+                    "property": "FORM_NAME",
+                    "value": "Personnes ayant reçu la dernière dose recommandée"
+                },
+                {
+                    "locale": "fr",
+                    "property": "SHORT_NAME",
+                    "value": "Personnes ayant reçu la dernière dose recommandée"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "COVAC: personas con la última dosis recomendada"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "COVAC - Personnes ayant la dernière dose recommandée"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "COVAC - Lidé s poslední doporučenou dávkou"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": [],
+            "valueType": "INTEGER_ZERO_OR_POSITIVE",
+            "zeroIsSignificant": true
+        },
+        {
+            "aggregationLevels": [],
+            "aggregationType": "SUM",
+            "attributeValues": [],
+            "categoryCombo": {
+                "id": "bjDvmb4bfuf"
+            },
+            "code": "CVC_EIR_AGG_PPL_UNDER_CONDITIONS",
+            "dataElementGroups": [
+                {
+                    "id": "NO7B6QrdrOB"
+                }
+            ],
+            "dataSetElements": [
+                {
+                    "dataElement": {
+                        "id": "OUI05zSKrqk"
+                    },
+                    "dataSet": {
+                        "id": "tM6PFnTKKGP"
+                    }
+                }
+            ],
+            "dimensionItem": "OUI05zSKrqk",
+            "dimensionItemType": "DATA_ELEMENT",
+            "domainType": "AGGREGATE",
+            "externalAccess": false,
+            "favorite": false,
+            "formName": "People with underlying conditions",
+            "id": "OUI05zSKrqk",
+            "legendSets": [],
+            "name": "COVAC - People with underlying conditions",
+            "optionSetValue": false,
+            "periodOffset": 0,
+            "publicAccess": "rw------",
+            "shortName": "People with underlying conditions",
+            "translations": [
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "COVAC: personas con comorbilidades"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "COVAC - Lidé se základními onemocněními"
+                },
+                {
+                    "locale": "cs",
+                    "property": "SHORT_NAME",
+                    "value": "Základní podmínky - lidé s"
+                },
+                {
+                    "locale": "es",
+                    "property": "FORM_NAME",
+                    "value": "Personas con comorbilidades"
+                },
+                {
+                    "locale": "fr",
+                    "property": "SHORT_NAME",
+                    "value": "Les personnes avec de maladies sous-jacentes"
+                },
+                {
+                    "locale": "es",
+                    "property": "SHORT_NAME",
+                    "value": "Personas con comorbilidades"
+                },
+                {
+                    "locale": "cs",
+                    "property": "FORM_NAME",
+                    "value": "Základní podmínky - lidé s"
+                },
+                {
+                    "locale": "fr",
+                    "property": "FORM_NAME",
+                    "value": "Les personnes avec de maladies sous-jacentes"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "COVAC - Personnes souffrant d'affections sous-jacentes"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": [],
+            "valueType": "INTEGER_ZERO_OR_POSITIVE",
+            "zeroIsSignificant": true
+        }
+    ],
+    "dataEntryForms": [],
+    "dataSets": [
+        {
+            "attributeValues": [],
+            "categoryCombo": {
+                "id": "bjDvmb4bfuf"
+            },
+            "code": "CVIRAG",
+            "compulsoryDataElementOperands": [],
+            "compulsoryFieldsCompleteOnly": false,
+            "dataElementDecoration": false,
+            "dataInputPeriods": [],
+            "dataSetElements": [
+                {
+                    "dataElement": {
+                        "id": "CB46jykiEye"
+                    },
+                    "dataSet": {
+                        "id": "tM6PFnTKKGP"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "OUI05zSKrqk"
+                    },
+                    "dataSet": {
+                        "id": "tM6PFnTKKGP"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "RjT7dmzunF4"
+                    },
+                    "dataSet": {
+                        "id": "tM6PFnTKKGP"
+                    }
+                },
+                {
+                    "dataElement": {
+                        "id": "zmKNuqgsq8N"
+                    },
+                    "dataSet": {
+                        "id": "tM6PFnTKKGP"
+                    }
+                }
+            ],
+            "description": "Aggregate data set for receiving aggregated tracker data from COVAC EIR program. The data serve the daily monitoring dashboard.",
+            "dimensionItem": "tM6PFnTKKGP",
+            "dimensionItemType": "REPORTING_RATE",
+            "expiryDays": 0,
+            "externalAccess": false,
+            "favorite": false,
+            "fieldCombinationRequired": false,
+            "formType": "DEFAULT",
+            "id": "tM6PFnTKKGP",
+            "indicators": [],
+            "interpretations": [],
+            "legendSets": [],
+            "mobile": false,
+            "name": "COVAC - EIR aggregated tracker data",
+            "noValueRequiresComment": false,
+            "notifyCompletingUser": false,
+            "openFuturePeriods": 1,
+            "openPeriodsAfterCoEndDate": 0,
+            "periodOffset": 0,
+            "periodType": "Daily",
+            "publicAccess": "--------",
+            "renderAsTabs": false,
+            "renderHorizontally": true,
+            "sections": [],
+            "shortName": "COVAC - EIR tracker data",
+            "skipOffline": false,
+            "timelyDays": 15,
+            "translations": [
+                {
+                    "locale": "cs",
+                    "property": "SHORT_NAME",
+                    "value": "COVAC - data sledovače EIR"
+                },
+                {
+                    "locale": "fr",
+                    "property": "SHORT_NAME",
+                    "value": "COVAC - Données de suivi REI"
+                },
+                {
+                    "locale": "es",
+                    "property": "DESCRIPTION",
+                    "value": "Conjunto de datos agregados para recibir datos de seguimiento agregados del programa COVAC EIR. Los datos sirven para el panel de control diario."
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "COVAC: Registro de vacunación, datos individuales"
+                },
+                {
+                    "locale": "es",
+                    "property": "SHORT_NAME",
+                    "value": "COVAC - Registro de vacunación datos individuales"
+                },
+                {
+                    "locale": "cs",
+                    "property": "DESCRIPTION",
+                    "value": "Souhrnná datová sada pro příjem agregovaných sledovacích dat z programu COVAC EIR. Data slouží dennímu monitorovacímu ovládacímu panelu."
+                },
+                {
+                    "locale": "fr",
+                    "property": "DESCRIPTION",
+                    "value": "Ensemble de données agrégées pour recevoir des données de suivi agrégées du programme COVAC REI. Les données servent au tableau de bord de suivi quotidien."
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "COVAC – agregovaná data sledování EIR"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "COVAC - Données de suivi agrégées REI"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": [
+                {
+                    "access": "r-r-----",
+                    "id": "VLIaHu6ou8E",
+                    "userGroupUid": "VLIaHu6ou8E"
+                },
+                {
+                    "access": "rw------",
+                    "id": "AEAQ9LktNze",
+                    "userGroupUid": "AEAQ9LktNze"
+                },
+                {
+                    "access": "r-rw----",
+                    "id": "dl1WZpz570i",
+                    "userGroupUid": "dl1WZpz570i"
+                }
+            ],
+            "validCompleteOnly": false,
+            "version": 9
+        }
+    ],
+    "documents": [],
+    "eventCharts": [],
+    "eventReports": [],
+    "indicatorGroupSets": [],
+    "indicatorGroups": [
+        {
+            "attributeValues": [],
+            "code": "CVIRAG_DAILY",
+            "externalAccess": false,
+            "favorite": false,
+            "id": "doQTIS8KJQH",
+            "indicators": [
+                {
+                    "id": "KIgI3EPjs2T"
+                },
+                {
+                    "id": "ddZjJCwXf6k"
+                },
+                {
+                    "id": "GeAtojrj7Yy"
+                },
+                {
+                    "id": "OAZXVEjEEoD"
+                }
+            ],
+            "name": "COVAC - Daily",
+            "publicAccess": "rw------",
+            "translations": [
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "COVAC - journalier"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "COVAC - Denně"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "COVAC - Diario"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": []
+        }
+    ],
+    "indicatorTypes": [
+        {
+            "attributeValues": [],
+            "code": "NUMBER_ONLY",
+            "externalAccess": false,
+            "factor": 1,
+            "favorite": false,
+            "id": "kHy61PbChXr",
+            "name": "Numerator only (number)",
+            "number": true,
+            "translations": [
+                {
+                    "locale": "nb",
+                    "property": "NAME",
+                    "value": "Kun teller (tall)"
+                },
+                {
+                    "locale": "pt",
+                    "property": "NAME",
+                    "value": "Apenas numerador (número)"
+                },
+                {
+                    "locale": "ar",
+                    "property": "NAME",
+                    "value": "البسط فقط (رقم)"
+                },
+                {
+                    "locale": "uz",
+                    "property": "NAME",
+                    "value": "Фақат рақамловчи (рақам)"
+                },
+                {
+                    "locale": "ru",
+                    "property": "NAME",
+                    "value": "Тоько числитель (число)"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "Solo numerador (número)"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "Numérateur seulement (nombre)"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "Pouze čitatel (číslo)"
+                }
+            ],
+            "userAccesses": [],
+            "userGroupAccesses": []
+        }
+    ],
+    "indicators": [
+        {
+            "annualized": false,
+            "attributeValues": [],
+            "code": "CVC_EIR_AGG_PPL_1ST_DOSE",
+            "dataSets": [],
+            "decimals": 0,
+            "denominator": "1",
+            "denominatorDescription": "1",
+            "dimensionItem": "GeAtojrj7Yy",
+            "dimensionItemType": "INDICATOR",
+            "externalAccess": false,
+            "favorite": false,
+            "id": "GeAtojrj7Yy",
+            "indicatorGroups": [
+                {
+                    "id": "doQTIS8KJQH"
+                }
+            ],
+            "indicatorType": {
+                "id": "kHy61PbChXr"
+            },
+            "legendSets": [],
+            "name": "COVAC - People with 1st dose",
+            "numerator": "#{RjT7dmzunF4}",
+            "numeratorDescription": "1st dose covid vaccine",
+            "periodOffset": 0,
+            "publicAccess": "rw------",
+            "shortName": "People with 1st dose",
+            "translations": [
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "COVAC - Personas con 1ra dosis"
+                },
+                {
+                    "locale": "ru",
+                    "property": "DENOMINATOR_DESCRIPTION",
+                    "value": "1"
+                },
+                {
+                    "locale": "pt",
+                    "property": "DENOMINATOR_DESCRIPTION",
+                    "value": "1"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NUMERATOR_DESCRIPTION",
+                    "value": "1. dávka vakcíny proti covidu"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "COVAC - Personnes avec 1ère dose"
+                },
+                {
+                    "locale": "nb",
+                    "property": "DENOMINATOR_DESCRIPTION",
+                    "value": "1"
+                },
+                {
+                    "locale": "cs",
+                    "property": "DENOMINATOR_DESCRIPTION",
+                    "value": "1"
+                },
+                {
+                    "locale": "es",
+                    "property": "DENOMINATOR_DESCRIPTION",
+                    "value": "1"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "COVAC - Lidé s 1. dávkou"
+                },
+                {
+                    "locale": "fr",
+                    "property": "DENOMINATOR_DESCRIPTION",
+                    "value": "1"
+                },
+                {
+                    "locale": "fr",
+                    "property": "SHORT_NAME",
+                    "value": "Personnes avec 1ère dose"
+                },
+                {
+                    "locale": "es",
+                    "property": "SHORT_NAME",
+                    "value": "Personas con 1ª dosis"
+                },
+                {
+                    "locale": "cs",
+                    "property": "SHORT_NAME",
+                    "value": "Lidé s 1. dávkou"
+                },
+                {
+                    "locale": "ar",
+                    "property": "DENOMINATOR_DESCRIPTION",
+                    "value": "1"
+                },
+                {
+                    "locale": "es",
+                    "property": "NUMERATOR_DESCRIPTION",
+                    "value": "1ra dosis de vacuna covid"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": []
+        },
+        {
+            "annualized": false,
+            "attributeValues": [],
+            "code": "CVC_EIR_AGG_PPL_2ND_DOSE",
+            "dataSets": [],
+            "decimals": 0,
+            "denominator": "1",
+            "denominatorDescription": "1",
+            "dimensionItem": "ddZjJCwXf6k",
+            "dimensionItemType": "INDICATOR",
+            "externalAccess": false,
+            "favorite": false,
+            "id": "ddZjJCwXf6k",
+            "indicatorGroups": [
+                {
+                    "id": "doQTIS8KJQH"
+                }
+            ],
+            "indicatorType": {
+                "id": "kHy61PbChXr"
+            },
+            "legendSets": [],
+            "name": "COVAC - People with 2nd, 3rd, or booster doses",
+            "numerator": "#{zmKNuqgsq8N}",
+            "numeratorDescription": "2nd dose covid vaccine",
+            "periodOffset": 0,
+            "publicAccess": "rw------",
+            "shortName": "People with 2nd, 3rd, or booster doses",
+            "translations": [
+                {
+                    "locale": "fr",
+                    "property": "NUMERATOR_DESCRIPTION",
+                    "value": "Vaccin covid 2ème dose"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "COVAC - Personnes avec 2ème, 3ème ou doses de rappel"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "COVAC - Lidé s 2., 3. nebo posilovací dávkou"
+                },
+                {
+                    "locale": "ru",
+                    "property": "DENOMINATOR_DESCRIPTION",
+                    "value": "1"
+                },
+                {
+                    "locale": "pt",
+                    "property": "DENOMINATOR_DESCRIPTION",
+                    "value": "1"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "COVAC: personas con 2.da, 3.ra o dosis de refuerzo"
+                },
+                {
+                    "locale": "nb",
+                    "property": "DENOMINATOR_DESCRIPTION",
+                    "value": "1"
+                },
+                {
+                    "locale": "cs",
+                    "property": "DENOMINATOR_DESCRIPTION",
+                    "value": "1"
+                },
+                {
+                    "locale": "cs",
+                    "property": "SHORT_NAME",
+                    "value": "Lidé s 2., 3. nebo posilovací dávkou"
+                },
+                {
+                    "locale": "es",
+                    "property": "DENOMINATOR_DESCRIPTION",
+                    "value": "1"
+                },
+                {
+                    "locale": "es",
+                    "property": "SHORT_NAME",
+                    "value": "Personas con 2ª o 3ª dosis o dosis de refuerzo"
+                },
+                {
+                    "locale": "fr",
+                    "property": "DENOMINATOR_DESCRIPTION",
+                    "value": "1"
+                },
+                {
+                    "locale": "es",
+                    "property": "NUMERATOR_DESCRIPTION",
+                    "value": "2da dosis de vacuna covid"
+                },
+                {
+                    "locale": "fr",
+                    "property": "SHORT_NAME",
+                    "value": "Personnes ayant reçu une 2èmes, une 3ème dose ou une dose de rappel"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NUMERATOR_DESCRIPTION",
+                    "value": "2. dávka vakcíny proti covidu"
+                },
+                {
+                    "locale": "ar",
+                    "property": "DENOMINATOR_DESCRIPTION",
+                    "value": "1"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": []
+        },
+        {
+            "annualized": false,
+            "attributeValues": [],
+            "code": "CVC_EIR_AGG_PPL_LAST_DOSE",
+            "dataSets": [],
+            "decimals": 0,
+            "denominator": "1",
+            "denominatorDescription": "1",
+            "dimensionItem": "OAZXVEjEEoD",
+            "dimensionItemType": "INDICATOR",
+            "externalAccess": false,
+            "favorite": false,
+            "id": "OAZXVEjEEoD",
+            "indicatorGroups": [
+                {
+                    "id": "doQTIS8KJQH"
+                }
+            ],
+            "indicatorType": {
+                "id": "kHy61PbChXr"
+            },
+            "legendSets": [],
+            "name": "COVAC - People with last recommended dose",
+            "numerator": "#{CB46jykiEye}",
+            "numeratorDescription": "last dose covid vaccine",
+            "periodOffset": 0,
+            "publicAccess": "rw------",
+            "shortName": "People with last recommended dose",
+            "translations": [
+                {
+                    "locale": "es",
+                    "property": "SHORT_NAME",
+                    "value": "Personas con la última dosis recomendada"
+                },
+                {
+                    "locale": "ru",
+                    "property": "DENOMINATOR_DESCRIPTION",
+                    "value": "1"
+                },
+                {
+                    "locale": "pt",
+                    "property": "DENOMINATOR_DESCRIPTION",
+                    "value": "1"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "COVAC: personas con la última dosis recomendada"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "COVAC - Lidé s poslední doporučenou dávkou"
+                },
+                {
+                    "locale": "es",
+                    "property": "NUMERATOR_DESCRIPTION",
+                    "value": "última dosis de vacuna covid"
+                },
+                {
+                    "locale": "nb",
+                    "property": "DENOMINATOR_DESCRIPTION",
+                    "value": "1"
+                },
+                {
+                    "locale": "cs",
+                    "property": "DENOMINATOR_DESCRIPTION",
+                    "value": "1"
+                },
+                {
+                    "locale": "es",
+                    "property": "DENOMINATOR_DESCRIPTION",
+                    "value": "1"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NUMERATOR_DESCRIPTION",
+                    "value": "vaccin covid dernière dose"
+                },
+                {
+                    "locale": "cs",
+                    "property": "SHORT_NAME",
+                    "value": "Lidé s poslední doporučenou dávkou"
+                },
+                {
+                    "locale": "fr",
+                    "property": "DENOMINATOR_DESCRIPTION",
+                    "value": "1"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NUMERATOR_DESCRIPTION",
+                    "value": "poslední dávka vakcíny proti covidu"
+                },
+                {
+                    "locale": "fr",
+                    "property": "SHORT_NAME",
+                    "value": "Personnes ayant reçu la dernière dose recommandée"
+                },
+                {
+                    "locale": "ar",
+                    "property": "DENOMINATOR_DESCRIPTION",
+                    "value": "1"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "COVAC - Personnes ayant la dernière dose recommandée"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": []
+        },
+        {
+            "annualized": false,
+            "attributeValues": [],
+            "code": "CVC_EIR_AGG_PPL_UNDER_CONDITIONS",
+            "dataSets": [],
+            "decimals": 0,
+            "denominator": "1",
+            "denominatorDescription": "1",
+            "dimensionItem": "KIgI3EPjs2T",
+            "dimensionItemType": "INDICATOR",
+            "externalAccess": false,
+            "favorite": false,
+            "id": "KIgI3EPjs2T",
+            "indicatorGroups": [
+                {
+                    "id": "doQTIS8KJQH"
+                }
+            ],
+            "indicatorType": {
+                "id": "kHy61PbChXr"
+            },
+            "legendSets": [],
+            "name": "COVAC - People with underlying conditions",
+            "numerator": "#{OUI05zSKrqk}",
+            "numeratorDescription": "People with at least one underlying condition",
+            "periodOffset": 0,
+            "publicAccess": "rw------",
+            "shortName": "People with underlying conditions",
+            "translations": [
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "COVAC - Lidé se základními onemocněními"
+                },
+                {
+                    "locale": "ru",
+                    "property": "DENOMINATOR_DESCRIPTION",
+                    "value": "1"
+                },
+                {
+                    "locale": "pt",
+                    "property": "DENOMINATOR_DESCRIPTION",
+                    "value": "1"
+                },
+                {
+                    "locale": "es",
+                    "property": "SHORT_NAME",
+                    "value": "Personas con comorbilidades"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NUMERATOR_DESCRIPTION",
+                    "value": "Lidé s alespoň jedním základním onemocněním"
+                },
+                {
+                    "locale": "fr",
+                    "property": "SHORT_NAME",
+                    "value": "Les personnes avec de maladies sous-jacentes"
+                },
+                {
+                    "locale": "nb",
+                    "property": "DENOMINATOR_DESCRIPTION",
+                    "value": "1"
+                },
+                {
+                    "locale": "cs",
+                    "property": "DENOMINATOR_DESCRIPTION",
+                    "value": "1"
+                },
+                {
+                    "locale": "es",
+                    "property": "DENOMINATOR_DESCRIPTION",
+                    "value": "1"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NUMERATOR_DESCRIPTION",
+                    "value": "Personnes avec au moins une condition sous-jacente"
+                },
+                {
+                    "locale": "es",
+                    "property": "NUMERATOR_DESCRIPTION",
+                    "value": "Personas con al menos una comorbilidad"
+                },
+                {
+                    "locale": "fr",
+                    "property": "DENOMINATOR_DESCRIPTION",
+                    "value": "1"
+                },
+                {
+                    "locale": "cs",
+                    "property": "SHORT_NAME",
+                    "value": "Základní podmínky - lidé s"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "COVAC: personas con afecciones subyacentes"
+                },
+                {
+                    "locale": "ar",
+                    "property": "DENOMINATOR_DESCRIPTION",
+                    "value": "1"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "COVAC - Personnes souffrant d'affections sous-jacentes"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": []
+        }
+    ],
+    "jobConfigurations": [],
+    "legendSets": [],
+    "maps": [
+        {
+            "attributeValues": [],
+            "basemap": "osmLight",
+            "externalAccess": false,
+            "favorite": false,
+            "id": "Re6XpOCNGeo",
+            "interpretations": [],
+            "mapViews": [
+                {
+                    "aggregationType": "DEFAULT",
+                    "attributeDimensions": [],
+                    "attributeValues": [],
+                    "categoryDimensions": [],
+                    "categoryOptionGroupSetDimensions": [],
+                    "columnDimensions": [
+                        "dx"
+                    ],
+                    "columns": [],
+                    "completedOnly": false,
+                    "dataDimensionItems": [
+                        {
+                            "dataDimensionItemType": "INDICATOR",
+                            "indicator": {
+                                "id": "GeAtojrj7Yy"
+                            }
+                        }
+                    ],
+                    "dataElementDimensions": [],
+                    "dataElementGroupSetDimensions": [],
+                    "digitGroupSeparator": "SPACE",
+                    "endDate": "2021-10-29T00:00:00.000",
+                    "eventClustering": false,
+                    "eventPointRadius": 0,
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "filterDimensions": [
+                        "pe"
+                    ],
+                    "filters": [],
+                    "hideSubtitle": false,
+                    "hideTitle": false,
+                    "id": "TE4sIK8abDS",
+                    "interpretations": [],
+                    "itemOrganisationUnitGroups": [],
+                    "layer": "thematic",
+                    "method": 2,
+                    "name": "COVAC - People with 1st dose",
+                    "opacity": 1.0,
+                    "organisationUnitGroupSetDimensions": [],
+                    "organisationUnitLevels": [],
+                    "organisationUnits": [],
+                    "parentGraphMap": {},
+                    "parentLevel": 0,
+                    "periods": [],
+                    "programIndicatorDimensions": [],
+                    "relativePeriods": {
+                        "biMonthsThisYear": false,
+                        "last12Months": false,
+                        "last12Weeks": false,
+                        "last14Days": true,
+                        "last180Days": false,
+                        "last2SixMonths": false,
+                        "last30Days": false,
+                        "last3Days": false,
+                        "last3Months": false,
+                        "last4BiWeeks": false,
+                        "last4Quarters": false,
+                        "last4Weeks": false,
+                        "last52Weeks": false,
+                        "last5FinancialYears": false,
+                        "last5Years": false,
+                        "last60Days": false,
+                        "last6BiMonths": false,
+                        "last6Months": false,
+                        "last7Days": false,
+                        "last90Days": false,
+                        "lastBiWeek": false,
+                        "lastBimonth": false,
+                        "lastFinancialYear": false,
+                        "lastMonth": false,
+                        "lastQuarter": false,
+                        "lastSixMonth": false,
+                        "lastWeek": false,
+                        "lastYear": false,
+                        "monthsLastYear": false,
+                        "monthsThisYear": false,
+                        "quartersLastYear": false,
+                        "quartersThisYear": false,
+                        "thisBiWeek": false,
+                        "thisBimonth": false,
+                        "thisDay": false,
+                        "thisFinancialYear": false,
+                        "thisMonth": false,
+                        "thisQuarter": false,
+                        "thisSixMonth": false,
+                        "thisWeek": false,
+                        "thisYear": false,
+                        "weeksThisYear": false,
+                        "yesterday": false
+                    },
+                    "renderingStrategy": "TIMELINE",
+                    "rows": [],
+                    "sortOrder": 0,
+                    "startDate": "2020-10-29T00:00:00.000",
+                    "subscribed": false,
+                    "subscribers": [],
+                    "thematicMapType": "CHOROPLETH",
+                    "topLimit": 0,
+                    "translations": [],
+                    "userAccesses": [],
+                    "userGroupAccesses": [],
+                    "userOrganisationUnit": false,
+                    "userOrganisationUnitChildren": false,
+                    "userOrganisationUnitGrandChildren": true
+                },
+                {
+                    "attributeDimensions": [],
+                    "attributeValues": [],
+                    "categoryDimensions": [],
+                    "categoryOptionGroupSetDimensions": [],
+                    "columnDimensions": [],
+                    "columns": [],
+                    "completedOnly": false,
+                    "dataDimensionItems": [],
+                    "dataElementDimensions": [],
+                    "dataElementGroupSetDimensions": [],
+                    "digitGroupSeparator": "SPACE",
+                    "eventClustering": false,
+                    "eventPointRadius": 0,
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "filterDimensions": [],
+                    "filters": [],
+                    "hideSubtitle": false,
+                    "hideTitle": false,
+                    "id": "UENctRId1Ik",
+                    "interpretations": [],
+                    "itemOrganisationUnitGroups": [],
+                    "layer": "boundary",
+                    "name": "UENctRId1Ik",
+                    "opacity": 1.0,
+                    "organisationUnitGroupSetDimensions": [],
+                    "organisationUnitLevels": [],
+                    "organisationUnits": [],
+                    "parentGraphMap": {},
+                    "parentLevel": 0,
+                    "periods": [],
+                    "programIndicatorDimensions": [],
+                    "renderingStrategy": "SINGLE",
+                    "rows": [],
+                    "sortOrder": 0,
+                    "subscribed": false,
+                    "subscribers": [],
+                    "topLimit": 0,
+                    "translations": [],
+                    "userAccesses": [],
+                    "userGroupAccesses": [],
+                    "userOrganisationUnit": true,
+                    "userOrganisationUnitChildren": false,
+                    "userOrganisationUnitGrandChildren": false
+                }
+            ],
+            "name": "COVAC-DAILY-006",
+            "publicAccess": "rw------",
+            "subscribed": false,
+            "subscribers": [],
+            "translations": [
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "COVAC-DAILY-006"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "COVAC-DAILY-006"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "COVAC-DIARIO-006"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": []
+        },
+        {
+            "attributeValues": [],
+            "basemap": "osmLight",
+            "externalAccess": false,
+            "favorite": false,
+            "id": "gY6BvOreBGk",
+            "interpretations": [],
+            "mapViews": [
+                {
+                    "aggregationType": "DEFAULT",
+                    "attributeDimensions": [],
+                    "attributeValues": [],
+                    "categoryDimensions": [],
+                    "categoryOptionGroupSetDimensions": [],
+                    "classes": 5,
+                    "colorScale": "#eff3ff,#bdd7e7,#6baed6,#3182bd,#08519c",
+                    "columnDimensions": [
+                        "dx"
+                    ],
+                    "columns": [],
+                    "completedOnly": false,
+                    "dataDimensionItems": [
+                        {
+                            "dataDimensionItemType": "INDICATOR",
+                            "indicator": {
+                                "id": "ddZjJCwXf6k"
+                            }
+                        }
+                    ],
+                    "dataElementDimensions": [],
+                    "dataElementGroupSetDimensions": [],
+                    "digitGroupSeparator": "SPACE",
+                    "endDate": "2021-10-29T00:00:00.000",
+                    "eventClustering": false,
+                    "eventPointRadius": 0,
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "filterDimensions": [
+                        "pe"
+                    ],
+                    "filters": [],
+                    "hideSubtitle": false,
+                    "hideTitle": false,
+                    "id": "wcJlVzJBumy",
+                    "interpretations": [],
+                    "itemOrganisationUnitGroups": [],
+                    "layer": "thematic",
+                    "method": 2,
+                    "name": "COVAC - People with 2nd, 3rd, or booster doses",
+                    "organisationUnitGroupSetDimensions": [],
+                    "organisationUnitLevels": [],
+                    "organisationUnits": [],
+                    "parentGraphMap": {},
+                    "parentLevel": 0,
+                    "periods": [],
+                    "programIndicatorDimensions": [],
+                    "relativePeriods": {
+                        "biMonthsThisYear": false,
+                        "last12Months": false,
+                        "last12Weeks": false,
+                        "last14Days": true,
+                        "last180Days": false,
+                        "last2SixMonths": false,
+                        "last30Days": false,
+                        "last3Days": false,
+                        "last3Months": false,
+                        "last4BiWeeks": false,
+                        "last4Quarters": false,
+                        "last4Weeks": false,
+                        "last52Weeks": false,
+                        "last5FinancialYears": false,
+                        "last5Years": false,
+                        "last60Days": false,
+                        "last6BiMonths": false,
+                        "last6Months": false,
+                        "last7Days": false,
+                        "last90Days": false,
+                        "lastBiWeek": false,
+                        "lastBimonth": false,
+                        "lastFinancialYear": false,
+                        "lastMonth": false,
+                        "lastQuarter": false,
+                        "lastSixMonth": false,
+                        "lastWeek": false,
+                        "lastYear": false,
+                        "monthsLastYear": false,
+                        "monthsThisYear": false,
+                        "quartersLastYear": false,
+                        "quartersThisYear": false,
+                        "thisBiWeek": false,
+                        "thisBimonth": false,
+                        "thisDay": false,
+                        "thisFinancialYear": false,
+                        "thisMonth": false,
+                        "thisQuarter": false,
+                        "thisSixMonth": false,
+                        "thisWeek": false,
+                        "thisYear": false,
+                        "weeksThisYear": false,
+                        "yesterday": false
+                    },
+                    "renderingStrategy": "TIMELINE",
+                    "rows": [],
+                    "sortOrder": 0,
+                    "startDate": "2020-10-29T00:00:00.000",
+                    "subscribed": false,
+                    "subscribers": [],
+                    "thematicMapType": "CHOROPLETH",
+                    "topLimit": 0,
+                    "translations": [],
+                    "userAccesses": [],
+                    "userGroupAccesses": [],
+                    "userOrganisationUnit": false,
+                    "userOrganisationUnitChildren": false,
+                    "userOrganisationUnitGrandChildren": true
+                },
+                {
+                    "attributeDimensions": [],
+                    "attributeValues": [],
+                    "categoryDimensions": [],
+                    "categoryOptionGroupSetDimensions": [],
+                    "columnDimensions": [],
+                    "columns": [],
+                    "completedOnly": false,
+                    "dataDimensionItems": [],
+                    "dataElementDimensions": [],
+                    "dataElementGroupSetDimensions": [],
+                    "digitGroupSeparator": "SPACE",
+                    "eventClustering": false,
+                    "eventPointRadius": 0,
+                    "externalAccess": false,
+                    "favorite": false,
+                    "favorites": [],
+                    "filterDimensions": [],
+                    "filters": [],
+                    "hideSubtitle": false,
+                    "hideTitle": false,
+                    "id": "HospXzzKKVM",
+                    "interpretations": [],
+                    "itemOrganisationUnitGroups": [],
+                    "layer": "boundary",
+                    "name": "HospXzzKKVM",
+                    "opacity": 1.0,
+                    "organisationUnitGroupSetDimensions": [],
+                    "organisationUnitLevels": [],
+                    "organisationUnits": [],
+                    "parentGraphMap": {},
+                    "parentLevel": 0,
+                    "periods": [],
+                    "programIndicatorDimensions": [],
+                    "renderingStrategy": "SINGLE",
+                    "rows": [],
+                    "sortOrder": 0,
+                    "subscribed": false,
+                    "subscribers": [],
+                    "topLimit": 0,
+                    "translations": [],
+                    "userAccesses": [],
+                    "userGroupAccesses": [],
+                    "userOrganisationUnit": true,
+                    "userOrganisationUnitChildren": false,
+                    "userOrganisationUnitGrandChildren": false
+                }
+            ],
+            "name": "COVAC-DAILY-007",
+            "publicAccess": "rw------",
+            "subscribed": false,
+            "subscribers": [],
+            "translations": [
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "COVAC-DAILY-007"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "COVAC-DAILY-007"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "COVAC-DIARIO-007"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": []
+        }
+    ],
+    "optionGroups": [],
+    "optionSets": [],
+    "options": [],
+    "organisationUnitGroups": [],
+    "package": {
+        "DHIS2Build": "35d663a",
+        "DHIS2Version": "2.35.11",
+        "code": "CVIRAG",
+        "description": "",
+        "lastUpdated": "20220119T094326",
+        "locale": "en",
+        "name": "CVIR_EIR_AGG_1.2.0_DHIS2.35.11-en",
+        "type": "AGG",
+        "version": "1.2.0"
+    },
+    "predictorGroups": [],
+    "predictors": [],
+    "sections": [],
+    "userGroups": [
+        {
+            "attributeValues": [],
+            "code": "CVIR_DATA_ADMIN",
+            "externalAccess": false,
+            "favorite": false,
+            "id": "dl1WZpz570i",
+            "managedByGroups": [],
+            "managedGroups": [],
+            "name": "COVAC - Covid-19 Immunization Data Admin",
+            "publicAccess": "rw------",
+            "translations": [
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "COVAC - Administrador de datos"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "COVAC - Administrateur des données de vaccination Covid-19"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "COVAC – Správa údajů o imunizaci Covid-19"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": [],
+            "users": []
+        },
+        {
+            "attributeValues": [],
+            "code": "CVIR_DATA_ANALYSIS",
+            "externalAccess": false,
+            "favorite": false,
+            "id": "VLIaHu6ou8E",
+            "managedByGroups": [],
+            "managedGroups": [],
+            "name": "COVAC - Covid-19 Immunization Data Analysis",
+            "publicAccess": "rw------",
+            "translations": [
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "COVAC - Analyse des données de vaccination Covid-19"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "COVAC - Análisis de datos de inmunización Covid-19"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "COVAC - Analýza dat imunizace Covid-19"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": [],
+            "users": []
+        },
+        {
+            "attributeValues": [],
+            "code": "CVIR_DATA_ENTRY",
+            "externalAccess": false,
+            "favorite": false,
+            "id": "q3Nh5xhJEy2",
+            "managedByGroups": [],
+            "managedGroups": [],
+            "name": "COVAC - Covid-19 Immunization Data Entry",
+            "publicAccess": "rw------",
+            "translations": [
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "COVAC - Saisie des données de vaccination Covid-19"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "COVAC - Entrada de datos de inmunización Covid-19"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "COVAC - vstup dat imunizace Covid-19"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": [],
+            "users": []
+        },
+        {
+            "attributeValues": [],
+            "code": "CVIR_METADATA_ADMIN",
+            "externalAccess": false,
+            "favorite": false,
+            "id": "AEAQ9LktNze",
+            "managedByGroups": [],
+            "managedGroups": [],
+            "name": "COVAC - Covid-19 Immunization Metadata Admin",
+            "publicAccess": "rw------",
+            "translations": [
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "COVAC - Administrateur de métadonnées d'immunisation Covid-19"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "COVAC - správce metadat imunizace Covid-19"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "COVAC - Administrador de metadatos de inmunización Covid-19"
+                }
+            ],
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": [],
+            "users": []
+        }
+    ],
+    "users": [
+        {
+            "attributeValues": [],
+            "dataViewOrganisationUnits": [],
+            "externalAccess": false,
+            "favorite": false,
+            "firstName": "Admin",
+            "id": "vUeLeQMSwhN",
+            "name": "Admin WHO",
+            "organisationUnits": [],
+            "surname": "WHO",
+            "teiSearchOrganisationUnits": [],
+            "translations": [],
+            "userAccesses": [],
+            "userCredentials": {
+                "attributeValues": [],
+                "catDimensionConstraints": [],
+                "cogsDimensionConstraints": [],
+                "disabled": true,
+                "externalAccess": false,
+                "externalAuth": false,
+                "favorite": false,
+                "favorites": [],
+                "id": "MMRO6oP1HQg",
+                "invitation": false,
+                "lastLogin": "2018-07-13T12:28:39.168",
+                "name": "Admin WHO",
+                "passwordLastUpdated": "2018-07-13T12:28:39.168",
+                "selfRegistered": false,
+                "translations": [],
+                "twoFA": false,
+                "user": {
+                    "displayName": "Admin WHO",
+                    "id": "vUeLeQMSwhN",
+                    "username": "who"
+                },
+                "userAccesses": [],
+                "userGroupAccesses": [],
+                "userInfo": {
+                    "id": "vUeLeQMSwhN"
+                },
+                "userRoles": [],
+                "username": "who"
+            }
+        }
+    ],
+    "validationRuleGroups": [],
+    "validationRules": [],
+    "visualizations": [
+        {
+            "aggregationType": "DEFAULT",
+            "attributeDimensions": [],
+            "attributeValues": [],
+            "categoryDimensions": [],
+            "categoryOptionGroupSetDimensions": [],
+            "colSubTotals": false,
+            "colTotals": false,
+            "columnDimensions": [
+                "dx"
+            ],
+            "columns": [
+                {
+                    "id": "dx"
+                }
+            ],
+            "completedOnly": false,
+            "cumulativeValues": false,
+            "dataDimensionItems": [
+                {
+                    "dataDimensionItemType": "INDICATOR",
+                    "indicator": {
+                        "id": "GeAtojrj7Yy"
+                    }
+                },
+                {
+                    "dataDimensionItemType": "INDICATOR",
+                    "indicator": {
+                        "id": "ddZjJCwXf6k"
+                    }
+                }
+            ],
+            "dataElementDimensions": [],
+            "dataElementGroupSetDimensions": [],
+            "digitGroupSeparator": "SPACE",
+            "displayDensity": "NORMAL",
+            "displayTitle": "Daily number of people vaccinated with the 1st or 2nd+ dose",
+            "externalAccess": false,
+            "favorite": false,
+            "filterDimensions": [
+                "ou"
+            ],
+            "filters": [
+                {
+                    "id": "ou"
+                }
+            ],
+            "fontSize": "NORMAL",
+            "hideEmptyColumns": false,
+            "hideEmptyRowItems": "NONE",
+            "hideEmptyRows": false,
+            "hideLegend": false,
+            "hideSubtitle": false,
+            "hideTitle": false,
+            "id": "ejUP3qyDQIW",
+            "interpretations": [],
+            "itemOrganisationUnitGroups": [],
+            "legendDisplayStrategy": "FIXED",
+            "legendDisplayStyle": "FILL",
+            "name": "COVAC-DAILY-008",
+            "noSpaceBetweenColumns": false,
+            "numberType": "VALUE",
+            "optionalAxes": [],
+            "organisationUnitGroupSetDimensions": [],
+            "organisationUnitLevels": [],
+            "organisationUnits": [],
+            "parentGraphMap": {},
+            "percentStackedValues": false,
+            "periods": [],
+            "programIndicatorDimensions": [],
+            "publicAccess": "--------",
+            "regression": false,
+            "regressionType": "NONE",
+            "relativePeriods": {
+                "biMonthsThisYear": false,
+                "last12Months": false,
+                "last12Weeks": false,
+                "last14Days": true,
+                "last180Days": false,
+                "last2SixMonths": false,
+                "last30Days": false,
+                "last3Days": false,
+                "last3Months": false,
+                "last4BiWeeks": false,
+                "last4Quarters": false,
+                "last4Weeks": false,
+                "last52Weeks": false,
+                "last5FinancialYears": false,
+                "last5Years": false,
+                "last60Days": false,
+                "last6BiMonths": false,
+                "last6Months": false,
+                "last7Days": false,
+                "last90Days": false,
+                "lastBiWeek": false,
+                "lastBimonth": false,
+                "lastFinancialYear": false,
+                "lastMonth": false,
+                "lastQuarter": false,
+                "lastSixMonth": false,
+                "lastWeek": false,
+                "lastYear": false,
+                "monthsLastYear": false,
+                "monthsThisYear": false,
+                "quartersLastYear": false,
+                "quartersThisYear": false,
+                "thisBiWeek": false,
+                "thisBimonth": false,
+                "thisDay": false,
+                "thisFinancialYear": false,
+                "thisMonth": false,
+                "thisQuarter": false,
+                "thisSixMonth": false,
+                "thisWeek": false,
+                "thisYear": false,
+                "weeksThisYear": false,
+                "yesterday": false
+            },
+            "reportingParams": {
+                "grandParentOrganisationUnit": false,
+                "organisationUnit": false,
+                "parentOrganisationUnit": false,
+                "reportingPeriod": false
+            },
+            "rowDimensions": [
+                "pe"
+            ],
+            "rowSubTotals": false,
+            "rowTotals": false,
+            "rows": [
+                {
+                    "id": "pe"
+                }
+            ],
+            "showData": true,
+            "showDimensionLabels": false,
+            "showHierarchy": false,
+            "skipRounding": false,
+            "sortOrder": 0,
+            "subscribed": false,
+            "subscribers": [],
+            "title": "Daily number of people vaccinated with the 1st or 2nd+ dose",
+            "topLimit": 0,
+            "translations": [
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "COVAC-DAILY-008"
+                },
+                {
+                    "locale": "fr",
+                    "property": "title",
+                    "value": "Nombre quotidien de personnes vaccinées avec la 1ère ou la 2ème+ dose"
+                },
+                {
+                    "locale": "es",
+                    "property": "title",
+                    "value": "Número diario de personas vacunadas con la 1.a o 2.a + dosis"
+                },
+                {
+                    "locale": "cs",
+                    "property": "title",
+                    "value": "Denní počet osob očkovaných 1. nebo 2.+ dávkou"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "COVAC-DAILY-008"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "COVAC-DIARIO-008"
+                }
+            ],
+            "type": "COLUMN",
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": [
+                {
+                    "access": "r-r-----",
+                    "id": "dl1WZpz570i",
+                    "userGroupUid": "dl1WZpz570i"
+                },
+                {
+                    "access": "r-r-----",
+                    "id": "VLIaHu6ou8E",
+                    "userGroupUid": "VLIaHu6ou8E"
+                },
+                {
+                    "access": "rw------",
+                    "id": "AEAQ9LktNze",
+                    "userGroupUid": "AEAQ9LktNze"
+                },
+                {
+                    "access": "r-r-----",
+                    "id": "q3Nh5xhJEy2",
+                    "userGroupUid": "q3Nh5xhJEy2"
+                }
+            ],
+            "userOrganisationUnit": true,
+            "userOrganisationUnitChildren": false,
+            "userOrganisationUnitGrandChildren": false,
+            "yearlySeries": []
+        },
+        {
+            "aggregationType": "DEFAULT",
+            "attributeDimensions": [],
+            "attributeValues": [],
+            "categoryDimensions": [
+                {
+                    "category": {
+                        "id": "FRwO58KwwJt"
+                    },
+                    "categoryOptions": [
+                        {
+                            "id": "FFA9e1yIXCT"
+                        },
+                        {
+                            "id": "MP15bHaQh2x"
+                        }
+                    ]
+                }
+            ],
+            "categoryOptionGroupSetDimensions": [
+                {
+                    "categoryOptionGroupSet": {
+                        "id": "hEcLht1oMFl"
+                    },
+                    "categoryOptionGroups": [
+                        {
+                            "id": "fqborXHhXZG"
+                        },
+                        {
+                            "id": "hEct0AAbPAw"
+                        }
+                    ]
+                }
+            ],
+            "colSubTotals": false,
+            "colTotals": true,
+            "columnDimensions": [
+                "dx",
+                "hEcLht1oMFl",
+                "FRwO58KwwJt"
+            ],
+            "columns": [
+                {
+                    "id": "dx"
+                },
+                {
+                    "id": "hEcLht1oMFl"
+                },
+                {
+                    "id": "FRwO58KwwJt"
+                }
+            ],
+            "completedOnly": false,
+            "cumulativeValues": false,
+            "dataDimensionItems": [
+                {
+                    "dataDimensionItemType": "INDICATOR",
+                    "indicator": {
+                        "id": "GeAtojrj7Yy"
+                    }
+                },
+                {
+                    "dataDimensionItemType": "INDICATOR",
+                    "indicator": {
+                        "id": "ddZjJCwXf6k"
+                    }
+                }
+            ],
+            "dataElementDimensions": [],
+            "dataElementGroupSetDimensions": [],
+            "description": "Overview of the vaccination activities by age and sex",
+            "digitGroupSeparator": "SPACE",
+            "displayDensity": "NORMAL",
+            "displayTitle": "Overview of the vaccination activities by age and sex",
+            "externalAccess": false,
+            "favorite": false,
+            "filterDimensions": [
+                "ou"
+            ],
+            "filters": [
+                {
+                    "id": "ou"
+                }
+            ],
+            "fontSize": "NORMAL",
+            "hideEmptyColumns": true,
+            "hideEmptyRowItems": "NONE",
+            "hideEmptyRows": true,
+            "hideLegend": false,
+            "hideSubtitle": false,
+            "hideTitle": false,
+            "id": "P9Zxxt2VNXi",
+            "interpretations": [],
+            "itemOrganisationUnitGroups": [],
+            "legendDisplayStrategy": "FIXED",
+            "legendDisplayStyle": "FILL",
+            "name": "COVAC-DAILY-004",
+            "noSpaceBetweenColumns": false,
+            "numberType": "VALUE",
+            "optionalAxes": [],
+            "organisationUnitGroupSetDimensions": [],
+            "organisationUnitLevels": [],
+            "organisationUnits": [],
+            "parentGraphMap": {},
+            "percentStackedValues": false,
+            "periods": [],
+            "programIndicatorDimensions": [],
+            "publicAccess": "--------",
+            "regression": false,
+            "regressionType": "NONE",
+            "relativePeriods": {
+                "biMonthsThisYear": false,
+                "last12Months": false,
+                "last12Weeks": false,
+                "last14Days": true,
+                "last180Days": false,
+                "last2SixMonths": false,
+                "last30Days": false,
+                "last3Days": false,
+                "last3Months": false,
+                "last4BiWeeks": false,
+                "last4Quarters": false,
+                "last4Weeks": false,
+                "last52Weeks": false,
+                "last5FinancialYears": false,
+                "last5Years": false,
+                "last60Days": false,
+                "last6BiMonths": false,
+                "last6Months": false,
+                "last7Days": false,
+                "last90Days": false,
+                "lastBiWeek": false,
+                "lastBimonth": false,
+                "lastFinancialYear": false,
+                "lastMonth": false,
+                "lastQuarter": false,
+                "lastSixMonth": false,
+                "lastWeek": false,
+                "lastYear": false,
+                "monthsLastYear": false,
+                "monthsThisYear": false,
+                "quartersLastYear": false,
+                "quartersThisYear": false,
+                "thisBiWeek": false,
+                "thisBimonth": false,
+                "thisDay": false,
+                "thisFinancialYear": false,
+                "thisMonth": false,
+                "thisQuarter": false,
+                "thisSixMonth": false,
+                "thisWeek": false,
+                "thisYear": false,
+                "weeksThisYear": false,
+                "yesterday": false
+            },
+            "reportingParams": {
+                "grandParentOrganisationUnit": false,
+                "organisationUnit": false,
+                "parentOrganisationUnit": false,
+                "reportingPeriod": false
+            },
+            "rowDimensions": [
+                "pe"
+            ],
+            "rowSubTotals": false,
+            "rowTotals": true,
+            "rows": [
+                {
+                    "id": "pe"
+                }
+            ],
+            "showData": true,
+            "showDimensionLabels": false,
+            "showHierarchy": false,
+            "skipRounding": false,
+            "sortOrder": 0,
+            "subscribed": false,
+            "subscribers": [],
+            "title": "Overview of the vaccination activities by age and sex",
+            "topLimit": 0,
+            "translations": [
+                {
+                    "locale": "cs",
+                    "property": "DESCRIPTION",
+                    "value": "Přehled očkovacích aktivit podle věku a pohlaví"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "COVAC-DAILY-004"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "COVAC-DAILY-004"
+                },
+                {
+                    "locale": "es",
+                    "property": "title",
+                    "value": "Resumen de las actividades de vacunación por edad y sexo"
+                },
+                {
+                    "locale": "fr",
+                    "property": "title",
+                    "value": "Aperçu des activités de vaccination par âge et sexe"
+                },
+                {
+                    "locale": "es",
+                    "property": "DESCRIPTION",
+                    "value": "Resumen de las actividades de vacunación por edad y sexo"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "COVAC-DIARIO-004"
+                },
+                {
+                    "locale": "cs",
+                    "property": "title",
+                    "value": "Přehled očkovacích aktivit podle věku a pohlaví"
+                },
+                {
+                    "locale": "fr",
+                    "property": "DESCRIPTION",
+                    "value": "Aperçu des activités de vaccination par âge et sexe"
+                }
+            ],
+            "type": "PIVOT_TABLE",
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": [
+                {
+                    "access": "r-r-----",
+                    "id": "VLIaHu6ou8E",
+                    "userGroupUid": "VLIaHu6ou8E"
+                },
+                {
+                    "access": "rw------",
+                    "id": "AEAQ9LktNze",
+                    "userGroupUid": "AEAQ9LktNze"
+                },
+                {
+                    "access": "r-rw----",
+                    "id": "dl1WZpz570i",
+                    "userGroupUid": "dl1WZpz570i"
+                },
+                {
+                    "access": "r-r-----",
+                    "id": "q3Nh5xhJEy2",
+                    "userGroupUid": "q3Nh5xhJEy2"
+                }
+            ],
+            "userOrganisationUnit": true,
+            "userOrganisationUnitChildren": false,
+            "userOrganisationUnitGrandChildren": false,
+            "yearlySeries": []
+        },
+        {
+            "aggregationType": "DEFAULT",
+            "attributeDimensions": [],
+            "attributeValues": [],
+            "categoryDimensions": [],
+            "categoryOptionGroupSetDimensions": [
+                {
+                    "categoryOptionGroupSet": {
+                        "id": "hEcLht1oMFl"
+                    },
+                    "categoryOptionGroups": [
+                        {
+                            "id": "fqborXHhXZG"
+                        },
+                        {
+                            "id": "hEct0AAbPAw"
+                        }
+                    ]
+                }
+            ],
+            "colSubTotals": false,
+            "colTotals": false,
+            "columnDimensions": [
+                "hEcLht1oMFl"
+            ],
+            "columns": [
+                {
+                    "id": "hEcLht1oMFl"
+                }
+            ],
+            "completedOnly": false,
+            "cumulativeValues": false,
+            "dataDimensionItems": [
+                {
+                    "dataDimensionItemType": "INDICATOR",
+                    "indicator": {
+                        "id": "GeAtojrj7Yy"
+                    }
+                }
+            ],
+            "dataElementDimensions": [],
+            "dataElementGroupSetDimensions": [],
+            "description": "Age distribution of the recipients of the 1st dose",
+            "digitGroupSeparator": "SPACE",
+            "displayDensity": "NORMAL",
+            "displayTitle": "Age distribution of the recipients of the 1st dose",
+            "externalAccess": false,
+            "favorite": false,
+            "filterDimensions": [
+                "ou",
+                "pe",
+                "dx"
+            ],
+            "filters": [
+                {
+                    "id": "ou"
+                },
+                {
+                    "id": "pe"
+                },
+                {
+                    "id": "dx"
+                }
+            ],
+            "fontSize": "NORMAL",
+            "hideEmptyColumns": false,
+            "hideEmptyRowItems": "NONE",
+            "hideEmptyRows": false,
+            "hideLegend": false,
+            "hideSubtitle": false,
+            "hideTitle": false,
+            "id": "efCsnG0LzNp",
+            "interpretations": [],
+            "itemOrganisationUnitGroups": [],
+            "legendDisplayStrategy": "FIXED",
+            "legendDisplayStyle": "FILL",
+            "name": "COVAC-DAILY-005",
+            "noSpaceBetweenColumns": false,
+            "numberType": "VALUE",
+            "optionalAxes": [],
+            "organisationUnitGroupSetDimensions": [],
+            "organisationUnitLevels": [],
+            "organisationUnits": [],
+            "parentGraphMap": {},
+            "percentStackedValues": false,
+            "periods": [],
+            "programIndicatorDimensions": [],
+            "publicAccess": "--------",
+            "regression": false,
+            "regressionType": "NONE",
+            "relativePeriods": {
+                "biMonthsThisYear": false,
+                "last12Months": false,
+                "last12Weeks": false,
+                "last14Days": true,
+                "last180Days": false,
+                "last2SixMonths": false,
+                "last30Days": false,
+                "last3Days": false,
+                "last3Months": false,
+                "last4BiWeeks": false,
+                "last4Quarters": false,
+                "last4Weeks": false,
+                "last52Weeks": false,
+                "last5FinancialYears": false,
+                "last5Years": false,
+                "last60Days": false,
+                "last6BiMonths": false,
+                "last6Months": false,
+                "last7Days": false,
+                "last90Days": false,
+                "lastBiWeek": false,
+                "lastBimonth": false,
+                "lastFinancialYear": false,
+                "lastMonth": false,
+                "lastQuarter": false,
+                "lastSixMonth": false,
+                "lastWeek": false,
+                "lastYear": false,
+                "monthsLastYear": false,
+                "monthsThisYear": false,
+                "quartersLastYear": false,
+                "quartersThisYear": false,
+                "thisBiWeek": false,
+                "thisBimonth": false,
+                "thisDay": false,
+                "thisFinancialYear": false,
+                "thisMonth": false,
+                "thisQuarter": false,
+                "thisSixMonth": false,
+                "thisWeek": false,
+                "thisYear": false,
+                "weeksThisYear": false,
+                "yesterday": false
+            },
+            "reportingParams": {
+                "grandParentOrganisationUnit": false,
+                "organisationUnit": false,
+                "parentOrganisationUnit": false,
+                "reportingPeriod": false
+            },
+            "rowDimensions": [],
+            "rowSubTotals": false,
+            "rowTotals": false,
+            "rows": [],
+            "showData": true,
+            "showDimensionLabels": false,
+            "showHierarchy": false,
+            "skipRounding": false,
+            "sortOrder": 0,
+            "subscribed": false,
+            "subscribers": [],
+            "title": "Age distribution of the recipients of the 1st dose",
+            "topLimit": 0,
+            "translations": [
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "COVAC-DAILY-005"
+                },
+                {
+                    "locale": "fr",
+                    "property": "DESCRIPTION",
+                    "value": "Répartition par âge des receveurs de la 1ère dose"
+                },
+                {
+                    "locale": "fr",
+                    "property": "title",
+                    "value": "Répartition par âge des receveurs de la 1ère dose"
+                },
+                {
+                    "locale": "cs",
+                    "property": "title",
+                    "value": "Věkové rozložení příjemců 1. dávky"
+                },
+                {
+                    "locale": "es",
+                    "property": "DESCRIPTION",
+                    "value": "Distribución por edades de los receptores de la 1a dosis"
+                },
+                {
+                    "locale": "cs",
+                    "property": "DESCRIPTION",
+                    "value": "Věkové rozložení příjemců 1. dávky"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "COVAC-DIARIO-005"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "COVAC-DAILY-005"
+                },
+                {
+                    "locale": "es",
+                    "property": "title",
+                    "value": "Distribución por edades de los receptores de la 1a dosis"
+                }
+            ],
+            "type": "PIE",
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": [
+                {
+                    "access": "r-r-----",
+                    "id": "VLIaHu6ou8E",
+                    "userGroupUid": "VLIaHu6ou8E"
+                },
+                {
+                    "access": "rw------",
+                    "id": "AEAQ9LktNze",
+                    "userGroupUid": "AEAQ9LktNze"
+                },
+                {
+                    "access": "r-rw----",
+                    "id": "dl1WZpz570i",
+                    "userGroupUid": "dl1WZpz570i"
+                },
+                {
+                    "access": "r-r-----",
+                    "id": "q3Nh5xhJEy2",
+                    "userGroupUid": "q3Nh5xhJEy2"
+                }
+            ],
+            "userOrganisationUnit": true,
+            "userOrganisationUnitChildren": false,
+            "userOrganisationUnitGrandChildren": false,
+            "yearlySeries": []
+        },
+        {
+            "aggregationType": "DEFAULT",
+            "attributeDimensions": [],
+            "attributeValues": [],
+            "categoryDimensions": [],
+            "categoryOptionGroupSetDimensions": [],
+            "colSubTotals": false,
+            "colTotals": false,
+            "columnDimensions": [
+                "dx"
+            ],
+            "columns": [
+                {
+                    "id": "dx"
+                }
+            ],
+            "completedOnly": false,
+            "cumulativeValues": true,
+            "dataDimensionItems": [
+                {
+                    "dataDimensionItemType": "INDICATOR",
+                    "indicator": {
+                        "id": "GeAtojrj7Yy"
+                    }
+                }
+            ],
+            "dataElementDimensions": [],
+            "dataElementGroupSetDimensions": [],
+            "digitGroupSeparator": "SPACE",
+            "displayDensity": "NORMAL",
+            "displayTitle": "Cumulative number of people given the 1st dose",
+            "externalAccess": false,
+            "favorite": false,
+            "filterDimensions": [
+                "ou"
+            ],
+            "filters": [
+                {
+                    "id": "ou"
+                }
+            ],
+            "fontSize": "NORMAL",
+            "hideEmptyColumns": false,
+            "hideEmptyRowItems": "NONE",
+            "hideEmptyRows": false,
+            "hideLegend": false,
+            "hideSubtitle": false,
+            "hideTitle": false,
+            "id": "mtLMyTmbSSE",
+            "interpretations": [],
+            "itemOrganisationUnitGroups": [],
+            "legendDisplayStrategy": "FIXED",
+            "legendDisplayStyle": "FILL",
+            "name": "COVAC-DAILY-001",
+            "noSpaceBetweenColumns": true,
+            "numberType": "VALUE",
+            "optionalAxes": [],
+            "organisationUnitGroupSetDimensions": [],
+            "organisationUnitLevels": [],
+            "organisationUnits": [],
+            "parentGraphMap": {},
+            "percentStackedValues": false,
+            "periods": [],
+            "programIndicatorDimensions": [],
+            "publicAccess": "--------",
+            "regression": false,
+            "regressionType": "NONE",
+            "relativePeriods": {
+                "biMonthsThisYear": false,
+                "last12Months": false,
+                "last12Weeks": false,
+                "last14Days": true,
+                "last180Days": false,
+                "last2SixMonths": false,
+                "last30Days": false,
+                "last3Days": false,
+                "last3Months": false,
+                "last4BiWeeks": false,
+                "last4Quarters": false,
+                "last4Weeks": false,
+                "last52Weeks": false,
+                "last5FinancialYears": false,
+                "last5Years": false,
+                "last60Days": false,
+                "last6BiMonths": false,
+                "last6Months": false,
+                "last7Days": false,
+                "last90Days": false,
+                "lastBiWeek": false,
+                "lastBimonth": false,
+                "lastFinancialYear": false,
+                "lastMonth": false,
+                "lastQuarter": false,
+                "lastSixMonth": false,
+                "lastWeek": false,
+                "lastYear": false,
+                "monthsLastYear": false,
+                "monthsThisYear": false,
+                "quartersLastYear": false,
+                "quartersThisYear": false,
+                "thisBiWeek": false,
+                "thisBimonth": false,
+                "thisDay": false,
+                "thisFinancialYear": false,
+                "thisMonth": false,
+                "thisQuarter": false,
+                "thisSixMonth": false,
+                "thisWeek": false,
+                "thisYear": false,
+                "weeksThisYear": false,
+                "yesterday": false
+            },
+            "reportingParams": {
+                "grandParentOrganisationUnit": false,
+                "organisationUnit": false,
+                "parentOrganisationUnit": false,
+                "reportingPeriod": false
+            },
+            "rowDimensions": [
+                "pe"
+            ],
+            "rowSubTotals": false,
+            "rowTotals": false,
+            "rows": [
+                {
+                    "id": "pe"
+                }
+            ],
+            "showData": true,
+            "showDimensionLabels": false,
+            "showHierarchy": false,
+            "skipRounding": false,
+            "sortOrder": 0,
+            "subscribed": false,
+            "subscribers": [],
+            "title": "Cumulative number of people given the 1st dose",
+            "topLimit": 0,
+            "translations": [
+                {
+                    "locale": "fr",
+                    "property": "title",
+                    "value": "Nombre cumulé de personnes ayant reçu la 1ère dose"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "COVAC-DIARIO-001"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "COVAC-DAILY-001"
+                },
+                {
+                    "locale": "es",
+                    "property": "title",
+                    "value": "Número acumulado de personas que recibieron la 1.ra dosis"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "COVAC-DAILY-001"
+                },
+                {
+                    "locale": "cs",
+                    "property": "title",
+                    "value": "Kumulativní počet osob, kterým byla podána 1. dávka"
+                }
+            ],
+            "type": "STACKED_COLUMN",
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": [
+                {
+                    "access": "r-r-----",
+                    "id": "VLIaHu6ou8E",
+                    "userGroupUid": "VLIaHu6ou8E"
+                },
+                {
+                    "access": "rw------",
+                    "id": "AEAQ9LktNze",
+                    "userGroupUid": "AEAQ9LktNze"
+                },
+                {
+                    "access": "r-rw----",
+                    "id": "dl1WZpz570i",
+                    "userGroupUid": "dl1WZpz570i"
+                },
+                {
+                    "access": "r-r-----",
+                    "id": "q3Nh5xhJEy2",
+                    "userGroupUid": "q3Nh5xhJEy2"
+                }
+            ],
+            "userOrganisationUnit": true,
+            "userOrganisationUnitChildren": false,
+            "userOrganisationUnitGrandChildren": false,
+            "yearlySeries": []
+        },
+        {
+            "aggregationType": "DEFAULT",
+            "attributeDimensions": [],
+            "attributeValues": [],
+            "categoryDimensions": [],
+            "categoryOptionGroupSetDimensions": [],
+            "colSubTotals": false,
+            "colTotals": false,
+            "columnDimensions": [
+                "dx"
+            ],
+            "columns": [
+                {
+                    "id": "dx"
+                }
+            ],
+            "completedOnly": false,
+            "cumulativeValues": true,
+            "dataDimensionItems": [
+                {
+                    "dataDimensionItemType": "INDICATOR",
+                    "indicator": {
+                        "id": "ddZjJCwXf6k"
+                    }
+                }
+            ],
+            "dataElementDimensions": [],
+            "dataElementGroupSetDimensions": [],
+            "digitGroupSeparator": "SPACE",
+            "displayDensity": "NORMAL",
+            "displayTitle": "Cumulative number of people given the 2nd+ dose",
+            "externalAccess": false,
+            "favorite": false,
+            "filterDimensions": [
+                "ou"
+            ],
+            "filters": [
+                {
+                    "id": "ou"
+                }
+            ],
+            "fontSize": "NORMAL",
+            "hideEmptyColumns": false,
+            "hideEmptyRowItems": "NONE",
+            "hideEmptyRows": false,
+            "hideLegend": false,
+            "hideSubtitle": false,
+            "hideTitle": false,
+            "id": "B09OVExmoc6",
+            "interpretations": [],
+            "itemOrganisationUnitGroups": [],
+            "legendDisplayStrategy": "FIXED",
+            "legendDisplayStyle": "FILL",
+            "name": "COVAC-DAILY-002",
+            "noSpaceBetweenColumns": true,
+            "numberType": "VALUE",
+            "optionalAxes": [],
+            "organisationUnitGroupSetDimensions": [],
+            "organisationUnitLevels": [],
+            "organisationUnits": [],
+            "parentGraphMap": {},
+            "percentStackedValues": false,
+            "periods": [],
+            "programIndicatorDimensions": [],
+            "publicAccess": "--------",
+            "regression": false,
+            "regressionType": "NONE",
+            "relativePeriods": {
+                "biMonthsThisYear": false,
+                "last12Months": false,
+                "last12Weeks": false,
+                "last14Days": true,
+                "last180Days": false,
+                "last2SixMonths": false,
+                "last30Days": false,
+                "last3Days": false,
+                "last3Months": false,
+                "last4BiWeeks": false,
+                "last4Quarters": false,
+                "last4Weeks": false,
+                "last52Weeks": false,
+                "last5FinancialYears": false,
+                "last5Years": false,
+                "last60Days": false,
+                "last6BiMonths": false,
+                "last6Months": false,
+                "last7Days": false,
+                "last90Days": false,
+                "lastBiWeek": false,
+                "lastBimonth": false,
+                "lastFinancialYear": false,
+                "lastMonth": false,
+                "lastQuarter": false,
+                "lastSixMonth": false,
+                "lastWeek": false,
+                "lastYear": false,
+                "monthsLastYear": false,
+                "monthsThisYear": false,
+                "quartersLastYear": false,
+                "quartersThisYear": false,
+                "thisBiWeek": false,
+                "thisBimonth": false,
+                "thisDay": false,
+                "thisFinancialYear": false,
+                "thisMonth": false,
+                "thisQuarter": false,
+                "thisSixMonth": false,
+                "thisWeek": false,
+                "thisYear": false,
+                "weeksThisYear": false,
+                "yesterday": false
+            },
+            "reportingParams": {
+                "grandParentOrganisationUnit": false,
+                "organisationUnit": false,
+                "parentOrganisationUnit": false,
+                "reportingPeriod": false
+            },
+            "rowDimensions": [
+                "pe"
+            ],
+            "rowSubTotals": false,
+            "rowTotals": false,
+            "rows": [
+                {
+                    "id": "pe"
+                }
+            ],
+            "showData": true,
+            "showDimensionLabels": false,
+            "showHierarchy": false,
+            "skipRounding": false,
+            "sortOrder": 0,
+            "subscribed": false,
+            "subscribers": [],
+            "title": "Cumulative number of people given the 2nd+ dose",
+            "topLimit": 0,
+            "translations": [
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "COVAC-DAILY-002"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "COVAC-DAILY-002"
+                },
+                {
+                    "locale": "fr",
+                    "property": "title",
+                    "value": "Nombre cumulé de personnes ayant reçu la 2èmes+ dose"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "COVAC-DIARIO-002"
+                },
+                {
+                    "locale": "es",
+                    "property": "title",
+                    "value": "Número acumulado de personas que recibieron la 2.a dosis o mayor"
+                },
+                {
+                    "locale": "cs",
+                    "property": "title",
+                    "value": "Kumulativní počet lidí, kterým byla podána 2.+ dávka"
+                }
+            ],
+            "type": "STACKED_COLUMN",
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": [
+                {
+                    "access": "r-r-----",
+                    "id": "VLIaHu6ou8E",
+                    "userGroupUid": "VLIaHu6ou8E"
+                },
+                {
+                    "access": "rw------",
+                    "id": "AEAQ9LktNze",
+                    "userGroupUid": "AEAQ9LktNze"
+                },
+                {
+                    "access": "r-rw----",
+                    "id": "dl1WZpz570i",
+                    "userGroupUid": "dl1WZpz570i"
+                },
+                {
+                    "access": "r-r-----",
+                    "id": "q3Nh5xhJEy2",
+                    "userGroupUid": "q3Nh5xhJEy2"
+                }
+            ],
+            "userOrganisationUnit": true,
+            "userOrganisationUnitChildren": false,
+            "userOrganisationUnitGrandChildren": false,
+            "yearlySeries": []
+        },
+        {
+            "aggregationType": "DEFAULT",
+            "attributeDimensions": [],
+            "attributeValues": [],
+            "categoryDimensions": [],
+            "categoryOptionGroupSetDimensions": [],
+            "colSubTotals": false,
+            "colTotals": false,
+            "columnDimensions": [
+                "dx"
+            ],
+            "columns": [
+                {
+                    "id": "dx"
+                }
+            ],
+            "completedOnly": false,
+            "cumulativeValues": false,
+            "dataDimensionItems": [
+                {
+                    "dataDimensionItemType": "INDICATOR",
+                    "indicator": {
+                        "id": "GeAtojrj7Yy"
+                    }
+                },
+                {
+                    "dataDimensionItemType": "INDICATOR",
+                    "indicator": {
+                        "id": "KIgI3EPjs2T"
+                    }
+                }
+            ],
+            "dataElementDimensions": [],
+            "dataElementGroupSetDimensions": [],
+            "digitGroupSeparator": "SPACE",
+            "displayDensity": "NORMAL",
+            "displayTitle": "Total 1st dose recipients vs recipients with at least an underlying condition",
+            "externalAccess": false,
+            "favorite": false,
+            "filterDimensions": [
+                "ou"
+            ],
+            "filters": [
+                {
+                    "id": "ou"
+                }
+            ],
+            "fontSize": "NORMAL",
+            "hideEmptyColumns": false,
+            "hideEmptyRowItems": "NONE",
+            "hideEmptyRows": false,
+            "hideLegend": false,
+            "hideSubtitle": false,
+            "hideTitle": false,
+            "id": "JYXA2qs3udu",
+            "interpretations": [],
+            "itemOrganisationUnitGroups": [],
+            "legendDisplayStrategy": "FIXED",
+            "legendDisplayStyle": "FILL",
+            "name": "COVAC-DAILY-003",
+            "noSpaceBetweenColumns": false,
+            "numberType": "VALUE",
+            "optionalAxes": [],
+            "organisationUnitGroupSetDimensions": [],
+            "organisationUnitLevels": [],
+            "organisationUnits": [],
+            "parentGraphMap": {},
+            "percentStackedValues": false,
+            "periods": [],
+            "programIndicatorDimensions": [],
+            "publicAccess": "--------",
+            "regression": false,
+            "regressionType": "NONE",
+            "relativePeriods": {
+                "biMonthsThisYear": false,
+                "last12Months": false,
+                "last12Weeks": false,
+                "last14Days": true,
+                "last180Days": false,
+                "last2SixMonths": false,
+                "last30Days": false,
+                "last3Days": false,
+                "last3Months": false,
+                "last4BiWeeks": false,
+                "last4Quarters": false,
+                "last4Weeks": false,
+                "last52Weeks": false,
+                "last5FinancialYears": false,
+                "last5Years": false,
+                "last60Days": false,
+                "last6BiMonths": false,
+                "last6Months": false,
+                "last7Days": false,
+                "last90Days": false,
+                "lastBiWeek": false,
+                "lastBimonth": false,
+                "lastFinancialYear": false,
+                "lastMonth": false,
+                "lastQuarter": false,
+                "lastSixMonth": false,
+                "lastWeek": false,
+                "lastYear": false,
+                "monthsLastYear": false,
+                "monthsThisYear": false,
+                "quartersLastYear": false,
+                "quartersThisYear": false,
+                "thisBiWeek": false,
+                "thisBimonth": false,
+                "thisDay": false,
+                "thisFinancialYear": false,
+                "thisMonth": false,
+                "thisQuarter": false,
+                "thisSixMonth": false,
+                "thisWeek": false,
+                "thisYear": false,
+                "weeksThisYear": false,
+                "yesterday": false
+            },
+            "reportingParams": {
+                "grandParentOrganisationUnit": false,
+                "organisationUnit": false,
+                "parentOrganisationUnit": false,
+                "reportingPeriod": false
+            },
+            "rowDimensions": [
+                "pe"
+            ],
+            "rowSubTotals": false,
+            "rowTotals": false,
+            "rows": [
+                {
+                    "id": "pe"
+                }
+            ],
+            "showData": true,
+            "showDimensionLabels": false,
+            "showHierarchy": false,
+            "skipRounding": false,
+            "sortOrder": 0,
+            "subscribed": false,
+            "subscribers": [],
+            "title": "Total 1st dose recipients vs recipients with at least an underlying condition",
+            "topLimit": 0,
+            "translations": [
+                {
+                    "locale": "cs",
+                    "property": "title",
+                    "value": "Celkový počet příjemců 1. dávky vs. příjemci s alespoň základním onemocněním"
+                },
+                {
+                    "locale": "cs",
+                    "property": "NAME",
+                    "value": "COVAC-DAILY-003"
+                },
+                {
+                    "locale": "fr",
+                    "property": "NAME",
+                    "value": "COVAC-DAILY-003"
+                },
+                {
+                    "locale": "es",
+                    "property": "title",
+                    "value": "Total de vacunados con la 1.a dosis contra vacunados con al menos una afección subyacente"
+                },
+                {
+                    "locale": "es",
+                    "property": "NAME",
+                    "value": "COVAC-DIARIO-003"
+                },
+                {
+                    "locale": "fr",
+                    "property": "title",
+                    "value": "Total des receveurs de la 1ère dose par rapport aux receveurs avec au moins une affection sous-jacente"
+                }
+            ],
+            "type": "COLUMN",
+            "user": {
+                "id": "vUeLeQMSwhN",
+                "username": "who"
+            },
+            "userAccesses": [],
+            "userGroupAccesses": [
+                {
+                    "access": "r-r-----",
+                    "id": "VLIaHu6ou8E",
+                    "userGroupUid": "VLIaHu6ou8E"
+                },
+                {
+                    "access": "rw------",
+                    "id": "AEAQ9LktNze",
+                    "userGroupUid": "AEAQ9LktNze"
+                },
+                {
+                    "access": "r-rw----",
+                    "id": "dl1WZpz570i",
+                    "userGroupUid": "dl1WZpz570i"
+                },
+                {
+                    "access": "r-r-----",
+                    "id": "q3Nh5xhJEy2",
+                    "userGroupUid": "q3Nh5xhJEy2"
+                }
+            ],
+            "userOrganisationUnit": true,
+            "userOrganisationUnitChildren": false,
+            "userOrganisationUnitGrandChildren": false,
+            "yearlySeries": []
+        }
+    ]
+}
