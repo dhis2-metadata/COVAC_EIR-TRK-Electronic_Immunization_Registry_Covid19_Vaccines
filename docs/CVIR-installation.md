@@ -264,9 +264,9 @@ The table below contains metadata elements that use an affected option set:
 | Data element             | COVAC - Underlying condition           | `bCtWZGjSWM8` |
 | Data element             | COVAC - Vaccine Brand                  | `rWYryQb3ohn` |
 | Data element             | COVAC - Vaccine Manufacturer           | `rpkH9ZPGJcX` |
-| Data element             | COVAC - Vaccine Name                   | `bbnyNYD1wgS` |
-| Tracked Entity Attribute | COVID - Occupation                     | `LY2bDXpNvS7` |
-| Tracked Entity Attribute | Sex                                    | `oindugucx72` |
+| Data element             | COVAC - Vaccine Name                   | `bbnyNYD1wgS` |
+| Tracked Entity Attribute | COVID - Occupation                     | `LY2bDXpNvS7` |
+| Tracked Entity Attribute | Sex                                    | `oindugucx72` |
 
 > **Important**
 >
@@ -276,31 +276,31 @@ The table below contains metadata elements that use an affected option set:
 
 For data element values, use:
 
-```SQL
-UPDATE programstageinstance
-SET eventdatavalues = jsonb_set(eventdatavalues, '{"<affected data element uid>","value"}', '"<new value>"')
-WHERE eventdatavalues @> '{"<affected data element uid>":{"value": "<old value>"}}'::jsonb
-AND programstageid=<database_programsatgeid>;
-```
+    ```SQL
+    UPDATE programstageinstance
+    SET eventdatavalues = jsonb_set(eventdatavalues, '{"<affected data element uid>","value"}', '"<new value>"')
+    WHERE eventdatavalues @> '{"<affected data element uid>":{"value": "<old value>"}}'::jsonb
+    AND programstageid=<database_programsatgeid>;
+    ```
 
 For tracked entity attribute values, use:
 
-```SQL
-UPDATE trackedentityattributevalue
-SET value = <new value>
-WHERE trackedentityattributeid=<affected trackedentityattribute database_id> AND value=<old value>;
-```
+    ```SQL
+    UPDATE trackedentityattributevalue
+    SET value = <new value>
+    WHERE trackedentityattributeid=<affected trackedentityattribute database_id> AND value=<old value>;
+    ```
 
 > **Example**
 >
 > To replace the option code 'yes' with 'YES' for existing data values (data element COVAC - Previously infected with COVID `LOU9t0aR0z7`) in the programstage with the id=1510410385 (example id), the command will be configured as follows:
 >
-> ```SQL
-> UPDATE programstageinstance
-> SET eventdatavalues = jsonb_set(eventdatavalues, '{"LOU9t0aR0z7","value"}', '"YES"')
-> WHERE eventdatavalues @> '{"LOU9t0aR0z7":{"value": "yes"}}'::jsonb
-> AND programstageid=1510410385;
-> ```
+>     ```SQL
+>     UPDATE programstageinstance
+>     SET eventdatavalues = jsonb_set(eventdatavalues, '{"LOU9t0aR0z7","value"}', '"YES"')
+>     WHERE eventdatavalues @> '{"LOU9t0aR0z7":{"value": "yes"}}'::jsonb
+>     AND programstageid=1510410385;
+>     ```
 
 Option codes are also used in program rule expressions, program indicators, etc. If you are updating code options in your system, make sure you update the codes in all affected metadata objects.
 
