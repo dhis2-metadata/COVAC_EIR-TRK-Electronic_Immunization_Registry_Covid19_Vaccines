@@ -1,8 +1,10 @@
 # Release Note
 
+## 1.2.0
+
 A new version of the COVID-19 Vaccine EIR package has been released with configuration fixes and improvements. A detailed changelog of all metadata changes is included in [insert package repository link from GH].  
 
-## New Features
+### New Features
 
 New **tracker data elements** were added to conform to the WHO's [Digital Documentation of COVID-19 Certificates: Vaccination Status (2021)](https://www.who.int/publications/i/item/WHO-2019-nCoV-Digital_certificates-vaccination-data_dictionary-2021.1) core data dictionary:
 
@@ -15,7 +17,7 @@ New **aggregate dataset** [COVAC - EIR aggregated tracker data, `tM6PFnTKKGP`] a
 
 **Program indicators** were modified to include a mapping (based on program indicator attributes) to target aggregate domain data elements and category option combinations to populate the aggregate dataset & dashboard.
 
-## Improvements
+### Improvements
 
 Removed previous **dashboard** [COVID-19 Vaccine Registry, `YYtAbckt77l`] and associated analytics objects to prevent performance issues associated with users loading dashboards based on Program Indicators that calculate on the fly with heavy queries.
 
