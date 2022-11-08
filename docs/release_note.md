@@ -1,4 +1,4 @@
-# Release Note
+# Release Note { #cvc-eir-release-note }
 
 ## 1.2.0
 
