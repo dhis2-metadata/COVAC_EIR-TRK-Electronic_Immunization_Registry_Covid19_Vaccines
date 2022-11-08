@@ -14,7 +14,7 @@
 
 ## Metadata Reference
 
-[Version 1.2.0]()
+[Version 1.2.0](https://packages.dhis2.org/en/CVC_EIR/1.2.0/DHIS2.36/CVC_EIR_COMPLETE_1.2.0_DHIS2.36.xlsx)
 
 ## Training Materials
 
