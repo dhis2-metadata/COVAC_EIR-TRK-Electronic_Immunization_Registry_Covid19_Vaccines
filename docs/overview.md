@@ -2,19 +2,19 @@
 
 ## Design
 
-[Version 1.2.0](#cvc-eir-design)
+- [Version 1.2.0](#cvc-eir-design)
 
 ## Installation
 
-[Installation Guide](#cvc-eir-installation)
+- [Installation Guide](#cvc-eir-installation)
 
 ## Release Note
 
-[Release Note](#cvc-eir-release-note)
+ [Release Note](#cvc-eir-release-note)
 
 ## Metadata Reference
 
-[Version 1.2.0](https://packages.dhis2.org/en/CVC_EIR/1.2.0/DHIS2.36/CVC_EIR_COMPLETE_1.2.0_DHIS2.36.xlsx)
+- [Version 1.2.0](https://packages.dhis2.org/en/CVC_EIR/1.2.0/DHIS2.36/CVC_EIR_COMPLETE_1.2.0_DHIS2.36.xlsx)
 
 ## Training Materials
 
