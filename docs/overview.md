@@ -10,7 +10,7 @@
 
 ## Release Note
 
- [Release Note](#cvc-eir-release-note)
+- [Release Note](#cvc-eir-release-note)
 
 ## Metadata Reference
 
