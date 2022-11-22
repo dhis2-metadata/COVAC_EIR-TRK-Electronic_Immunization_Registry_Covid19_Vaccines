@@ -1,5 +1,9 @@
 # COVID-19 Electronic Immunization Registry
 
+## Release Note
+
+- [Release Note](#cvc-eir-release-note)
+
 ## Design
 
 - [Version 1.2.0](#cvc-eir-design)
@@ -7,10 +11,6 @@
 ## Installation
 
 - [Installation Guide](#cvc-eir-installation)
-
-## Release Note
-
-- [Release Note](#cvc-eir-release-note)
 
 ## Metadata Reference
 
